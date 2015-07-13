@@ -115,7 +115,7 @@ def fpp_summaryplot(data=FPPDATA,fig=None,symbol='o',ms=1,color='k',
 
     
     inds = np.argsort(data['rp'])
-    ypts = data['fpp'][inds].clip(1e-4,1)
+    ypts = data['FPP'][inds].clip(1e-4,1)
     xpts = np.arange(len(data))
     plt.semilogy(ypts,symbol,ms=ms,color=color,alpha=alpha,**kwargs)
     if showcc:
