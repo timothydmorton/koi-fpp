@@ -103,7 +103,6 @@ K01054.01 NoWeakSecondaryError: K01054.01
 K01082.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1082.n/tremove.4.dat does not exist.
 K01109.01 NoWeakSecondaryError: K01109.01
 K01112.01 EmptyPhotometryError: K01112.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1112.n/tremove.1.dat) is empty
-K01126.02 2015-07-13 17:44:21,540: No eclipse registered for index 14064
 K01132.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1132.n/tremove.2.dat does not exist.
 K01134.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1134.n/tremove.2.dat does not exist.
 K01149.01 EmptyPhotometryError: K01149.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1149.n/tremove.1.dat) is empty
@@ -270,7 +269,6 @@ K02843.01 NoWeakSecondaryError: K02843.01
 K02854.01 MissingStellarError: 5513866 not in stellar table?
 K02869.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2869.n/tremove.2.dat does not exist.
 K02871.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2871.n/tremove.3.dat does not exist.
-K02896.02 2015-07-13 17:47:22,841: No eclipse registered for index 14869
 K02902.01 BadRoweFitError: best-fit impact parameter (80.22) inconsistent with best-fit radius ratio (0.12693497513).
 K02917.01 BadRoweFitError: K02917.01 has negative RoR (-0.012982364351) from JRowe MCMC fit
 K02918.02 BadRoweFitError: best-fit impact parameter (1.99) inconsistent with best-fit radius ratio (0.00021068131885).
@@ -296,7 +294,6 @@ K03156.02 BadRoweFitError: K03156.02 has a/Rstar < 1 (0.883545649488) from JRowe
 K03156.03 BadRoweFitError: best-fit impact parameter (1.75) inconsistent with best-fit radius ratio (0.61688392527).
 K03158.04 AllWithinRocheError: All simulated systems within Roche lobe
 K03158.05 AllWithinRocheError: All simulated systems within Roche lobe
-K03163.01 UserWarning: Warning: converting a masked element to nan.
 K03172.01 MissingStellarError: 3337061 not in stellar table?
 K03172.02 MissingStellarError: 3337061 not in stellar table?
 K03174.01 MissingStellarError: 7115661 not in stellar table?
@@ -1206,9 +1203,7 @@ K06061.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6061.n/tremove.1
 K06062.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6062.n/tremove.1.dat does not exist.
 K06063.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6063.n/tremove.1.dat does not exist.
 K06064.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6064.n/tremove.1.dat does not exist.
-K06064.02 2015-07-13 17:47:34,402: No eclipse registered for index 18535
 K06065.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6065.n/tremove.1.dat does not exist.
-K06065.02 2015-07-13 17:46:59,501: No eclipse registered for index 16989
 K06067.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6067.n/tremove.1.dat does not exist.
 K06068.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6068.n/tremove.1.dat does not exist.
 K06069.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6069.n/tremove.1.dat does not exist.
@@ -1383,8 +1378,6 @@ K06247.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6247.n/tremove.1
 K06248.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6248.n/tremove.1.dat does not exist.
 K06249.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6249.n/tremove.1.dat does not exist.
 K06250.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6250.n/tremove.1.dat does not exist.
-K06257.01 UserWarning: Warning: converting a masked element to nan.
-K06261.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K06264.01 BadRoweFitError: K06264.01 has RoR > 1 (1.0781543155) from JRowe MCMC fit
 K06266.01 EmptyPopulationError: < 4 valid systems in population
 K06270.01 MissingStellarError: 2438061 not in stellar table?
@@ -1400,7 +1393,6 @@ K06407.01 EmptyPopulationError: < 4 valid systems in population
 K06412.01 EmptyPopulationError: < 4 valid systems in population
 K06416.01 MissingStellarError: 4454219 not in stellar table?
 K06424.01 AllWithinRocheError: All simulated systems within Roche lobe
-K06427.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K06433.01 EmptyPopulationError: < 4 valid systems in population
 K06460.01 NoWeakSecondaryError: K06460.01
 K06471.01 MCMCError: TransitSignal trapezoid fit not converged (K06471.01).
@@ -1409,14 +1401,11 @@ K06512.01 NoWeakSecondaryError: K06512.01
 K06514.01 BadRoweFitError: K06514.01 has a/Rstar < 1 (0.998141193808) from JRowe MCMC fit
 K06529.01 MissingStellarError: 5126627 not in stellar table?
 K06531.01 NoWeakSecondaryError: K06531.01
-K06549.01 UserWarning: Warning: converting a masked element to nan.
 K06598.01 NoWeakSecondaryError: K06598.01
 K06602.01 EmptyPopulationError: < 4 valid systems in population
-K06622.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K06635.01 BadRoweFitError: K06635.01 has a/Rstar < 1 (0.994180354071) from JRowe MCMC fit
 K06639.01 EmptyPopulationError: < 4 valid systems in population
 K06648.01 EmptyPopulationError: < 4 valid systems in population
-K06656.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K06682.01 BadRoweFitError: K06682.01 has RoR > 1 (1.4140190896) from JRowe MCMC fit
 K06696.01 EmptyPopulationError: < 4 valid systems in population
 K06698.01 BadRoweFitError: K06698.01 has RoR > 1 (1.0473111323) from JRowe MCMC fit
@@ -1427,22 +1416,19 @@ K06768.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06780.01 MCMCError: TransitSignal trapezoid fit not converged (K06780.01).
 K06814.01 EmptyPopulationError: < 4 valid systems in population
 K06817.01 MissingStellarError: 7090801 not in stellar table?
-K06822.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K06827.01 EmptyPopulationError: < 4 valid systems in population
 K06834.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06851.01 EmptyPopulationError: < 4 valid systems in population
 K06852.01 EmptyPopulationError: < 4 valid systems in population
-K06855.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
+K06855.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06884.01 BadRoweFitError: K06884.01 has a/Rstar < 1 (0.993869453195) from JRowe MCMC fit
 K06885.01 BadRoweFitError: K06885.01 has RoR > 1 (1.2327987416) from JRowe MCMC fit
 K06902.01 BadRoweFitError: K06902.01 has RoR > 1 (11.339171342) from JRowe MCMC fit
 K06939.01 MissingStellarError: 7960295 not in stellar table?
 K06955.01 MCMCError: TransitSignal trapezoid fit not converged (K06955.01).
 K06963.01 EmptyPopulationError: < 4 valid systems in population
-K07021.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K07034.01 EmptyPopulationError: < 4 valid systems in population
 K07039.01 EmptyPopulationError: < 4 valid systems in population
-K07054.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K07062.01 BadRoweFitError: K07062.01 has RoR > 1 (12.735797589) from JRowe MCMC fit
 K07067.01 EmptyPopulationError: < 4 valid systems in population
 K07081.01 EmptyPopulationError: < 4 valid systems in population
@@ -1451,21 +1437,15 @@ K07097.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07101.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07156.01 BadRoweFitError: K07156.01 has RoR > 1 (1.372805843) from JRowe MCMC fit
 K07159.01 BadRoweFitError: K07159.01 has RoR > 1 (10.353392486) from JRowe MCMC fit
-K07179.01 UserWarning: Warning: converting a masked element to nan.
 K07194.01 BadRoweFitError: K07194.01 has negative RoR (-0.011824524103) from JRowe MCMC fit
 K07200.01 MissingStellarError: 9597095 not in stellar table?
 K07204.01 BadRoweFitError: K07204.01 has RoR > 1 (2.159873686) from JRowe MCMC fit
 K07205.01 MissingStellarError: 9635520 not in stellar table?
-K07218.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
-K07250.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K07304.01 BadRoweFitError: K07304.01 has RoR > 1 (1.8775599812) from JRowe MCMC fit
 K07309.01 BadRoweFitError: K07309.01 has RoR > 1 (1.3300692853) from JRowe MCMC fit
-K07330.01 UserWarning: Warning: converting a masked element to nan.
 K07331.01 MissingStellarError: 10468514 not in stellar table?
 K07349.01 BadRoweFitError: K07349.01 has RoR > 1 (1.3778795192) from JRowe MCMC fit
 K07369.01 MissingStellarError: 10743600 not in stellar table?
-K07417.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
-K07450.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K07474.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07482.01 BadRoweFitError: K07482.01 has RoR > 1 (1.0339588484) from JRowe MCMC fit
 K07511.01 BadRoweFitError: K07511.01 has RoR > 1 (1.4264435583) from JRowe MCMC fit
@@ -1474,5 +1454,3 @@ K07561.01 MCMCError: TransitSignal trapezoid fit not converged (K07561.01).
 K07562.01 BadRoweFitError: K07562.01 has negative RoR (-0.013766406001) from JRowe MCMC fit
 K07578.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07581.01 AllWithinRocheError: All simulated systems within Roche lobe
-K07587.01 UserWarning: Warning: converting a masked element to nan.
-K07617.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
