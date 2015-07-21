@@ -1,0 +1,208 @@
+%% This is emulateapj reformatting of the AASTEX sample document
+%%
+\documentclass[preprint2]{aastex}
+%\documentclass[iop]{emulateapj}
+
+\usepackage{natbib}
+\usepackage{acronym}
+\bibliographystyle{apj}
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand{\myemail}{tdm@astro.princeton.edu}
+
+\newcommand{\ntotal}{5500}
+\newcommand{\nfail}{1000}
+\newcommand{\nval}{1500}
+\newcommand{\nvalnew}{1000}
+\newcommand{\nfp}{500}
+\newcommand{\nfpnew}{200}
+\newcommand{\kepler}{\textit{Kepler}}
+\newcommand{\vespa}{\texttt{vespa}}
+\newcommand{\isochrones}{\texttt{isochrones}}
+
+\defcitealias{Morton:2012}{M12}
+
+\acrodef{fpp}[FPP]{false positive probability}
+\acrodef{koi}[KOI]{\kepler\ Object of Interest}
+\acrodefplural{koi}[KOIs]{\kepler\ Objects of Interest}
+\acrodef{nexsci}[NExScI]{NASA Exoplanet Science Institute}
+
+%% You can insert a short comment on the title page using the command below.
+
+\slugcomment{}
+
+\shorttitle{False Positive Probabilities for KOIs}
+\shortauthors{Morton et al.}
+
+%% This is the end of the preamble.  Indicate the beginning of the
+%% paper itself with \begin{document}.
+
+\begin{document}
+
+%% LaTeX will automatically break titles if they run longer than
+%% one line. However, you may use \\ to force a line break if
+%% you desire.
+
+\title{False Positive Probabilities for all Kepler Objects of Interest: \\
+        \nvalnew\ newly validated planets and \nfpnew\ likely false positives}
+
+%% Use \author, \affil, and the \and command to format
+%% author and affiliation information.
+%% Note that \email has replaced the old \authoremail command
+%% from AASTeX v4.0. You can use \email to mark an email address
+%% anywhere in the paper, not just in the front matter.
+%% As in the title, use \\ to force line breaks.
+
+\author{Timothy D. Morton}
+\affil{Department of Astrophysical Sciences, Princeton University}
+
+%\altaffiltext{1}{Department of Astrophysics, Princeton University}
+
+%% Mark off your abstract in the ``abstract'' environment. In the manuscript
+%% style, abstract will output a Received/Accepted line after the
+%% title and affiliation information. No date will appear since the author
+%% does not have this information. The dates will be filled in by the
+%% editorial office after submission.
+
+\begin{abstract}
+We present the results of applying a fully automated transit signal
+false positive probability calculating procedure to every
+\kepler\ Object of Interest (KOI) from the Q1-Q16 catalog release.
+Out of \ntotal\ KOIs, we determine that \nval\ have probabilities
+$<$1\% to be astrophysical false positives, and thus may be considered
+validated planets.  \nvalnew\ of these have not yet been validated or
+confirmed by other methods.  In addition, we identify \nfp\ KOIs
+likely to be false positives ($>$90\% probability), \nfpnew\ of which
+have not yet been identified as such. A side product of these
+calculations is full stellar property posterior samplings for every
+host star, modeled as single, binary, and triple.  These calculations
+use \vespa, a publicly available Python package able to be easily
+applied to any transiting exoplanet candidate.
+\end{abstract}
+
+%% Keywords should appear after the \end{abstract} command. The uncommented
+%% example has been keyed in ApJ style. See the instructions to authors
+%% for the journal to which you are submitting your paper to determine
+%% what keyword punctuation is appropriate.
+
+%% Authors who wish to have the most important objects in their paper
+%% linked in the electronic edition to a data center may do so in the
+%% subject header.  Objects should be in the appropriate "individual"
+%% headers (e.g. quasars: individual, stars: individual, etc.) with the
+%% additional provision that the total number of headers, including each
+%% individual object, not exceed six.  The \objectname{} macro, and its
+%% alias \object{}, is used to mark each object.  The macro takes the object
+%% name as its primary argument.  This name will appear in the paper
+%% and serve as the link's anchor in the electronic edition if the name
+%% is recognized by the data centers.  The macro also takes an optional
+%% argument in parentheses in cases where the data center identification
+%% differs from what is to be printed in the paper.
+
+\keywords{}
+
+
+\section{Introduction}
+
+The \kepler\ mission has revolutionized our understanding of
+exoplanets.  Among many other important discoveries, \kepler\ has
+identified several previously unsuspected features of planetary
+systems, such as the prevalence of planets between the size of Earth
+and Neptune, and a population of very compact multiple-planet
+systems. And perhaps most notably, it has enabled for the first time
+estimates of the occurrence rates of small planets ($\gtrsim$1
+$R_\oplus$) out to orbits of about one year.  It is important to
+remember, however, that these revolutionary discoveries depend
+intimately on another revolution---how to interpret transiting planet
+\textit{candidate} signals in the absence of unambiguous positive
+confirmation of their veracity.
+
+Before \kepler, every survey searching for transiting exoplanets had a 
+
+\ac{fpp} and then \ac{fpp}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Methods}
+\label{sec:methods}
+
+In this work, we apply the fully automated \ac{fpp}-computing
+procedure described in \citet{Morton:2012}
+\citepalias[][hereafter]{Morton:2012} to all \acp{koi} listed in the
+``cumulative'' \kepler\ data table at the \ac{nexsci} Exoplanet
+Archive.  While we refer the reader to \citetalias{Morton:2012} for a
+detailed description of the method, we outline it briefly here, noting
+especially the differences between the current implementation and
+\citetalias{Morton:2012}.  The procedure as implemented in this work
+is now publicly available in the Python module
+\vespa\footnote{\url{https://github.com/timothydmorton/vespa}}.
+
+The basic goal of \vespa\ is to assign probabilities to different
+astrophysical hypotheses that might describe a transiting planet
+candidate signal.  If $\{H_i\}$ is the set of all considered
+hypotheses, the probability for any given model $i$ is
+\begin{equation}
+  \label{eq:prob}
+  \mathrm{Pr}(H_i) = \frac{\mathcal L_i \pi_i}{\displaystyle \sum_j \mathcal L_j \pi_j}
+\end{equation}
+where $\mathcal L_i$ and $\pi_i$ are the ``likelihood'' and ``prior''
+factors for each hypothesis.
+
+
+
+eclipse signals as simple
+trapezoidal 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Stellar Properties}
+\label{sec:methods:stellar}
+
+The first step in calculating the \ac{fpp} of a transit signal is to
+determine the physical properties of the signal host star.  To
+accomplish this, we use the Python module \isochrones
+\citep{isochrones}, which fits a stellar model grid of choice to a set
+of observed properties of a given star.  
+
+In \citetalias{Morton:2012}, 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{False Positive Probabilities}
+\label{sec:methods:fpp}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Results}
+\label{sec:results}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Stellar Properties}
+\label{sec:results:stars}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{False Positive Probabilities}
+\label{sec:results:fpp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusions}
+\label{sec:conclusions}
+
+\acknowledgments
+It is a pleasure to thank
+\ldots\
+
+\clearpage
+\bibliography{ms}
+\clearpage
+
+
+\end{document}
+
+%%
+%% End of file `sample.tex'.
