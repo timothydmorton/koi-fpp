@@ -1,0 +1,349 @@
+%% This is emulateapj reformatting of the AASTEX sample document
+%%
+\documentclass[preprint2]{aastex}
+%\documentclass[iop]{emulateapj}
+
+\usepackage{natbib}
+\usepackage{amssymb,amsmath}
+\usepackage[backref,breaklinks,colorlinks,citecolor=blue]{hyperref}
+\usepackage[all]{hypcap}
+\renewcommand*{\backref}[1]{[#1]}
+
+\usepackage{acronym}
+
+
+\bibliographystyle{apj}
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand{\myemail}{tdm@astro.princeton.edu}
+
+\newcommand{\ntotal}{8826}
+\newcommand{\nfail}{1584}
+\newcommand{\ncalc}{7242}
+\newcommand{\nval}{1500}
+\newcommand{\nvalnew}{1000}
+\newcommand{\nfp}{500}
+\newcommand{\nfpnew}{200}
+\newcommand{\kepler}{\textit{Kepler}}
+\newcommand{\vespa}{\texttt{vespa}}
+\newcommand{\isochrones}{\texttt{isochrones}}
+\newcommand{\bvec}[1]{{\ensuremath{\boldsymbol{#1}}}}
+
+\defcitealias{Morton:2012}{M12}
+
+\acrodef{fpp}[FPP]{false positive probability}
+\acrodef{koi}[KOI]{\kepler\ Object of Interest}
+\acrodefplural{koi}[KOIs]{\kepler\ Objects of Interest}
+\acrodef{nexsci}[NExScI]{NASA Exoplanet Science Institute}
+\acrodef{mcmc}[MCMC]{Markov Chain Monte Carlo}
+\acrodef{trilegal}[TRILEGAL]{TRIdimensional modeL of thE GALaxy}
+
+%% You can insert a short comment on the title page using the command below.
+
+\slugcomment{}
+
+\shorttitle{False Positive Probabilities for KOIs}
+\shortauthors{Morton et al.}
+
+%% This is the end of the preamble.  Indicate the beginning of the
+%% paper itself with \begin{document}.
+
+\begin{document}
+
+%% LaTeX will automatically break titles if they run longer than
+%% one line. However, you may use \\ to force a line break if
+%% you desire.
+
+\title{False Positive Probabilities for all Kepler Objects of Interest: \\
+        \nvalnew\ newly validated planets and \nfpnew\ likely false positives}
+
+%% Use \author, \affil, and the \and command to format
+%% author and affiliation information.
+%% Note that \email has replaced the old \authoremail command
+%% from AASTeX v4.0. You can use \email to mark an email address
+%% anywhere in the paper, not just in the front matter.
+%% As in the title, use \\ to force line breaks.
+
+\author{Timothy D. Morton}
+\affil{Department of Astrophysical Sciences, Princeton University}
+
+%\altaffiltext{1}{Department of Astrophysics, Princeton University}
+
+%% Mark off your abstract in the ``abstract'' environment. In the manuscript
+%% style, abstract will output a Received/Accepted line after the
+%% title and affiliation information. No date will appear since the author
+%% does not have this information. The dates will be filled in by the
+%% editorial office after submission.
+
+\begin{abstract}
+We present the results of applying a fully automated transit signal
+false positive probability calculating procedure to every
+\kepler\ Object of Interest (KOI) from the Q1-Q16 catalog release.
+Out of \ncalc\ KOIs, we determine that \nval\ have probabilities
+$<$1\% to be astrophysical false positives, and thus may be considered
+validated planets.  \nvalnew\ of these have not yet been validated or
+confirmed by other methods.  In addition, we identify \nfp\ KOIs
+likely to be false positives ($>$90\% probability), \nfpnew\ of which
+have not yet been identified as such. A side product of these
+calculations is full stellar property posterior samplings for every
+host star, modeled as single, binary, and triple.  These calculations
+use \vespa, a publicly available Python package able to be easily
+applied to any transiting exoplanet candidate.
+\end{abstract}
+
+%% Keywords should appear after the \end{abstract} command. The uncommented
+%% example has been keyed in ApJ style. See the instructions to authors
+%% for the journal to which you are submitting your paper to determine
+%% what keyword punctuation is appropriate.
+
+%% Authors who wish to have the most important objects in their paper
+%% linked in the electronic edition to a data center may do so in the
+%% subject header.  Objects should be in the appropriate "individual"
+%% headers (e.g. quasars: individual, stars: individual, etc.) with the
+%% additional provision that the total number of headers, including each
+%% individual object, not exceed six.  The \objectname{} macro, and its
+%% alias \object{}, is used to mark each object.  The macro takes the object
+%% name as its primary argument.  This name will appear in the paper
+%% and serve as the link's anchor in the electronic edition if the name
+%% is recognized by the data centers.  The macro also takes an optional
+%% argument in parentheses in cases where the data center identification
+%% differs from what is to be printed in the paper.
+
+\keywords{}
+
+
+\section{Introduction}
+
+The \kepler\ mission has revolutionized our understanding of
+exoplanets.  Among many other important discoveries, \kepler\ has
+identified several previously unsuspected features of planetary
+systems, such as the prevalence of planets between the size of Earth
+and Neptune, and a population of very compact multiple-planet
+systems. And perhaps most notably, it has enabled for the first time
+estimates of the occurrence rates of small planets ($\gtrsim$1
+$R_\oplus$) out to orbits of about one year.  It is important to
+remember, however, that these revolutionary discoveries depend
+intimately on another revolution---how to interpret transiting planet
+\textit{candidate} signals in the absence of unambiguous positive
+confirmation of their veracity.
+
+Before \kepler, every survey searching for transiting exoplanets had a 
+
+\ac{fpp} and then \ac{fpp}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Methods}
+\label{sec:methods}
+
+In this work, we apply the fully automated \ac{fpp}-computing
+procedure described in \citet[][hereafter
+  \citetalias{Morton:2012}]{Morton:2012} to \ncalc\ \acp{koi} (see
+\autoref{sec:data} for details).  While we refer the reader to
+\citetalias{Morton:2012} for a detailed description of the method, we
+outline it briefly in this section.  The procedure as implemented here
+is now publicly available in the Python module
+\vespa\footnote{\url{https://github.com/timothydmorton/vespa}}
+\citep{vespa}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{False Positive Probabilities}
+\label{sec:methods:fpp}
+
+The basic idea of \vespa\ is to assign probabilities to different
+astrophysical hypotheses that might describe a transiting planet
+candidate signal.  If $\{H_i\}$ is the set of all considered
+hypotheses, the probability for any given model $i$ is
+\begin{equation}
+  \label{eq:prob}
+  \mathrm{Pr}\left(H_i\right) = \frac{\pi_i \mathcal
+    L_i}{\displaystyle \sum_j \pi_j \mathcal L_j},
+\end{equation}
+where $\pi_i$ is the ``hypothesis prior'' and $\mathcal L_i$ is the
+``hypothesis likelihood''\footnote{This factor is more widely known as
+  the ``Bayesian evidence'' or ``marginalized likelihood'';
+  \citet{Morton:2014b} argues for the term ``hypothesis likelihood,''
+  as it can be clarifying to think of it that way.}
+The prior represents how intrinsically probable the hypothesized
+scenario is to exist, and the likelihood represents how closely the
+shape of the observed transit signal matches with the expected shape
+of a signal produced by the hypothesis.
+
+\vespa\ models an eclipse signal as a simple trapezoid, parametrized
+by depth $\delta$, total duration $T$, and shape parameter $T / \tau$,
+where $\tau$ is the ``ingress/egress'' duration (such that a
+completely V-shaped transit has $T/\tau = 2$).  For the transit signal
+being evaluated, the joint posterior probability density function
+(PDF) of these shape parameters is sampled with \ac{mcmc}, using the
+\texttt{emcee} sampler \citep{emcee}.  This allows the likelihood for
+each hypothesis to be determined by simulating a physically realistic
+population of the hypothesized astrophysical scenario and using this
+population to define the PDF for the trapezoidal parameters under the
+hypothesis.  The likelihood is then
+\begin{equation}
+  \label{eq:lhood}
+  \mathcal L_i = \displaystyle \int p_\mathrm{sig}\left(\bvec{\theta}\right)
+                                    p_i\left(\bvec{\theta}\right)\,d\bvec{\theta},
+\end{equation}
+where $\bvec{\theta}$ is the vector of trapezoidal shape parameters,
+$p_\mathrm{sig}$ is the posterior PDF of the signal, and $p_i$ is the
+PDF for the parameters under hypothesis $i$.\footnote{$\mathcal L_i$
+  may be seen to be the ``evidence'' or ``marginalized likelihood'' of
+  the trapezoidal model under hypothesis $i$, with $p_\mathrm{sig}$
+  being the likelihood and $p_i$ being the prior, integrated over the
+  $\bvec{\theta}$ parameter space.  But for clarity, and for
+  continuity with previous publication, we continue to call $\mathcal
+  L_i$ the ``likelihood'' for hypothesis $i$.}
+
+Observational constraints are incorporated in two different ways.
+First, photometric (or spectroscopic/asteroseismic) measurements of
+the target star are folded into the population simulations of each
+hypothesis (see \autoref{sec:methods:stellar}).  All other constraints are
+applied to narrow down which simulated instances of each scenario may
+be counted in the final prior and likelihood evalulations; for example,
+only blended eclipsing binaries with secondary eclipse depths
+shallower than the observed limits contribute to the construction of
+the $p_i$ trapezoidal shape parameter PDF.
+
+The steps \vespa\ takes to calculate the \ac{fpp} of a transit signal
+are thus as follows:
+\begin{enumerate}
+\item Fit trapezoid model to observed transit signal using \ac{mcmc}.
+\item Generate population simulations for each hypothesis scenario
+  being considered (conditioned on available observations of the
+  target star; see \autoref{sec:methods:stellar}).
+\item Fit each simulated eclipse in each scenario with a trapezoid
+  model (using least-squares optimization).
+\item Evaluate priors and likelihoods for each hypothesis, taking into
+  account all available observational constraints, in order to
+  calculate the \ac{fpp}.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Stellar Properties}
+\label{sec:methods:stellar}
+
+The most substantial difference between the current implementation of
+\vespa\ and the procedure documented in \citetalias{Morton:2012} is
+how stellar properties are treated.  Previously, either the target
+star's mass and radius were explicitly provided, or they were randomly
+generated according to the stellar population expected along the line
+of sight by the \ac{trilegal} Galactic stellar popultion synthesis
+tool, but constrained to agree with some observed color(s) of the star
+(e.g. $J-K$), to within some specified tolerance.  This strategy was
+used both to generate the host stars for the transiting planet model
+and the binary and triple stars for the EB and HEB false positive
+models.
+
+The new method now used by \vespa\ uses the \isochrones\ Python module
+\citep{isochrones} to fold in observational constraints on the host
+star.  At its core, \isochrones\ performs 3-D linear interpolation in
+mass--[Fe/H]--age parameter space for a given stellar model grid.
+This method of stellar modeling for FPP calculation debuted in
+\citet{Montet:2015} and is explained there in more detail.  Instead of
+randomly generating stars (or binary or triple systems of stars) from
+a predefined distribution and culling them to agree with observed
+colors, \emph{all} available constraints on the target star are used
+to condition a direct fit of either a single--, binary--, or
+triple--star model to the Dartmouth grid of stellar models.  This fit
+is done using \texttt{MultiNest} \citep{Feroz:2009, Feroz:2011,
+  Feroz:2013}, via the \texttt{PyMultiNest} wrapper
+\citep{Buchner:2014}.  Monte Carlo samples of stellar properties for
+the population simulations are then drawn directly from these
+posterior samples.
+
+As a result, \vespa\ creates full posterior samplings of the physical
+properties of the host star, modeled as a single, binary, and triple
+star system, as a by-product of the \ac{fpp} calculation.  Parameters
+directly fitted for in this process are stellar mass, age, [Fe/H],
+$A_V$ extinction, and distance.  For binary and triple fits, secondary
+and/or tertiary mass parameters are added, with all other parameters
+assumed to be the same among all components.  Photometric observations
+upon which these fits are conditioned are assumed to be the sum of all
+components.  If spectroscopic and/or asteroseismic measurements are
+used (e.g., constraints on effective temperature or stellar surface
+gravity), they are assumed to relate to only the primary star.  Priors
+used in these fits are listed in \autoref{table:priors}.  Posterior
+chains of all other stellar parameters of interest (e.g., temperature,
+surface gravity, radius, etc.) are derived from the chains of fitting
+parameters by evaluting the stellar models using \isochrones.
+
+\capstartfalse
+\begin{deluxetable}{cc}
+\tablewidth{0pt}
+\tabletypesize{\scriptsize}
+\tablecaption{Priors used in stellar property fits}
+\tablehead{
+\colhead{Parameter} &
+\colhead{Prior}}
+\startdata
+Primary mass $M_A$ & $\propto M_A^{-2.35},~M_A > 0.1$ \\
+Secondary mass $M_B$ & $\propto (M_B/M_A)^{0.3},~0.1 <= M_B < M_A$ \\
+Tertiary mass $M_C$ & $\propto (M_C/M_A)^{0.3},~0.1 <= M_C < M_B$ \\
+Age {[}Gyr{]} & $\mathcal U(1,15)$ \tablenotemark{a}\\
+{[}Fe/H{]} & $\frac{0.8}{0.15} \mathcal N(0.016, 0.15) +
+\frac{0.2}{0.22} \mathcal N(-0.15, 0.22)$  \tablenotemark{b}\\
+$A_V$ {[}mag{]} & $\mathcal U(0, A_{V, \mathrm{max}})$
+\tablenotemark{c} \\
+Distance $d$ & $\propto d^2$ 
+\enddata
+\tablenotetext{a}{The age range for the Dartmouth stellar model grids
+  used.}
+\tablenotetext{b}{Double-Gaussian fit to measured local stellar metallicity
+  distribution \citep{Hayden:2015, Casagrande:2011}.}
+\tablenotetext{3}{Maximum allowed value is the Galactic extinction at
+  infinity calculated along the star's line of sight, according to \citet{Schlegel:1998}.}
+\label{table:priors}
+\end{deluxetable}
+\capstarttrue
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Data and Constraints}
+\label{sec:data}
+
+The goal of this work is to calculate the \ac{fpp} for every \ac{koi},
+regardless of classification as CONFIRMED, CANDIDATE, or
+FALSE POSITIVE.  As such, we begin with a list of
+\ntotal\ \acp{koi} from the cumulative table at the \ac{nexsci}
+Exoplanet Archive.  However, for various reasons, the ancillary data
+and constraints that we describe below are not available for every
+\ac{koi}, and so in the end we present \ac{fpp} results for
+\ncalc\ \acp{koi}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Results}
+\label{sec:results}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Stellar Properties}
+\label{sec:results:stars}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{False Positive Probabilities}
+\label{sec:results:fpp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusions}
+\label{sec:conclusions}
+
+\acknowledgments
+It is a pleasure to thank
+\ldots\
+
+\clearpage
+\bibliography{ms}
+\clearpage
+
+
+\end{document}
+
+%%
+%% End of file `sample.tex'.
