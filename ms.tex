@@ -5,6 +5,8 @@
 
 \usepackage{natbib}
 \usepackage{acronym}
+\usepackage{amssymb,amsmath}
+
 \bibliographystyle{apj}
 
 \newcommand{\vdag}{(v)^\dagger}
@@ -19,6 +21,8 @@
 \newcommand{\kepler}{\textit{Kepler}}
 \newcommand{\vespa}{\texttt{vespa}}
 \newcommand{\isochrones}{\texttt{isochrones}}
+\newcommand{\bvec}[1]{{\ensuremath{\boldsymbol{#1}}}}
+
 
 \defcitealias{Morton:2012}{M12}
 
@@ -26,6 +30,8 @@
 \acrodef{koi}[KOI]{\kepler\ Object of Interest}
 \acrodefplural{koi}[KOIs]{\kepler\ Objects of Interest}
 \acrodef{nexsci}[NExScI]{NASA Exoplanet Science Institute}
+\acrodef{mcmc}[MCMC]{Markov Chain Monte Carlo}
+\acrodef{trilegal}[TRILEGAL]{TRIdimensional modeL of thE GALaxy}
 
 %% You can insert a short comment on the title page using the command below.
 
@@ -126,51 +132,145 @@ Before \kepler, every survey searching for transiting exoplanets had a
 \label{sec:methods}
 
 In this work, we apply the fully automated \ac{fpp}-computing
-procedure described in \citet{Morton:2012}
-\citepalias[][hereafter]{Morton:2012} to all \acp{koi} listed in the
-``cumulative'' \kepler\ data table at the \ac{nexsci} Exoplanet
+procedure described in \citet[][hereafter
+  \citetalias{Morton:2012}]{Morton:2012} to all \acp{koi} listed in
+the ``cumulative'' \kepler\ data table at the \ac{nexsci} Exoplanet
 Archive.  While we refer the reader to \citetalias{Morton:2012} for a
-detailed description of the method, we outline it briefly here, noting
-especially the differences between the current implementation and
-\citetalias{Morton:2012}.  The procedure as implemented in this work
-is now publicly available in the Python module
+detailed description of the method, we outline it briefly in this
+section.  The procedure as implemented here is now publicly available
+in the Python module
 \vespa\footnote{\url{https://github.com/timothydmorton/vespa}}.
-
-The basic goal of \vespa\ is to assign probabilities to different
-astrophysical hypotheses that might describe a transiting planet
-candidate signal.  If $\{H_i\}$ is the set of all considered
-hypotheses, the probability for any given model $i$ is
-\begin{equation}
-  \label{eq:prob}
-  \mathrm{Pr}(H_i) = \frac{\mathcal L_i \pi_i}{\displaystyle \sum_j \mathcal L_j \pi_j}
-\end{equation}
-where $\mathcal L_i$ and $\pi_i$ are the ``likelihood'' and ``prior''
-factors for each hypothesis.
-
-
-
-eclipse signals as simple
-trapezoidal 
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Stellar Properties}
-\label{sec:methods:stellar}
-
-The first step in calculating the \ac{fpp} of a transit signal is to
-determine the physical properties of the signal host star.  To
-accomplish this, we use the Python module \isochrones
-\citep{isochrones}, which fits a stellar model grid of choice to a set
-of observed properties of a given star.  
-
-In \citetalias{Morton:2012}, 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{False Positive Probabilities}
 \label{sec:methods:fpp}
+
+The basic idea of \vespa\ is to assign probabilities to different
+astrophysical hypotheses that might describe a transiting planet
+candidate signal.  If $\{H_i\}$ is the set of all considered
+hypotheses, the probability for any given model $i$ is
+\begin{equation}
+  \label{eq:prob}
+  \mathrm{Pr}\left(H_i\right) = \frac{\pi_i \mathcal
+    L_i}{\displaystyle \sum_j \pi_j \mathcal L_j},
+\end{equation}
+where $\pi_i$ is the ``hypothesis prior'' and $\mathcal L_i$ is the
+``hypothesis likelihood'' (also known as ``evidence'' or
+``marginalized likelihood'').  The prior represents how intrinsically
+probable the hypothesized scenario is to exist, and the likelihood
+represents how closely the shape of the observed transit signal
+matches with the expected shape of a signal produced by the
+hypothesis.
+
+\vespa\ models an eclipse signal as a simple trapezoid, parametrized
+by depth $\delta$, total duration $T$, and shape parameter $T / \tau$,
+where $\tau$ is the ``ingress/egress'' duration (such that a
+completely V-shaped transit has $T/\tau = 2$).  For the transit signal
+being evaluated, the joint posterior probability density function
+(PDF) of these shape parameters is sampled with \ac{mcmc}, using the
+\texttt{emcee} sampler \citep{emcee}.  This allows the likelihood for
+each hypothesis to be determined by simulating a physically realistic
+population of the hypothesized astrophysical scenario and using this
+population to define the PDF for the trapezoidal parameters under the
+hypothesis.  The likelihood is then
+\begin{equation}
+  \label{eq:lhood}
+  \mathcal L_i = \displaystyle \int p_\mathrm{sig}\left(\bvec{\theta}\right)
+                                    p_i\left(\bvec{\theta}\right)\,d\bvec{\theta},
+\end{equation}
+where $\bvec{\theta}$ is the vector of trapezoidal shape parameters,
+$p_\mathrm{sig}$ is the posterior PDF of the signal, and $p_i$ is the
+PDF for the parameters under hypothesis $i$.
+
+Observational constraints are incorporated in two different ways.
+First, photometric (or spectroscopic/asteroseismic) measurements of
+the target star are folded into the population simulations of each
+hypothesis (see \S\ref{sec:methods:stellar}).  All other constraints are
+applied to narrow down which simulated instances of each scenario may
+be counted in the final prior and likelihood evalulations; for example,
+only blended eclipsing binaries with secondary eclipse depths
+shallower than the observed limits are allowed.
+
+The steps \vespa\ takes to calculate the \ac{fpp} of a transit signal
+are thus as follows:
+\begin{enumerate}
+\item Fit trapezoid model to observed transit signal using \ac{mcmc}.
+\item Generate population simulations for each hypothesis scenario
+  being considered (conditioned on available observations of the
+  target star; see \S\ref{sec:methods:stellar}).
+\item Fit each simulated eclipse in each scenario with a trapezoid
+  model (using least-squares optimization).
+\item Evaluate priors and likelihoods for each hypothesis, taking into
+  account all available observational constraints, in order to
+  calculate the \ac{fpp}.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Stellar Properties}
+\label{sec:methods:stellar}
+
+The most substantial difference between the current implementation of
+\vespa\ and the procedure documented in \citetalias{Morton:2012} is
+how stellar properties are treated.  Previously, either the target
+star's mass and radius were explicitly provided, or they were randomly
+generated according to the stellar population expected along the line
+of sight by \ac{trilegal}, but constrained to agree with some observed
+color(s) of the star (e.g. $J-K$), to within some specified tolerance.
+This strategy was used both to generate the host stars for the
+transiting planet model and the binary and triple stars for the EB and
+HEB false positive models.
+
+The new method now used by \vespa\ to fold in observational
+constraints on the host star debuted in \citet{Montet:2015} (and is
+explained there in more detail).  Instead of randomly generating stars
+(or binary or triple systems of stars) from a predefined distribution and
+culling them to agree with observed colors, \emph{all} available
+constraints on the target star are used to condition a direct fit of
+either a single-, binary-, or triple-star model to the Dartmouth grid
+of stellar models.  This fit is done using \texttt{MultiNest}, via the
+\isochrones\footnote{\url{https://github.com/timothydmorton/isochrones}}
+Python module.  Monte Carlo samples of stellar properties for the
+population simulations are then drawn directly from these posterior
+samples.  
+
+As a result, a by-product of the \vespa\ \ac{fpp} calculation is full
+posterior samples of the physical properties of the star, modeled as a
+single, binary, or triple system.  Parameters directly fitted for in
+this process are stellar mass, age, [Fe/H], $A_V$ extinction, and
+distance.  For binary and triple fits, secondary and/or tertiary mass
+parameters are added, with all other parameters assumed to be the same
+among all components.  Photometric observations upon which these fits
+are conditioned are assumed to be the sum of all components.  If
+spectroscopic and/or asteroseismic measurements are used (e.g.,
+constraints on effective temperature or stellar surface gravity), they
+are assumed to relate to only the primary star.  Priors used in these
+fits are listed in Table \ref{table:priors}.  Posterior chains of all
+other stellar parameters of interest (e.g., temperature, surface
+gravity, radius, etc.) are derived from the chains of fitting
+parameters by evaluting the stellar models.
+
+
+\begin{deluxetable}{cc}
+\tablewidth{0pt}
+\tabletypesize{\scriptsize}
+\tablecaption{Priors used in stellar fits}
+\tablehead{
+\colhead{Parameter} &
+\colhead{Prior}}
+\startdata
+Primary mass $M$ & $\propto M^{-2.35}$ \\
+Age {[}Gyr{]} & $\mathcal U(1,15) $\\
+{[}Fe/H{]} & $\frac{0.8}{0.15} \mathcal N(0.016, 0.15) + \frac{0.2}{0.22} \mathcal N(-0.15, 0.22)$ \\
+$A_V$ {[}mag{]} & $\mathcal U(0, A_{V, \mathrm{max}})$ \\
+Distance d & $\propto d^2$ 
+\enddata
+\label{table:priors}
+\end{deluxetable}
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
