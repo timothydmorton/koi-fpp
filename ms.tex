@@ -1,7 +1,7 @@
 %% This is emulateapj reformatting of the AASTEX sample document
 %%
-\documentclass[preprint2]{aastex}
-%\documentclass[iop]{emulateapj}
+%\documentclass[preprint2]{aastex}
+\documentclass{emulateapj}
 
 \usepackage{natbib}
 \usepackage{amssymb,amsmath}
@@ -30,13 +30,6 @@
 \newcommand{\bvec}[1]{{\ensuremath{\boldsymbol{#1}}}}
 
 \defcitealias{Morton:2012}{M12}
-
-\acrodef{fpp}[FPP]{false positive probability}
-\acrodef{koi}[KOI]{\kepler\ Object of Interest}
-\acrodefplural{koi}[KOIs]{\kepler\ Objects of Interest}
-\acrodef{nexsci}[NExScI]{NASA Exoplanet Science Institute}
-\acrodef{mcmc}[MCMC]{Markov Chain Monte Carlo}
-\acrodef{trilegal}[TRILEGAL]{TRIdimensional modeL of thE GALaxy}
 
 %% You can insert a short comment on the title page using the command below.
 
@@ -77,9 +70,8 @@
 
 \begin{abstract}
 We present the results of applying a fully automated transit signal
-false positive probability calculating procedure to every
-\kepler\ Object of Interest (KOI) from the Q1-Q16 catalog release.
-Out of \ncalc\ KOIs, we determine that \nval\ have probabilities
+false positive probability calculating procedure to every \ac{koi}.
+Out of \ncalc\ \acp{koi}, we determine that \nval\ have probabilities
 $<$1\% to be astrophysical false positives, and thus may be considered
 validated planets.  \nvalnew\ of these have not yet been validated or
 confirmed by other methods.  In addition, we identify \nfp\ KOIs
@@ -113,6 +105,7 @@ applied to any transiting exoplanet candidate.
 
 
 \section{Introduction}
+\acresetall
 
 The \kepler\ mission has revolutionized our understanding of
 exoplanets.  Among many other important discoveries, \kepler\ has
@@ -247,12 +240,12 @@ randomly generating stars (or binary or triple systems of stars) from
 a predefined distribution and culling them to agree with observed
 colors, \emph{all} available constraints on the target star are used
 to condition a direct fit of either a single--, binary--, or
-triple--star model to the Dartmouth grid of stellar models.  This fit
-is done using \texttt{MultiNest} \citep{Feroz:2009, Feroz:2011,
-  Feroz:2013}, via the \texttt{PyMultiNest} wrapper
-\citep{Buchner:2014}.  Monte Carlo samples of stellar properties for
-the population simulations are then drawn directly from these
-posterior samples.
+triple--star model to the Dartmouth grid of stellar models
+\citep{Dotter:2008, Feiden:2011}.  This fit is done using
+\texttt{MultiNest} \citep{Feroz:2009, Feroz:2011, Feroz:2013}, via the
+\texttt{PyMultiNest} wrapper \citep{Buchner:2014}.  Monte Carlo
+samples of stellar properties for the population simulations are then
+drawn directly from these posterior samples.
 
 As a result, \vespa\ creates full posterior samplings of the physical
 properties of the host star, modeled as a single, binary, and triple
@@ -305,13 +298,42 @@ Distance $d$ & $\propto d^2$
 \label{sec:data}
 
 The goal of this work is to calculate the \ac{fpp} for every \ac{koi},
-regardless of classification as CONFIRMED, CANDIDATE, or
-FALSE POSITIVE.  As such, we begin with a list of
-\ntotal\ \acp{koi} from the cumulative table at the \ac{nexsci}
-Exoplanet Archive.  However, for various reasons, the ancillary data
-and constraints that we describe below are not available for every
-\ac{koi}, and so in the end we present \ac{fpp} results for
-\ncalc\ \acp{koi}.
+regardless of classification as CONFIRMED, CANDIDATE, or FALSE
+POSITIVE.  As such, we begin with a list of \ntotal\ \acp{koi} from
+the cumulative table at the \ac{nexsci} Exoplanet Archive.  We then
+gather ancillary data and constraints from various sources (described
+below) in order to enable the \vespa\ calculation. For various
+reasons, the data are not available for every \ac{koi}, and so in the
+end we present \ac{fpp} results for \ncalc\ \acp{koi}.
+
+For each \ac{koi} we obtain the following data:
+\begin{enumerate}
+\item The RA/Dec coordinates of each star from the \ac{kic}.
+\item $grizJHK$ photometry from the \ac{kic}, with $griz$ bands
+  corrected to the \ac{sdss} photometric scale according to
+  \citet{Pinsonneault:2012}.
+\item Stellar $T_\mathrm{eff}$, [Fe/H], and $\log g$ values and
+  uncertainties from the \citet{Huber:2014} stellar properties
+  catalog, if the provenance of these values is from spectroscopy or
+  asteroseismology.
+\item Detrended \kepler\ photometry used for the \ac{mcmc} modeling of
+  \citet{Rowe:2015}, along with information about individually fitted
+  transit times, where available.
+\item Best-fit $R_p/R_\star$ from the \citet{Rowe:2015} MCMC analysis.
+\item Centroid uncertainty information from the \ac{nexsci} Exoplanet
+  Archive: we assume that the allowed ``exclusion'' radius for a blend
+  scenario is 3$\times$ the uncertainty in the fitted centroid
+  position (the \verb|koi_dicco_msky_err| column in the Archive
+  table).  We floor this value at 0\farcs5, to prevent unrealistically
+  small exclusion radii.
+\item The maximum secondary eclipse depth allowed by the
+  \kepler\ photometry.  This quantity is obtained from vetting
+  metrics produced internally by the \kepler\ Science Office.  When
+  these metrics are not available for a particular \ac{koi}, we
+  default to 10$\times$ the uncertainty in the \kepler\ pipeline
+  measured transit depth (\verb|koi_depth_err1|).
+  
+\end{enumerate}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -333,6 +355,17 @@ and constraints that we describe below are not available for every
 
 \section{Conclusions}
 \label{sec:conclusions}
+
+\acrodef{fpp}[FPP]{false positive probability}
+\acrodef{koi}[KOI]{\kepler\ Object of Interest}
+\acrodefplural{koi}[KOIs]{\kepler\ Objects of Interest}
+\acrodef{nexsci}[NExScI]{NASA Exoplanet Science Institute}
+\acrodef{mcmc}[MCMC]{Markov Chain Monte Carlo}
+\acrodef{trilegal}[TRILEGAL]{TRIdimensional modeL of thE GALaxy}
+\acrodef{kic}[KIC]{Kepler Input Catalog}
+\acrodef{sdss}[SDSS]{Sloan Digital Sky Survey}
+
+
 
 \acknowledgments
 It is a pleasure to thank
