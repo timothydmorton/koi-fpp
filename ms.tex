@@ -5,6 +5,7 @@
 
 \usepackage{natbib}
 \usepackage{amssymb,amsmath}
+\usepackage{color}
 \usepackage[backref,breaklinks,colorlinks,citecolor=blue]{hyperref}
 \usepackage[all]{hypcap}
 \renewcommand*{\backref}[1]{[#1]}
@@ -24,10 +25,20 @@
 \newcommand{\nvalnew}{1000}
 \newcommand{\nfp}{500}
 \newcommand{\nfpnew}{200}
+\newcommand{\nbadphot}{1009} %EmptyPhotometry or MissingKOI
+\newcommand{\nbadphotFP}{897}
+\newcommand{\nbadphotCAND}{111}
+\newcommand{\nbadrowemcmc}{210}
+\newcommand{\nbadstellar}{80} %MissingStellar
+\newcommand{\nbadsec}{82} %NoWeakSecondary
 \newcommand{\kepler}{\textit{Kepler}}
 \newcommand{\vespa}{\texttt{vespa}}
 \newcommand{\isochrones}{\texttt{isochrones}}
 \newcommand{\bvec}[1]{{\ensuremath{\boldsymbol{#1}}}}
+
+%% TODO commands
+\newcommand{\todo}[3]{{\color{#2} \emph{#1} TODO: #3}}
+\newcommand{\tdmtodo}[1]{\todo{TDM}{red}{#1}}
 
 \defcitealias{Morton:2012}{M12}
 
@@ -301,12 +312,9 @@ The goal of this work is to calculate the \ac{fpp} for every \ac{koi},
 regardless of classification as CONFIRMED, CANDIDATE, or FALSE
 POSITIVE.  As such, we begin with a list of \ntotal\ \acp{koi} from
 the cumulative table at the \ac{nexsci} Exoplanet Archive.  We then
-gather ancillary data and constraints from various sources (described
-below) in order to enable the \vespa\ calculation. For various
-reasons, the data are not available for every \ac{koi}, and so in the
-end we present \ac{fpp} results for \ncalc\ \acp{koi}.
+gather ancillary data and constraints from various sources in order to
+enable the \vespa\ calculation:
 
-For each \ac{koi} we obtain the following data:
 \begin{enumerate}
 \item The RA/Dec coordinates of each star from the \ac{kic}.
 \item $grizJHK$ photometry from the \ac{kic}, with $griz$ bands
@@ -318,7 +326,7 @@ For each \ac{koi} we obtain the following data:
   asteroseismology.
 \item Detrended \kepler\ photometry used for the \ac{mcmc} modeling of
   \citet{Rowe:2015}, along with information about individually fitted
-  transit times, where available.
+  transit times, where available.  
 \item Best-fit $R_p/R_\star$ from the \citet{Rowe:2015} MCMC analysis.
 \item Centroid uncertainty information from the \ac{nexsci} Exoplanet
   Archive: we assume that the allowed ``exclusion'' radius for a blend
@@ -331,9 +339,22 @@ For each \ac{koi} we obtain the following data:
   metrics produced internally by the \kepler\ Science Office.  When
   these metrics are not available for a particular \ac{koi}, we
   default to 10$\times$ the uncertainty in the \kepler\ pipeline
-  measured transit depth (\verb|koi_depth_err1|).
+  measured transit depth (\verb|koi_depth_err1|).  While these
+  secondary metrics are not yet available on the Archive, they should
+  become available with the final data release.  
   
 \end{enumerate}
+
+Of the \ntotal\ total \acp{koi}, \nbadphot\ did not receive \ac{mcmc}
+modeling.  Most of these (\nbadphotFP) are already designated FALSE
+POSITIVE at the archive, though \nbadphotCAND\ have CANDIDATE
+disposition.  One, K00245.04, is a confirmed planet.  \tdmtodo{Find
+  out why??}  An additional \nbadrowemcmc\ did receive \ac{mcmc}
+modeling but had unphysical fit results; e.g., negative $R_p/R_\star$
+or best-fit impact parameter greater than $(1 + R_p/R_\star)$.  Of the
+\acp{koi} that did have usable \ac{mcmc} fits, \nbadsec\ had no
+\verb|koi_depth_err1| on the archive, and thus had no weak secondary
+constraint and were left out of the calculations.  After all these 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -364,7 +385,7 @@ For each \ac{koi} we obtain the following data:
 \acrodef{trilegal}[TRILEGAL]{TRIdimensional modeL of thE GALaxy}
 \acrodef{kic}[KIC]{Kepler Input Catalog}
 \acrodef{sdss}[SDSS]{Sloan Digital Sky Survey}
-
+\acrodef{ttv}[TTV]{transit timing variations}
 
 
 \acknowledgments
