@@ -31,6 +31,8 @@
 \newcommand{\nbadrowemcmc}{210}
 \newcommand{\nbadstellar}{80} %MissingStellar
 \newcommand{\nbadsec}{82} %NoWeakSecondary
+\newcommand{\nattempted}{7317}
+\newcommand{\ntryfail}{75}
 \newcommand{\kepler}{\textit{Kepler}}
 \newcommand{\vespa}{\texttt{vespa}}
 \newcommand{\isochrones}{\texttt{isochrones}}
@@ -354,7 +356,11 @@ modeling but had unphysical fit results; e.g., negative $R_p/R_\star$
 or best-fit impact parameter greater than $(1 + R_p/R_\star)$.  Of the
 \acp{koi} that did have usable \ac{mcmc} fits, \nbadsec\ had no
 \verb|koi_depth_err1| on the archive, and thus had no weak secondary
-constraint and were left out of the calculations.  After all these 
+constraint and were left out of the calculations.
+
+This leaves \nattempted\ \acp{koi} upon which we run \vespa.
+\ntryfail of these encounter runtime errors during
+the \vespa\ calculation; these are further explained in \autoref{sec:failures}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -371,6 +377,11 @@ constraint and were left out of the calculations.  After all these
 
 \subsection{False Positive Probabilities}
 \label{sec:results:fpp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Reasons for failure}
+\label{sec:failures}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
