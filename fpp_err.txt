@@ -1,5 +1,5 @@
-K00005.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5.n/tremove.2.dat does not exist.
-K00028.01 NoWeakSecondaryError: K00028.01
+K00005.02 TypeError: can't multiply sequence by non-int of type 'float'
+K00028.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00031.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00043.01 BadRoweFitError: K00043.01 has RoR > 1 (2.5740352544) from JRowe MCMC fit
 K00045.01 MissingStellarError: 3742855 not in stellar table?
@@ -7,74 +7,57 @@ K00048.01 BadRoweFitError: K00048.01 has RoR > 1 (2.0520174238) from JRowe MCMC 
 K00051.01 MissingStellarError: 6056992 not in stellar table?
 K00053.01 MissingStellarError: 2445975 not in stellar table?
 K00065.01 BadRoweFitError: best-fit impact parameter (1.12) inconsistent with best-fit radius ratio (0.12006221516).
-K00066.01 NoWeakSecondaryError: K00066.01
-K00099.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi99.n/tremove.2.dat does not exist.
-K00111.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi111.n/tremove.4.dat does not exist.
-K00129.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi129.n/tremove.2.dat does not exist.
-K00142.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi142.n/tremove.2.dat does not exist.
+K00066.01 AllWithinRocheError: All simulated systems within Roche lobe
+K00099.02 NoWeakSecondaryError: K00099.02
+K00111.04 TypeError: can't multiply sequence by non-int of type 'float'
+K00129.02 NoWeakSecondaryError: K00129.02
 K00154.01 NoWeakSecondaryError: K00154.01
 K00185.01 BadRoweFitError: K00185.01 has RoR > 1 (1.0011483245) from JRowe MCMC fit
-K00238.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi238.n/tremove.3.dat does not exist.
 K00243.01 BadRoweFitError: K00243.01 has RoR > 1 (5.2080768041) from JRowe MCMC fit
-K00245.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi245.n/tremove.4.dat does not exist.
 K00256.01 BadRoweFitError: K00256.01 has RoR > 1 (8.4808313908) from JRowe MCMC fit
-K00266.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi266.n/tremove.2.dat does not exist.
+K00266.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00266.02/popset.h5'
 K00267.01 BadRoweFitError: best-fit impact parameter (5.08) inconsistent with best-fit radius ratio (0.0044234173049).
 K00298.01 MissingStellarError: 12785320 not in stellar table?
 K00298.02 MissingStellarError: 12785320 not in stellar table?
-K00302.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi302.n/tremove.2.dat does not exist.
 K00322.01 MissingStellarError: 8948424 not in stellar table?
-K00337.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi337.n/tremove.2.dat does not exist.
 K00338.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00338.02 AllWithinRocheError: All simulated systems within Roche lobe
-K00353.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi353.n/tremove.3.dat does not exist.
 K00364.01 EmptyPhotometryError: K00364.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi364.n/tremove.1.dat) is empty
-K00365.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi365.n/tremove.2.dat does not exist.
 K00371.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi371.n/tremove.2.dat does not exist.
 K00383.01 EmptyPhotometryError: K00383.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi383.n/tremove.1.dat) is empty
 K00396.01 BadRoweFitError: K00396.01 has RoR > 1 (3.0528175234) from JRowe MCMC fit
 K00406.01 BadRoweFitError: K00406.01 has RoR > 1 (4.5293063684) from JRowe MCMC fit
-K00423.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi423.n/tremove.2.dat does not exist.
 K00436.01 BadRoweFitError: K00436.01 has RoR > 1 (11.110383852) from JRowe MCMC fit
 K00439.02 BadRoweFitError: best-fit impact parameter (12.17) inconsistent with best-fit radius ratio (0.020549841222).
-K00445.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi445.n/tremove.1.dat does not exist.
+K00445.01 TypeError: can't multiply sequence by non-int of type 'float'
 K00456.02 BadRoweFitError: best-fit impact parameter (3.87) inconsistent with best-fit radius ratio (0.010654258197).
 K00489.02 BadRoweFitError: best-fit impact parameter (21.49) inconsistent with best-fit radius ratio (-0.010009995439).
-K00492.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi492.n/tremove.2.dat does not exist.
 K00511.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
-K00520.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi520.n/tremove.4.dat does not exist.
-K00521.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi521.n/tremove.2.dat does not exist.
-K00539.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi539.n/tremove.1.dat does not exist.
+K00520.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00520.04/popset.h5'
+K00521.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00521.02/popset.h5'
+K00539.01 TypeError: can't multiply sequence by non-int of type 'float'
 K00552.01 BadRoweFitError: K00552.01 has RoR > 1 (2.3150069905) from JRowe MCMC fit
-K00562.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi562.n/tremove.1.dat does not exist.
-K00589.01 NoWeakSecondaryError: K00589.01
-K00593.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi593.n/tremove.4.dat does not exist.
+K00562.01 TypeError: can't multiply sequence by non-int of type 'float'
+K00589.01 MCMCError: TransitSignal trapezoid fit not converged (K00589.01).
+K00593.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00593.04/popset.h5'
 K00594.01 EmptyPhotometryError: K00594.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi594.n/tremove.1.dat) is empty
 K00595.01 NoWeakSecondaryError: K00595.01
-K00600.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi600.n/tremove.2.dat does not exist.
 K00607.01 BadRoweFitError: K00607.01 has RoR > 1 (11.234649554) from JRowe MCMC fit
 K00621.01 BadRoweFitError: K00621.01 has RoR > 1 (7.3702650003) from JRowe MCMC fit
-K00649.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi649.n/tremove.2.dat does not exist.
-K00651.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi651.n/tremove.2.dat does not exist.
+K00649.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00649.02/popset.h5'
+K00651.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00651.02/popset.h5'
 K00667.01 MissingStellarError: 6752502 not in stellar table?
 K00699.01 BadRoweFitError: best-fit impact parameter (1.35) inconsistent with best-fit radius ratio (0.069814143978).
 K00706.01 BadRoweFitError: K00706.01 has RoR > 1 (2.8942509398) from JRowe MCMC fit
 K00731.01 BadRoweFitError: best-fit impact parameter (4.84) inconsistent with best-fit radius ratio (3.2016334259).
-K00736.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi736.n/tremove.3.dat does not exist.
+K00736.03 NoWeakSecondaryError: K00736.03
 K00742.01 BadRoweFitError: K00742.01 has RoR > 1 (2.1939485137) from JRowe MCMC fit
-K00744.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi744.n/tremove.2.dat does not exist.
-K00750.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi750.n/tremove.3.dat does not exist.
-K00750.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi750.n/tremove.4.dat does not exist.
 K00753.01 BadRoweFitError: K00753.01 has RoR > 1 (3.4826993453) from JRowe MCMC fit
-K00841.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi841.n/tremove.4.dat does not exist.
-K00841.05 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi841.n/tremove.5.dat does not exist.
 K00860.01 NoWeakSecondaryError: K00860.01
 K00876.01 BadRoweFitError: K00876.01 has RoR > 1 (6.7332565282) from JRowe MCMC fit
 K00877.03 BadRoweFitError: K00877.03 has negative RoR (-0.019717029267) from JRowe MCMC fit
 K00879.01 EmptyPhotometryError: K00879.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi879.n/tremove.1.dat) is empty
 K00885.01 EmptyPhotometryError: K00885.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi885.n/tremove.1.dat) is empty
-K00896.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi896.n/tremove.3.dat does not exist.
-K00945.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi945.n/tremove.3.dat does not exist.
 K00959.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00962.01 EmptyPhotometryError: K00962.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi962.n/tremove.1.dat) is empty
 K00965.01 BadRoweFitError: best-fit impact parameter (13.04) inconsistent with best-fit radius ratio (4.460469645).
@@ -86,42 +69,34 @@ K00973.01 EmptyPhotometryError: K00973.01 photometry file (/tigress/tmorton/kepl
 K00977.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00978.01 BadRoweFitError: K00978.01 has RoR > 1 (8.0200704608) from JRowe MCMC fit
 K00979.01 AllWithinRocheError: All simulated systems within Roche lobe
-K00983.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi983.n/tremove.2.dat does not exist.
-K00989.01 BadRoweFitError: K00989.01 has RoR > 1 (2.0346797156) from JRowe MCMC fit
-K00989.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi989.n/tremove.4.dat does not exist.
-K00992.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi992.n/tremove.2.dat does not exist.
-K00993.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi993.n/tremove.3.dat does not exist.
+K00983.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00983.02/popset.h5'
+K00989.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00989.01/popset.h5'
+K00989.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00989.04/popset.h5'
+K00992.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00992.02/popset.h5'
+K00993.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00993.03/popset.h5'
 K01010.01 EmptyPhotometryError: K01010.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1010.n/tremove.1.dat) is empty
-K01015.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1015.n/tremove.3.dat does not exist.
 K01019.01 BadRoweFitError: best-fit impact parameter (2.65) inconsistent with best-fit radius ratio (0.0041444620321).
 K01026.01 EmptyPhotometryError: K01026.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1026.n/tremove.1.dat) is empty
 K01027.01 BadRoweFitError: best-fit impact parameter (4.27) inconsistent with best-fit radius ratio (0.024463143006).
 K01040.01 BadRoweFitError: best-fit impact parameter (1.09) inconsistent with best-fit radius ratio (0.072231667881).
-K01042.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1042.n/tremove.2.dat does not exist.
-K01053.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1053.n/tremove.2.dat does not exist.
-K01054.01 NoWeakSecondaryError: K01054.01
-K01082.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1082.n/tremove.4.dat does not exist.
+K01054.01 AllWithinRocheError: All simulated systems within Roche lobe
+K01082.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01082.04/popset.h5'
 K01109.01 NoWeakSecondaryError: K01109.01
 K01112.01 EmptyPhotometryError: K01112.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1112.n/tremove.1.dat) is empty
-K01132.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1132.n/tremove.2.dat does not exist.
-K01134.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1134.n/tremove.2.dat does not exist.
+K01132.02 MCMCError: TransitSignal trapezoid fit not converged (K01132.02).
+K01134.02 TypeError: Improper input: N=4 must not exceed M=0
 K01149.01 EmptyPhotometryError: K01149.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1149.n/tremove.1.dat) is empty
-K01174.01 NoWeakSecondaryError: K01174.01
+K01174.01 2015-08-06 21:06:09,425: Fitting trapezoid models for HEBs...
 K01177.01 BadRoweFitError: K01177.01 has RoR > 1 (3.6817681625) from JRowe MCMC fit
-K01198.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1198.n/tremove.4.dat does not exist.
 K01219.01 NoWeakSecondaryError: K01219.01
 K01249.01 BadRoweFitError: K01249.01 has RoR > 1 (11.210251178) from JRowe MCMC fit
-K01250.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1250.n/tremove.2.dat does not exist.
 K01253.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01254.01 MissingStellarError: 8454250 not in stellar table?
 K01260.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01271.01 BadRoweFitError: K01271.01 has RoR > 1 (1.4833309581) from JRowe MCMC fit
-K01310.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1310.n/tremove.2.dat does not exist.
+K01310.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01310.02/popset.h5'
 K01316.02 BadRoweFitError: best-fit impact parameter (1.41) inconsistent with best-fit radius ratio (0.0022232591812).
 K01317.01 BadRoweFitError: K01317.01 has RoR > 1 (2.3300098044) from JRowe MCMC fit
-K01319.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1319.n/tremove.2.dat does not exist.
-K01330.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1330.n/tremove.2.dat does not exist.
-K01334.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1334.n/tremove.2.dat does not exist.
 K01345.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01348.01 BadRoweFitError: K01348.01 has RoR > 1 (2.3932371583) from JRowe MCMC fit
 K01349.01 BadRoweFitError: K01349.01 has RoR > 1 (6.4774028925) from JRowe MCMC fit
@@ -149,20 +124,17 @@ K01489.01 EmptyPhotometryError: K01489.01 photometry file (/tigress/tmorton/kepl
 K01498.02 BadRoweFitError: best-fit impact parameter (1.76) inconsistent with best-fit radius ratio (0.010404983383).
 K01499.02 BadRoweFitError: best-fit impact parameter (1.87) inconsistent with best-fit radius ratio (0.010759510101).
 K01499.03 BadRoweFitError: best-fit impact parameter (3.13) inconsistent with best-fit radius ratio (0.021009993089).
-K01519.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1519.n/tremove.2.dat does not exist.
-K01522.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1522.n/tremove.2.dat does not exist.
 K01538.01 BadRoweFitError: K01538.01 has RoR > 1 (17.922046652) from JRowe MCMC fit
-K01541.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1541.n/tremove.2.dat does not exist.
+K01541.02 NoWeakSecondaryError: K01541.02
 K01545.02 EmptyPhotometryError: K01545.02 photometry file (/tigress/tmorton/kepler/data/rowe/koi1545.n/tremove.2.dat) is empty
 K01575.01 BadRoweFitError: K01575.01 has RoR > 1 (1.2762369085) from JRowe MCMC fit
-K01608.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1608.n/tremove.3.dat does not exist.
-K01616.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1616.n/tremove.2.dat does not exist.
+K01608.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01608.03/popset.h5'
+K01616.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01616.02/popset.h5'
 K01617.01 BadRoweFitError: best-fit impact parameter (5.90) inconsistent with best-fit radius ratio (-0.03814991808).
-K01628.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1628.n/tremove.3.dat does not exist.
 K01677.02 MCMCError: TransitSignal trapezoid fit not converged (K01677.02).
 K01686.01 BadRoweFitError: best-fit impact parameter (4.21) inconsistent with best-fit radius ratio (0.064242599409).
 K01739.01 NoWeakSecondaryError: K01739.01
-K01747.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1747.n/tremove.2.dat does not exist.
+K01747.02 MCMCError: TransitSignal trapezoid fit not converged (K01747.02).
 K01767.01 BadRoweFitError: K01767.01 has RoR > 1 (3.6025146813) from JRowe MCMC fit
 K01770.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01773.01 BadRoweFitError: K01773.01 has RoR > 1 (7.1885784218) from JRowe MCMC fit
@@ -171,8 +143,8 @@ K01796.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01807.01 BadRoweFitError: best-fit impact parameter (1.23) inconsistent with best-fit radius ratio (-0.38260524695).
 K01810.01 EmptyPhotometryError: K01810.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1810.n/tremove.1.dat) is empty
 K01816.01 BadRoweFitError: K01816.01 has RoR > 1 (3.0378296267) from JRowe MCMC fit
-K01839.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1839.n/tremove.2.dat does not exist.
-K01860.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1860.n/tremove.4.dat does not exist.
+K01839.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01839.02/popset.h5'
+K01860.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01860.04/popset.h5'
 K01912.01 MissingStellarError: 3952651 not in stellar table?
 K01922.02 MCMCError: TransitSignal trapezoid fit not converged (K01922.02).
 K01926.01 EmptyPhotometryError: K01926.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1926.n/tremove.1.dat) is empty
@@ -180,45 +152,34 @@ K01927.01 NoWeakSecondaryError: K01927.01
 K01940.02 BadRoweFitError: K01940.02 has negative RoR (-0.010396388416) from JRowe MCMC fit
 K01948.01 EmptyPhotometryError: K01948.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1948.n/tremove.1.dat) is empty
 K01957.02 MCMCError: TransitSignal trapezoid fit not converged (K01957.02).
-K01996.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi1996.n/tremove.2.dat does not exist.
-K02012.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2012.n/tremove.2.dat does not exist.
-K02081.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2081.n/tremove.2.dat does not exist.
-K02086.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2086.n/tremove.4.dat does not exist.
+K01996.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01996.02/popset.h5'
 K02112.01 EmptyPhotometryError: K02112.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2112.n/tremove.1.dat) is empty
 K02120.01 BadRoweFitError: K02120.01 has negative RoR (-0.014749334723) from JRowe MCMC fit
-K02160.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2160.n/tremove.2.dat does not exist.
-K02163.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2163.n/tremove.3.dat does not exist.
+K02160.02 MCMCError: TransitSignal trapezoid fit not converged (K02160.02).
 K02167.02 MCMCError: TransitSignal trapezoid fit not converged (K02167.02).
 K02176.01 BadRoweFitError: best-fit impact parameter (1.27) inconsistent with best-fit radius ratio (0.006677043599).
-K02183.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2183.n/tremove.3.dat does not exist.
-K02184.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2184.n/tremove.2.dat does not exist.
-K02194.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2194.n/tremove.3.dat does not exist.
-K02203.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2203.n/tremove.2.dat does not exist.
-K02209.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2209.n/tremove.2.dat does not exist.
-K02210.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2210.n/tremove.2.dat does not exist.
+K02203.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02203.02/popset.h5'
+K02209.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02209.02/popset.h5'
+K02210.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02210.02/popset.h5'
 K02224.02 MCMCError: TransitSignal trapezoid fit not converged (K02224.02).
 K02261.02 MCMCError: TransitSignal trapezoid fit not converged (K02261.02).
 K02268.01 BadRoweFitError: best-fit impact parameter (316.72) inconsistent with best-fit radius ratio (0.068672073949).
-K02281.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2281.n/tremove.2.dat does not exist.
+K02281.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02281.02/popset.h5'
 K02311.02 MCMCError: TransitSignal trapezoid fit not converged (K02311.02).
-K02311.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2311.n/tremove.3.dat does not exist.
 K02323.01 BadRoweFitError: best-fit impact parameter (367.78) inconsistent with best-fit radius ratio (-0.14495902994).
 K02324.01 MissingStellarError: 7746958 not in stellar table?
 K02326.01 NoWeakSecondaryError: K02326.01
-K02327.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2327.n/tremove.2.dat does not exist.
 K02334.01 BadRoweFitError: best-fit impact parameter (123.09) inconsistent with best-fit radius ratio (0.069642275392).
 K02339.02 MCMCError: TransitSignal trapezoid fit not converged (K02339.02).
-K02360.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2360.n/tremove.2.dat does not exist.
-K02393.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2393.n/tremove.2.dat does not exist.
+K02360.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02360.02/popset.h5'
 K02394.01 NoWeakSecondaryError: K02394.01
-K02404.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2404.n/tremove.2.dat does not exist.
 K02410.01 BadRoweFitError: best-fit impact parameter (12.34) inconsistent with best-fit radius ratio (0.055188421293).
 K02410.02 BadRoweFitError: best-fit impact parameter (164.75) inconsistent with best-fit radius ratio (0.034547548994).
 K02411.01 BadRoweFitError: best-fit impact parameter (5.57) inconsistent with best-fit radius ratio (-0.029310076703).
-K02432.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2432.n/tremove.2.dat does not exist.
+K02432.02 NoWeakSecondaryError: K02432.02
 K02433.06 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2433.n/tremove.6.dat does not exist.
 K02433.07 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2433.n/tremove.7.dat does not exist.
-K02450.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2450.n/tremove.2.dat does not exist.
+K02450.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02450.02/popset.h5'
 K02473.02 BadRoweFitError: best-fit impact parameter (1.30) inconsistent with best-fit radius ratio (0.022714552322).
 K02481.01 BadRoweFitError: best-fit impact parameter (913.54) inconsistent with best-fit radius ratio (-883.86353168).
 K02502.01 EmptyPhotometryError: K02502.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2502.n/tremove.1.dat) is empty
@@ -230,8 +191,8 @@ K02525.01 EmptyPhotometryError: K02525.01 photometry file (/tigress/tmorton/kepl
 K02527.01 BadRoweFitError: best-fit impact parameter (19.28) inconsistent with best-fit radius ratio (-0.00077242707259).
 K02529.02 BadRoweFitError: best-fit impact parameter (31.87) inconsistent with best-fit radius ratio (0.023583365802).
 K02531.01 EmptyPhotometryError: K02531.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2531.n/tremove.1.dat) is empty
-K02533.02 BadRoweFitError: best-fit impact parameter (1.03) inconsistent with best-fit radius ratio (0.002413596751).
-K02533.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2533.n/tremove.3.dat does not exist.
+K02533.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02533.02/popset.h5'
+K02533.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02533.03/popset.h5'
 K02537.01 EmptyPhotometryError: K02537.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2537.n/tremove.1.dat) is empty
 K02538.01 EmptyPhotometryError: K02538.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2538.n/tremove.1.dat) is empty
 K02542.01 BadRoweFitError: best-fit impact parameter (49.87) inconsistent with best-fit radius ratio (0.00091160807051).
@@ -251,7 +212,7 @@ K02588.01 EmptyPhotometryError: K02588.01 photometry file (/tigress/tmorton/kepl
 K02590.01 BadRoweFitError: best-fit impact parameter (1.01) inconsistent with best-fit radius ratio (0.0043270404892).
 K02596.01 EmptyPhotometryError: K02596.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2596.n/tremove.1.dat) is empty
 K02599.01 BadRoweFitError: best-fit impact parameter (56.62) inconsistent with best-fit radius ratio (53.602739218).
-K02610.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2610.n/tremove.2.dat does not exist.
+K02610.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02610.02/popset.h5'
 K02636.01 AllWithinRocheError: All simulated systems within Roche lobe
 K02640.01 BadRoweFitError: best-fit impact parameter (53.75) inconsistent with best-fit radius ratio (50.195399342).
 K02671.01 MissingStellarError: 2437505 not in stellar table?
@@ -259,32 +220,24 @@ K02671.02 MissingStellarError: 2437505 not in stellar table?
 K02673.01 BadRoweFitError: K02673.01 has RoR > 1 (2.9994043145) from JRowe MCMC fit
 K02682.01 MissingStellarError: 2436378 not in stellar table?
 K02689.01 BadRoweFitError: K02689.01 has RoR > 1 (4.1507072384) from JRowe MCMC fit
-K02714.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2714.n/tremove.3.dat does not exist.
 K02718.01 AllWithinRocheError: All simulated systems within Roche lobe
-K02719.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2719.n/tremove.2.dat does not exist.
-K02768.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2768.n/tremove.3.dat does not exist.
+K02768.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02768.03/popset.h5'
 K02774.01 MissingStellarError: 9593757 not in stellar table?
-K02828.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2828.n/tremove.2.dat does not exist.
 K02843.01 NoWeakSecondaryError: K02843.01
 K02854.01 MissingStellarError: 5513866 not in stellar table?
-K02869.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2869.n/tremove.2.dat does not exist.
-K02871.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2871.n/tremove.3.dat does not exist.
+K02869.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02869.02/popset.h5'
+K02871.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02871.03/popset.h5'
 K02902.01 BadRoweFitError: best-fit impact parameter (80.22) inconsistent with best-fit radius ratio (0.12693497513).
 K02917.01 BadRoweFitError: K02917.01 has negative RoR (-0.012982364351) from JRowe MCMC fit
 K02918.02 BadRoweFitError: best-fit impact parameter (1.99) inconsistent with best-fit radius ratio (0.00021068131885).
-K02926.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2926.n/tremove.3.dat does not exist.
-K02926.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2926.n/tremove.4.dat does not exist.
 K02940.01 BadRoweFitError: best-fit impact parameter (39.67) inconsistent with best-fit radius ratio (-0.030802391002).
-K02971.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2971.n/tremove.2.dat does not exist.
 K02988.01 NoWeakSecondaryError: K02988.01
-K03028.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3028.n/tremove.2.dat does not exist.
+K03028.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03028.02/popset.h5'
 K03046.01 BadRoweFitError: best-fit impact parameter (2.18) inconsistent with best-fit radius ratio (0.0042665553656).
 K03055.01 BadRoweFitError: K03055.01 has a/Rstar < 1 (0.747218452801) from JRowe MCMC fit
 K03076.01 NoWeakSecondaryError: K03076.01
 K03079.01 NoWeakSecondaryError: K03079.01
 K03080.01 NoWeakSecondaryError: K03080.01
-K03088.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3088.n/tremove.2.dat does not exist.
-K03090.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3090.n/tremove.2.dat does not exist.
 K03118.01 NoWeakSecondaryError: K03118.01
 K03139.01 BadRoweFitError: K03139.01 has RoR > 1 (2.3928936908) from JRowe MCMC fit
 K03143.01 BadRoweFitError: best-fit impact parameter (21.18) inconsistent with best-fit radius ratio (0.023032778076).
@@ -297,42 +250,35 @@ K03158.05 AllWithinRocheError: All simulated systems within Roche lobe
 K03172.01 MissingStellarError: 3337061 not in stellar table?
 K03172.02 MissingStellarError: 3337061 not in stellar table?
 K03174.01 MissingStellarError: 7115661 not in stellar table?
-K03178.01 NoWeakSecondaryError: K03178.01
+K03178.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03180.01 BadRoweFitError: best-fit impact parameter (1.10) inconsistent with best-fit radius ratio (0.0093770756052).
 K03193.01 MissingStellarError: 7430876 not in stellar table?
 K03199.01 MissingStellarError: 5482603 not in stellar table?
 K03206.01 MissingStellarError: 5612697 not in stellar table?
 K03211.01 MissingStellarError: 7293937 not in stellar table?
-K03214.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3214.n/tremove.2.dat does not exist.
+K03214.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03214.02/popset.h5'
 K03219.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03230.01 BadRoweFitError: K03230.01 has a/Rstar < 1 (0.737520636627) from JRowe MCMC fit
 K03233.01 NoWeakSecondaryError: K03233.01
 K03252.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03269.01 BadRoweFitError: K03269.01 has RoR > 1 (3.5149242253) from JRowe MCMC fit
-K03283.01 BadRoweFitError: best-fit impact parameter (54.10) inconsistent with best-fit radius ratio (0.077530810024).
-K03283.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3283.n/tremove.2.dat does not exist.
-K03283.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3283.n/tremove.3.dat does not exist.
+K03283.01 KeyError: 'distance'
 K03320.01 BadRoweFitError: K03320.01 has RoR > 1 (10.116769334) from JRowe MCMC fit
 K03326.01 BadRoweFitError: K03326.01 has RoR > 1 (5.0460116338) from JRowe MCMC fit
 K03327.01 BadRoweFitError: K03327.01 has RoR > 1 (1.4097176182) from JRowe MCMC fit
 K03334.01 BadRoweFitError: best-fit impact parameter (0.74) inconsistent with best-fit radius ratio (-0.39922915791).
 K03338.02 EmptyPhotometryError: K03338.02 photometry file (/tigress/tmorton/kepler/data/rowe/koi3338.n/tremove.2.dat) is empty
 K03350.01 BadRoweFitError: K03350.01 has RoR > 1 (10.202738112) from JRowe MCMC fit
-K03371.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3371.n/tremove.2.dat does not exist.
 K03376.02 BadRoweFitError: best-fit impact parameter (1.27) inconsistent with best-fit radius ratio (0.0083706016203).
-K03401.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3401.n/tremove.2.dat does not exist.
+K03401.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03401.02/popset.h5'
 K03405.01 BadRoweFitError: best-fit impact parameter (89.44) inconsistent with best-fit radius ratio (-89.937139087).
-K03406.01 NoWeakSecondaryError: K03406.01
-K03410.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3410.n/tremove.2.dat does not exist.
-K03440.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3440.n/tremove.2.dat does not exist.
+K03406.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
+K03410.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03410.02/popset.h5'
 K03442.01 MissingStellarError: 9837586 not in stellar table?
-K03444.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3444.n/tremove.4.dat does not exist.
-K03456.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3456.n/tremove.2.dat does not exist.
 K03473.01 BadRoweFitError: K03473.01 has RoR > 1 (2.473535964) from JRowe MCMC fit
-K03479.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3479.n/tremove.2.dat does not exist.
+K03479.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03479.02/popset.h5'
 K03501.01 BadRoweFitError: K03501.01 has RoR > 1 (18.324161678) from JRowe MCMC fit
-K03503.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3503.n/tremove.2.dat does not exist.
-K03504.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3504.n/tremove.2.dat does not exist.
+K03504.02 NoWeakSecondaryError: K03504.02
 K03515.01 BadRoweFitError: K03515.01 has RoR > 1 (1.8698108695) from JRowe MCMC fit
 K03516.01 BadRoweFitError: best-fit impact parameter (0.56) inconsistent with best-fit radius ratio (-0.69523726674).
 K03522.01 BadRoweFitError: K03522.01 has RoR > 1 (15.444303896) from JRowe MCMC fit
@@ -391,14 +337,11 @@ K03730.01 MissingStellarError: 10879213 not in stellar table?
 K03733.01 MissingStellarError: 9655858 not in stellar table?
 K03738.01 BadRoweFitError: K03738.01 has RoR > 1 (3.629624014) from JRowe MCMC fit
 K03740.01 BadRoweFitError: K03740.01 has RoR > 1 (1.1673832548) from JRowe MCMC fit
-K03741.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3741.n/tremove.3.dat does not exist.
-K03741.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3741.n/tremove.4.dat does not exist.
 K03742.01 BadRoweFitError: best-fit impact parameter (0.83) inconsistent with best-fit radius ratio (-0.5658199713).
 K03743.01 MissingStellarError: 4935914 not in stellar table?
 K03745.01 MissingStellarError: 2437783 not in stellar table?
 K03746.01 MissingStellarError: 12062660 not in stellar table?
-K03748.01 BadRoweFitError: K03748.01 has RoR > 1 (3.0423036583) from JRowe MCMC fit
-K03748.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3748.n/tremove.2.dat does not exist.
+K03748.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03748.02/popset.h5'
 K03751.01 BadRoweFitError: K03751.01 has RoR > 1 (2.470514546) from JRowe MCMC fit
 K03754.01 MissingStellarError: 8937019 not in stellar table?
 K03757.01 BadRoweFitError: K03757.01 has RoR > 1 (5.9992973821) from JRowe MCMC fit
@@ -412,7 +355,7 @@ K03787.01 BadRoweFitError: K03787.01 has RoR > 1 (2.6429299318) from JRowe MCMC 
 K03788.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03790.01 MissingStellarError: 7296094 not in stellar table?
 K03792.01 BadRoweFitError: K03792.01 has negative RoR (-0.062005390604) from JRowe MCMC fit
-K03793.01 NoWeakSecondaryError: K03793.01
+K03793.01 MissingStellarError: 4037163 not in stellar table?
 K03797.01 BadRoweFitError: K03797.01 has RoR > 1 (1.9527882187) from JRowe MCMC fit
 K03800.01 BadRoweFitError: K03800.01 has RoR > 1 (14.914653664) from JRowe MCMC fit
 K03807.01 BadRoweFitError: best-fit impact parameter (0.80) inconsistent with best-fit radius ratio (-0.54431448388).
@@ -424,48 +367,39 @@ K03833.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03844.01 MissingStellarError: 7174349 not in stellar table?
 K03851.01 MissingStellarError: 9784230 not in stellar table?
 K03855.01 MissingStellarError: 2558370 not in stellar table?
-K03857.01 NoWeakSecondaryError: K03857.01
-K03859.01 NoWeakSecondaryError: K03859.01
+K03857.01 MissingStellarError: 11825057 not in stellar table?
+K03859.01 MissingStellarError: 9692336 not in stellar table?
 K03864.01 BadRoweFitError: K03864.01 has RoR > 1 (1.3090343268) from JRowe MCMC fit
-K03878.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3878.n/tremove.2.dat does not exist.
 K03891.01 BadRoweFitError: K03891.01 has RoR > 1 (1.4931319642) from JRowe MCMC fit
 K03895.01 MissingStellarError: 12106934 not in stellar table?
-K03899.01 NoWeakSecondaryError: K03899.01
+K03899.01 MissingStellarError: 3556229 not in stellar table?
 K03918.01 BadRoweFitError: K03918.01 has RoR > 1 (1.0148524023) from JRowe MCMC fit
 K03924.01 BadRoweFitError: best-fit impact parameter (0.76) inconsistent with best-fit radius ratio (-0.45047531929).
-K03929.01 NoWeakSecondaryError: K03929.01
+K03929.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03930.01 BadRoweFitError: K03930.01 has a/Rstar < 1 (0.83442933753) from JRowe MCMC fit
 K03938.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03947.01 MissingStellarError: 5952366 not in stellar table?
 K03947.02 MissingStellarError: 5952366 not in stellar table?
-K03954.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3954.n/tremove.2.dat does not exist.
-K03956.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi3956.n/tremove.2.dat does not exist.
+K03954.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03954.02/popset.h5'
+K03956.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03956.02/popset.h5'
 K03967.02 EmptyPhotometryError: K03967.02 photometry file (/tigress/tmorton/kepler/data/rowe/koi3967.n/tremove.2.dat) is empty
 K03972.01 BadRoweFitError: K03972.01 has a/Rstar < 1 (0.821946575476) from JRowe MCMC fit
 K03982.01 MissingStellarError: 5303557 not in stellar table?
 K03993.01 MissingStellarError: 2970804 not in stellar table?
 K03998.01 BadRoweFitError: best-fit impact parameter (7.24) inconsistent with best-fit radius ratio (-5.138197518).
-K04000.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4000.n/tremove.2.dat does not exist.
-K04009.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4009.n/tremove.2.dat does not exist.
 K04021.01 AllWithinRocheError: All simulated systems within Roche lobe
-K04030.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4030.n/tremove.2.dat does not exist.
-K04032.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4032.n/tremove.3.dat does not exist.
-K04032.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4032.n/tremove.4.dat does not exist.
-K04034.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4034.n/tremove.2.dat does not exist.
+K04030.02 MCMCError: TransitSignal trapezoid fit not converged (K04030.02).
+K04032.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04032.03/popset.h5'
+K04032.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04032.04/popset.h5'
+K04034.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04034.02/popset.h5'
 K04035.01 MissingStellarError: 3247404 not in stellar table?
-K04046.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4046.n/tremove.2.dat does not exist.
+K04046.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04046.02/popset.h5'
 K04094.01 AllWithinRocheError: All simulated systems within Roche lobe
-K04103.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4103.n/tremove.2.dat does not exist.
 K04118.01 MissingStellarError: 10661778 not in stellar table?
-K04131.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4131.n/tremove.2.dat does not exist.
+K04131.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04131.02/popset.h5'
 K04134.01 NoWeakSecondaryError: K04134.01
 K04136.01 BadRoweFitError: best-fit impact parameter (1.05) inconsistent with best-fit radius ratio (-0.0055382883847).
-K04181.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4181.n/tremove.2.dat does not exist.
-K04192.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4192.n/tremove.2.dat does not exist.
-K04246.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4246.n/tremove.2.dat does not exist.
-K04260.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4260.n/tremove.2.dat does not exist.
 K04279.01 MissingStellarError: 5876360 not in stellar table?
-K04287.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4287.n/tremove.2.dat does not exist.
 K04298.02 MCMCError: TransitSignal trapezoid fit not converged (K04298.02).
 K04323.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4323.n/tremove.2.dat does not exist.
 K04352.01 BadRoweFitError: K04352.01 has a/Rstar < 1 (0.582441770778) from JRowe MCMC fit
@@ -475,909 +409,547 @@ K04355.03 MissingStellarError: 4571004 not in stellar table?
 K04355.04 MissingStellarError: 4571004 not in stellar table?
 K04355.05 BadRoweFitError: best-fit impact parameter (1.00) inconsistent with best-fit radius ratio (-0.024137217226).
 K04369.01 NoWeakSecondaryError: K04369.01
-K04385.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4385.n/tremove.2.dat does not exist.
-K04385.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4385.n/tremove.3.dat does not exist.
-K04396.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4396.n/tremove.3.dat does not exist.
-K04396.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4396.n/tremove.4.dat does not exist.
-K04435.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4435.n/tremove.2.dat does not exist.
+K04396.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04396.03/popset.h5'
+K04396.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04396.04/popset.h5'
 K04507.01 MissingStellarError: 7598111 not in stellar table?
-K04541.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4541.n/tremove.2.dat does not exist.
 K04543.01 MissingStellarError: 9776186 not in stellar table?
 K04565.01 BadRoweFitError: best-fit impact parameter (6.23) inconsistent with best-fit radius ratio (-0.0059063664708).
-K04567.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4567.n/tremove.2.dat does not exist.
-K04568.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4568.n/tremove.2.dat does not exist.
+K04568.02 NoWeakSecondaryError: K04568.02
 K04636.01 BadRoweFitError: K04636.01 has RoR > 1 (1.0150188102) from JRowe MCMC fit
-K04647.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4647.n/tremove.2.dat does not exist.
-K04657.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4657.n/tremove.2.dat does not exist.
 K04682.01 MissingStellarError: 5024252 not in stellar table?
 K04713.01 MissingStellarError: 5253802 not in stellar table?
 K04724.01 MissingStellarError: 8395860 not in stellar table?
-K04777.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4777.n/tremove.2.dat does not exist.
-K04781.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4781.n/tremove.2.dat does not exist.
+K04777.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04777.02/popset.h5'
+K04781.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04781.02/popset.h5'
 K04797.01 BadRoweFitError: best-fit impact parameter (1.17) inconsistent with best-fit radius ratio (-0.19586766195).
 K04807.01 MissingStellarError: 9822284 not in stellar table?
 K04883.01 NoWeakSecondaryError: K04883.01
 K04889.01 NoWeakSecondaryError: K04889.01
-K04895.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4895.n/tremove.2.dat does not exist.
-K04913.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4913.n/tremove.2.dat does not exist.
-K04920.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4920.n/tremove.1.dat does not exist.
-K04921.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4921.n/tremove.1.dat does not exist.
-K04925.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4925.n/tremove.1.dat does not exist.
-K04929.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4929.n/tremove.1.dat does not exist.
-K04930.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4930.n/tremove.1.dat does not exist.
-K04931.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4931.n/tremove.1.dat does not exist.
-K04932.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4932.n/tremove.1.dat does not exist.
-K04934.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4934.n/tremove.1.dat does not exist.
-K04935.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4935.n/tremove.1.dat does not exist.
-K04937.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4937.n/tremove.1.dat does not exist.
-K04940.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4940.n/tremove.1.dat does not exist.
-K04942.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4942.n/tremove.1.dat does not exist.
-K04943.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4943.n/tremove.1.dat does not exist.
-K04944.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4944.n/tremove.1.dat does not exist.
-K04945.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4945.n/tremove.1.dat does not exist.
-K04946.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4946.n/tremove.1.dat does not exist.
-K04947.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4947.n/tremove.1.dat does not exist.
-K04948.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4948.n/tremove.1.dat does not exist.
-K04949.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4949.n/tremove.1.dat does not exist.
-K04950.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4950.n/tremove.1.dat does not exist.
-K04951.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4951.n/tremove.1.dat does not exist.
-K04952.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4952.n/tremove.1.dat does not exist.
-K04953.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4953.n/tremove.1.dat does not exist.
-K04955.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4955.n/tremove.1.dat does not exist.
-K04956.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4956.n/tremove.1.dat does not exist.
-K04957.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4957.n/tremove.1.dat does not exist.
+K04932.01 NoWeakSecondaryError: K04932.01
+K04948.01 AllWithinRocheError: All simulated systems within Roche lobe
+K04952.01 NoWeakSecondaryError: K04952.01
+K04955.01 NoWeakSecondaryError: K04955.01
 K04960.01 NoWeakSecondaryError: K04960.01
-K04963.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4963.n/tremove.1.dat does not exist.
-K04964.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4964.n/tremove.1.dat does not exist.
-K04965.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4965.n/tremove.1.dat does not exist.
-K04966.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4966.n/tremove.1.dat does not exist.
-K04969.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4969.n/tremove.1.dat does not exist.
-K04970.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4970.n/tremove.1.dat does not exist.
-K04973.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4973.n/tremove.1.dat does not exist.
-K04979.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4979.n/tremove.1.dat does not exist.
-K04981.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4981.n/tremove.1.dat does not exist.
-K04983.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4983.n/tremove.1.dat does not exist.
-K04984.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4984.n/tremove.1.dat does not exist.
-K04989.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4989.n/tremove.1.dat does not exist.
-K04990.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4990.n/tremove.1.dat does not exist.
+K04963.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04963.01/popset.h5'
+K04964.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04964.01/popset.h5'
+K04965.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04965.01/popset.h5'
+K04966.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04966.01/popset.h5'
+K04969.01 NoWeakSecondaryError: K04969.01
+K04970.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04970.01/popset.h5'
+K04973.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04973.01/popset.h5'
+K04979.01 NoWeakSecondaryError: K04979.01
+K04981.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04981.01/popset.h5'
+K04983.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04983.01/popset.h5'
+K04984.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04984.01/popset.h5'
+K04989.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04989.01/popset.h5'
+K04990.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04990.01/popset.h5'
 K04993.01 BadRoweFitError: K04993.01 has negative RoR (-0.0070897783122) from JRowe MCMC fit
-K04994.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4994.n/tremove.1.dat does not exist.
-K04995.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4995.n/tremove.1.dat does not exist.
+K04995.01 NoWeakSecondaryError: K04995.01
 K04996.01 NoWeakSecondaryError: K04996.01
-K04997.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4997.n/tremove.1.dat does not exist.
-K04998.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi4998.n/tremove.1.dat does not exist.
-K05000.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5000.n/tremove.1.dat does not exist.
-K05001.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5001.n/tremove.1.dat does not exist.
-K05003.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5003.n/tremove.1.dat does not exist.
-K05005.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5005.n/tremove.1.dat does not exist.
-K05006.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5006.n/tremove.1.dat does not exist.
-K05008.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5008.n/tremove.1.dat does not exist.
-K05009.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5009.n/tremove.1.dat does not exist.
-K05010.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5010.n/tremove.1.dat does not exist.
-K05011.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5011.n/tremove.1.dat does not exist.
-K05012.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5012.n/tremove.1.dat does not exist.
-K05013.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5013.n/tremove.1.dat does not exist.
-K05014.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5014.n/tremove.1.dat does not exist.
-K05015.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5015.n/tremove.1.dat does not exist.
-K05016.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5016.n/tremove.1.dat does not exist.
-K05019.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5019.n/tremove.1.dat does not exist.
-K05020.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5020.n/tremove.1.dat does not exist.
-K05022.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5022.n/tremove.1.dat does not exist.
-K05024.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5024.n/tremove.1.dat does not exist.
-K05025.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5025.n/tremove.1.dat does not exist.
-K05026.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5026.n/tremove.1.dat does not exist.
-K05028.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5028.n/tremove.1.dat does not exist.
-K05029.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5029.n/tremove.1.dat does not exist.
+K05000.01 NoWeakSecondaryError: K05000.01
+K05006.01 MCMCError: TransitSignal trapezoid fit not converged (K05006.01).
+K05008.01 NoWeakSecondaryError: K05008.01
+K05022.01 NoWeakSecondaryError: K05022.01
 K05031.01 NoWeakSecondaryError: K05031.01
-K05032.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5032.n/tremove.1.dat does not exist.
-K05035.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5035.n/tremove.1.dat does not exist.
-K05036.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5036.n/tremove.1.dat does not exist.
-K05037.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5037.n/tremove.1.dat does not exist.
-K05038.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5038.n/tremove.1.dat does not exist.
-K05041.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5041.n/tremove.1.dat does not exist.
-K05044.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5044.n/tremove.1.dat does not exist.
-K05049.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5049.n/tremove.1.dat does not exist.
-K05050.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5050.n/tremove.1.dat does not exist.
-K05051.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5051.n/tremove.1.dat does not exist.
-K05054.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5054.n/tremove.1.dat does not exist.
-K05055.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5055.n/tremove.1.dat does not exist.
-K05056.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5056.n/tremove.1.dat does not exist.
-K05060.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5060.n/tremove.1.dat does not exist.
-K05061.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5061.n/tremove.1.dat does not exist.
-K05062.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5062.n/tremove.1.dat does not exist.
-K05063.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5063.n/tremove.1.dat does not exist.
-K05064.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5064.n/tremove.1.dat does not exist.
-K05065.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5065.n/tremove.1.dat does not exist.
-K05066.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5066.n/tremove.1.dat does not exist.
-K05069.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5069.n/tremove.1.dat does not exist.
-K05072.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5072.n/tremove.1.dat does not exist.
-K05073.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5073.n/tremove.1.dat does not exist.
+K05035.01 NoWeakSecondaryError: K05035.01
+K05037.01 AllWithinRocheError: All simulated systems within Roche lobe
+K05051.01 NoWeakSecondaryError: K05051.01
+K05054.01 BadRoweFitError: K05054.01 has RoR > 1 (1.0366707987) from JRowe MCMC fit
+K05056.01 NoWeakSecondaryError: K05056.01
+K05060.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05060.01/popset.h5'
+K05061.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05061.01/popset.h5'
+K05062.01 NoWeakSecondaryError: K05062.01
+K05063.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05063.01/popset.h5'
+K05064.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05064.01/popset.h5'
+K05065.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05065.01/popset.h5'
+K05066.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05066.01/popset.h5'
+K05069.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05069.01/popset.h5'
+K05072.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05072.01/popset.h5'
+K05073.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05073.01/popset.h5'
 K05074.01 NoWeakSecondaryError: K05074.01
-K05075.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5075.n/tremove.1.dat does not exist.
-K05076.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5076.n/tremove.1.dat does not exist.
+K05075.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05075.01/popset.h5'
+K05076.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05076.01/popset.h5'
 K05076.02 AllWithinRocheError: All simulated systems within Roche lobe
-K05077.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5077.n/tremove.1.dat does not exist.
-K05078.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5078.n/tremove.1.dat does not exist.
+K05077.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05077.01/popset.h5'
+K05078.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05078.01/popset.h5'
 K05080.01 NoWeakSecondaryError: K05080.01
-K05082.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5082.n/tremove.1.dat does not exist.
-K05086.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5086.n/tremove.1.dat does not exist.
-K05089.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5089.n/tremove.1.dat does not exist.
-K05090.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5090.n/tremove.1.dat does not exist.
-K05091.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5091.n/tremove.1.dat does not exist.
-K05094.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5094.n/tremove.1.dat does not exist.
-K05095.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5095.n/tremove.1.dat does not exist.
-K05096.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5096.n/tremove.1.dat does not exist.
-K05097.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5097.n/tremove.1.dat does not exist.
-K05100.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5100.n/tremove.1.dat does not exist.
-K05103.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5103.n/tremove.1.dat does not exist.
-K05105.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5105.n/tremove.1.dat does not exist.
-K05106.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5106.n/tremove.1.dat does not exist.
-K05108.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5108.n/tremove.1.dat does not exist.
-K05111.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5111.n/tremove.1.dat does not exist.
-K05112.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5112.n/tremove.1.dat does not exist.
-K05113.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5113.n/tremove.1.dat does not exist.
-K05114.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5114.n/tremove.1.dat does not exist.
-K05116.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5116.n/tremove.1.dat does not exist.
-K05118.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5118.n/tremove.1.dat does not exist.
-K05120.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5120.n/tremove.1.dat does not exist.
-K05125.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5125.n/tremove.1.dat does not exist.
-K05128.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5128.n/tremove.1.dat does not exist.
+K05082.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05082.01/popset.h5'
+K05086.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05086.01/popset.h5'
+K05089.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05089.01/popset.h5'
+K05091.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05091.01/popset.h5'
+K05103.01 NoWeakSecondaryError: K05103.01
+K05118.01 NoWeakSecondaryError: K05118.01
 K05129.01 AllWithinRocheError: All simulated systems within Roche lobe
-K05130.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5130.n/tremove.1.dat does not exist.
-K05133.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5133.n/tremove.1.dat does not exist.
-K05134.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5134.n/tremove.1.dat does not exist.
 K05136.01 NoWeakSecondaryError: K05136.01
-K05137.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5137.n/tremove.1.dat does not exist.
-K05139.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5139.n/tremove.1.dat does not exist.
-K05140.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5140.n/tremove.1.dat does not exist.
-K05141.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5141.n/tremove.1.dat does not exist.
+K05137.01 NoWeakSecondaryError: K05137.01
+K05140.01 NoWeakSecondaryError: K05140.01
 K05143.01 NoWeakSecondaryError: K05143.01
-K05144.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5144.n/tremove.1.dat does not exist.
-K05145.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5145.n/tremove.1.dat does not exist.
-K05146.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5146.n/tremove.1.dat does not exist.
-K05147.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5147.n/tremove.1.dat does not exist.
-K05150.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5150.n/tremove.1.dat does not exist.
-K05152.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5152.n/tremove.1.dat does not exist.
-K05153.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5153.n/tremove.1.dat does not exist.
-K05154.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5154.n/tremove.1.dat does not exist.
-K05157.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5157.n/tremove.1.dat does not exist.
-K05158.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5158.n/tremove.1.dat does not exist.
+K05153.01 2015-08-06 23:42:03,470: Fitting trapezoid models for BEBs...
+K05154.01 NoWeakSecondaryError: K05154.01
+K05157.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05157.01/popset.h5'
+K05158.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05158.01/popset.h5'
 K05159.01 NoWeakSecondaryError: K05159.01
-K05160.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5160.n/tremove.1.dat does not exist.
-K05161.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5161.n/tremove.1.dat does not exist.
-K05162.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5162.n/tremove.1.dat does not exist.
-K05163.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5163.n/tremove.1.dat does not exist.
-K05165.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5165.n/tremove.1.dat does not exist.
+K05160.01 NoWeakSecondaryError: K05160.01
+K05161.01 NoWeakSecondaryError: K05161.01
+K05162.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05162.01/popset.h5'
+K05163.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05163.01/popset.h5'
+K05165.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05165.01/popset.h5'
 K05166.01 NoWeakSecondaryError: K05166.01
-K05167.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5167.n/tremove.1.dat does not exist.
-K05168.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5168.n/tremove.1.dat does not exist.
-K05170.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5170.n/tremove.1.dat does not exist.
-K05171.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5171.n/tremove.1.dat does not exist.
-K05172.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5172.n/tremove.1.dat does not exist.
-K05173.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5173.n/tremove.1.dat does not exist.
-K05174.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5174.n/tremove.1.dat does not exist.
-K05175.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5175.n/tremove.1.dat does not exist.
+K05167.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05167.01/popset.h5'
+K05168.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05168.01/popset.h5'
+K05170.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05170.01/popset.h5'
+K05171.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05171.01/popset.h5'
+K05172.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05172.01/popset.h5'
+K05173.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05173.01/popset.h5'
+K05174.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05174.01/popset.h5'
+K05175.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05175.01/popset.h5'
 K05177.01 NoWeakSecondaryError: K05177.01
-K05180.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5180.n/tremove.1.dat does not exist.
-K05181.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5181.n/tremove.1.dat does not exist.
-K05182.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5182.n/tremove.1.dat does not exist.
-K05183.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5183.n/tremove.1.dat does not exist.
-K05187.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5187.n/tremove.1.dat does not exist.
-K05188.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5188.n/tremove.1.dat does not exist.
-K05189.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5189.n/tremove.1.dat does not exist.
-K05190.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5190.n/tremove.1.dat does not exist.
+K05180.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05180.01/popset.h5'
+K05181.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05181.01/popset.h5'
+K05182.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05182.01/popset.h5'
+K05183.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05183.01/popset.h5'
+K05187.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05187.01/popset.h5'
+K05188.01 MCMCError: 0 points with slopes < maxslope (30)
+K05190.01 MissingStellarError: 5653163 not in stellar table?
 K05194.01 NoWeakSecondaryError: K05194.01
-K05195.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5195.n/tremove.1.dat does not exist.
 K05197.01 NoWeakSecondaryError: K05197.01
-K05199.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5199.n/tremove.1.dat does not exist.
-K05200.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5200.n/tremove.1.dat does not exist.
 K05201.01 BadRoweFitError: best-fit impact parameter (4.13) inconsistent with best-fit radius ratio (0.042192180713).
-K05203.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5203.n/tremove.1.dat does not exist.
-K05204.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5204.n/tremove.1.dat does not exist.
-K05208.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5208.n/tremove.1.dat does not exist.
-K05209.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5209.n/tremove.1.dat does not exist.
 K05210.01 NoWeakSecondaryError: K05210.01
-K05213.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5213.n/tremove.1.dat does not exist.
-K05214.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5214.n/tremove.1.dat does not exist.
-K05215.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5215.n/tremove.1.dat does not exist.
-K05217.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5217.n/tremove.1.dat does not exist.
-K05218.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5218.n/tremove.1.dat does not exist.
-K05221.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5221.n/tremove.1.dat does not exist.
-K05222.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5222.n/tremove.1.dat does not exist.
-K05226.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5226.n/tremove.1.dat does not exist.
-K05227.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5227.n/tremove.1.dat does not exist.
-K05229.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5229.n/tremove.1.dat does not exist.
-K05233.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5233.n/tremove.1.dat does not exist.
-K05234.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5234.n/tremove.1.dat does not exist.
-K05238.01 NoWeakSecondaryError: K05238.01
-K05239.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5239.n/tremove.1.dat does not exist.
-K05240.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5240.n/tremove.1.dat does not exist.
-K05242.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5242.n/tremove.1.dat does not exist.
-K05244.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5244.n/tremove.1.dat does not exist.
-K05246.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5246.n/tremove.1.dat does not exist.
-K05250.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5250.n/tremove.1.dat does not exist.
-K05251.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5251.n/tremove.1.dat does not exist.
-K05252.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5252.n/tremove.1.dat does not exist.
-K05256.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5256.n/tremove.1.dat does not exist.
-K05258.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5258.n/tremove.1.dat does not exist.
-K05260.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5260.n/tremove.1.dat does not exist.
-K05262.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5262.n/tremove.1.dat does not exist.
-K05264.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5264.n/tremove.1.dat does not exist.
-K05265.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5265.n/tremove.1.dat does not exist.
-K05266.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5266.n/tremove.1.dat does not exist.
-K05268.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5268.n/tremove.1.dat does not exist.
-K05270.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5270.n/tremove.1.dat does not exist.
-K05271.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5271.n/tremove.1.dat does not exist.
-K05272.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5272.n/tremove.1.dat does not exist.
-K05273.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5273.n/tremove.1.dat does not exist.
-K05276.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5276.n/tremove.1.dat does not exist.
-K05277.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5277.n/tremove.1.dat does not exist.
-K05280.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5280.n/tremove.1.dat does not exist.
-K05282.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5282.n/tremove.1.dat does not exist.
-K05286.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5286.n/tremove.1.dat does not exist.
-K05289.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5289.n/tremove.1.dat does not exist.
-K05291.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5291.n/tremove.1.dat does not exist.
-K05292.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5292.n/tremove.1.dat does not exist.
-K05293.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5293.n/tremove.1.dat does not exist.
-K05295.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5295.n/tremove.1.dat does not exist.
-K05299.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5299.n/tremove.1.dat does not exist.
-K05301.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5301.n/tremove.1.dat does not exist.
-K05302.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5302.n/tremove.1.dat does not exist.
-K05303.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5303.n/tremove.1.dat does not exist.
-K05304.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5304.n/tremove.1.dat does not exist.
-K05305.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5305.n/tremove.1.dat does not exist.
-K05306.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5306.n/tremove.1.dat does not exist.
-K05307.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5307.n/tremove.1.dat does not exist.
+K05226.01 MissingStellarError: 6034379 not in stellar table?
+K05234.01 MissingStellarError: 6062298 not in stellar table?
+K05238.01 MissingStellarError: 6116605 not in stellar table?
+K05242.01 MissingStellarError: 6143819 not in stellar table?
+K05258.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05258.01/popset.h5'
+K05260.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05260.01/popset.h5'
+K05262.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05262.01/popset.h5'
+K05264.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05264.01/popset.h5'
+K05265.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05265.01/popset.h5'
+K05266.01 NoWeakSecondaryError: K05266.01
+K05268.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05268.01/popset.h5'
+K05270.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05270.01/popset.h5'
+K05271.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05271.01/popset.h5'
+K05272.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05272.01/popset.h5'
+K05273.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05273.01/popset.h5'
+K05276.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05276.01/popset.h5'
+K05277.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05277.01/popset.h5'
+K05280.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05280.01/popset.h5'
+K05282.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05282.01/popset.h5'
+K05286.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05286.01/popset.h5'
+K05291.01 2015-08-06 23:16:14,275: No eclipse registered for index 10796
+K05292.01 NoWeakSecondaryError: K05292.01
+K05295.01 BadRoweFitError: K05295.01 has RoR > 1 (1.1383157186) from JRowe MCMC fit
+K05304.01 ValueError: Properties not same as saved chains (basename chains/binary-*). Use overwrite=True to fit.
+K05306.01 KeyError: 'name'
 K05309.01 NoWeakSecondaryError: K05309.01
-K05311.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5311.n/tremove.1.dat does not exist.
-K05312.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5312.n/tremove.1.dat does not exist.
-K05313.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5313.n/tremove.1.dat does not exist.
-K05314.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5314.n/tremove.1.dat does not exist.
-K05315.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5315.n/tremove.1.dat does not exist.
-K05316.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5316.n/tremove.1.dat does not exist.
+K05312.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K05317.01 BadRoweFitError: K05317.01 has RoR > 1 (1.534657661) from JRowe MCMC fit
-K05318.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5318.n/tremove.1.dat does not exist.
-K05319.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5319.n/tremove.1.dat does not exist.
-K05320.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5320.n/tremove.1.dat does not exist.
-K05330.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5330.n/tremove.1.dat does not exist.
-K05334.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5334.n/tremove.1.dat does not exist.
-K05337.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5337.n/tremove.1.dat does not exist.
-K05338.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5338.n/tremove.1.dat does not exist.
+K05338.01 2015-08-06 23:34:36,987: No eclipse registered for index 5261
 K05342.01 NoWeakSecondaryError: K05342.01
-K05343.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5343.n/tremove.1.dat does not exist.
-K05346.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5346.n/tremove.1.dat does not exist.
-K05348.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5348.n/tremove.1.dat does not exist.
-K05349.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5349.n/tremove.1.dat does not exist.
-K05350.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5350.n/tremove.1.dat does not exist.
-K05352.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5352.n/tremove.1.dat does not exist.
-K05353.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5353.n/tremove.1.dat does not exist.
-K05354.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5354.n/tremove.1.dat does not exist.
-K05355.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5355.n/tremove.1.dat does not exist.
+K05343.01 2015-08-06 23:35:16,284: No eclipse registered for index 13522
+K05346.01 AllWithinRocheError: All simulated systems within Roche lobe
+K05349.01 NoWeakSecondaryError: K05349.01
+K05350.01 NoWeakSecondaryError: K05350.01
+K05352.01 NoWeakSecondaryError: K05352.01
 K05356.01 NoWeakSecondaryError: K05356.01
-K05361.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5361.n/tremove.1.dat does not exist.
-K05362.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5362.n/tremove.1.dat does not exist.
-K05363.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5363.n/tremove.1.dat does not exist.
-K05364.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5364.n/tremove.1.dat does not exist.
-K05365.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5365.n/tremove.1.dat does not exist.
-K05366.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5366.n/tremove.1.dat does not exist.
-K05367.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5367.n/tremove.1.dat does not exist.
-K05368.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5368.n/tremove.1.dat does not exist.
-K05370.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5370.n/tremove.1.dat does not exist.
-K05371.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5371.n/tremove.1.dat does not exist.
-K05374.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5374.n/tremove.1.dat does not exist.
-K05377.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5377.n/tremove.1.dat does not exist.
-K05378.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5378.n/tremove.1.dat does not exist.
-K05382.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5382.n/tremove.1.dat does not exist.
-K05383.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5383.n/tremove.1.dat does not exist.
-K05385.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5385.n/tremove.1.dat does not exist.
-K05386.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5386.n/tremove.1.dat does not exist.
-K05389.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5389.n/tremove.1.dat does not exist.
-K05391.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5391.n/tremove.1.dat does not exist.
-K05392.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5392.n/tremove.1.dat does not exist.
-K05394.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5394.n/tremove.1.dat does not exist.
-K05395.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5395.n/tremove.1.dat does not exist.
-K05396.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5396.n/tremove.1.dat does not exist.
-K05397.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5397.n/tremove.1.dat does not exist.
-K05399.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5399.n/tremove.1.dat does not exist.
-K05400.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5400.n/tremove.1.dat does not exist.
-K05401.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5401.n/tremove.1.dat does not exist.
-K05402.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5402.n/tremove.1.dat does not exist.
-K05404.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5404.n/tremove.1.dat does not exist.
+K05361.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05361.01/popset.h5'
+K05362.01 NoWeakSecondaryError: K05362.01
+K05363.01 NoWeakSecondaryError: K05363.01
+K05364.01 NoWeakSecondaryError: K05364.01
+K05365.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05365.01/popset.h5'
+K05366.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05366.01/popset.h5'
+K05367.01 NoWeakSecondaryError: K05367.01
+K05368.01 NoWeakSecondaryError: K05368.01
+K05370.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05370.01/popset.h5'
+K05371.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05371.01/popset.h5'
+K05374.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05374.01/popset.h5'
+K05377.01 NoWeakSecondaryError: K05377.01
+K05378.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05378.01/popset.h5'
+K05382.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05382.01/popset.h5'
+K05383.01 NoWeakSecondaryError: K05383.01
+K05385.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05385.01/popset.h5'
+K05386.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05386.01/popset.h5'
+K05400.01 NoWeakSecondaryError: K05400.01
+K05401.01 2015-08-07 00:02:10,646: No eclipse registered for index 5336
+K05402.01 NoWeakSecondaryError: K05402.01
+K05404.01 NoWeakSecondaryError: K05404.01
 K05405.01 NoWeakSecondaryError: K05405.01
-K05407.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5407.n/tremove.1.dat does not exist.
-K05414.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5414.n/tremove.1.dat does not exist.
-K05415.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5415.n/tremove.1.dat does not exist.
-K05419.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5419.n/tremove.1.dat does not exist.
-K05420.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5420.n/tremove.1.dat does not exist.
-K05421.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5421.n/tremove.1.dat does not exist.
-K05422.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5422.n/tremove.1.dat does not exist.
+K05422.01 NoWeakSecondaryError: K05422.01
 K05424.01 NoWeakSecondaryError: K05424.01
-K05425.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5425.n/tremove.1.dat does not exist.
-K05427.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5427.n/tremove.1.dat does not exist.
-K05428.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5428.n/tremove.1.dat does not exist.
-K05429.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5429.n/tremove.1.dat does not exist.
-K05430.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5430.n/tremove.1.dat does not exist.
-K05431.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5431.n/tremove.1.dat does not exist.
-K05432.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5432.n/tremove.1.dat does not exist.
-K05434.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5434.n/tremove.1.dat does not exist.
-K05437.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5437.n/tremove.1.dat does not exist.
-K05438.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5438.n/tremove.1.dat does not exist.
-K05439.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5439.n/tremove.1.dat does not exist.
-K05441.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5441.n/tremove.1.dat does not exist.
-K05442.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5442.n/tremove.1.dat does not exist.
-K05443.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5443.n/tremove.1.dat does not exist.
-K05444.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5444.n/tremove.1.dat does not exist.
-K05445.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5445.n/tremove.1.dat does not exist.
-K05446.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5446.n/tremove.1.dat does not exist.
-K05448.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5448.n/tremove.1.dat does not exist.
-K05449.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5449.n/tremove.1.dat does not exist.
-K05450.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5450.n/tremove.1.dat does not exist.
-K05452.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5452.n/tremove.1.dat does not exist.
-K05453.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5453.n/tremove.1.dat does not exist.
-K05455.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5455.n/tremove.1.dat does not exist.
-K05456.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5456.n/tremove.1.dat does not exist.
-K05457.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5457.n/tremove.1.dat does not exist.
-K05460.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5460.n/tremove.1.dat does not exist.
-K05462.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5462.n/tremove.1.dat does not exist.
-K05463.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5463.n/tremove.1.dat does not exist.
-K05464.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5464.n/tremove.1.dat does not exist.
-K05467.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5467.n/tremove.1.dat does not exist.
-K05468.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5468.n/tremove.1.dat does not exist.
-K05469.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5469.n/tremove.1.dat does not exist.
-K05470.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5470.n/tremove.1.dat does not exist.
-K05473.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5473.n/tremove.1.dat does not exist.
-K05474.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5474.n/tremove.1.dat does not exist.
-K05475.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5475.n/tremove.1.dat does not exist.
-K05477.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5477.n/tremove.1.dat does not exist.
-K05481.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5481.n/tremove.1.dat does not exist.
-K05488.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5488.n/tremove.1.dat does not exist.
-K05489.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5489.n/tremove.1.dat does not exist.
-K05491.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5491.n/tremove.1.dat does not exist.
-K05492.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5492.n/tremove.1.dat does not exist.
-K05494.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5494.n/tremove.1.dat does not exist.
-K05495.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5495.n/tremove.1.dat does not exist.
-K05496.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5496.n/tremove.1.dat does not exist.
-K05501.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5501.n/tremove.1.dat does not exist.
-K05502.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5502.n/tremove.1.dat does not exist.
-K05503.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5503.n/tremove.1.dat does not exist.
-K05504.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5504.n/tremove.1.dat does not exist.
-K05505.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5505.n/tremove.1.dat does not exist.
-K05507.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5507.n/tremove.1.dat does not exist.
-K05510.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5510.n/tremove.1.dat does not exist.
-K05512.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5512.n/tremove.1.dat does not exist.
-K05513.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5513.n/tremove.1.dat does not exist.
-K05516.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5516.n/tremove.1.dat does not exist.
-K05518.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5518.n/tremove.1.dat does not exist.
-K05519.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5519.n/tremove.1.dat does not exist.
-K05522.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5522.n/tremove.1.dat does not exist.
-K05523.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5523.n/tremove.1.dat does not exist.
-K05524.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5524.n/tremove.1.dat does not exist.
-K05525.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5525.n/tremove.1.dat does not exist.
-K05526.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5526.n/tremove.1.dat does not exist.
-K05531.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5531.n/tremove.1.dat does not exist.
+K05425.01 NoWeakSecondaryError: K05425.01
+K05428.01 NoWeakSecondaryError: K05428.01
+K05429.01 NoWeakSecondaryError: K05429.01
+K05431.01 NoWeakSecondaryError: K05431.01
+K05432.01 NoWeakSecondaryError: K05432.01
+K05437.01 NoWeakSecondaryError: K05437.01
+K05450.01 NoWeakSecondaryError: K05450.01
+K05452.01 2015-08-07 00:14:15,267: No eclipse registered for index 6746
+K05455.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05455.01/popset.h5'
+K05456.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05456.01/popset.h5'
+K05457.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05457.01/popset.h5'
+K05460.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05460.01/popset.h5'
+K05462.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05462.01/popset.h5'
+K05463.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05463.01/popset.h5'
+K05464.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05464.01/popset.h5'
+K05467.01 NoWeakSecondaryError: K05467.01
+K05468.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05468.01/popset.h5'
+K05469.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05469.01/popset.h5'
+K05470.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05470.01/popset.h5'
+K05473.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05473.01/popset.h5'
+K05474.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05474.01/popset.h5'
+K05475.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05475.01/popset.h5'
+K05477.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05477.01/popset.h5'
+K05488.01 KeyError: 'name'
+K05494.01 NoWeakSecondaryError: K05494.01
+K05502.01 2015-08-06 23:16:07,608: No eclipse registered for index 11961
+K05503.01 KeyError: 'name'
+K05504.01 NoWeakSecondaryError: K05504.01
+K05516.01 MissingStellarError: 8432034 not in stellar table?
+K05531.01 2015-08-06 23:09:33,631: No eclipse registered for index 1060
 K05533.01 NoWeakSecondaryError: K05533.01
-K05534.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5534.n/tremove.1.dat does not exist.
-K05535.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5535.n/tremove.1.dat does not exist.
-K05536.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5536.n/tremove.1.dat does not exist.
-K05537.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5537.n/tremove.1.dat does not exist.
-K05538.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5538.n/tremove.1.dat does not exist.
-K05539.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5539.n/tremove.1.dat does not exist.
-K05540.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5540.n/tremove.1.dat does not exist.
-K05542.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5542.n/tremove.1.dat does not exist.
-K05544.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5544.n/tremove.1.dat does not exist.
-K05547.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5547.n/tremove.1.dat does not exist.
-K05548.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5548.n/tremove.1.dat does not exist.
-K05549.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5549.n/tremove.1.dat does not exist.
-K05550.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5550.n/tremove.1.dat does not exist.
-K05551.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5551.n/tremove.1.dat does not exist.
-K05555.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5555.n/tremove.1.dat does not exist.
-K05557.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5557.n/tremove.1.dat does not exist.
-K05558.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5558.n/tremove.1.dat does not exist.
-K05559.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5559.n/tremove.1.dat does not exist.
-K05560.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5560.n/tremove.1.dat does not exist.
-K05561.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5561.n/tremove.1.dat does not exist.
-K05562.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5562.n/tremove.1.dat does not exist.
-K05563.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5563.n/tremove.1.dat does not exist.
-K05569.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5569.n/tremove.1.dat does not exist.
-K05571.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5571.n/tremove.1.dat does not exist.
-K05573.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5573.n/tremove.1.dat does not exist.
-K05575.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5575.n/tremove.1.dat does not exist.
-K05576.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5576.n/tremove.1.dat does not exist.
-K05580.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5580.n/tremove.1.dat does not exist.
-K05584.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5584.n/tremove.1.dat does not exist.
-K05586.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5586.n/tremove.1.dat does not exist.
-K05588.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5588.n/tremove.1.dat does not exist.
-K05589.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5589.n/tremove.1.dat does not exist.
-K05590.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5590.n/tremove.1.dat does not exist.
-K05593.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5593.n/tremove.1.dat does not exist.
-K05594.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5594.n/tremove.1.dat does not exist.
-K05595.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5595.n/tremove.1.dat does not exist.
-K05596.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5596.n/tremove.1.dat does not exist.
-K05598.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5598.n/tremove.1.dat does not exist.
-K05599.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5599.n/tremove.1.dat does not exist.
-K05600.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5600.n/tremove.1.dat does not exist.
-K05601.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5601.n/tremove.1.dat does not exist.
+K05535.01 KeyError: 'name'
+K05540.01 KeyError: 'name'
+K05547.01 2015-08-06 23:40:59,358: No eclipse registered for index 16221
+K05549.01 KeyError: 'name'
+K05550.01 2015-08-06 23:43:08,822: No eclipse registered for index 7456
+K05555.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05555.01/popset.h5'
+K05557.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05557.01/popset.h5'
+K05558.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05558.01/popset.h5'
+K05559.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05559.01/popset.h5'
+K05560.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05560.01/popset.h5'
+K05561.01 NoWeakSecondaryError: K05561.01
+K05562.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05562.01/popset.h5'
+K05563.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05563.01/popset.h5'
+K05569.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05569.01/popset.h5'
+K05571.01 MissingStellarError: 8766285 not in stellar table?
+K05573.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05573.01/popset.h5'
+K05575.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05575.01/popset.h5'
+K05576.01 NoWeakSecondaryError: K05576.01
+K05580.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05580.01/popset.h5'
+K05584.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05584.01/popset.h5'
+K05588.01 2015-08-06 23:57:46,752: No eclipse registered for index 16401
+K05593.01 2015-08-06 23:56:39,557: No eclipse registered for index 13444
+K05595.01 2015-08-06 23:59:36,837: Fitting trapezoid models for EBs...
+K05596.01 2015-08-06 23:59:43,162: Fitting trapezoid models for BEBs...
+K05599.01 NoWeakSecondaryError: K05599.01
+K05600.01 2015-08-07 00:02:43,545: Done.
 K05606.01 BadRoweFitError: K05606.01 has RoR > 1 (4.9669744434) from JRowe MCMC fit
-K05607.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5607.n/tremove.1.dat does not exist.
-K05609.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5609.n/tremove.1.dat does not exist.
-K05610.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5610.n/tremove.1.dat does not exist.
-K05611.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5611.n/tremove.1.dat does not exist.
-K05614.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5614.n/tremove.1.dat does not exist.
-K05615.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5615.n/tremove.1.dat does not exist.
-K05616.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5616.n/tremove.1.dat does not exist.
-K05617.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5617.n/tremove.1.dat does not exist.
-K05618.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5618.n/tremove.1.dat does not exist.
-K05619.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5619.n/tremove.1.dat does not exist.
-K05620.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5620.n/tremove.1.dat does not exist.
-K05621.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5621.n/tremove.1.dat does not exist.
-K05624.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5624.n/tremove.1.dat does not exist.
-K05627.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5627.n/tremove.1.dat does not exist.
-K05630.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5630.n/tremove.1.dat does not exist.
-K05631.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5631.n/tremove.1.dat does not exist.
-K05634.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5634.n/tremove.1.dat does not exist.
-K05635.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5635.n/tremove.1.dat does not exist.
-K05636.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5636.n/tremove.1.dat does not exist.
-K05637.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5637.n/tremove.1.dat does not exist.
-K05641.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5641.n/tremove.1.dat does not exist.
-K05643.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5643.n/tremove.1.dat does not exist.
-K05644.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5644.n/tremove.1.dat does not exist.
+K05609.01 2015-08-07 00:04:45,759: No eclipse registered for index 18840
+K05614.01 BadRoweFitError: K05614.01 has RoR > 1 (1.1555061226) from JRowe MCMC fit
+K05615.01 BadRoweFitError: K05615.01 has RoR > 1 (1.1239550436) from JRowe MCMC fit
+K05620.01 NoWeakSecondaryError: K05620.01
+K05634.01 NoWeakSecondaryError: K05634.01
+K05635.01 KeyError: 'name'
+K05636.01 2015-08-07 00:14:46,925: No eclipse registered for index 16273
+K05637.01 NoWeakSecondaryError: K05637.01
+K05644.01 NoWeakSecondaryError: K05644.01
 K05645.01 NoWeakSecondaryError: K05645.01
-K05646.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5646.n/tremove.1.dat does not exist.
-K05647.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5647.n/tremove.1.dat does not exist.
-K05648.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5648.n/tremove.1.dat does not exist.
-K05650.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5650.n/tremove.1.dat does not exist.
-K05654.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5654.n/tremove.1.dat does not exist.
-K05655.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5655.n/tremove.1.dat does not exist.
+K05648.01 2015-08-07 00:20:54,927: No eclipse registered for index 7891
+K05654.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05654.01/popset.h5'
+K05655.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05655.01/popset.h5'
 K05656.01 NoWeakSecondaryError: K05656.01
-K05658.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5658.n/tremove.1.dat does not exist.
-K05659.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5659.n/tremove.1.dat does not exist.
-K05661.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5661.n/tremove.1.dat does not exist.
-K05662.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5662.n/tremove.1.dat does not exist.
-K05664.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5664.n/tremove.1.dat does not exist.
-K05667.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5667.n/tremove.1.dat does not exist.
-K05668.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5668.n/tremove.1.dat does not exist.
-K05669.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5669.n/tremove.1.dat does not exist.
-K05670.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5670.n/tremove.1.dat does not exist.
-K05673.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5673.n/tremove.1.dat does not exist.
-K05674.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5674.n/tremove.1.dat does not exist.
-K05675.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5675.n/tremove.1.dat does not exist.
-K05676.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5676.n/tremove.1.dat does not exist.
-K05678.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5678.n/tremove.1.dat does not exist.
-K05679.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5679.n/tremove.1.dat does not exist.
-K05681.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5681.n/tremove.1.dat does not exist.
-K05686.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5686.n/tremove.1.dat does not exist.
-K05687.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5687.n/tremove.1.dat does not exist.
-K05690.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5690.n/tremove.1.dat does not exist.
-K05691.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5691.n/tremove.1.dat does not exist.
-K05693.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5693.n/tremove.1.dat does not exist.
-K05696.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5696.n/tremove.1.dat does not exist.
-K05697.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5697.n/tremove.1.dat does not exist.
-K05698.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5698.n/tremove.1.dat does not exist.
-K05699.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5699.n/tremove.1.dat does not exist.
-K05700.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5700.n/tremove.1.dat does not exist.
-K05701.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5701.n/tremove.1.dat does not exist.
-K05703.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5703.n/tremove.1.dat does not exist.
-K05705.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5705.n/tremove.1.dat does not exist.
-K05709.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5709.n/tremove.1.dat does not exist.
-K05710.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5710.n/tremove.1.dat does not exist.
-K05711.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5711.n/tremove.1.dat does not exist.
-K05714.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5714.n/tremove.1.dat does not exist.
-K05715.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5715.n/tremove.1.dat does not exist.
-K05716.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5716.n/tremove.1.dat does not exist.
-K05718.01 NoWeakSecondaryError: K05718.01
-K05720.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5720.n/tremove.1.dat does not exist.
-K05723.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5723.n/tremove.1.dat does not exist.
-K05724.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5724.n/tremove.1.dat does not exist.
-K05725.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5725.n/tremove.1.dat does not exist.
-K05726.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5726.n/tremove.1.dat does not exist.
-K05728.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5728.n/tremove.1.dat does not exist.
-K05729.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5729.n/tremove.1.dat does not exist.
-K05730.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5730.n/tremove.1.dat does not exist.
-K05731.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5731.n/tremove.1.dat does not exist.
-K05733.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5733.n/tremove.1.dat does not exist.
-K05734.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5734.n/tremove.1.dat does not exist.
-K05735.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5735.n/tremove.1.dat does not exist.
-K05738.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5738.n/tremove.1.dat does not exist.
-K05739.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5739.n/tremove.1.dat does not exist.
-K05741.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5741.n/tremove.1.dat does not exist.
-K05742.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5742.n/tremove.1.dat does not exist.
-K05743.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5743.n/tremove.1.dat does not exist.
-K05746.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5746.n/tremove.1.dat does not exist.
-K05750.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5750.n/tremove.1.dat does not exist.
-K05751.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5751.n/tremove.1.dat does not exist.
+K05658.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05658.01/popset.h5'
+K05659.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05659.01/popset.h5'
+K05661.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05661.01/popset.h5'
+K05662.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05662.01/popset.h5'
+K05664.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05664.01/popset.h5'
+K05667.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05667.01/popset.h5'
+K05668.01 NoWeakSecondaryError: K05668.01
+K05669.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05669.01/popset.h5'
+K05670.01 NoWeakSecondaryError: K05670.01
+K05673.01 NoWeakSecondaryError: K05673.01
+K05674.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05674.01/popset.h5'
+K05675.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05675.01/popset.h5'
+K05676.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05676.01/popset.h5'
+K05678.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05678.01/popset.h5'
+K05679.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05679.01/popset.h5'
+K05687.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05687.01/popset.h5'
+K05697.01 NoWeakSecondaryError: K05697.01
+K05699.01 2015-08-06 23:19:48,689: No eclipse registered for index 16830
+K05700.01 AllWithinRocheError: All simulated systems within Roche lobe
+K05703.01 MissingStellarError: 9662475 not in stellar table?
+K05709.01 NoWeakSecondaryError: K05709.01
+K05711.01 MissingStellarError: 9775475 not in stellar table?
+K05716.01 2015-08-06 23:24:56,377: Fitting trapezoid models for BEBs...
+K05718.01 MissingStellarError: 9838582 not in stellar table?
+K05725.01 2015-08-06 23:13:52,347: Fitting trapezoid models for EBs...
+K05726.01 2015-08-06 23:17:18,591: No eclipse registered for index 3713
+K05728.01 MissingStellarError: 9896438 not in stellar table?
+K05729.01 2015-08-06 23:31:54,979: No eclipse registered for index 2698
+K05731.01 KeyError: 'name'
+K05734.01 NoWeakSecondaryError: K05734.01
+K05735.01 KeyError: 'name'
+K05738.01 2015-08-06 23:34:58,786: No eclipse registered for index 13807
+K05739.01 2015-08-06 23:35:52,733: No eclipse registered for index 17637
+K05743.01 2015-08-06 23:39:37,146: No eclipse registered for index 9422
+K05746.01 KeyError: 'name'
+K05750.01 KeyError: 'name'
+K05751.01 NoWeakSecondaryError: K05751.01
 K05752.01 AllWithinRocheError: All simulated systems within Roche lobe
-K05753.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5753.n/tremove.1.dat does not exist.
-K05754.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5754.n/tremove.1.dat does not exist.
-K05755.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5755.n/tremove.1.dat does not exist.
-K05756.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5756.n/tremove.1.dat does not exist.
-K05757.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5757.n/tremove.1.dat does not exist.
-K05759.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5759.n/tremove.1.dat does not exist.
-K05760.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5760.n/tremove.1.dat does not exist.
-K05763.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5763.n/tremove.1.dat does not exist.
-K05764.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5764.n/tremove.1.dat does not exist.
-K05765.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5765.n/tremove.1.dat does not exist.
-K05766.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5766.n/tremove.1.dat does not exist.
-K05767.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5767.n/tremove.1.dat does not exist.
-K05768.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5768.n/tremove.1.dat does not exist.
-K05770.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5770.n/tremove.1.dat does not exist.
-K05771.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5771.n/tremove.1.dat does not exist.
-K05773.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5773.n/tremove.1.dat does not exist.
-K05775.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5775.n/tremove.1.dat does not exist.
-K05777.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5777.n/tremove.1.dat does not exist.
-K05778.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5778.n/tremove.1.dat does not exist.
-K05779.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5779.n/tremove.1.dat does not exist.
-K05780.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5780.n/tremove.1.dat does not exist.
-K05781.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5781.n/tremove.1.dat does not exist.
-K05783.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5783.n/tremove.1.dat does not exist.
-K05784.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5784.n/tremove.1.dat does not exist.
+K05753.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05753.01/popset.h5'
+K05754.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05754.01/popset.h5'
+K05755.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05755.01/popset.h5'
+K05756.01 NoWeakSecondaryError: K05756.01
+K05757.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05757.01/popset.h5'
+K05759.01 NoWeakSecondaryError: K05759.01
+K05760.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05760.01/popset.h5'
+K05763.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05763.01/popset.h5'
+K05764.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05764.01/popset.h5'
+K05765.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05765.01/popset.h5'
+K05766.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05766.01/popset.h5'
+K05767.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05767.01/popset.h5'
+K05768.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05768.01/popset.h5'
+K05770.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05770.01/popset.h5'
+K05771.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05771.01/popset.h5'
+K05773.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05773.01/popset.h5'
+K05775.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05775.01/popset.h5'
+K05777.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05777.01/popset.h5'
+K05778.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05778.01/popset.h5'
+K05779.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05779.01/popset.h5'
+K05780.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05780.01/popset.h5'
+K05781.01 NoWeakSecondaryError: K05781.01
+K05783.01 NoWeakSecondaryError: K05783.01
+K05784.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05784.01/popset.h5'
 K05785.01 NoWeakSecondaryError: K05785.01
-K05786.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5786.n/tremove.1.dat does not exist.
-K05789.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5789.n/tremove.1.dat does not exist.
-K05791.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5791.n/tremove.1.dat does not exist.
+K05789.01 2015-08-06 23:59:14,486: No eclipse registered for index 5820
+K05791.01 2015-08-06 23:59:40,139: No eclipse registered for index 5518
 K05792.01 AllWithinRocheError: All simulated systems within Roche lobe
-K05793.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5793.n/tremove.1.dat does not exist.
-K05794.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5794.n/tremove.1.dat does not exist.
+K05793.01 KeyError: 'name'
 K05795.01 NoWeakSecondaryError: K05795.01
-K05803.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5803.n/tremove.1.dat does not exist.
-K05804.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5804.n/tremove.1.dat does not exist.
+K05803.01 NoWeakSecondaryError: K05803.01
+K05804.01 BadRoweFitError: K05804.01 has RoR > 1 (1.7779233594) from JRowe MCMC fit
 K05807.01 NoWeakSecondaryError: K05807.01
-K05808.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5808.n/tremove.1.dat does not exist.
-K05809.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5809.n/tremove.1.dat does not exist.
-K05811.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5811.n/tremove.1.dat does not exist.
-K05813.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5813.n/tremove.1.dat does not exist.
-K05814.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5814.n/tremove.1.dat does not exist.
-K05818.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5818.n/tremove.1.dat does not exist.
-K05820.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5820.n/tremove.1.dat does not exist.
-K05821.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5821.n/tremove.1.dat does not exist.
-K05823.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5823.n/tremove.1.dat does not exist.
-K05824.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5824.n/tremove.1.dat does not exist.
-K05828.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5828.n/tremove.1.dat does not exist.
-K05832.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5832.n/tremove.1.dat does not exist.
-K05836.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5836.n/tremove.1.dat does not exist.
-K05837.01 NoWeakSecondaryError: K05837.01
-K05838.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5838.n/tremove.1.dat does not exist.
-K05841.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5841.n/tremove.1.dat does not exist.
-K05843.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5843.n/tremove.1.dat does not exist.
-K05844.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5844.n/tremove.1.dat does not exist.
-K05845.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5845.n/tremove.1.dat does not exist.
-K05846.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5846.n/tremove.1.dat does not exist.
-K05847.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5847.n/tremove.1.dat does not exist.
-K05848.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5848.n/tremove.1.dat does not exist.
-K05851.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5851.n/tremove.1.dat does not exist.
-K05853.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5853.n/tremove.1.dat does not exist.
-K05857.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5857.n/tremove.1.dat does not exist.
-K05858.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5858.n/tremove.1.dat does not exist.
-K05859.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5859.n/tremove.1.dat does not exist.
-K05860.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5860.n/tremove.1.dat does not exist.
-K05862.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5862.n/tremove.1.dat does not exist.
-K05864.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5864.n/tremove.1.dat does not exist.
-K05865.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5865.n/tremove.1.dat does not exist.
-K05866.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5866.n/tremove.1.dat does not exist.
-K05867.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5867.n/tremove.1.dat does not exist.
-K05870.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5870.n/tremove.1.dat does not exist.
-K05871.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5871.n/tremove.1.dat does not exist.
-K05872.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5872.n/tremove.1.dat does not exist.
-K05873.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5873.n/tremove.1.dat does not exist.
-K05876.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5876.n/tremove.1.dat does not exist.
-K05878.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5878.n/tremove.1.dat does not exist.
-K05879.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5879.n/tremove.1.dat does not exist.
-K05880.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5880.n/tremove.1.dat does not exist.
-K05881.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5881.n/tremove.1.dat does not exist.
-K05882.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5882.n/tremove.1.dat does not exist.
-K05883.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5883.n/tremove.1.dat does not exist.
-K05886.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5886.n/tremove.1.dat does not exist.
-K05887.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5887.n/tremove.1.dat does not exist.
-K05890.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5890.n/tremove.1.dat does not exist.
-K05891.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5891.n/tremove.1.dat does not exist.
-K05893.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5893.n/tremove.1.dat does not exist.
-K05894.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5894.n/tremove.1.dat does not exist.
-K05896.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5896.n/tremove.1.dat does not exist.
-K05897.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5897.n/tremove.1.dat does not exist.
-K05898.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5898.n/tremove.1.dat does not exist.
-K05900.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5900.n/tremove.1.dat does not exist.
-K05903.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5903.n/tremove.1.dat does not exist.
-K05905.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5905.n/tremove.1.dat does not exist.
-K05906.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5906.n/tremove.1.dat does not exist.
-K05907.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5907.n/tremove.1.dat does not exist.
-K05908.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5908.n/tremove.1.dat does not exist.
-K05910.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5910.n/tremove.1.dat does not exist.
-K05912.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5912.n/tremove.1.dat does not exist.
-K05914.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5914.n/tremove.1.dat does not exist.
-K05915.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5915.n/tremove.1.dat does not exist.
-K05916.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5916.n/tremove.1.dat does not exist.
-K05917.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5917.n/tremove.1.dat does not exist.
-K05921.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5921.n/tremove.1.dat does not exist.
-K05922.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5922.n/tremove.1.dat does not exist.
-K05923.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5923.n/tremove.1.dat does not exist.
-K05926.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5926.n/tremove.1.dat does not exist.
-K05928.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5928.n/tremove.1.dat does not exist.
-K05930.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5930.n/tremove.1.dat does not exist.
-K05931.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5931.n/tremove.1.dat does not exist.
-K05933.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5933.n/tremove.1.dat does not exist.
-K05934.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5934.n/tremove.1.dat does not exist.
+K05808.01 NoWeakSecondaryError: K05808.01
+K05809.01 NoWeakSecondaryError: K05809.01
+K05811.01 NoWeakSecondaryError: K05811.01
+K05813.01 NoWeakSecondaryError: K05813.01
+K05820.01 NoWeakSecondaryError: K05820.01
+K05821.01 NoWeakSecondaryError: K05821.01
+K05824.01 NoWeakSecondaryError: K05824.01
+K05836.01 NoWeakSecondaryError: K05836.01
+K05837.01 MCMCError: TransitSignal trapezoid fit not converged (K05837.01).
+K05843.01 NoWeakSecondaryError: K05843.01
+K05847.01 KeyError: 'name'
+K05848.01 2015-08-07 00:10:39,253: Fitting trapezoid models for EBs...
+K05851.01 2015-08-07 00:22:40,644: Fitting trapezoid models for BEBs...
+K05853.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05853.01/popset.h5'
+K05857.01 NoWeakSecondaryError: K05857.01
+K05858.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05858.01/popset.h5'
+K05859.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05859.01/popset.h5'
+K05860.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05860.01/popset.h5'
+K05862.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05862.01/popset.h5'
+K05864.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05864.01/popset.h5'
+K05865.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05865.01/popset.h5'
+K05866.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05866.01/popset.h5'
+K05867.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05867.01/popset.h5'
+K05870.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05870.01/popset.h5'
+K05871.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05871.01/popset.h5'
+K05872.01 NoWeakSecondaryError: K05872.01
+K05873.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05873.01/popset.h5'
+K05876.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05876.01/popset.h5'
+K05878.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05878.01/popset.h5'
+K05880.01 NoWeakSecondaryError: K05880.01
+K05881.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05881.01/popset.h5'
+K05882.01 NoWeakSecondaryError: K05882.01
+K05886.01 KeyError: 'name'
+K05891.01 2015-08-06 23:15:22,426: No eclipse registered for index 814
+K05897.01 KeyError: 'name'
+K05900.01 KeyError: 'name'
+K05905.01 NoWeakSecondaryError: K05905.01
+K05907.01 2015-08-06 23:24:11,119: No eclipse registered for index 18474
+K05912.01 2015-08-06 23:21:26,858: No eclipse registered for index 15716
+K05916.01 NoWeakSecondaryError: K05916.01
+K05922.01 KeyError: 'name'
+K05923.01 KeyError: 'name'
+K05926.01 KeyError: 'name'
+K05928.01 KeyError: 'name'
+K05931.01 NoWeakSecondaryError: K05931.01
+K05933.01 2015-08-06 23:29:13,382: Fitting trapezoid models for HEBs...
 K05935.01 NoWeakSecondaryError: K05935.01
 K05936.01 NoWeakSecondaryError: K05936.01
-K05937.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5937.n/tremove.1.dat does not exist.
-K05940.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5940.n/tremove.1.dat does not exist.
-K05942.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5942.n/tremove.1.dat does not exist.
-K05945.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5945.n/tremove.1.dat does not exist.
-K05946.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5946.n/tremove.1.dat does not exist.
-K05947.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5947.n/tremove.1.dat does not exist.
-K05951.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5951.n/tremove.1.dat does not exist.
-K05955.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5955.n/tremove.1.dat does not exist.
-K05956.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5956.n/tremove.1.dat does not exist.
-K05957.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5957.n/tremove.1.dat does not exist.
-K05958.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5958.n/tremove.1.dat does not exist.
-K05962.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5962.n/tremove.1.dat does not exist.
-K05963.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5963.n/tremove.1.dat does not exist.
+K05937.01 KeyError: 'name'
+K05940.01 KeyError: 'name'
+K05946.01 NoWeakSecondaryError: K05946.01
+K05947.01 KeyError: 'name'
+K05951.01 NoWeakSecondaryError: K05951.01
+K05955.01 NoWeakSecondaryError: K05955.01
+K05956.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05956.01/popset.h5'
+K05957.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05957.01/popset.h5'
+K05958.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05958.01/popset.h5'
+K05962.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05962.01/popset.h5'
+K05963.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05963.01/popset.h5'
 K05966.01 NoWeakSecondaryError: K05966.01
-K05967.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5967.n/tremove.1.dat does not exist.
-K05969.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5969.n/tremove.1.dat does not exist.
-K05970.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5970.n/tremove.1.dat does not exist.
-K05972.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5972.n/tremove.1.dat does not exist.
-K05973.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5973.n/tremove.1.dat does not exist.
-K05975.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5975.n/tremove.1.dat does not exist.
-K05977.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5977.n/tremove.1.dat does not exist.
-K05978.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5978.n/tremove.1.dat does not exist.
-K05979.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5979.n/tremove.1.dat does not exist.
-K05980.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5980.n/tremove.1.dat does not exist.
-K05981.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5981.n/tremove.1.dat does not exist.
-K05982.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5982.n/tremove.1.dat does not exist.
-K05983.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5983.n/tremove.1.dat does not exist.
-K05984.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5984.n/tremove.1.dat does not exist.
-K05985.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5985.n/tremove.1.dat does not exist.
-K05986.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5986.n/tremove.1.dat does not exist.
-K05987.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5987.n/tremove.1.dat does not exist.
-K05988.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5988.n/tremove.1.dat does not exist.
-K05989.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5989.n/tremove.1.dat does not exist.
-K05990.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5990.n/tremove.1.dat does not exist.
-K05991.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5991.n/tremove.1.dat does not exist.
-K05992.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5992.n/tremove.1.dat does not exist.
-K05993.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5993.n/tremove.1.dat does not exist.
-K05994.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5994.n/tremove.1.dat does not exist.
-K05995.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5995.n/tremove.1.dat does not exist.
-K05996.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5996.n/tremove.1.dat does not exist.
-K05997.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5997.n/tremove.1.dat does not exist.
-K05998.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5998.n/tremove.1.dat does not exist.
-K05999.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi5999.n/tremove.1.dat does not exist.
-K06000.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6000.n/tremove.1.dat does not exist.
-K06001.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6001.n/tremove.1.dat does not exist.
-K06002.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6002.n/tremove.1.dat does not exist.
-K06003.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6003.n/tremove.1.dat does not exist.
-K06004.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6004.n/tremove.1.dat does not exist.
-K06005.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6005.n/tremove.1.dat does not exist.
-K06006.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6006.n/tremove.1.dat does not exist.
-K06007.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6007.n/tremove.1.dat does not exist.
-K06008.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6008.n/tremove.1.dat does not exist.
-K06009.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6009.n/tremove.1.dat does not exist.
-K06010.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6010.n/tremove.1.dat does not exist.
-K06011.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6011.n/tremove.1.dat does not exist.
-K06012.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6012.n/tremove.1.dat does not exist.
-K06013.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6013.n/tremove.1.dat does not exist.
-K06014.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6014.n/tremove.1.dat does not exist.
-K06015.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6015.n/tremove.1.dat does not exist.
-K06016.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6016.n/tremove.1.dat does not exist.
-K06017.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6017.n/tremove.1.dat does not exist.
-K06018.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6018.n/tremove.1.dat does not exist.
-K06019.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6019.n/tremove.1.dat does not exist.
-K06020.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6020.n/tremove.1.dat does not exist.
-K06021.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6021.n/tremove.1.dat does not exist.
-K06022.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6022.n/tremove.1.dat does not exist.
-K06023.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6023.n/tremove.1.dat does not exist.
-K06024.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6024.n/tremove.1.dat does not exist.
-K06025.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6025.n/tremove.1.dat does not exist.
-K06026.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6026.n/tremove.1.dat does not exist.
-K06027.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6027.n/tremove.1.dat does not exist.
-K06029.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6029.n/tremove.1.dat does not exist.
-K06030.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6030.n/tremove.1.dat does not exist.
-K06031.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6031.n/tremove.1.dat does not exist.
-K06032.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6032.n/tremove.1.dat does not exist.
-K06033.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6033.n/tremove.1.dat does not exist.
-K06034.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6034.n/tremove.1.dat does not exist.
-K06035.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6035.n/tremove.1.dat does not exist.
-K06036.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6036.n/tremove.1.dat does not exist.
-K06037.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6037.n/tremove.1.dat does not exist.
-K06038.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6038.n/tremove.1.dat does not exist.
-K06039.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6039.n/tremove.1.dat does not exist.
-K06040.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6040.n/tremove.1.dat does not exist.
-K06041.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6041.n/tremove.1.dat does not exist.
-K06042.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6042.n/tremove.1.dat does not exist.
-K06043.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6043.n/tremove.1.dat does not exist.
-K06044.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6044.n/tremove.1.dat does not exist.
-K06045.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6045.n/tremove.1.dat does not exist.
-K06046.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6046.n/tremove.1.dat does not exist.
-K06048.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6048.n/tremove.1.dat does not exist.
-K06049.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6049.n/tremove.1.dat does not exist.
-K06050.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6050.n/tremove.1.dat does not exist.
-K06051.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6051.n/tremove.1.dat does not exist.
-K06052.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6052.n/tremove.1.dat does not exist.
-K06053.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6053.n/tremove.1.dat does not exist.
-K06054.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6054.n/tremove.1.dat does not exist.
-K06055.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6055.n/tremove.1.dat does not exist.
-K06056.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6056.n/tremove.1.dat does not exist.
-K06057.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6057.n/tremove.1.dat does not exist.
-K06058.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6058.n/tremove.1.dat does not exist.
-K06059.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6059.n/tremove.1.dat does not exist.
-K06060.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6060.n/tremove.1.dat does not exist.
-K06061.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6061.n/tremove.1.dat does not exist.
-K06062.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6062.n/tremove.1.dat does not exist.
-K06063.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6063.n/tremove.1.dat does not exist.
-K06064.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6064.n/tremove.1.dat does not exist.
-K06065.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6065.n/tremove.1.dat does not exist.
-K06067.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6067.n/tremove.1.dat does not exist.
-K06068.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6068.n/tremove.1.dat does not exist.
-K06069.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6069.n/tremove.1.dat does not exist.
-K06070.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6070.n/tremove.1.dat does not exist.
-K06071.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6071.n/tremove.1.dat does not exist.
-K06072.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6072.n/tremove.1.dat does not exist.
-K06073.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6073.n/tremove.1.dat does not exist.
-K06074.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6074.n/tremove.1.dat does not exist.
-K06075.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6075.n/tremove.1.dat does not exist.
-K06076.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6076.n/tremove.1.dat does not exist.
-K06077.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6077.n/tremove.1.dat does not exist.
-K06078.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6078.n/tremove.1.dat does not exist.
-K06080.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6080.n/tremove.1.dat does not exist.
-K06081.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6081.n/tremove.1.dat does not exist.
-K06082.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6082.n/tremove.1.dat does not exist.
-K06083.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6083.n/tremove.1.dat does not exist.
-K06084.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6084.n/tremove.1.dat does not exist.
-K06085.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6085.n/tremove.1.dat does not exist.
-K06086.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6086.n/tremove.1.dat does not exist.
-K06087.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6087.n/tremove.1.dat does not exist.
-K06088.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6088.n/tremove.1.dat does not exist.
-K06089.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6089.n/tremove.1.dat does not exist.
-K06090.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6090.n/tremove.1.dat does not exist.
-K06091.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6091.n/tremove.1.dat does not exist.
-K06092.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6092.n/tremove.1.dat does not exist.
-K06094.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6094.n/tremove.1.dat does not exist.
-K06095.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6095.n/tremove.1.dat does not exist.
-K06096.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6096.n/tremove.1.dat does not exist.
-K06097.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6097.n/tremove.1.dat does not exist.
-K06097.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6097.n/tremove.2.dat does not exist.
-K06097.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6097.n/tremove.3.dat does not exist.
-K06097.04 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6097.n/tremove.4.dat does not exist.
-K06098.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6098.n/tremove.1.dat does not exist.
-K06099.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6099.n/tremove.1.dat does not exist.
-K06099.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6099.n/tremove.2.dat does not exist.
-K06100.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6100.n/tremove.1.dat does not exist.
-K06100.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6100.n/tremove.2.dat does not exist.
-K06104.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6104.n/tremove.1.dat does not exist.
-K06104.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6104.n/tremove.2.dat does not exist.
-K06105.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6105.n/tremove.1.dat does not exist.
-K06106.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6106.n/tremove.1.dat does not exist.
-K06107.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6107.n/tremove.1.dat does not exist.
-K06109.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6109.n/tremove.1.dat does not exist.
-K06109.02 BadRoweFitError: best-fit impact parameter (940.19) inconsistent with best-fit radius ratio (0.49894472251).
-K06110.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6110.n/tremove.1.dat does not exist.
-K06112.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6112.n/tremove.1.dat does not exist.
-K06113.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6113.n/tremove.1.dat does not exist.
+K05967.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05967.01/popset.h5'
+K05969.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05969.01/popset.h5'
+K05970.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05970.01/popset.h5'
+K05972.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05972.01/popset.h5'
+K05973.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05973.01/popset.h5'
+K05975.01 NoWeakSecondaryError: K05975.01
+K05977.01 NoWeakSecondaryError: K05977.01
+K05979.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05979.01/popset.h5'
+K05981.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05981.01/popset.h5'
+K05984.01 BadRoweFitError: K05984.01 has RoR > 1 (21.269429902) from JRowe MCMC fit
+K05985.01 KeyError: 'name'
+K05986.01 KeyError: 'name'
+K05988.01 KeyError: 'name'
+K05990.01 KeyError: 'name'
+K05992.01 KeyError: 'name'
+K05993.01 KeyError: 'name'
+K05995.01 2015-08-07 00:01:06,552: Loading TRILEGAL simulation from /tigress/tmorton/kepler/fpp/starfields/kepler_starfield_23.0.h5
+K05996.01 KeyError: 'name'
+K05997.01 KeyError: 'name'
+K06002.01 2015-08-07 00:04:47,787: No eclipse registered for index 17812
+K06006.01 KeyError: 'name'
+K06007.01 KeyError: 'name'
+K06010.01 2015-08-07 00:07:34,994: No eclipse registered for index 7965
+K06014.01 2015-08-07 00:09:15,834: No eclipse registered for index 7522
+K06015.01 2015-08-07 00:07:32,871: Fitting trapezoid models for BEBs...
+K06016.01 2015-08-07 00:09:17,452: Fitting trapezoid models for BEBs...
+K06021.01 2015-08-07 00:10:46,649: No eclipse registered for index 5645
+K06029.01 2015-08-07 00:12:20,112: No eclipse registered for index 3403
+K06032.01 KeyError: 'name'
+K06033.01 KeyError: 'name'
+K06034.01 2015-08-07 00:15:47,573: No eclipse registered for index 3070
+K06037.01 2015-08-07 00:16:21,643: No eclipse registered for index 6109
+K06038.01 2015-08-07 00:17:12,754: Fitting trapezoid models for HEBs...
+K06041.01 KeyError: 'name'
+K06042.01 BadRoweFitError: K06042.01 has RoR > 1 (2.9133829786) from JRowe MCMC fit
+K06045.01 KeyError: 'name'
+K06046.01 KeyError: 'name'
+K06048.01 KeyError: 'name'
+K06049.01 KeyError: 'name'
+K06050.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06050.01/popset.h5'
+K06051.01 BadRoweFitError: K06051.01 has RoR > 1 (1.2740323203) from JRowe MCMC fit
+K06052.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06052.01/popset.h5'
+K06053.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06053.01/popset.h5'
+K06054.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06054.01/popset.h5'
+K06055.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06055.01/popset.h5'
+K06056.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06056.01/popset.h5'
+K06057.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06057.01/popset.h5'
+K06058.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06058.01/popset.h5'
+K06059.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06059.01/popset.h5'
+K06060.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06060.01/popset.h5'
+K06061.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06061.01/popset.h5'
+K06062.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06062.01/popset.h5'
+K06063.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06063.01/popset.h5'
+K06064.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06064.01/popset.h5'
+K06065.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06065.01/popset.h5'
+K06067.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06067.01/popset.h5'
+K06068.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06068.01/popset.h5'
+K06069.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06069.01/popset.h5'
+K06070.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06070.01/popset.h5'
+K06071.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06071.01/popset.h5'
+K06072.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06072.01/popset.h5'
+K06073.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06073.01/popset.h5'
+K06075.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06075.01/popset.h5'
+K06077.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06077.01/popset.h5'
+K06082.01 AllWithinRocheError: All simulated systems within Roche lobe
+K06083.01 KeyError: 'name'
+K06084.01 BadRoweFitError: K06084.01 has RoR > 1 (1.2833797334) from JRowe MCMC fit
+K06088.01 KeyError: 'name'
+K06089.01 2015-08-06 23:17:59,876: No eclipse registered for index 18701
+K06094.01 BadRoweFitError: K06094.01 has RoR > 1 (1.2201789567) from JRowe MCMC fit
+K06095.01 MissingStellarError: 2707097 not in stellar table?
+K06096.01 KeyError: 'name'
+K06097.01 NoWeakSecondaryError: K06097.01
+K06099.01 KeyError: 'name'
+K06099.02 NoWeakSecondaryError: K06099.02
+K06100.01 KeyError: 'name'
+K06104.01 KeyError: 'name'
+K06104.02 2015-08-06 23:26:02,862: No eclipse registered for index 4877
+K06105.01 2015-08-06 23:21:50,730: No eclipse registered for index 2189
+K06106.01 NoWeakSecondaryError: K06106.01
+K06109.02 2015-08-06 23:25:33,455: Fitting trapezoid models for HEBs...
+K06112.01 KeyError: 'name'
 K06115.01 MCMCError: TransitSignal trapezoid fit not converged (K06115.01).
-K06116.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6116.n/tremove.1.dat does not exist.
-K06118.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6118.n/tremove.1.dat does not exist.
-K06119.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6119.n/tremove.1.dat does not exist.
-K06122.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6122.n/tremove.1.dat does not exist.
-K06123.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6123.n/tremove.1.dat does not exist.
-K06125.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6125.n/tremove.1.dat does not exist.
-K06126.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6126.n/tremove.1.dat does not exist.
-K06127.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6127.n/tremove.1.dat does not exist.
-K06128.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6128.n/tremove.1.dat does not exist.
-K06129.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6129.n/tremove.1.dat does not exist.
+K06119.01 KeyError: 'name'
+K06122.01 KeyError: 'name'
+K06123.01 KeyError: 'name'
+K06126.01 2015-08-06 23:35:04,488: No eclipse registered for index 4351
+K06127.01 NoWeakSecondaryError: K06127.01
+K06129.01 2015-08-06 23:39:50,012: Loading TRILEGAL simulation from /tigress/tmorton/kepler/fpp/starfields/kepler_starfield_22.0.h5
 K06130.01 BadRoweFitError: best-fit impact parameter (8.55) inconsistent with best-fit radius ratio (0.00090570037586).
-K06131.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6131.n/tremove.1.dat does not exist.
-K06131.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6131.n/tremove.2.dat does not exist.
-K06132.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6132.n/tremove.3.dat does not exist.
-K06133.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6133.n/tremove.1.dat does not exist.
-K06134.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6134.n/tremove.1.dat does not exist.
-K06135.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6135.n/tremove.1.dat does not exist.
-K06136.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6136.n/tremove.1.dat does not exist.
-K06138.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6138.n/tremove.1.dat does not exist.
-K06139.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6139.n/tremove.1.dat does not exist.
-K06141.01 NoWeakSecondaryError: K06141.01
-K06142.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6142.n/tremove.1.dat does not exist.
-K06142.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6142.n/tremove.2.dat does not exist.
-K06142.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6142.n/tremove.3.dat does not exist.
-K06143.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6143.n/tremove.1.dat does not exist.
-K06144.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6144.n/tremove.1.dat does not exist.
-K06146.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6146.n/tremove.1.dat does not exist.
-K06147.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6147.n/tremove.1.dat does not exist.
-K06148.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6148.n/tremove.1.dat does not exist.
-K06149.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6149.n/tremove.1.dat does not exist.
+K06131.01 KeyError: 'name'
+K06132.03 2015-08-06 23:43:01,193: No eclipse registered for index 13850
+K06134.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06134.01/popset.h5'
+K06135.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06135.01/popset.h5'
+K06136.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06136.01/popset.h5'
+K06138.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06138.01/popset.h5'
+K06139.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06139.01/popset.h5'
+K06142.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06142.01/popset.h5'
+K06142.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06142.02/popset.h5'
+K06142.03 NoWeakSecondaryError: K06142.03
+K06143.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06143.01/popset.h5'
+K06144.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06144.01/popset.h5'
+K06146.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06146.01/popset.h5'
+K06147.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06147.01/popset.h5'
+K06148.01 NoWeakSecondaryError: K06148.01
+K06149.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06149.01/popset.h5'
 K06150.01 NoWeakSecondaryError: K06150.01
-K06152.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6152.n/tremove.1.dat does not exist.
-K06153.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6153.n/tremove.1.dat does not exist.
-K06154.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6154.n/tremove.1.dat does not exist.
-K06155.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6155.n/tremove.1.dat does not exist.
-K06156.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6156.n/tremove.1.dat does not exist.
-K06157.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6157.n/tremove.1.dat does not exist.
-K06158.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6158.n/tremove.1.dat does not exist.
-K06158.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6158.n/tremove.2.dat does not exist.
-K06159.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6159.n/tremove.1.dat does not exist.
-K06160.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6160.n/tremove.1.dat does not exist.
-K06161.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6161.n/tremove.1.dat does not exist.
-K06162.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6162.n/tremove.1.dat does not exist.
-K06163.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6163.n/tremove.1.dat does not exist.
-K06164.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6164.n/tremove.2.dat does not exist.
-K06165.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6165.n/tremove.1.dat does not exist.
-K06167.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6167.n/tremove.1.dat does not exist.
-K06168.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6168.n/tremove.1.dat does not exist.
-K06168.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6168.n/tremove.2.dat does not exist.
-K06168.03 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6168.n/tremove.3.dat does not exist.
-K06169.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6169.n/tremove.1.dat does not exist.
-K06170.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6170.n/tremove.1.dat does not exist.
-K06171.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6171.n/tremove.1.dat does not exist.
-K06173.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6173.n/tremove.1.dat does not exist.
-K06174.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6174.n/tremove.1.dat does not exist.
-K06176.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6176.n/tremove.2.dat does not exist.
-K06177.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6177.n/tremove.1.dat does not exist.
+K06152.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06152.01/popset.h5'
+K06153.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06153.01/popset.h5'
+K06157.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06157.01/popset.h5'
+K06158.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06158.02/popset.h5'
+K06162.01 KeyError: 'name'
+K06163.01 KeyError: 'name'
+K06164.02 NoWeakSecondaryError: K06164.02
+K06167.01 KeyError: 'name'
+K06168.02 KeyError: 'name'
+K06168.03 KeyError: 'name'
+K06169.01 KeyError: 'name'
+K06174.01 KeyError: 'name'
+K06176.02 NoWeakSecondaryError: K06176.02
+K06177.01 KeyError: 'name'
 K06180.01 NoWeakSecondaryError: K06180.01
-K06180.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6180.n/tremove.2.dat does not exist.
-K06181.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6181.n/tremove.1.dat does not exist.
-K06183.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6183.n/tremove.1.dat does not exist.
-K06184.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6184.n/tremove.1.dat does not exist.
-K06185.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6185.n/tremove.1.dat does not exist.
-K06187.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6187.n/tremove.1.dat does not exist.
+K06183.01 KeyError: 'name'
+K06184.01 KeyError: 'name'
+K06185.01 2015-08-07 00:08:51,657: No eclipse registered for index 13347
 K06188.01 BadRoweFitError: K06188.01 has a/Rstar < 1 (0.963379093636) from JRowe MCMC fit
-K06189.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6189.n/tremove.1.dat does not exist.
-K06190.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6190.n/tremove.1.dat does not exist.
-K06192.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6192.n/tremove.1.dat does not exist.
-K06193.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6193.n/tremove.1.dat does not exist.
-K06194.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6194.n/tremove.2.dat does not exist.
-K06196.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6196.n/tremove.1.dat does not exist.
-K06197.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6197.n/tremove.1.dat does not exist.
-K06198.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6198.n/tremove.1.dat does not exist.
-K06199.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6199.n/tremove.1.dat does not exist.
-K06200.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6200.n/tremove.1.dat does not exist.
-K06201.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6201.n/tremove.1.dat does not exist.
+K06189.01 KeyError: 'name'
+K06198.01 KeyError: 'name'
+K06199.01 KeyError: 'name'
+K06200.01 KeyError: 'name'
 K06202.01 NoWeakSecondaryError: K06202.01
-K06203.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6203.n/tremove.1.dat does not exist.
-K06204.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6204.n/tremove.1.dat does not exist.
-K06205.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6205.n/tremove.1.dat does not exist.
-K06206.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6206.n/tremove.1.dat does not exist.
-K06207.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6207.n/tremove.1.dat does not exist.
-K06208.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6208.n/tremove.1.dat does not exist.
+K06203.01 KeyError: 'name'
+K06204.01 KeyError: 'name'
+K06205.01 2015-08-07 00:17:52,127: No eclipse registered for index 7010
+K06206.01 2015-08-07 00:16:23,094: No eclipse registered for index 8952
+K06207.01 KeyError: 'name'
 K06210.01 NoWeakSecondaryError: K06210.01
-K06211.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6211.n/tremove.1.dat does not exist.
-K06212.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6212.n/tremove.1.dat does not exist.
-K06213.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6213.n/tremove.1.dat does not exist.
-K06214.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6214.n/tremove.1.dat does not exist.
-K06214.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6214.n/tremove.2.dat does not exist.
-K06215.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6215.n/tremove.1.dat does not exist.
-K06216.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6216.n/tremove.1.dat does not exist.
+K06211.01 KeyError: 'name'
+K06213.01 KeyError: 'name'
+K06214.01 KeyError: 'name'
+K06214.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06214.02/popset.h5'
+K06215.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06215.01/popset.h5'
+K06216.01 NoWeakSecondaryError: K06216.01
 K06216.02 NoWeakSecondaryError: K06216.02
-K06218.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6218.n/tremove.1.dat does not exist.
-K06219.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6219.n/tremove.1.dat does not exist.
-K06220.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6220.n/tremove.1.dat does not exist.
-K06221.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6221.n/tremove.1.dat does not exist.
-K06222.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6222.n/tremove.1.dat does not exist.
-K06223.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6223.n/tremove.1.dat does not exist.
-K06224.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6224.n/tremove.2.dat does not exist.
-K06225.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6225.n/tremove.1.dat does not exist.
-K06226.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6226.n/tremove.1.dat does not exist.
-K06227.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6227.n/tremove.1.dat does not exist.
-K06229.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6229.n/tremove.1.dat does not exist.
-K06230.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6230.n/tremove.1.dat does not exist.
-K06231.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6231.n/tremove.1.dat does not exist.
-K06232.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6232.n/tremove.1.dat does not exist.
-K06233.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6233.n/tremove.1.dat does not exist.
-K06234.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6234.n/tremove.1.dat does not exist.
-K06236.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6236.n/tremove.1.dat does not exist.
-K06236.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6236.n/tremove.2.dat does not exist.
-K06237.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6237.n/tremove.1.dat does not exist.
-K06237.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6237.n/tremove.2.dat does not exist.
+K06218.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06218.01/popset.h5'
+K06219.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06219.01/popset.h5'
+K06220.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06220.01/popset.h5'
+K06221.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06221.01/popset.h5'
+K06222.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06222.01/popset.h5'
+K06223.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06223.01/popset.h5'
+K06224.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06224.02/popset.h5'
+K06225.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06225.01/popset.h5'
+K06226.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06226.01/popset.h5'
+K06227.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06227.01/popset.h5'
+K06229.01 BadRoweFitError: K06229.01 has RoR > 1 (2.9531717587) from JRowe MCMC fit
+K06230.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06230.01/popset.h5'
+K06231.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06231.01/popset.h5'
+K06232.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06232.01/popset.h5'
+K06233.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06233.01/popset.h5'
+K06234.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06234.01/popset.h5'
+K06236.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06236.01/popset.h5'
+K06236.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06236.02/popset.h5'
+K06237.02 NoWeakSecondaryError: K06237.02
 K06238.01 NoWeakSecondaryError: K06238.01
-K06239.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6239.n/tremove.2.dat does not exist.
-K06240.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6240.n/tremove.1.dat does not exist.
-K06241.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6241.n/tremove.1.dat does not exist.
+K06239.02 NoWeakSecondaryError: K06239.02
+K06240.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06240.01/popset.h5'
 K06242.01 NoWeakSecondaryError: K06242.01
 K06242.02 NoWeakSecondaryError: K06242.02
-K06243.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6243.n/tremove.1.dat does not exist.
-K06244.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6244.n/tremove.1.dat does not exist.
-K06245.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6245.n/tremove.1.dat does not exist.
-K06245.02 NoWeakSecondaryError: K06245.02
-K06247.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6247.n/tremove.1.dat does not exist.
-K06248.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6248.n/tremove.1.dat does not exist.
-K06249.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6249.n/tremove.1.dat does not exist.
-K06250.01 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi6250.n/tremove.1.dat does not exist.
+K06245.01 2015-08-06 23:17:09,969: Fitting trapezoid models for BEBs...
+K06245.02 AllWithinRocheError: All simulated systems within Roche lobe
+K06247.01 KeyError: 'name'
+K06250.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06250.01/popset.h5'
 K06264.01 BadRoweFitError: K06264.01 has RoR > 1 (1.0781543155) from JRowe MCMC fit
 K06266.01 EmptyPopulationError: < 4 valid systems in population
 K06270.01 MissingStellarError: 2438061 not in stellar table?
@@ -1387,21 +959,21 @@ K06363.01 MissingStellarError: 3836413 not in stellar table?
 K06391.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06395.01 BadRoweFitError: K06395.01 has RoR > 1 (29.946679782) from JRowe MCMC fit
 K06401.01 MCMCError: TransitSignal trapezoid fit not converged (K06401.01).
-K06402.01 NoWeakSecondaryError: K06402.01
+K06402.01 MCMCError: TransitSignal trapezoid fit not converged (K06402.01).
 K06406.01 MCMCError: TransitSignal trapezoid fit not converged (K06406.01).
 K06407.01 EmptyPopulationError: < 4 valid systems in population
 K06412.01 EmptyPopulationError: < 4 valid systems in population
 K06416.01 MissingStellarError: 4454219 not in stellar table?
 K06424.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06433.01 EmptyPopulationError: < 4 valid systems in population
-K06460.01 NoWeakSecondaryError: K06460.01
+K06460.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K06471.01 MCMCError: TransitSignal trapezoid fit not converged (K06471.01).
-K06503.02 NoWeakSecondaryError: K06503.02
-K06512.01 NoWeakSecondaryError: K06512.01
+K06503.02 MCMCError: TransitSignal trapezoid fit not converged (K06503.02).
+K06512.01 MCMCError: TransitSignal trapezoid fit not converged (K06512.01).
 K06514.01 BadRoweFitError: K06514.01 has a/Rstar < 1 (0.998141193808) from JRowe MCMC fit
 K06529.01 MissingStellarError: 5126627 not in stellar table?
-K06531.01 NoWeakSecondaryError: K06531.01
-K06598.01 NoWeakSecondaryError: K06598.01
+K06531.01 MissingStellarError: 5164794 not in stellar table?
+K06598.01 MCMCError: TransitSignal trapezoid fit not converged (K06598.01).
 K06602.01 EmptyPopulationError: < 4 valid systems in population
 K06635.01 BadRoweFitError: K06635.01 has a/Rstar < 1 (0.994180354071) from JRowe MCMC fit
 K06639.01 EmptyPopulationError: < 4 valid systems in population
@@ -1411,7 +983,7 @@ K06696.01 EmptyPopulationError: < 4 valid systems in population
 K06698.01 BadRoweFitError: K06698.01 has RoR > 1 (1.0473111323) from JRowe MCMC fit
 K06704.01 BadRoweFitError: K06704.01 has RoR > 1 (3.0769048993) from JRowe MCMC fit
 K06718.01 BadRoweFitError: K06718.01 has RoR > 1 (1.1188330365) from JRowe MCMC fit
-K06728.01 NoWeakSecondaryError: K06728.01
+K06728.01 MissingStellarError: 6543682 not in stellar table?
 K06768.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06780.01 MCMCError: TransitSignal trapezoid fit not converged (K06780.01).
 K06814.01 EmptyPopulationError: < 4 valid systems in population
@@ -1427,6 +999,8 @@ K06902.01 BadRoweFitError: K06902.01 has RoR > 1 (11.339171342) from JRowe MCMC 
 K06939.01 MissingStellarError: 7960295 not in stellar table?
 K06955.01 MCMCError: TransitSignal trapezoid fit not converged (K06955.01).
 K06963.01 EmptyPopulationError: < 4 valid systems in population
+K06967.01 2015-08-07 00:10:06,672: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K06967.01/popset.h5
+K06991.01 2015-08-07 00:19:21,011: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K06991.01/popset.h5
 K07034.01 EmptyPopulationError: < 4 valid systems in population
 K07039.01 EmptyPopulationError: < 4 valid systems in population
 K07062.01 BadRoweFitError: K07062.01 has RoR > 1 (12.735797589) from JRowe MCMC fit
