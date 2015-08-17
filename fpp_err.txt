@@ -15,7 +15,6 @@ K00154.01 NoWeakSecondaryError: K00154.01
 K00185.01 BadRoweFitError: K00185.01 has RoR > 1 (1.0011483245) from JRowe MCMC fit
 K00243.01 BadRoweFitError: K00243.01 has RoR > 1 (5.2080768041) from JRowe MCMC fit
 K00256.01 BadRoweFitError: K00256.01 has RoR > 1 (8.4808313908) from JRowe MCMC fit
-K00266.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00266.02/popset.h5'
 K00267.01 BadRoweFitError: best-fit impact parameter (5.08) inconsistent with best-fit radius ratio (0.0044234173049).
 K00298.01 MissingStellarError: 12785320 not in stellar table?
 K00298.02 MissingStellarError: 12785320 not in stellar table?
@@ -33,19 +32,14 @@ K00445.01 TypeError: can't multiply sequence by non-int of type 'float'
 K00456.02 BadRoweFitError: best-fit impact parameter (3.87) inconsistent with best-fit radius ratio (0.010654258197).
 K00489.02 BadRoweFitError: best-fit impact parameter (21.49) inconsistent with best-fit radius ratio (-0.010009995439).
 K00511.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
-K00520.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00520.04/popset.h5'
-K00521.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00521.02/popset.h5'
 K00539.01 TypeError: can't multiply sequence by non-int of type 'float'
 K00552.01 BadRoweFitError: K00552.01 has RoR > 1 (2.3150069905) from JRowe MCMC fit
 K00562.01 TypeError: can't multiply sequence by non-int of type 'float'
 K00589.01 MCMCError: TransitSignal trapezoid fit not converged (K00589.01).
-K00593.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00593.04/popset.h5'
 K00594.01 EmptyPhotometryError: K00594.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi594.n/tremove.1.dat) is empty
 K00595.01 NoWeakSecondaryError: K00595.01
 K00607.01 BadRoweFitError: K00607.01 has RoR > 1 (11.234649554) from JRowe MCMC fit
 K00621.01 BadRoweFitError: K00621.01 has RoR > 1 (7.3702650003) from JRowe MCMC fit
-K00649.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00649.02/popset.h5'
-K00651.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00651.02/popset.h5'
 K00667.01 MissingStellarError: 6752502 not in stellar table?
 K00699.01 BadRoweFitError: best-fit impact parameter (1.35) inconsistent with best-fit radius ratio (0.069814143978).
 K00706.01 BadRoweFitError: K00706.01 has RoR > 1 (2.8942509398) from JRowe MCMC fit
@@ -69,24 +63,18 @@ K00973.01 EmptyPhotometryError: K00973.01 photometry file (/tigress/tmorton/kepl
 K00977.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00978.01 BadRoweFitError: K00978.01 has RoR > 1 (8.0200704608) from JRowe MCMC fit
 K00979.01 AllWithinRocheError: All simulated systems within Roche lobe
-K00983.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00983.02/popset.h5'
-K00989.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00989.01/popset.h5'
-K00989.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00989.04/popset.h5'
-K00992.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00992.02/popset.h5'
-K00993.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K00993.03/popset.h5'
 K01010.01 EmptyPhotometryError: K01010.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1010.n/tremove.1.dat) is empty
 K01019.01 BadRoweFitError: best-fit impact parameter (2.65) inconsistent with best-fit radius ratio (0.0041444620321).
 K01026.01 EmptyPhotometryError: K01026.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1026.n/tremove.1.dat) is empty
 K01027.01 BadRoweFitError: best-fit impact parameter (4.27) inconsistent with best-fit radius ratio (0.024463143006).
 K01040.01 BadRoweFitError: best-fit impact parameter (1.09) inconsistent with best-fit radius ratio (0.072231667881).
 K01054.01 AllWithinRocheError: All simulated systems within Roche lobe
-K01082.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01082.04/popset.h5'
 K01109.01 NoWeakSecondaryError: K01109.01
 K01112.01 EmptyPhotometryError: K01112.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1112.n/tremove.1.dat) is empty
 K01132.02 MCMCError: TransitSignal trapezoid fit not converged (K01132.02).
 K01134.02 TypeError: Improper input: N=4 must not exceed M=0
 K01149.01 EmptyPhotometryError: K01149.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1149.n/tremove.1.dat) is empty
-K01174.01 2015-08-06 21:06:09,425: Fitting trapezoid models for HEBs...
+K01174.01 2015-08-13 03:46:28,390: No eclipse registered for index 6187
 K01177.01 BadRoweFitError: K01177.01 has RoR > 1 (3.6817681625) from JRowe MCMC fit
 K01219.01 NoWeakSecondaryError: K01219.01
 K01249.01 BadRoweFitError: K01249.01 has RoR > 1 (11.210251178) from JRowe MCMC fit
@@ -94,7 +82,6 @@ K01253.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01254.01 MissingStellarError: 8454250 not in stellar table?
 K01260.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01271.01 BadRoweFitError: K01271.01 has RoR > 1 (1.4833309581) from JRowe MCMC fit
-K01310.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01310.02/popset.h5'
 K01316.02 BadRoweFitError: best-fit impact parameter (1.41) inconsistent with best-fit radius ratio (0.0022232591812).
 K01317.01 BadRoweFitError: K01317.01 has RoR > 1 (2.3300098044) from JRowe MCMC fit
 K01345.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -128,8 +115,6 @@ K01538.01 BadRoweFitError: K01538.01 has RoR > 1 (17.922046652) from JRowe MCMC 
 K01541.02 NoWeakSecondaryError: K01541.02
 K01545.02 EmptyPhotometryError: K01545.02 photometry file (/tigress/tmorton/kepler/data/rowe/koi1545.n/tremove.2.dat) is empty
 K01575.01 BadRoweFitError: K01575.01 has RoR > 1 (1.2762369085) from JRowe MCMC fit
-K01608.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01608.03/popset.h5'
-K01616.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01616.02/popset.h5'
 K01617.01 BadRoweFitError: best-fit impact parameter (5.90) inconsistent with best-fit radius ratio (-0.03814991808).
 K01677.02 MCMCError: TransitSignal trapezoid fit not converged (K01677.02).
 K01686.01 BadRoweFitError: best-fit impact parameter (4.21) inconsistent with best-fit radius ratio (0.064242599409).
@@ -143,8 +128,6 @@ K01796.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01807.01 BadRoweFitError: best-fit impact parameter (1.23) inconsistent with best-fit radius ratio (-0.38260524695).
 K01810.01 EmptyPhotometryError: K01810.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1810.n/tremove.1.dat) is empty
 K01816.01 BadRoweFitError: K01816.01 has RoR > 1 (3.0378296267) from JRowe MCMC fit
-K01839.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01839.02/popset.h5'
-K01860.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01860.04/popset.h5'
 K01912.01 MissingStellarError: 3952651 not in stellar table?
 K01922.02 MCMCError: TransitSignal trapezoid fit not converged (K01922.02).
 K01926.01 EmptyPhotometryError: K01926.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1926.n/tremove.1.dat) is empty
@@ -152,26 +135,20 @@ K01927.01 NoWeakSecondaryError: K01927.01
 K01940.02 BadRoweFitError: K01940.02 has negative RoR (-0.010396388416) from JRowe MCMC fit
 K01948.01 EmptyPhotometryError: K01948.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1948.n/tremove.1.dat) is empty
 K01957.02 MCMCError: TransitSignal trapezoid fit not converged (K01957.02).
-K01996.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K01996.02/popset.h5'
 K02112.01 EmptyPhotometryError: K02112.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2112.n/tremove.1.dat) is empty
 K02120.01 BadRoweFitError: K02120.01 has negative RoR (-0.014749334723) from JRowe MCMC fit
 K02160.02 MCMCError: TransitSignal trapezoid fit not converged (K02160.02).
 K02167.02 MCMCError: TransitSignal trapezoid fit not converged (K02167.02).
 K02176.01 BadRoweFitError: best-fit impact parameter (1.27) inconsistent with best-fit radius ratio (0.006677043599).
-K02203.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02203.02/popset.h5'
-K02209.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02209.02/popset.h5'
-K02210.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02210.02/popset.h5'
 K02224.02 MCMCError: TransitSignal trapezoid fit not converged (K02224.02).
 K02261.02 MCMCError: TransitSignal trapezoid fit not converged (K02261.02).
 K02268.01 BadRoweFitError: best-fit impact parameter (316.72) inconsistent with best-fit radius ratio (0.068672073949).
-K02281.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02281.02/popset.h5'
 K02311.02 MCMCError: TransitSignal trapezoid fit not converged (K02311.02).
 K02323.01 BadRoweFitError: best-fit impact parameter (367.78) inconsistent with best-fit radius ratio (-0.14495902994).
 K02324.01 MissingStellarError: 7746958 not in stellar table?
 K02326.01 NoWeakSecondaryError: K02326.01
 K02334.01 BadRoweFitError: best-fit impact parameter (123.09) inconsistent with best-fit radius ratio (0.069642275392).
 K02339.02 MCMCError: TransitSignal trapezoid fit not converged (K02339.02).
-K02360.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02360.02/popset.h5'
 K02394.01 NoWeakSecondaryError: K02394.01
 K02410.01 BadRoweFitError: best-fit impact parameter (12.34) inconsistent with best-fit radius ratio (0.055188421293).
 K02410.02 BadRoweFitError: best-fit impact parameter (164.75) inconsistent with best-fit radius ratio (0.034547548994).
@@ -179,7 +156,6 @@ K02411.01 BadRoweFitError: best-fit impact parameter (5.57) inconsistent with be
 K02432.02 NoWeakSecondaryError: K02432.02
 K02433.06 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2433.n/tremove.6.dat does not exist.
 K02433.07 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi2433.n/tremove.7.dat does not exist.
-K02450.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02450.02/popset.h5'
 K02473.02 BadRoweFitError: best-fit impact parameter (1.30) inconsistent with best-fit radius ratio (0.022714552322).
 K02481.01 BadRoweFitError: best-fit impact parameter (913.54) inconsistent with best-fit radius ratio (-883.86353168).
 K02502.01 EmptyPhotometryError: K02502.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2502.n/tremove.1.dat) is empty
@@ -191,8 +167,6 @@ K02525.01 EmptyPhotometryError: K02525.01 photometry file (/tigress/tmorton/kepl
 K02527.01 BadRoweFitError: best-fit impact parameter (19.28) inconsistent with best-fit radius ratio (-0.00077242707259).
 K02529.02 BadRoweFitError: best-fit impact parameter (31.87) inconsistent with best-fit radius ratio (0.023583365802).
 K02531.01 EmptyPhotometryError: K02531.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2531.n/tremove.1.dat) is empty
-K02533.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02533.02/popset.h5'
-K02533.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02533.03/popset.h5'
 K02537.01 EmptyPhotometryError: K02537.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2537.n/tremove.1.dat) is empty
 K02538.01 EmptyPhotometryError: K02538.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2538.n/tremove.1.dat) is empty
 K02542.01 BadRoweFitError: best-fit impact parameter (49.87) inconsistent with best-fit radius ratio (0.00091160807051).
@@ -212,7 +186,6 @@ K02588.01 EmptyPhotometryError: K02588.01 photometry file (/tigress/tmorton/kepl
 K02590.01 BadRoweFitError: best-fit impact parameter (1.01) inconsistent with best-fit radius ratio (0.0043270404892).
 K02596.01 EmptyPhotometryError: K02596.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2596.n/tremove.1.dat) is empty
 K02599.01 BadRoweFitError: best-fit impact parameter (56.62) inconsistent with best-fit radius ratio (53.602739218).
-K02610.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02610.02/popset.h5'
 K02636.01 AllWithinRocheError: All simulated systems within Roche lobe
 K02640.01 BadRoweFitError: best-fit impact parameter (53.75) inconsistent with best-fit radius ratio (50.195399342).
 K02671.01 MissingStellarError: 2437505 not in stellar table?
@@ -221,18 +194,14 @@ K02673.01 BadRoweFitError: K02673.01 has RoR > 1 (2.9994043145) from JRowe MCMC 
 K02682.01 MissingStellarError: 2436378 not in stellar table?
 K02689.01 BadRoweFitError: K02689.01 has RoR > 1 (4.1507072384) from JRowe MCMC fit
 K02718.01 AllWithinRocheError: All simulated systems within Roche lobe
-K02768.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02768.03/popset.h5'
 K02774.01 MissingStellarError: 9593757 not in stellar table?
 K02843.01 NoWeakSecondaryError: K02843.01
 K02854.01 MissingStellarError: 5513866 not in stellar table?
-K02869.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02869.02/popset.h5'
-K02871.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K02871.03/popset.h5'
 K02902.01 BadRoweFitError: best-fit impact parameter (80.22) inconsistent with best-fit radius ratio (0.12693497513).
 K02917.01 BadRoweFitError: K02917.01 has negative RoR (-0.012982364351) from JRowe MCMC fit
 K02918.02 BadRoweFitError: best-fit impact parameter (1.99) inconsistent with best-fit radius ratio (0.00021068131885).
 K02940.01 BadRoweFitError: best-fit impact parameter (39.67) inconsistent with best-fit radius ratio (-0.030802391002).
 K02988.01 NoWeakSecondaryError: K02988.01
-K03028.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03028.02/popset.h5'
 K03046.01 BadRoweFitError: best-fit impact parameter (2.18) inconsistent with best-fit radius ratio (0.0042665553656).
 K03055.01 BadRoweFitError: K03055.01 has a/Rstar < 1 (0.747218452801) from JRowe MCMC fit
 K03076.01 NoWeakSecondaryError: K03076.01
@@ -256,7 +225,6 @@ K03193.01 MissingStellarError: 7430876 not in stellar table?
 K03199.01 MissingStellarError: 5482603 not in stellar table?
 K03206.01 MissingStellarError: 5612697 not in stellar table?
 K03211.01 MissingStellarError: 7293937 not in stellar table?
-K03214.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03214.02/popset.h5'
 K03219.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03230.01 BadRoweFitError: K03230.01 has a/Rstar < 1 (0.737520636627) from JRowe MCMC fit
 K03233.01 NoWeakSecondaryError: K03233.01
@@ -270,13 +238,10 @@ K03334.01 BadRoweFitError: best-fit impact parameter (0.74) inconsistent with be
 K03338.02 EmptyPhotometryError: K03338.02 photometry file (/tigress/tmorton/kepler/data/rowe/koi3338.n/tremove.2.dat) is empty
 K03350.01 BadRoweFitError: K03350.01 has RoR > 1 (10.202738112) from JRowe MCMC fit
 K03376.02 BadRoweFitError: best-fit impact parameter (1.27) inconsistent with best-fit radius ratio (0.0083706016203).
-K03401.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03401.02/popset.h5'
 K03405.01 BadRoweFitError: best-fit impact parameter (89.44) inconsistent with best-fit radius ratio (-89.937139087).
 K03406.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
-K03410.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03410.02/popset.h5'
 K03442.01 MissingStellarError: 9837586 not in stellar table?
 K03473.01 BadRoweFitError: K03473.01 has RoR > 1 (2.473535964) from JRowe MCMC fit
-K03479.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03479.02/popset.h5'
 K03501.01 BadRoweFitError: K03501.01 has RoR > 1 (18.324161678) from JRowe MCMC fit
 K03504.02 NoWeakSecondaryError: K03504.02
 K03515.01 BadRoweFitError: K03515.01 has RoR > 1 (1.8698108695) from JRowe MCMC fit
@@ -341,7 +306,6 @@ K03742.01 BadRoweFitError: best-fit impact parameter (0.83) inconsistent with be
 K03743.01 MissingStellarError: 4935914 not in stellar table?
 K03745.01 MissingStellarError: 2437783 not in stellar table?
 K03746.01 MissingStellarError: 12062660 not in stellar table?
-K03748.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03748.02/popset.h5'
 K03751.01 BadRoweFitError: K03751.01 has RoR > 1 (2.470514546) from JRowe MCMC fit
 K03754.01 MissingStellarError: 8937019 not in stellar table?
 K03757.01 BadRoweFitError: K03757.01 has RoR > 1 (5.9992973821) from JRowe MCMC fit
@@ -380,8 +344,6 @@ K03930.01 BadRoweFitError: K03930.01 has a/Rstar < 1 (0.83442933753) from JRowe 
 K03938.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03947.01 MissingStellarError: 5952366 not in stellar table?
 K03947.02 MissingStellarError: 5952366 not in stellar table?
-K03954.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03954.02/popset.h5'
-K03956.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K03956.02/popset.h5'
 K03967.02 EmptyPhotometryError: K03967.02 photometry file (/tigress/tmorton/kepler/data/rowe/koi3967.n/tremove.2.dat) is empty
 K03972.01 BadRoweFitError: K03972.01 has a/Rstar < 1 (0.821946575476) from JRowe MCMC fit
 K03982.01 MissingStellarError: 5303557 not in stellar table?
@@ -389,14 +351,10 @@ K03993.01 MissingStellarError: 2970804 not in stellar table?
 K03998.01 BadRoweFitError: best-fit impact parameter (7.24) inconsistent with best-fit radius ratio (-5.138197518).
 K04021.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04030.02 MCMCError: TransitSignal trapezoid fit not converged (K04030.02).
-K04032.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04032.03/popset.h5'
-K04032.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04032.04/popset.h5'
-K04034.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04034.02/popset.h5'
 K04035.01 MissingStellarError: 3247404 not in stellar table?
-K04046.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04046.02/popset.h5'
+K04046.02 MCMCError: TransitSignal trapezoid fit not converged (K04046.02).
 K04094.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04118.01 MissingStellarError: 10661778 not in stellar table?
-K04131.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04131.02/popset.h5'
 K04134.01 NoWeakSecondaryError: K04134.01
 K04136.01 BadRoweFitError: best-fit impact parameter (1.05) inconsistent with best-fit radius ratio (-0.0055382883847).
 K04279.01 MissingStellarError: 5876360 not in stellar table?
@@ -409,8 +367,6 @@ K04355.03 MissingStellarError: 4571004 not in stellar table?
 K04355.04 MissingStellarError: 4571004 not in stellar table?
 K04355.05 BadRoweFitError: best-fit impact parameter (1.00) inconsistent with best-fit radius ratio (-0.024137217226).
 K04369.01 NoWeakSecondaryError: K04369.01
-K04396.03 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04396.03/popset.h5'
-K04396.04 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04396.04/popset.h5'
 K04507.01 MissingStellarError: 7598111 not in stellar table?
 K04543.01 MissingStellarError: 9776186 not in stellar table?
 K04565.01 BadRoweFitError: best-fit impact parameter (6.23) inconsistent with best-fit radius ratio (-0.0059063664708).
@@ -419,8 +375,6 @@ K04636.01 BadRoweFitError: K04636.01 has RoR > 1 (1.0150188102) from JRowe MCMC 
 K04682.01 MissingStellarError: 5024252 not in stellar table?
 K04713.01 MissingStellarError: 5253802 not in stellar table?
 K04724.01 MissingStellarError: 8395860 not in stellar table?
-K04777.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04777.02/popset.h5'
-K04781.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04781.02/popset.h5'
 K04797.01 BadRoweFitError: best-fit impact parameter (1.17) inconsistent with best-fit radius ratio (-0.19586766195).
 K04807.01 MissingStellarError: 9822284 not in stellar table?
 K04883.01 NoWeakSecondaryError: K04883.01
@@ -430,19 +384,8 @@ K04948.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04952.01 NoWeakSecondaryError: K04952.01
 K04955.01 NoWeakSecondaryError: K04955.01
 K04960.01 NoWeakSecondaryError: K04960.01
-K04963.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04963.01/popset.h5'
-K04964.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04964.01/popset.h5'
-K04965.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04965.01/popset.h5'
-K04966.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04966.01/popset.h5'
 K04969.01 NoWeakSecondaryError: K04969.01
-K04970.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04970.01/popset.h5'
-K04973.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04973.01/popset.h5'
 K04979.01 NoWeakSecondaryError: K04979.01
-K04981.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04981.01/popset.h5'
-K04983.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04983.01/popset.h5'
-K04984.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04984.01/popset.h5'
-K04989.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04989.01/popset.h5'
-K04990.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K04990.01/popset.h5'
 K04993.01 BadRoweFitError: K04993.01 has negative RoR (-0.0070897783122) from JRowe MCMC fit
 K04995.01 NoWeakSecondaryError: K04995.01
 K04996.01 NoWeakSecondaryError: K04996.01
@@ -456,27 +399,11 @@ K05037.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05051.01 NoWeakSecondaryError: K05051.01
 K05054.01 BadRoweFitError: K05054.01 has RoR > 1 (1.0366707987) from JRowe MCMC fit
 K05056.01 NoWeakSecondaryError: K05056.01
-K05060.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05060.01/popset.h5'
-K05061.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05061.01/popset.h5'
 K05062.01 NoWeakSecondaryError: K05062.01
-K05063.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05063.01/popset.h5'
-K05064.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05064.01/popset.h5'
-K05065.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05065.01/popset.h5'
-K05066.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05066.01/popset.h5'
-K05069.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05069.01/popset.h5'
-K05072.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05072.01/popset.h5'
-K05073.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05073.01/popset.h5'
 K05074.01 NoWeakSecondaryError: K05074.01
-K05075.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05075.01/popset.h5'
-K05076.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05076.01/popset.h5'
+K05076.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05076.02 AllWithinRocheError: All simulated systems within Roche lobe
-K05077.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05077.01/popset.h5'
-K05078.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05078.01/popset.h5'
 K05080.01 NoWeakSecondaryError: K05080.01
-K05082.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05082.01/popset.h5'
-K05086.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05086.01/popset.h5'
-K05089.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05089.01/popset.h5'
-K05091.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05091.01/popset.h5'
 K05103.01 NoWeakSecondaryError: K05103.01
 K05118.01 NoWeakSecondaryError: K05118.01
 K05129.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -484,31 +411,12 @@ K05136.01 NoWeakSecondaryError: K05136.01
 K05137.01 NoWeakSecondaryError: K05137.01
 K05140.01 NoWeakSecondaryError: K05140.01
 K05143.01 NoWeakSecondaryError: K05143.01
-K05153.01 2015-08-06 23:42:03,470: Fitting trapezoid models for BEBs...
 K05154.01 NoWeakSecondaryError: K05154.01
-K05157.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05157.01/popset.h5'
-K05158.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05158.01/popset.h5'
 K05159.01 NoWeakSecondaryError: K05159.01
 K05160.01 NoWeakSecondaryError: K05160.01
 K05161.01 NoWeakSecondaryError: K05161.01
-K05162.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05162.01/popset.h5'
-K05163.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05163.01/popset.h5'
-K05165.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05165.01/popset.h5'
 K05166.01 NoWeakSecondaryError: K05166.01
-K05167.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05167.01/popset.h5'
-K05168.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05168.01/popset.h5'
-K05170.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05170.01/popset.h5'
-K05171.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05171.01/popset.h5'
-K05172.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05172.01/popset.h5'
-K05173.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05173.01/popset.h5'
-K05174.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05174.01/popset.h5'
-K05175.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05175.01/popset.h5'
 K05177.01 NoWeakSecondaryError: K05177.01
-K05180.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05180.01/popset.h5'
-K05181.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05181.01/popset.h5'
-K05182.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05182.01/popset.h5'
-K05183.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05183.01/popset.h5'
-K05187.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05187.01/popset.h5'
 K05188.01 MCMCError: 0 points with slopes < maxslope (30)
 K05190.01 MissingStellarError: 5653163 not in stellar table?
 K05194.01 NoWeakSecondaryError: K05194.01
@@ -519,23 +427,8 @@ K05226.01 MissingStellarError: 6034379 not in stellar table?
 K05234.01 MissingStellarError: 6062298 not in stellar table?
 K05238.01 MissingStellarError: 6116605 not in stellar table?
 K05242.01 MissingStellarError: 6143819 not in stellar table?
-K05258.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05258.01/popset.h5'
-K05260.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05260.01/popset.h5'
-K05262.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05262.01/popset.h5'
-K05264.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05264.01/popset.h5'
-K05265.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05265.01/popset.h5'
+K05262.01 2015-08-13 06:01:24,591: No eclipse registered for index 11213
 K05266.01 NoWeakSecondaryError: K05266.01
-K05268.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05268.01/popset.h5'
-K05270.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05270.01/popset.h5'
-K05271.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05271.01/popset.h5'
-K05272.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05272.01/popset.h5'
-K05273.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05273.01/popset.h5'
-K05276.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05276.01/popset.h5'
-K05277.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05277.01/popset.h5'
-K05280.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05280.01/popset.h5'
-K05282.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05282.01/popset.h5'
-K05286.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05286.01/popset.h5'
-K05291.01 2015-08-06 23:16:14,275: No eclipse registered for index 10796
 K05292.01 NoWeakSecondaryError: K05292.01
 K05295.01 BadRoweFitError: K05295.01 has RoR > 1 (1.1383157186) from JRowe MCMC fit
 K05304.01 ValueError: Properties not same as saved chains (basename chains/binary-*). Use overwrite=True to fit.
@@ -543,33 +436,20 @@ K05306.01 KeyError: 'name'
 K05309.01 NoWeakSecondaryError: K05309.01
 K05312.01 ValueError: Extra data: line 43 column 4 - line 44 column 2 (char 389 - 392)
 K05317.01 BadRoweFitError: K05317.01 has RoR > 1 (1.534657661) from JRowe MCMC fit
-K05338.01 2015-08-06 23:34:36,987: No eclipse registered for index 5261
 K05342.01 NoWeakSecondaryError: K05342.01
-K05343.01 2015-08-06 23:35:16,284: No eclipse registered for index 13522
 K05346.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05349.01 NoWeakSecondaryError: K05349.01
 K05350.01 NoWeakSecondaryError: K05350.01
 K05352.01 NoWeakSecondaryError: K05352.01
 K05356.01 NoWeakSecondaryError: K05356.01
-K05361.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05361.01/popset.h5'
 K05362.01 NoWeakSecondaryError: K05362.01
 K05363.01 NoWeakSecondaryError: K05363.01
 K05364.01 NoWeakSecondaryError: K05364.01
-K05365.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05365.01/popset.h5'
-K05366.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05366.01/popset.h5'
 K05367.01 NoWeakSecondaryError: K05367.01
 K05368.01 NoWeakSecondaryError: K05368.01
-K05370.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05370.01/popset.h5'
-K05371.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05371.01/popset.h5'
-K05374.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05374.01/popset.h5'
 K05377.01 NoWeakSecondaryError: K05377.01
-K05378.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05378.01/popset.h5'
-K05382.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05382.01/popset.h5'
 K05383.01 NoWeakSecondaryError: K05383.01
-K05385.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05385.01/popset.h5'
-K05386.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05386.01/popset.h5'
 K05400.01 NoWeakSecondaryError: K05400.01
-K05401.01 2015-08-07 00:02:10,646: No eclipse registered for index 5336
 K05402.01 NoWeakSecondaryError: K05402.01
 K05404.01 NoWeakSecondaryError: K05404.01
 K05405.01 NoWeakSecondaryError: K05405.01
@@ -582,138 +462,51 @@ K05431.01 NoWeakSecondaryError: K05431.01
 K05432.01 NoWeakSecondaryError: K05432.01
 K05437.01 NoWeakSecondaryError: K05437.01
 K05450.01 NoWeakSecondaryError: K05450.01
-K05452.01 2015-08-07 00:14:15,267: No eclipse registered for index 6746
-K05455.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05455.01/popset.h5'
-K05456.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05456.01/popset.h5'
-K05457.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05457.01/popset.h5'
-K05460.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05460.01/popset.h5'
-K05462.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05462.01/popset.h5'
-K05463.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05463.01/popset.h5'
-K05464.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05464.01/popset.h5'
+K05462.01 2015-08-13 06:03:39,537: No eclipse registered for index 3537
 K05467.01 NoWeakSecondaryError: K05467.01
-K05468.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05468.01/popset.h5'
-K05469.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05469.01/popset.h5'
-K05470.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05470.01/popset.h5'
-K05473.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05473.01/popset.h5'
-K05474.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05474.01/popset.h5'
-K05475.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05475.01/popset.h5'
-K05477.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05477.01/popset.h5'
-K05488.01 KeyError: 'name'
+K05474.01 2015-08-13 06:04:06,494: No eclipse registered for index 7655
+K05475.01 2015-08-13 06:04:06,004: No eclipse registered for index 11147
 K05494.01 NoWeakSecondaryError: K05494.01
-K05502.01 2015-08-06 23:16:07,608: No eclipse registered for index 11961
 K05503.01 KeyError: 'name'
 K05504.01 NoWeakSecondaryError: K05504.01
 K05516.01 MissingStellarError: 8432034 not in stellar table?
-K05531.01 2015-08-06 23:09:33,631: No eclipse registered for index 1060
 K05533.01 NoWeakSecondaryError: K05533.01
-K05535.01 KeyError: 'name'
-K05540.01 KeyError: 'name'
-K05547.01 2015-08-06 23:40:59,358: No eclipse registered for index 16221
-K05549.01 KeyError: 'name'
-K05550.01 2015-08-06 23:43:08,822: No eclipse registered for index 7456
-K05555.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05555.01/popset.h5'
-K05557.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05557.01/popset.h5'
-K05558.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05558.01/popset.h5'
-K05559.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05559.01/popset.h5'
-K05560.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05560.01/popset.h5'
+K05559.01 2015-08-13 05:55:52,998: Fitting trapezoid models for EBs...
 K05561.01 NoWeakSecondaryError: K05561.01
-K05562.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05562.01/popset.h5'
-K05563.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05563.01/popset.h5'
-K05569.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05569.01/popset.h5'
 K05571.01 MissingStellarError: 8766285 not in stellar table?
-K05573.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05573.01/popset.h5'
-K05575.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05575.01/popset.h5'
 K05576.01 NoWeakSecondaryError: K05576.01
-K05580.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05580.01/popset.h5'
-K05584.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05584.01/popset.h5'
-K05588.01 2015-08-06 23:57:46,752: No eclipse registered for index 16401
-K05593.01 2015-08-06 23:56:39,557: No eclipse registered for index 13444
-K05595.01 2015-08-06 23:59:36,837: Fitting trapezoid models for EBs...
-K05596.01 2015-08-06 23:59:43,162: Fitting trapezoid models for BEBs...
 K05599.01 NoWeakSecondaryError: K05599.01
-K05600.01 2015-08-07 00:02:43,545: Done.
 K05606.01 BadRoweFitError: K05606.01 has RoR > 1 (4.9669744434) from JRowe MCMC fit
-K05609.01 2015-08-07 00:04:45,759: No eclipse registered for index 18840
 K05614.01 BadRoweFitError: K05614.01 has RoR > 1 (1.1555061226) from JRowe MCMC fit
 K05615.01 BadRoweFitError: K05615.01 has RoR > 1 (1.1239550436) from JRowe MCMC fit
 K05620.01 NoWeakSecondaryError: K05620.01
 K05634.01 NoWeakSecondaryError: K05634.01
-K05635.01 KeyError: 'name'
-K05636.01 2015-08-07 00:14:46,925: No eclipse registered for index 16273
 K05637.01 NoWeakSecondaryError: K05637.01
 K05644.01 NoWeakSecondaryError: K05644.01
 K05645.01 NoWeakSecondaryError: K05645.01
-K05648.01 2015-08-07 00:20:54,927: No eclipse registered for index 7891
-K05654.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05654.01/popset.h5'
-K05655.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05655.01/popset.h5'
 K05656.01 NoWeakSecondaryError: K05656.01
-K05658.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05658.01/popset.h5'
-K05659.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05659.01/popset.h5'
-K05661.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05661.01/popset.h5'
-K05662.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05662.01/popset.h5'
-K05664.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05664.01/popset.h5'
-K05667.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05667.01/popset.h5'
 K05668.01 NoWeakSecondaryError: K05668.01
-K05669.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05669.01/popset.h5'
 K05670.01 NoWeakSecondaryError: K05670.01
 K05673.01 NoWeakSecondaryError: K05673.01
-K05674.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05674.01/popset.h5'
-K05675.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05675.01/popset.h5'
-K05676.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05676.01/popset.h5'
-K05678.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05678.01/popset.h5'
-K05679.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05679.01/popset.h5'
-K05687.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05687.01/popset.h5'
 K05697.01 NoWeakSecondaryError: K05697.01
-K05699.01 2015-08-06 23:19:48,689: No eclipse registered for index 16830
 K05700.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05703.01 MissingStellarError: 9662475 not in stellar table?
 K05709.01 NoWeakSecondaryError: K05709.01
 K05711.01 MissingStellarError: 9775475 not in stellar table?
-K05716.01 2015-08-06 23:24:56,377: Fitting trapezoid models for BEBs...
 K05718.01 MissingStellarError: 9838582 not in stellar table?
-K05725.01 2015-08-06 23:13:52,347: Fitting trapezoid models for EBs...
-K05726.01 2015-08-06 23:17:18,591: No eclipse registered for index 3713
 K05728.01 MissingStellarError: 9896438 not in stellar table?
-K05729.01 2015-08-06 23:31:54,979: No eclipse registered for index 2698
-K05731.01 KeyError: 'name'
 K05734.01 NoWeakSecondaryError: K05734.01
-K05735.01 KeyError: 'name'
-K05738.01 2015-08-06 23:34:58,786: No eclipse registered for index 13807
-K05739.01 2015-08-06 23:35:52,733: No eclipse registered for index 17637
-K05743.01 2015-08-06 23:39:37,146: No eclipse registered for index 9422
-K05746.01 KeyError: 'name'
-K05750.01 KeyError: 'name'
 K05751.01 NoWeakSecondaryError: K05751.01
 K05752.01 AllWithinRocheError: All simulated systems within Roche lobe
-K05753.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05753.01/popset.h5'
-K05754.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05754.01/popset.h5'
-K05755.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05755.01/popset.h5'
 K05756.01 NoWeakSecondaryError: K05756.01
-K05757.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05757.01/popset.h5'
 K05759.01 NoWeakSecondaryError: K05759.01
-K05760.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05760.01/popset.h5'
-K05763.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05763.01/popset.h5'
-K05764.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05764.01/popset.h5'
-K05765.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05765.01/popset.h5'
-K05766.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05766.01/popset.h5'
-K05767.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05767.01/popset.h5'
-K05768.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05768.01/popset.h5'
-K05770.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05770.01/popset.h5'
-K05771.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05771.01/popset.h5'
-K05773.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05773.01/popset.h5'
-K05775.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05775.01/popset.h5'
-K05777.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05777.01/popset.h5'
-K05778.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05778.01/popset.h5'
-K05779.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05779.01/popset.h5'
-K05780.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05780.01/popset.h5'
+K05760.01 2015-08-13 06:02:46,908: No eclipse registered for index 10196
+K05763.01 2015-08-13 05:54:06,677: No eclipse registered for index 877
+K05766.01 2015-08-13 06:02:19,643: No eclipse registered for index 10517
 K05781.01 NoWeakSecondaryError: K05781.01
 K05783.01 NoWeakSecondaryError: K05783.01
-K05784.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05784.01/popset.h5'
 K05785.01 NoWeakSecondaryError: K05785.01
-K05789.01 2015-08-06 23:59:14,486: No eclipse registered for index 5820
-K05791.01 2015-08-06 23:59:40,139: No eclipse registered for index 5518
 K05792.01 AllWithinRocheError: All simulated systems within Roche lobe
-K05793.01 KeyError: 'name'
 K05795.01 NoWeakSecondaryError: K05795.01
 K05803.01 NoWeakSecondaryError: K05803.01
 K05804.01 BadRoweFitError: K05804.01 has RoR > 1 (1.7779233594) from JRowe MCMC fit
@@ -728,228 +521,59 @@ K05824.01 NoWeakSecondaryError: K05824.01
 K05836.01 NoWeakSecondaryError: K05836.01
 K05837.01 MCMCError: TransitSignal trapezoid fit not converged (K05837.01).
 K05843.01 NoWeakSecondaryError: K05843.01
-K05847.01 KeyError: 'name'
-K05848.01 2015-08-07 00:10:39,253: Fitting trapezoid models for EBs...
-K05851.01 2015-08-07 00:22:40,644: Fitting trapezoid models for BEBs...
-K05853.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05853.01/popset.h5'
 K05857.01 NoWeakSecondaryError: K05857.01
-K05858.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05858.01/popset.h5'
-K05859.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05859.01/popset.h5'
-K05860.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05860.01/popset.h5'
-K05862.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05862.01/popset.h5'
-K05864.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05864.01/popset.h5'
-K05865.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05865.01/popset.h5'
-K05866.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05866.01/popset.h5'
-K05867.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05867.01/popset.h5'
-K05870.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05870.01/popset.h5'
-K05871.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05871.01/popset.h5'
 K05872.01 NoWeakSecondaryError: K05872.01
-K05873.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05873.01/popset.h5'
-K05876.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05876.01/popset.h5'
-K05878.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05878.01/popset.h5'
 K05880.01 NoWeakSecondaryError: K05880.01
-K05881.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05881.01/popset.h5'
 K05882.01 NoWeakSecondaryError: K05882.01
-K05886.01 KeyError: 'name'
-K05891.01 2015-08-06 23:15:22,426: No eclipse registered for index 814
-K05897.01 KeyError: 'name'
-K05900.01 KeyError: 'name'
 K05905.01 NoWeakSecondaryError: K05905.01
-K05907.01 2015-08-06 23:24:11,119: No eclipse registered for index 18474
-K05912.01 2015-08-06 23:21:26,858: No eclipse registered for index 15716
 K05916.01 NoWeakSecondaryError: K05916.01
-K05922.01 KeyError: 'name'
-K05923.01 KeyError: 'name'
-K05926.01 KeyError: 'name'
-K05928.01 KeyError: 'name'
 K05931.01 NoWeakSecondaryError: K05931.01
-K05933.01 2015-08-06 23:29:13,382: Fitting trapezoid models for HEBs...
 K05935.01 NoWeakSecondaryError: K05935.01
 K05936.01 NoWeakSecondaryError: K05936.01
-K05937.01 KeyError: 'name'
-K05940.01 KeyError: 'name'
 K05946.01 NoWeakSecondaryError: K05946.01
-K05947.01 KeyError: 'name'
 K05951.01 NoWeakSecondaryError: K05951.01
 K05955.01 NoWeakSecondaryError: K05955.01
-K05956.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05956.01/popset.h5'
-K05957.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05957.01/popset.h5'
-K05958.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05958.01/popset.h5'
-K05962.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05962.01/popset.h5'
-K05963.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05963.01/popset.h5'
 K05966.01 NoWeakSecondaryError: K05966.01
-K05967.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05967.01/popset.h5'
-K05969.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05969.01/popset.h5'
-K05970.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05970.01/popset.h5'
-K05972.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05972.01/popset.h5'
-K05973.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05973.01/popset.h5'
 K05975.01 NoWeakSecondaryError: K05975.01
 K05977.01 NoWeakSecondaryError: K05977.01
-K05979.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05979.01/popset.h5'
-K05981.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K05981.01/popset.h5'
+K05981.01 MCMCError: TransitSignal trapezoid fit not converged (K05981.01).
 K05984.01 BadRoweFitError: K05984.01 has RoR > 1 (21.269429902) from JRowe MCMC fit
-K05985.01 KeyError: 'name'
-K05986.01 KeyError: 'name'
-K05988.01 KeyError: 'name'
-K05990.01 KeyError: 'name'
-K05992.01 KeyError: 'name'
-K05993.01 KeyError: 'name'
-K05995.01 2015-08-07 00:01:06,552: Loading TRILEGAL simulation from /tigress/tmorton/kepler/fpp/starfields/kepler_starfield_23.0.h5
-K05996.01 KeyError: 'name'
-K05997.01 KeyError: 'name'
-K06002.01 2015-08-07 00:04:47,787: No eclipse registered for index 17812
-K06006.01 KeyError: 'name'
-K06007.01 KeyError: 'name'
-K06010.01 2015-08-07 00:07:34,994: No eclipse registered for index 7965
-K06014.01 2015-08-07 00:09:15,834: No eclipse registered for index 7522
-K06015.01 2015-08-07 00:07:32,871: Fitting trapezoid models for BEBs...
-K06016.01 2015-08-07 00:09:17,452: Fitting trapezoid models for BEBs...
-K06021.01 2015-08-07 00:10:46,649: No eclipse registered for index 5645
-K06029.01 2015-08-07 00:12:20,112: No eclipse registered for index 3403
-K06032.01 KeyError: 'name'
-K06033.01 KeyError: 'name'
-K06034.01 2015-08-07 00:15:47,573: No eclipse registered for index 3070
-K06037.01 2015-08-07 00:16:21,643: No eclipse registered for index 6109
-K06038.01 2015-08-07 00:17:12,754: Fitting trapezoid models for HEBs...
-K06041.01 KeyError: 'name'
 K06042.01 BadRoweFitError: K06042.01 has RoR > 1 (2.9133829786) from JRowe MCMC fit
-K06045.01 KeyError: 'name'
-K06046.01 KeyError: 'name'
-K06048.01 KeyError: 'name'
-K06049.01 KeyError: 'name'
-K06050.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06050.01/popset.h5'
 K06051.01 BadRoweFitError: K06051.01 has RoR > 1 (1.2740323203) from JRowe MCMC fit
-K06052.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06052.01/popset.h5'
-K06053.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06053.01/popset.h5'
-K06054.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06054.01/popset.h5'
-K06055.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06055.01/popset.h5'
-K06056.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06056.01/popset.h5'
-K06057.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06057.01/popset.h5'
-K06058.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06058.01/popset.h5'
-K06059.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06059.01/popset.h5'
-K06060.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06060.01/popset.h5'
-K06061.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06061.01/popset.h5'
-K06062.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06062.01/popset.h5'
-K06063.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06063.01/popset.h5'
-K06064.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06064.01/popset.h5'
-K06065.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06065.01/popset.h5'
-K06067.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06067.01/popset.h5'
-K06068.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06068.01/popset.h5'
-K06069.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06069.01/popset.h5'
-K06070.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06070.01/popset.h5'
-K06071.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06071.01/popset.h5'
-K06072.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06072.01/popset.h5'
-K06073.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06073.01/popset.h5'
-K06075.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06075.01/popset.h5'
-K06077.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06077.01/popset.h5'
+K06064.01 2015-08-13 06:03:52,173: Loading TRILEGAL simulation from /tigress/tmorton/kepler/fpp/starfields/kepler_starfield_13.0.h5
+K06067.01 2015-08-13 06:04:03,347: No eclipse registered for index 11548
+K06071.01 2015-08-13 06:04:17,875: No eclipse registered for index 2281
 K06082.01 AllWithinRocheError: All simulated systems within Roche lobe
-K06083.01 KeyError: 'name'
 K06084.01 BadRoweFitError: K06084.01 has RoR > 1 (1.2833797334) from JRowe MCMC fit
-K06088.01 KeyError: 'name'
-K06089.01 2015-08-06 23:17:59,876: No eclipse registered for index 18701
 K06094.01 BadRoweFitError: K06094.01 has RoR > 1 (1.2201789567) from JRowe MCMC fit
 K06095.01 MissingStellarError: 2707097 not in stellar table?
-K06096.01 KeyError: 'name'
 K06097.01 NoWeakSecondaryError: K06097.01
-K06099.01 KeyError: 'name'
 K06099.02 NoWeakSecondaryError: K06099.02
-K06100.01 KeyError: 'name'
-K06104.01 KeyError: 'name'
-K06104.02 2015-08-06 23:26:02,862: No eclipse registered for index 4877
-K06105.01 2015-08-06 23:21:50,730: No eclipse registered for index 2189
 K06106.01 NoWeakSecondaryError: K06106.01
-K06109.02 2015-08-06 23:25:33,455: Fitting trapezoid models for HEBs...
-K06112.01 KeyError: 'name'
 K06115.01 MCMCError: TransitSignal trapezoid fit not converged (K06115.01).
-K06119.01 KeyError: 'name'
-K06122.01 KeyError: 'name'
-K06123.01 KeyError: 'name'
-K06126.01 2015-08-06 23:35:04,488: No eclipse registered for index 4351
 K06127.01 NoWeakSecondaryError: K06127.01
-K06129.01 2015-08-06 23:39:50,012: Loading TRILEGAL simulation from /tigress/tmorton/kepler/fpp/starfields/kepler_starfield_22.0.h5
 K06130.01 BadRoweFitError: best-fit impact parameter (8.55) inconsistent with best-fit radius ratio (0.00090570037586).
-K06131.01 KeyError: 'name'
-K06132.03 2015-08-06 23:43:01,193: No eclipse registered for index 13850
-K06134.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06134.01/popset.h5'
-K06135.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06135.01/popset.h5'
-K06136.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06136.01/popset.h5'
-K06138.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06138.01/popset.h5'
-K06139.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06139.01/popset.h5'
-K06142.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06142.01/popset.h5'
-K06142.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06142.02/popset.h5'
+K06139.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06142.03 NoWeakSecondaryError: K06142.03
-K06143.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06143.01/popset.h5'
-K06144.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06144.01/popset.h5'
-K06146.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06146.01/popset.h5'
-K06147.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06147.01/popset.h5'
 K06148.01 NoWeakSecondaryError: K06148.01
-K06149.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06149.01/popset.h5'
 K06150.01 NoWeakSecondaryError: K06150.01
-K06152.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06152.01/popset.h5'
-K06153.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06153.01/popset.h5'
-K06157.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06157.01/popset.h5'
-K06158.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06158.02/popset.h5'
-K06162.01 KeyError: 'name'
-K06163.01 KeyError: 'name'
+K06152.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06164.02 NoWeakSecondaryError: K06164.02
-K06167.01 KeyError: 'name'
-K06168.02 KeyError: 'name'
-K06168.03 KeyError: 'name'
-K06169.01 KeyError: 'name'
-K06174.01 KeyError: 'name'
 K06176.02 NoWeakSecondaryError: K06176.02
-K06177.01 KeyError: 'name'
 K06180.01 NoWeakSecondaryError: K06180.01
-K06183.01 KeyError: 'name'
-K06184.01 KeyError: 'name'
-K06185.01 2015-08-07 00:08:51,657: No eclipse registered for index 13347
 K06188.01 BadRoweFitError: K06188.01 has a/Rstar < 1 (0.963379093636) from JRowe MCMC fit
-K06189.01 KeyError: 'name'
-K06198.01 KeyError: 'name'
-K06199.01 KeyError: 'name'
-K06200.01 KeyError: 'name'
 K06202.01 NoWeakSecondaryError: K06202.01
-K06203.01 KeyError: 'name'
-K06204.01 KeyError: 'name'
-K06205.01 2015-08-07 00:17:52,127: No eclipse registered for index 7010
-K06206.01 2015-08-07 00:16:23,094: No eclipse registered for index 8952
-K06207.01 KeyError: 'name'
 K06210.01 NoWeakSecondaryError: K06210.01
-K06211.01 KeyError: 'name'
-K06213.01 KeyError: 'name'
-K06214.01 KeyError: 'name'
-K06214.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06214.02/popset.h5'
-K06215.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06215.01/popset.h5'
 K06216.01 NoWeakSecondaryError: K06216.01
 K06216.02 NoWeakSecondaryError: K06216.02
-K06218.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06218.01/popset.h5'
-K06219.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06219.01/popset.h5'
-K06220.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06220.01/popset.h5'
-K06221.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06221.01/popset.h5'
-K06222.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06222.01/popset.h5'
-K06223.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06223.01/popset.h5'
-K06224.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06224.02/popset.h5'
-K06225.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06225.01/popset.h5'
-K06226.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06226.01/popset.h5'
-K06227.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06227.01/popset.h5'
+K06227.01 2015-08-13 06:02:34,726: Fitting trapezoid models for HEBs...
 K06229.01 BadRoweFitError: K06229.01 has RoR > 1 (2.9531717587) from JRowe MCMC fit
-K06230.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06230.01/popset.h5'
-K06231.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06231.01/popset.h5'
-K06232.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06232.01/popset.h5'
-K06233.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06233.01/popset.h5'
-K06234.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06234.01/popset.h5'
-K06236.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06236.01/popset.h5'
-K06236.02 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06236.02/popset.h5'
 K06237.02 NoWeakSecondaryError: K06237.02
 K06238.01 NoWeakSecondaryError: K06238.01
 K06239.02 NoWeakSecondaryError: K06239.02
-K06240.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06240.01/popset.h5'
 K06242.01 NoWeakSecondaryError: K06242.01
 K06242.02 NoWeakSecondaryError: K06242.02
-K06245.01 2015-08-06 23:17:09,969: Fitting trapezoid models for BEBs...
 K06245.02 AllWithinRocheError: All simulated systems within Roche lobe
-K06247.01 KeyError: 'name'
-K06250.01 Unable to open/create file '/tigress/tmorton/kepler/fpp/K06250.01/popset.h5'
 K06264.01 BadRoweFitError: K06264.01 has RoR > 1 (1.0781543155) from JRowe MCMC fit
 K06266.01 EmptyPopulationError: < 4 valid systems in population
 K06270.01 MissingStellarError: 2438061 not in stellar table?
@@ -999,8 +623,6 @@ K06902.01 BadRoweFitError: K06902.01 has RoR > 1 (11.339171342) from JRowe MCMC 
 K06939.01 MissingStellarError: 7960295 not in stellar table?
 K06955.01 MCMCError: TransitSignal trapezoid fit not converged (K06955.01).
 K06963.01 EmptyPopulationError: < 4 valid systems in population
-K06967.01 2015-08-07 00:10:06,672: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K06967.01/popset.h5
-K06991.01 2015-08-07 00:19:21,011: PopulationSet loaded from /tigress/tmorton/kepler/fpp/K06991.01/popset.h5
 K07034.01 EmptyPopulationError: < 4 valid systems in population
 K07039.01 EmptyPopulationError: < 4 valid systems in population
 K07062.01 BadRoweFitError: K07062.01 has RoR > 1 (12.735797589) from JRowe MCMC fit
