@@ -28,6 +28,8 @@ err_table = np.loadtxt('fpp_err.txt', usecols=(0,1), dtype=str)
 
 kois = fpp_table.index
 
+fpp_table['kepid'] = ku.DATA.ix[kois, 'kepid']
+fpp_table['period'] = ku.DATA.ix[kois, 'koi_period']
 fpp_table['rp'] = fpp_table.ix[kois, 'rprs'] * star_table.ix[kois, 'radius'] * RSUN/REARTH
 fpp_table['disposition'] = ku.DATA.ix[kois, 'koi_disposition']
 fpp_table['prob_ontarget'] = positional_table.ix[kois, 'pp_host_rel_prob']
