@@ -5,7 +5,12 @@
 
 \usepackage{natbib}
 \usepackage{amssymb,amsmath}
-\usepackage{color}
+\usepackage{color}%,hyperref}
+%\definecolor{linkcolor}{rgb}{0,0,0.5}
+%\hypersetup{colorlinks=true,linkcolor=linkcolor,citecolor=linkcolor,
+%            filecolor=linkcolor,urlcolor=linkcolor}
+%\usepackage{url}
+
 \usepackage[backref,breaklinks,colorlinks,citecolor=blue]{hyperref}
 \usepackage[all]{hypcap}
 \renewcommand*{\backref}[1]{[#1]}
@@ -281,7 +286,7 @@ chains of all other stellar parameters of interest (e.g., temperature,
 surface gravity, radius, etc.) are derived from the chains of fitting
 parameters by evaluting the stellar models using \isochrones.
 
-\capstartfalse
+%\capstartfalse
 \begin{deluxetable}{cc}
 \tablewidth{0pt}
 \tabletypesize{\scriptsize}
@@ -295,20 +300,17 @@ Primary mass $M_A$ & $\propto M_A^{-2.35},~M_A > 0.1$ \\
 Secondary mass $M_B$ & $\propto (M_B/M_A)^{0.3},~0.1 <= M_B < M_A$ \\
 Tertiary mass $M_C$ & $\propto (M_C/M_A)^{0.3},~0.1 <= M_C < M_B$ \\
 Age {[}Gyr{]} & $\mathcal U(1,15)$ \tablenotemark{a}\\
-{[}Fe/H{]} & $\frac{0.8}{0.15} \mathcal N(0.016, 0.15) +
-\frac{0.2}{0.22} \mathcal N(-0.15, 0.22)$  \tablenotemark{b}\\
-$A_V$ {[}mag{]} & $\mathcal U(0, A_{V, \mathrm{max}})$
-\tablenotemark{c} \\
+{[}Fe/H{]} & $\frac{0.8}{0.15} \mathcal N(0.016, 0.15) + \frac{0.2}{0.22} \mathcal N(-0.15, 0.22)$  \tablenotemark{b}\\
+$A_V$ {[}mag{]} & $\mathcal U(0, A_{V, \mathrm{max}})$ \tablenotemark{c} \\
 Distance $d$ & $\propto d^2$ 
 \enddata
-\tablenotetext{a}{The age range for the Dartmouth stellar model grids
-  used.}
-\tablenotetext{b}{Double-Gaussian fit to measured local stellar metallicity
-  distribution \citep{Hayden:2015, Casagrande:2011}.}
+\tablenotetext{a}{The age range for the Dartmouth stellar model grids used.}
+\tablenotetext{b}{Double-Gaussian fit to measured local stellar
+  metallicity distribution \citep{Hayden:2015, Casagrande:2011}.}
 \tablenotetext{3}{Maximum allowed value is the Galactic extinction at
   infinity calculated along the star's line of sight, according to \citet{Schlegel:1998}.}
 \end{deluxetable}
-\capstarttrue
+%\capstarttrue
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -518,13 +520,13 @@ It is a pleasure to thank
 \bibliography{ms}
 \clearpage
 
-\capstartfalse
+%\capstartfalse
 \input{table_stars}
-\capstarttrue
+%\capstarttrue
 
-\capstartfalse
+%\capstartfalse
 \input{table_fpp}
-\capstarttrue
+%\capstarttrue
 
 
 \end{document}
