@@ -5,15 +5,40 @@
 
 \usepackage{natbib}
 \usepackage{amssymb,amsmath}
-\usepackage{color}
-\usepackage[backref,breaklinks,colorlinks,citecolor=blue]{hyperref}
-\usepackage[all]{hypcap}
-\renewcommand*{\backref}[1]{[#1]}
+\usepackage{color,hyperref}
+\definecolor{linkcolor}{rgb}{0,0,0.5}
+\hypersetup{colorlinks=true,linkcolor=linkcolor,citecolor=linkcolor,
+            filecolor=linkcolor,urlcolor=linkcolor}
+\usepackage{url}
 
-\usepackage{acronym}
+%\usepackage[backref,breaklinks,colorlinks,citecolor=blue]{hyperref}
+%\usepackage[all]{hypcap}
+%\renewcommand*{\backref}[1]{[#1]}
+
+%\usepackage{acronym}
 
 
 \bibliographystyle{apj}
+
+\newcommand{\figref}[1]{\ref{fig:#1}}
+\newcommand{\Fig}[1]{\figurename~\figref{#1}}
+\newcommand{\fig}[1]{\Fig{#1}}
+\newcommand{\figlabel}[1]{\label{fig:#1}}
+\newcommand{\Tab}[1]{Table~\ref{tab:#1}}
+\newcommand{\tab}[1]{\Tab{#1}}
+\newcommand{\tablabel}[1]{\label{tab:#1}}
+\newcommand{\Eq}[1]{Equation~(\ref{eq:#1})}
+\newcommand{\eq}[1]{\Eq{#1}}
+\newcommand{\eqalt}[1]{Equation~\ref{eq:#1}}
+\newcommand{\eqlabel}[1]{\label{eq:#1}}
+\newcommand{\sectionname}{Section}
+\newcommand{\Sect}[1]{\sectionname~\ref{sect:#1}}
+\newcommand{\sect}[1]{\Sect{#1}}
+\newcommand{\sectalt}[1]{\ref{sect:#1}}
+\newcommand{\App}[1]{Appendix~\ref{sect:#1}}
+\newcommand{\app}[1]{\App{#1}}
+\newcommand{\sectlabel}[1]{\label{sect:#1}}
+
 
 \newcommand{\vdag}{(v)^\dagger}
 \newcommand{\myemail}{tdm@astro.princeton.edu}
@@ -85,8 +110,9 @@
 
 \begin{abstract}
 We present the results of applying a fully automated transit signal
-false positive probability calculating procedure to every \ac{koi}.
-Out of \ncalc\ \acp{koi}, we determine that \nval\ have probabilities
+false positive probability calculating procedure to every Kepler
+Object of Interest (KOI).
+Out of \ncalc\ KOIs, we determine that \nval\ have probabilities
 $<$1\% to be astrophysical false positives, and thus may be considered
 validated planets.  \nvalnew\ of these have not yet been validated or
 confirmed by other methods.  In addition, we identify \nfp\ KOIs
@@ -120,7 +146,6 @@ be easily applied to any transiting exoplanet candidate.
 
 
 \section{Introduction}
-\acresetall
 
 The \kepler\ mission has revolutionized our understanding of
 exoplanets.  Among many other important discoveries, \kepler\ has
@@ -137,17 +162,17 @@ confirmation of their veracity.
 
 Before \kepler, every survey searching for transiting exoplanets had a 
 
-\ac{fpp} and then \ac{fpp}.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Methods}
-\label{sec:methods}
+\sectlabel{methods}
 
-In this work, we apply the fully automated \ac{fpp}-computing
+In this work, we apply the fully automated FPP-computing
 procedure described in \citet[][hereafter
-  \citetalias{Morton:2012}]{Morton:2012} to \ncalc\ \acp{koi} (see
-\autoref{sec:data} for details).  While we refer the reader to
+  \citetalias{Morton:2012}]{Morton:2012} to \ncalc\ KOIs (see
+\sect{data} for details).  While we refer the reader to
 \citetalias{Morton:2012} for a detailed description of the method, we
 outline it briefly in this section.  The procedure as implemented here
 is now publicly available in the Python module
@@ -157,14 +182,14 @@ is now publicly available in the Python module
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{False Positive Probabilities}
-\label{sec:methods:fpp}
+\sectlabel{methods:fpp}
 
 The basic idea of \vespa\ is to assign probabilities to different
 astrophysical hypotheses that might describe a transiting planet
 candidate signal.  If $\{H_i\}$ is the set of all considered
 hypotheses, the probability for any given model $i$ is
 \begin{equation}
-  \label{eq:prob}
+  \eqlabel{prob}
   \mathrm{Pr}\left(H_i\right) = \frac{\pi_i \mathcal
     L_i}{\displaystyle \sum_j \pi_j \mathcal L_j},
 \end{equation}
@@ -183,14 +208,15 @@ by depth $\delta$, total duration $T$, and shape parameter $T / \tau$,
 where $\tau$ is the ``ingress/egress'' duration (such that a
 completely V-shaped transit has $T/\tau = 2$).  For the transit signal
 being evaluated, the joint posterior probability density function
-(PDF) of these shape parameters is sampled with \ac{mcmc}, using the
+(PDF) of these shape parameters is sampled with Markov Chain Monte
+Carlo (MCMC), using the
 \texttt{emcee} sampler \citep{emcee}.  This allows the likelihood for
 each hypothesis to be determined by simulating a physically realistic
 population of the hypothesized astrophysical scenario and using this
 population to define the PDF for the trapezoidal parameters under the
 hypothesis.  The likelihood is then
 \begin{equation}
-  \label{eq:lhood}
+  \eqlabel{lhood}
   \mathcal L_i = \displaystyle \int p_\mathrm{sig}\left(\bvec{\theta}\right)
                                     p_i\left(\bvec{\theta}\right)\,d\bvec{\theta},
 \end{equation}
@@ -207,43 +233,43 @@ PDF for the parameters under hypothesis $i$.\footnote{$\mathcal L_i$
 Observational constraints are incorporated in two different ways.
 First, photometric (or spectroscopic/asteroseismic) measurements of
 the target star are folded into the population simulations of each
-hypothesis (see \autoref{sec:methods:stellar}).  All other constraints are
+hypothesis (see \sect{methods:stellar}).  All other constraints are
 applied to narrow down which simulated instances of each scenario may
 be counted in the final prior and likelihood evalulations; for example,
 only blended eclipsing binaries with secondary eclipse depths
 shallower than the observed limits contribute to the construction of
 the $p_i$ trapezoidal shape parameter PDF.
 
-The steps \vespa\ takes to calculate the \ac{fpp} of a transit signal
+The steps \vespa\ takes to calculate the FPP of a transit signal
 are thus as follows:
 \begin{enumerate}
-\item Fit trapezoid model to observed transit signal using \ac{mcmc}.
+\item Fit trapezoid model to observed transit signal using MCMC.
 \item Generate population simulations for each hypothesis scenario
   being considered (conditioned on available observations of the
-  target star; see \autoref{sec:methods:stellar}).
+  target star; see \sect{methods:stellar}).
 \item Fit each simulated eclipse in each scenario with a trapezoid
   model (using least-squares optimization).
 \item Evaluate priors and likelihoods for each hypothesis, taking into
   account all available observational constraints, in order to
-  calculate the \ac{fpp}.
+  calculate the FPP.
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Stellar Properties}
-\label{sec:methods:stellar}
+\sectlabel{methods:stellar}
 
 The most substantial difference between the current implementation of
 \vespa\ and the procedure documented in \citetalias{Morton:2012} is
 how stellar properties are treated.  Previously, either the target
 star's mass and radius were explicitly provided, or they were randomly
 generated according to the stellar population expected along the line
-of sight by the \ac{trilegal} Galactic stellar popultion synthesis
-tool, but constrained to agree with some observed color(s) of the star
-(e.g. $J-K$), to within some specified tolerance.  This strategy was
-used both to generate the host stars for the transiting planet model
-and the binary and triple stars for the EB and HEB false positive
-models.
+of sight by the TRIdimensional modeL of thE GALaxy (TRILEGAL) Galactic
+stellar popultion synthesis tool, but constrained to agree with some
+observed color(s) of the star (e.g. $J-K$), to within some specified
+tolerance.  This strategy was used both to generate the host stars for
+the transiting planet model and the binary and triple stars for the EB
+and HEB false positive models.
 
 The new method now used by \vespa\ uses the \isochrones\ Python module
 \citep{isochrones} to fold in observational constraints on the host
@@ -265,7 +291,7 @@ drawn directly from these posterior samples.
 
 As a result, \vespa\ creates full posterior samplings of the physical
 properties of the host star, modeled as a single, binary, and triple
-star system, as a by-product of the \ac{fpp} calculation.  Parameters
+star system, as a by-product of the FPP calculation.  Parameters
 directly fitted for in this process are stellar mass, age, [Fe/H],
 $A_V$ extinction, and distance.  For binary and triple fits, secondary
 and/or tertiary mass parameters are added, with all other parameters
@@ -274,19 +300,19 @@ upon which these fits are conditioned are assumed to be the sum of all
 components.  If spectroscopic and/or asteroseismic measurements are
 used (e.g., constraints on effective temperature or stellar surface
 gravity), they are assumed to relate to only the primary star.  Priors
-used in these fits are listed in \autoref{table:priors}---notably, we
+used in these fits are listed in \tab{priors}---notably, we
 use a prior on [Fe/H] based on a double-Gaussian fit to the local
 metallicity distribution \citep{Hayden:2015, Casagrande:2011}.  Posterior
 chains of all other stellar parameters of interest (e.g., temperature,
 surface gravity, radius, etc.) are derived from the chains of fitting
 parameters by evaluting the stellar models using \isochrones.
 
-\capstartfalse
+%\capstartfalse
 \begin{deluxetable}{cc}
 \tablewidth{0pt}
 \tabletypesize{\scriptsize}
 \tablecaption{Priors used in stellar property fits
-\label{table:priors}}
+\tablabel{priors}}
 \tablehead{
 \colhead{Parameter} &
 \colhead{Prior}}
@@ -295,47 +321,45 @@ Primary mass $M_A$ & $\propto M_A^{-2.35},~M_A > 0.1$ \\
 Secondary mass $M_B$ & $\propto (M_B/M_A)^{0.3},~0.1 <= M_B < M_A$ \\
 Tertiary mass $M_C$ & $\propto (M_C/M_A)^{0.3},~0.1 <= M_C < M_B$ \\
 Age {[}Gyr{]} & $\mathcal U(1,15)$ \tablenotemark{a}\\
-{[}Fe/H{]} & $\frac{0.8}{0.15} \mathcal N(0.016, 0.15) +
-\frac{0.2}{0.22} \mathcal N(-0.15, 0.22)$  \tablenotemark{b}\\
-$A_V$ {[}mag{]} & $\mathcal U(0, A_{V, \mathrm{max}})$
-\tablenotemark{c} \\
+{[}Fe/H{]} & $\frac{0.8}{0.15} \mathcal N(0.016, 0.15) + \frac{0.2}{0.22} \mathcal N(-0.15, 0.22)$  \tablenotemark{b} \\
+$A_V$ {[}mag{]} & $\mathcal U(0, A_{V, \mathrm{max}})$ \tablenotemark{c} \\
 Distance $d$ & $\propto d^2$ 
 \enddata
-\tablenotetext{a}{The age range for the Dartmouth stellar model grids
-  used.}
-\tablenotetext{b}{Double-Gaussian fit to measured local stellar metallicity
-  distribution \citep{Hayden:2015, Casagrande:2011}.}
-\tablenotetext{3}{Maximum allowed value is the Galactic extinction at
-  infinity calculated along the star's line of sight, according to \citet{Schlegel:1998}.}
+%\tablenotetext{a}{The age range for the Dartmouth stellar model grids used.}
+%\tablenotetext{b}{Double-Gaussian fit to measured local stellar
+%  metallicity distribution \citep{Hayden:2015, Casagrande:2011}.}
+%\tablenotetext{3}{Maximum allowed value is the Galactic extinction at
+%  infinity calculated along the star's line of sight, according to \citet{Schlegel:1998}.}
 \end{deluxetable}
-\capstarttrue
+%\capstarttrue
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Data and Constraints}
-\label{sec:data}
+\sectlabel{data}
 
-The goal of this work is to calculate the \ac{fpp} for every \ac{koi},
+The goal of this work is to calculate the FPP for every KOI,
 regardless of classification as CONFIRMED, CANDIDATE, or FALSE
-POSITIVE.  As such, we begin with a list of \ntotal\ \acp{koi} from
-the cumulative table at the \ac{nexsci} Exoplanet Archive.  We then
-gather ancillary data and constraints from various sources in order to
-enable the \vespa\ calculation:
+POSITIVE.  As such, we begin with a list of \ntotal\ KOIs from the
+cumulative table at the NASA Exoplanet Science Institute (NExScI)
+Exoplanet Archive.  We then gather ancillary data and constraints from
+various sources in order to enable the \vespa\ calculation:
 
 \begin{enumerate}
-\item The RA/Dec coordinates of each star from the \ac{kic}.
-\item $grizJHK$ photometry from the \ac{kic}, with $griz$ bands
-  corrected to the \ac{sdss} photometric scale according to
-  \citet{Pinsonneault:2012}.
+\item The RA/Dec coordinates of each star from the Kepler Input
+  Catalog (KIC).
+\item $grizJHK$ photometry from the KIC, with $griz$ bands corrected
+  to the Sloan Digital Sky Survey (SDSS) photometric scale according
+  to \citet{Pinsonneault:2012}.
 \item Stellar $T_\mathrm{eff}$, [Fe/H], and $\log g$ values and
   uncertainties from the \citet{Huber:2014} stellar properties
   catalog, if the provenance of these values is from spectroscopy or
   asteroseismology.
-\item Detrended \kepler\ photometry used for the \ac{mcmc} modeling of
+\item Detrended \kepler\ photometry used for the MCMC modeling of
   \citet{Rowe:2015}, along with information about individually fitted
   transit times, where available.  
 \item Best-fit $R_p/R_\star$ from the \citet{Rowe:2015} MCMC analysis.
-\item Centroid uncertainty information from the \ac{nexsci} Exoplanet
+\item Centroid uncertainty information from the NExScI Exoplanet
   Archive: we assume that the allowed ``exclusion'' radius for a blend
   scenario is 3$\times$ the uncertainty in the fitted centroid
   position (the \verb|koi_dicco_msky_err| column in the Archive
@@ -345,7 +369,7 @@ enable the \vespa\ calculation:
 \item The maximum secondary eclipse depth allowed by the
   \kepler\ photometry.  This quantity is obtained from vetting
   metrics produced internally by the \kepler\ Science Office.  When
-  these metrics are not available for a particular \ac{koi}, we
+  these metrics are not available for a particular KOI, we
   default to 10$\times$ the uncertainty in the \kepler\ pipeline
   measured transit depth (\verb|koi_depth_err1|).  While these
   secondary metrics are not yet available on the Archive, they should
@@ -362,42 +386,42 @@ enable the \vespa\ calculation:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Results}
-\label{sec:results}
+\sectlabel{results}
 
 The results of the \vespa\ calculations are presented in
-\autoref{table:stars} and \autoref{table:fpp}, and are discussed in
+\tab{stars} and \tab{fpp}, and are discussed in
 the following subsections.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Stellar Properties}
-\label{sec:results:stars}
+\sectlabel{results:stars}
 
-As discussed in \autoref{sec:methods:stellar}, \vespa\ fits for stellar
-properties as part of its \ac{fpp}--calculating procedure, using the
+As discussed in \sect{methods:stellar}, \vespa\ fits for stellar
+properties as part of its FPP--calculating procedure, using the
 \isochrones\ package.  Thus, we obtain posterior samplings of the
-physical properties of each \ac{koi} as a side effect of this batch
-calculation, a result of general interest independent of \acp{fpp}.
-\autoref{table:stars} presents summarized results of the single--star
+physical properties of each KOI as a side effect of this batch
+calculation, a result of general interest independent of FPP.
+\tab{stars} presents summarized results of the single--star
 fits.  While \vespa\ also fits double-- and triple--star models for
-each \ac{koi}, these are of less general interest and so we do not
+each KOI, these are of less general interest and so we do not
 present them separately.
 
-\autoref{fig:starsteff} and \autoref{fig:starsfehradius} compare the
-estimated effective temperatures, metallicities, and radii, derived
-here to those independently determined for the official
-\kepler\ stellar properties catalog \citep[][hereafter
+\fig{starsteff} and \fig{starsfehradius} compare the estimated
+effective temperatures, metallicities, and radii, derived here to
+those independently determined for the official \kepler\ stellar
+properties catalog \citep[][hereafter
   \citetalias{Huber:2014}]{Huber:2014}.  While there is largely
-general agreement, there are also discrepancies, highlighting the
+general agreement, there are also some discrepancies, highlighting the
 difficulty of estimating physical stellar properties.
 
 In particular, we note that for stars which \citetalias{Huber:2014}
 list as $T_{\rm eff} < 4000$\,K, \isochrones\ predicts systematically
-hotter temperatures.  Most of the \citetalias{Huber:2014} properties
+hotter temperatures.  Many of the \citetalias{Huber:2014} properties
 for these stars are taken from
 \citet[][\citetalias{Dressing:2013}]{Dressing:2013}.  Those properties
-were determined by trying to match the colors of each star to the colors
+were determined by trying to match the $grizJHK$ photometry
 of a grid of model stars from the Dartmouth models, supplemented by
 some interpolation.  \citetalias{Dressing:2013} also imposed priors
 on [Fe/H] and the height of stars above the plane of the Galaxy.  To
@@ -405,8 +429,56 @@ validate their methodology, \citetalias{Dressing:2013} compare their
 results for 26 nearby stars to the masses predicted for those stars by
 combining parallax measurements with the \citet{Delfosse:2000}
 relation between mass and absolute $K$-band magnitude.  While they
-find general good agreement, the \citetalias{Dressing:2013} masses are
-noted to be on average about 5\% lower than the Delfosse-predicted masses. 
+find general good agreement, \citetalias{Dressing:2013} does note that
+their masses are on average about 5\% lower than the Delfosse-predicted
+masses.  Our estimated masses for these stars are typically
+$\sim$10-15\% higher than those estimated by \citetalias{Dressing:2013}.
+
+The same data ($grizJHK$ photometry) and the same stellar models
+(Dartmouth) were used for both this work and
+\citetalias{Dressing:2013}, raising the question of the origin of the
+systematic differences between these methods.  The primary origin of
+this discrepancy appears to be the fact that \isochrones\ is doing a
+full multi-modal posterior exploration of the stellar parameter space,
+marginalizing over the unknown $A_V$ extinction in the process, while
+\citetalias{Dressing:2013} uses rather a fixed 1\,mag of $V$-band
+extinction per 1000\,pc extinction and selects the maximum-likelihood
+match to the grid of models.  As we allow for a maximum extinction up
+to the measured $A_V$ extinction at infinity, not explicitly dependent
+on distance, this typically allows for slightly hotter stars with
+slightly more extinction than was permitted by \citet{Dressing:2013}.
+
+The other significant discrepancy between the \isochrones\ results and
+\citetalias{Huber:2014} is among evolved stars, as seen in the lower
+panel of \fig{starsfehradius}.  Many of these stars have densities
+measured via asteroseismology, and \isochrones\ does not unambiguously
+identify all of them as evolved.  However, it should be noted that we
+do in fact identify over half of them as probably significantly
+evolved---this is made possible by the multi-modal posterior sampling
+of \texttt{MultiNest} used by \isochrones.  In addition, as the middle
+panel of \fig{starsfehradius} shows, even for stars not positively
+identified as evolved by \citetalias{Huber:2014}, isochrones often
+allows for a significant range of stellar radius---also desirable
+behavior, as \citetalias{Huber:2014} estimates the properties for many
+of these using only broad-band photometry as well, which means their
+true nature is not securely known.  The need for caution when
+estimating the radii of KOI host stars has also been emphasized by
+\citetalias{Bastien:2014}, who find from photometric ``flicker''
+measurements that a significant number of FGK KOI hosts may be
+slightly evolved.
+
+We emphasize that stellar parameter estimation is not the central goal
+of this work, nor are the FPP results very sensitive to the exact
+estimated stellar properties.  The exception to this would be if the
+stellar density estimate is significantly mis-estimated, which would
+the case if a star is not properly identified as evolved.  However, we
+note that of the 743 KOIs with host stars $>$2\,$R_{\odot}$ at the
+NExScI Archive, 515 of them already have FALSE POSITIVE designations.
+Additionally, \citet{Sliski:2014} find a large false positive rate for
+KOIs with evolved host stars.  Given all of these considerations, we
+believe that potential systematic issues with stellar property
+determinations in various corners of parameter space do not affect the
+main results, which are the false positive probabilities.
 
 
 
@@ -430,7 +502,7 @@ noted to be on average about 5\% lower than the Delfosse-predicted masses.
   that the stellar parameters estimated in this work are broadly
   consistent with \citetalias{Huber:2014}, though less so for the
   coolest and hottest stars.
-\label{fig:starsteff}}
+\figlabel{starsteff}}
 \end{figure*}
 
 
@@ -455,9 +527,9 @@ noted to be on average about 5\% lower than the Delfosse-predicted masses.
   consistent with \citetalias{Huber:2014}, though less so for the more
   evolved stars.  The metallicity estimates of the
   \isochrones\ calculations are driven by the use of the local
-  metallicity prior \citep[][\autoref{table:priors}]{Hayden:2015,
+  metallicity prior \citep[][\tab{priors}]{Hayden:2015,
     Casagrande:2011}.
-\label{fig:starsfehradius}}
+\figlabel{starsfehradius}}
 \end{figure*}
 
 
@@ -465,13 +537,13 @@ noted to be on average about 5\% lower than the Delfosse-predicted masses.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{False Positive Probabilities}
-\label{sec:results:fpp}
+\sectlabel{results:fpp}
 
-Of the \ntotal\ \acp{koi} in the cumulative
-table at the \ac{nexsci} Exoplanet Archive, \vespa\ successfully
-calculated the \ac{fpp} for \ncalc.  Most of the \nfail\ failures are a
-result of a \ac{koi} no longer being ``of interest,'' despite still
-being listed in the cumulative table.  \autoref{sec:failures} contains
+Of the \ntotal\ KOIs in the cumulative
+table at the NExScI Exoplanet Archive, \vespa\ successfully
+calculated the FPP for \ncalc.  Most of the \nfail\ failures are a
+result of a KOI no longer being ``of interest,'' despite still
+being listed in the cumulative table.  \sect{failures} contains
 detailed explanations of the different failure modes.
 
 
@@ -479,17 +551,17 @@ detailed explanations of the different failure modes.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Failure Modes}
-\label{sec:failures}
+\sectlabel{failures}
 
 
-Of the \ntotal\ total \acp{koi}, \nbadphot\ did not receive \ac{mcmc}
+Of the \ntotal\ total KOIs, \nbadphot\ did not receive MCMC
 modeling.  Most of these (\nbadphotFP) are already designated FALSE
 POSITIVE at the archive, though \nbadphotCAND\ have CANDIDATE
 disposition.  One, K00245.04, is a confirmed planet.  \tdmtodo{Find
-  out why??}  An additional \nbadrowemcmc\ did receive \ac{mcmc}
+  out why??}  An additional \nbadrowemcmc\ did receive MCMC
 modeling but had unphysical fit results; e.g., negative $R_p/R_\star$
 or best-fit impact parameter greater than $(1 + R_p/R_\star)$.  Of the
-\acp{koi} that did have usable \ac{mcmc} fits, \nbadsec\ had no
+KOIs that did have usable MCMC fits, \nbadsec\ had no
 \verb|koi_depth_err1| value on the archive, and thus had no weak
 secondary constraint and were left out of the calculations.
 
@@ -497,17 +569,17 @@ secondary constraint and were left out of the calculations.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Conclusions}
-\label{sec:conclusions}
+\sectlabel{conclusions}
 
-\acrodef{fpp}[FPP]{false positive probability}
-\acrodef{koi}[KOI]{\kepler\ Object of Interest}
-\acrodefplural{koi}[KOIs]{\kepler\ Objects of Interest}
-\acrodef{nexsci}[NExScI]{NASA Exoplanet Science Institute}
-\acrodef{mcmc}[MCMC]{Markov Chain Monte Carlo}
-\acrodef{trilegal}[TRILEGAL]{TRIdimensional modeL of thE GALaxy}
-\acrodef{kic}[KIC]{Kepler Input Catalog}
-\acrodef{sdss}[SDSS]{Sloan Digital Sky Survey}
-\acrodef{ttv}[TTV]{transit timing variations}
+%\acrodef{fpp}[FPP]{false positive probability}
+%\acrodef{koi}[KOI]{\kepler\ Object of Interest}
+%\acrodefplural{koi}[KOIs]{\kepler\ Objects of Interest}
+%\acrodef{nexsci}[NExScI]{NASA Exoplanet Science Institute}
+%\acrodef{mcmc}[MCMC]{Markov Chain Monte Carlo}
+%\acrodef{trilegal}[TRILEGAL]{TRIdimensional modeL of thE GALaxy}
+%\acrodef{kic}[KIC]{Kepler Input Catalog}
+%\acrodef{sdss}[SDSS]{Sloan Digital Sky Survey}
+%\acrodef{ttv}[TTV]{transit timing variations}
 
 
 \acknowledgments
@@ -518,13 +590,13 @@ It is a pleasure to thank
 \bibliography{ms}
 \clearpage
 
-\capstartfalse
+%\capstartfalse
 \input{table_stars}
-\capstarttrue
+%\capstarttrue
 
-\capstartfalse
+%\capstartfalse
 \input{table_fpp}
-\capstarttrue
+%\capstarttrue
 
 
 \end{document}
