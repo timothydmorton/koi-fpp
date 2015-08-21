@@ -44,20 +44,27 @@
 \newcommand{\myemail}{tdm@astro.princeton.edu}
 
 \newcommand{\ntotal}{8826}
-\newcommand{\nfail}{1584}
-\newcommand{\ncalc}{7242}
+\newcommand{\nfail}{787}
+\newcommand{\ncalc}{8039}
 \newcommand{\nval}{1500}
 \newcommand{\nvalnew}{1000}
 \newcommand{\nfp}{500}
 \newcommand{\nfpnew}{200}
-\newcommand{\nbadphot}{1009} %EmptyPhotometry or MissingKOI
-\newcommand{\nbadphotFP}{897}
-\newcommand{\nbadphotCAND}{111}
-\newcommand{\nbadrowemcmc}{210}
-\newcommand{\nbadstellar}{80} %MissingStellar
-\newcommand{\nbadsec}{82} %NoWeakSecondary
-\newcommand{\nattempted}{7317}
-\newcommand{\ntryfail}{75}
+\newcommand{\nbadphot}{47} %EmptyPhotometry or MissingKOI
+\newcommand{\nbadphotFP}{34}
+\newcommand{\nbadphotCAND}{13}
+\newcommand{\nbadrowemcmc}{216}
+\newcommand{\nbadstellar}{98} %MissingStellar
+\newcommand{\nbadsec}{162} %NoWeakSecondary
+\newcommand{\nattempted}{8141}
+\newcommand{\ntryfail}{112}
+\newcommand{\nbadtrapfit}{32}
+\newcommand{\nbadroche}{52}
+\newcommand{\nbadother}{28}
+\newcommand{\nbadotherFP}{22}
+\newcommand{\nbadotherCAND}{5}
+\newcommand{\nbadotherCONF}{1}
+
 \newcommand{\kepler}{\textit{Kepler}}
 \newcommand{\vespa}{\texttt{vespa}}
 \newcommand{\isochrones}{\texttt{isochrones}}
@@ -325,11 +332,11 @@ Age {[}Gyr{]} & $\mathcal U(1,15)$ \tablenotemark{a}\\
 $A_V$ {[}mag{]} & $\mathcal U(0, A_{V, \mathrm{max}})$ \tablenotemark{c} \\
 Distance $d$ & $\propto d^2$ 
 \enddata
-%\tablenotetext{a}{The age range for the Dartmouth stellar model grids used.}
-%\tablenotetext{b}{Double-Gaussian fit to measured local stellar
-%  metallicity distribution \citep{Hayden:2015, Casagrande:2011}.}
-%\tablenotetext{3}{Maximum allowed value is the Galactic extinction at
-%  infinity calculated along the star's line of sight, according to \citet{Schlegel:1998}.}
+\tablenotetext{a}{The age range for the Dartmouth stellar model grids used.}
+\tablenotetext{b}{Double-Gaussian fit to measured local stellar
+  metallicity distribution \citep{Hayden:2015, Casagrande:2011}.}
+\tablenotetext{c}{Maximum allowed value is the Galactic extinction at
+  infinity calculated along the star's line of sight, according to \citet{Schlegel:1998}.}
 \end{deluxetable}
 %\capstarttrue
 
@@ -403,18 +410,18 @@ properties as part of its FPP--calculating procedure, using the
 \isochrones\ package.  Thus, we obtain posterior samplings of the
 physical properties of each KOI as a side effect of this batch
 calculation, a result of general interest independent of FPP.
-\tab{stars} presents summarized results of the single--star
+\tab{stars} presents summarized results of these single--star
 fits.  While \vespa\ also fits double-- and triple--star models for
 each KOI, these are of less general interest and so we do not
 present them separately.
 
 \fig{starsteff} and \fig{starsfehradius} compare the estimated
-effective temperatures, metallicities, and radii, derived here to
-those independently determined for the official \kepler\ stellar
-properties catalog \citep[][hereafter
+effective temperatures, metallicities, and radii derived in this work
+to those independently determined for (or compiled by) the official
+\kepler\ stellar properties catalog \citep[][hereafter
   \citetalias{Huber:2014}]{Huber:2014}.  While there is largely
-general agreement, there are also some discrepancies, highlighting the
-difficulty of estimating physical stellar properties.
+general agreement, there are also some discrepancies, highlighting some
+difficulties of estimating physical stellar properties.
 
 In particular, we note that for stars which \citetalias{Huber:2014}
 list as $T_{\rm eff} < 4000$\,K, \isochrones\ predicts systematically
@@ -438,11 +445,11 @@ The same data ($grizJHK$ photometry) and the same stellar models
 (Dartmouth) were used for both this work and
 \citetalias{Dressing:2013}, raising the question of the origin of the
 systematic differences between these methods.  The primary origin of
-this discrepancy appears to be the fact that \isochrones\ is doing a
+this discrepancy appears to be the fact that \isochrones\ performs a
 full multi-modal posterior exploration of the stellar parameter space,
 marginalizing over the unknown $A_V$ extinction in the process, while
 \citetalias{Dressing:2013} uses rather a fixed 1\,mag of $V$-band
-extinction per 1000\,pc extinction and selects the maximum-likelihood
+extinction per 1000\,pc and selects the maximum-likelihood
 match to the grid of models.  As we allow for a maximum extinction up
 to the measured $A_V$ extinction at infinity, not explicitly dependent
 on distance, this typically allows for slightly hotter stars with
@@ -471,10 +478,10 @@ We emphasize that stellar parameter estimation is not the central goal
 of this work, nor are the FPP results very sensitive to the exact
 estimated stellar properties.  The exception to this would be if the
 stellar density estimate is significantly mis-estimated, which would
-the case if a star is not properly identified as evolved.  However, we
-note that of the 743 KOIs with host stars $>$2\,$R_{\odot}$ at the
-NExScI Archive, 515 of them already have FALSE POSITIVE designations.
-Additionally, \citet{Sliski:2014} find a large false positive rate for
+be the case if a star is not properly identified as evolved.  However, we
+note that of the 743 KOIs with host stars $>$2\,$R_{\odot}$ at the 
+NExScI Archive, 515 of them already have FALSE POSITIVE designations;
+additionally, \citet{Sliski:2014} find a large false positive rate for
 KOIs with evolved host stars.  Given all of these considerations, we
 believe that potential systematic issues with stellar property
 determinations in various corners of parameter space do not affect the
@@ -541,7 +548,7 @@ main results, which are the false positive probabilities.
 
 Of the \ntotal\ KOIs in the cumulative
 table at the NExScI Exoplanet Archive, \vespa\ successfully
-calculated the FPP for \ncalc.  Most of the \nfail\ failures are a
+calculated the FPP for \ncalc.  Many of the \nfail\ failures are a
 result of a KOI no longer being ``of interest,'' despite still
 being listed in the cumulative table.  \sect{failures} contains
 detailed explanations of the different failure modes.
@@ -554,16 +561,38 @@ detailed explanations of the different failure modes.
 \sectlabel{failures}
 
 
-Of the \ntotal\ total KOIs, \nbadphot\ did not receive MCMC
-modeling.  Most of these (\nbadphotFP) are already designated FALSE
-POSITIVE at the archive, though \nbadphotCAND\ have CANDIDATE
-disposition.  One, K00245.04, is a confirmed planet.  \tdmtodo{Find
-  out why??}  An additional \nbadrowemcmc\ did receive MCMC
-modeling but had unphysical fit results; e.g., negative $R_p/R_\star$
-or best-fit impact parameter greater than $(1 + R_p/R_\star)$.  Of the
-KOIs that did have usable MCMC fits, \nbadsec\ had no
-\verb|koi_depth_err1| value on the archive, and thus had no weak
-secondary constraint and were left out of the calculations.
+We were not able to successfully run \vespa\ on \nfail\ of the
+\ntotal\ total KOIs. The various reasons for these failures are
+detailed below.  
+\begin{enumerate}
+\item \nbadphot\ KOIs did not receive MCMC modeling.  Most of these
+  (\nbadphotFP) are already designated FALSE POSITIVE at the archive,
+  though \nbadphotCAND\ have CANDIDATE disposition.
+\item \nbadrowemcmc\ KOIs did receive MCMC modeling but had unphysical fit
+  results; e.g., negative $R_p/R_\star$ or best-fit impact parameter
+  greater than $(1 + R_p/R_\star)$.
+\item The host stars of \nbadstellar\ KOIs are not included in the
+  \citetalias{Huber:2014} stellar property catalog, and thus were not
+  included in this analysis.
+\item \nbadsec\ KOIs have no \verb|koi_depth_err1| value on the archive,
+  and thus had no weak secondary constraint and were left out of the
+  calculations.
+\item For \nbadtrapfit\ KOIs, the trapezoid MCMC fit did not converge.  The
+  convergence criterion was for the autocorrelation time of the chain
+  for each parameter to be shorter than 10\% of the total chain
+  length.
+\item For \nbadroche\ KOIs, the period of the planet was such that its
+  orbit was implied to be within its host star's Roche limit.  This
+  usually happens when the host star is estimated to be a giant, and
+  these situations are nearly always false positives. 
+\item Finally, \nbadother\ KOIs failed for as-yet undetermined
+  reasons.  \nbadotherFP\ of these are already designated FALSE
+  POSITIVE, \nbadotherCAND\ are CANDIDATE, and \nbadotherCONF\ is
+  dispositioned as a confirmed planet.
+\end{enumerate}
+The numbers in this list correspond to the numbers listed in
+the ``failure'' column in \tab{fpp} for those KOIs without values in
+the ``FPP'' column.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
