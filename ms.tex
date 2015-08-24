@@ -46,7 +46,7 @@
 \newcommand{\ntotal}{8826}
 \newcommand{\nfail}{787}
 \newcommand{\ncalc}{8039}
-\newcommand{\nval}{1500}
+
 \newcommand{\nvalnew}{1000}
 \newcommand{\nfp}{500}
 \newcommand{\nfpnew}{200}
@@ -64,6 +64,10 @@
 \newcommand{\nbadotherFP}{22}
 \newcommand{\nbadotherCAND}{5}
 \newcommand{\nbadotherCONF}{1}
+
+\newcommand{\nreliable}{2854}
+\newcommand{\nval}{2136}
+\newcommand{\nreliableFP}{298}
 
 \newcommand{\kepler}{\textit{Kepler}}
 \newcommand{\vespa}{\texttt{vespa}}
@@ -546,12 +550,34 @@ main results, which are the false positive probabilities.
 \subsection{False Positive Probabilities}
 \sectlabel{results:fpp}
 
-Of the \ntotal\ KOIs in the cumulative
-table at the NExScI Exoplanet Archive, \vespa\ successfully
-calculated the FPP for \ncalc.  Many of the \nfail\ failures are a
-result of a KOI no longer being ``of interest,'' despite still
-being listed in the cumulative table.  \sect{failures} contains
-detailed explanations of the different failure modes.
+Of the \ntotal\ KOIs in the cumulative table at the NExScI Exoplanet
+Archive, \vespa\ successfully calculated the FPP for \ncalc.  These
+results are listed in \tab{fpp};  \sect{failures} contains detailed
+explanations of the different failure modes.
+
+The first thing to note about these results is that they should not
+all be taken at face value.  For example, many KOIs have already been
+identified as false positives, and designated 
+
+\begin{figure*}[p]
+\begin{center}
+\includegraphics[width=7in]{figures/fpp_summary_all.pdf}
+\end{center}
+\caption{False positive probabilities of all KOIs for which we
+  consider the \vespa\ calculations to be reliable.  This includes
+  KOIs that are not dispositioned as FALSE POSITIVE on the NExScI
+  archive, are considered to be reliably located on the target star ($
+  {\rm Pr} > 0.99$) according to pixel-level analysis
+  \citep{Bryson:2015}, and for which $\mathcal L_{\rm tot} > 10^{-3}$,
+  indicating that the hypotheses tested by \vespa\ are not all poor
+  explanations of the data.  Of these \nreliable\ KOIs, \nval\ have
+  FPPs less than 1\%.  Noteably, \nreliableFP\ are likely false
+  positives (FPP $> 0.5$), consistent with the \citet{Morton:2011} and
+  \citet{Fressin:2013} \emph{a priori} estimates of the overall
+  \kepler\ candidate false positive rate.
+
+\figlabel{fppall}}
+\end{figure*}
 
 
 
