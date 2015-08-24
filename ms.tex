@@ -553,7 +553,47 @@ main results, which are the false positive probabilities.
 Of the \ntotal\ KOIs in the cumulative table at the NExScI Exoplanet
 Archive, \vespa\ successfully calculated the FPP for \ncalc.  These
 results are listed in \tab{fpp};  \sect{failures} contains detailed
-explanations of the different failure modes.
+explanations of the different failure modes.  
+
+In order to properly interpret these results, it is necessary to
+understand the range of applicability of the \vespa\ calculation.
+First of all, this method selects between different \emph{eclipse
+  configuration} explanations for the transit-like signal, and cannot
+comment on whether the signal might be caused by stellar variability
+or an instrumental false alarm.  Thus, \vespa\ results on low
+signal-to-noise candidates where it is not clear whether the
+identified signal is truly transit-like or not must be viewed with
+caution.
+
+Another important constraint used in the FPP calculation is the
+allowed sky area inside which a blended false positive may live.  As
+described in \sect{data}, this value is taken to be three times the
+uncertainty on the fitted centroid position from the pixel-level data.
+However, many KOIs have already been identified to be blended binaries
+displaced from the target star.  Some of these are found by detecting
+significant centroid offsets---in these cases, treating the confusion
+radius simply as the uncertainty in the centroid position will clearly
+give a misleading result.  Other displaced false positives have been
+identified as originating from displaced stars by finding KOIs with
+matching ephemerides \citep{Coughlin:2014}, and often the ``parents''
+of these signals are outside the pixel masks, and so unable to be
+detected via the normal centroid-measuring methods.
+
+Thus there are many KOIs that have
+already been identified as false alarms (and thus dispositioned FALSE
+POSITIVE at the NExScI archive) for which \vespa\ gives a low false
+positive probability---all this means is that the planet scenario for
+those KOIs is \emph{more} probable than the other scenarios being
+considered, but 
+
+
+
+from several pixels or more away, often the result of
+the point spread function (PSF) of a bright eclipsing binary star
+leaking into the aperture of a nearby target star
+\citep{Coughlin:2014}.  Most of these have been 
+
+the limits of the \vespa\ method.  
 
 The first thing to note about these results is that they should not
 all be taken at face value.  For example, many KOIs have already been
@@ -564,7 +604,8 @@ identified as false positives, and designated
 \includegraphics[width=7in]{figures/fpp_summary_all.pdf}
 \end{center}
 \caption{False positive probabilities of all KOIs for which we
-  consider the \vespa\ calculations to be reliable.  This includes
+  consider the \vespa\ calculations to be reliable (floored at
+  $10^{-4}$ for visualization purposes).  This includes
   KOIs that are not dispositioned as FALSE POSITIVE on the NExScI
   archive, are considered to be reliably located on the target star ($
   {\rm Pr} > 0.99$) according to pixel-level analysis
@@ -575,7 +616,6 @@ identified as false positives, and designated
   positives (FPP $> 0.5$), consistent with the \citet{Morton:2011} and
   \citet{Fressin:2013} \emph{a priori} estimates of the overall
   \kepler\ candidate false positive rate.
-
 \figlabel{fppall}}
 \end{figure*}
 
