@@ -47,7 +47,6 @@
 \newcommand{\nfail}{787}
 \newcommand{\ncalc}{8039}
 
-\newcommand{\nvalnew}{1000}
 \newcommand{\nfp}{500}
 \newcommand{\nfpnew}{200}
 \newcommand{\nbadphot}{47} %EmptyPhotometry or MissingKOI
@@ -65,9 +64,11 @@
 \newcommand{\nbadotherCAND}{5}
 \newcommand{\nbadotherCONF}{1}
 
-\newcommand{\nreliable}{2854}
-\newcommand{\nval}{2136}
-\newcommand{\nreliableFP}{298}
+\newcommand{\nreliable}{2752}
+\newcommand{\nval}{2069}
+\newcommand{\nreliableFP}{292}
+\newcommand{\nvalnew}{1368}
+\newcommand{\ncurval}{1001}
 
 \newcommand{\kepler}{\textit{Kepler}}
 \newcommand{\vespa}{\texttt{vespa}}
@@ -239,7 +240,12 @@ PDF for the parameters under hypothesis $i$.\footnote{$\mathcal L_i$
   being the likelihood and $p_i$ being the prior, integrated over the
   $\bvec{\theta}$ parameter space.  But for clarity, and for
   continuity with previous publication, we continue to call $\mathcal
-  L_i$ the ``likelihood'' for hypothesis $i$.}
+  L_i$ the ``likelihood'' for hypothesis $i$.}  The hypotheses
+currently supported by \vespa are the following: unblended eclipsing
+binary (EB), hierarchical-triple eclipsing binary (HEB),
+chance-aligned background/foreground eclipsing binary (BEB), and
+transiting planet (Pl).
+
 
 Observational constraints are incorporated in two different ways.
 First, photometric (or spectroscopic/asteroseismic) measurements of
@@ -482,66 +488,17 @@ We emphasize that stellar parameter estimation is not the central goal
 of this work, nor are the FPP results very sensitive to the exact
 estimated stellar properties.  The exception to this would be if the
 stellar density estimate is significantly mis-estimated, which would
-be the case if a star is not properly identified as evolved.  However, we
-note that of the 743 KOIs with host stars $>$2\,$R_{\odot}$ at the 
+be the case if a star is not properly identified as evolved.  However,
+we note that of the 743 KOIs with host stars $>$2\,$R_{\odot}$ at the
 NExScI Archive, 515 of them already have FALSE POSITIVE designations;
 additionally, \citet{Sliski:2014} find a large false positive rate for
 KOIs with evolved host stars.  Given all of these considerations, we
 believe that potential systematic issues with stellar property
-determinations in various corners of parameter space do not affect the
-main results, which are the false positive probabilities.
+determinations in various corners of parameter space do not strongly
+affect the main results, which are the astrophysical false positive
+probabilities of thousands of KOIs.
 
 
-
-\begin{figure*}[p]
-\begin{center}
-\includegraphics[width=7in]{figures/hubercompare_teff.pdf}
-\end{center}
-\caption{Comparison between effective temperatures estimated from the
-  \isochrones\ analysis in this work and those from the
-  \kepler\ stellar parameters catalog \citep[][hereafter
-    \citetalias{Huber:2014}]{Huber:2014}.  Bottom panel shows stars
-  for which \citetalias{Huber:2014} predicts $T_{\rm eff} < 4500$\,K,
-  middle spans $4500\,{\rm K} < T_{\rm eff} < 6500\,{\rm K}$, and top
-  has $T_{\rm eff} > 6500$\,K. Blue horizontal bold lines are the
-  \citetalias{Huber:2014} values in sorted order; blue shading
-  represents the error bars from \citetalias{Huber:2014}.  Vertical
-  lines span the 1$\sigma$ credible region of the \isochrones\ fits;
-  these lines are grey if they overlap with the
-  \citetalias{Huber:2014} 1$\sigma$ region and red (with the median
-  marked by a point) if they are inconsistent.  This comparison shows
-  that the stellar parameters estimated in this work are broadly
-  consistent with \citetalias{Huber:2014}, though less so for the
-  coolest and hottest stars.
-\figlabel{starsteff}}
-\end{figure*}
-
-
-\begin{figure*}[p]
-\begin{center}
-\includegraphics[width=7in]{figures/hubercompare_fehradius.pdf}
-\end{center}
-\caption{Comparison between metallicities and radii estimated from the
-  \isochrones\ analysis in this work and those from the
-  \kepler\ stellar parameters catalog \citep[][hereafter
-    \citetalias{Huber:2014}]{Huber:2014}.  Top panel shows metallicity
-  for all stars in the sample.  The middle panel shows stars for which
-  \citetalias{Huber:2014} estimates $R_\star < 2\,R_\odot$, and the
-  bottom shows $R_\star > 2\,R_\odot$. Blue horizontal bold lines are
-  the \citetalias{Huber:2014} values in sorted order; blue shading
-  represents the error bars from \citetalias{Huber:2014}.  Vertical
-  lines span the 1$\sigma$ credible region of the \isochrones\ fits;
-  these lines are grey if they overlap with the
-  \citetalias{Huber:2014} 1$\sigma$ region and red (with the median
-  marked by a point) if they are inconsistent.  This comparison shows
-  that the stellar parameters estimated in this work are broadly
-  consistent with \citetalias{Huber:2014}, though less so for the more
-  evolved stars.  The metallicity estimates of the
-  \isochrones\ calculations are driven by the use of the local
-  metallicity prior \citep[][\tab{priors}]{Hayden:2015,
-    Casagrande:2011}.
-\figlabel{starsfehradius}}
-\end{figure*}
 
 
 
@@ -551,9 +508,9 @@ main results, which are the false positive probabilities.
 \sectlabel{results:fpp}
 
 Of the \ntotal\ KOIs in the cumulative table at the NExScI Exoplanet
-Archive, \vespa\ successfully calculated the FPP for \ncalc.  These
+Archive, \vespa\ successfully calculates the FPP for \ncalc.  These
 results are listed in \tab{fpp};  \sect{failures} contains detailed
-explanations of the different failure modes.  
+explanations of the failure reasons for the other \nfail\ KOIs.
 
 In order to properly interpret these results, it is necessary to
 understand the range of applicability of the \vespa\ calculation.
@@ -562,17 +519,43 @@ First of all, this method selects between different \emph{eclipse
 comment on whether the signal might be caused by stellar variability
 or an instrumental false alarm.  Thus, \vespa\ results on low
 signal-to-noise ratio (SNR) candidates that are not clearly
-transit-like must be viewed with caution.
+transit-like must be viewed with caution.  
+
+However, while the FPP value does only give the \emph{relative}
+probability between the false positive and planet scenarios, there is
+a way to get a sense of whether \emph{all} of the models might be bad
+fits to the data (and thus get a hint that perhaps the signal is due
+to stellar variability or a false alarm).  Recall that FPP is
+calculated as
+\begin{equation}
+\eqlabel{fpp}
+{\rm FPP} = \frac{\displaystyle\sum_{i \neq {\rm Pl}}
+  L_i}{\displaystyle \sum_i L_i}
+\end{equation}
+where $L_i$ = $\mathcal L_i \pi_i$ and $i$ runs over all the models,
+with ``Pl'' representing the planet scenario.  If, for example, the
+shape of the transit is such that \emph{none} of the models gives any
+kind of decent fit to its trapezoidal shape, then $L_{\rm tot} =
+\sum_i L_i$ will be very small.  It appears that a value of $10^{-3}$
+is a reasonable threshold below which to consider a particular
+calculation unreliable.  To set this threshold we inspected the
+handful of systems that have low FPPs and $L_{\rm tot} < 10^{-3}$
+(some go as low as $10^{-10}$ or lower), and find that these very
+often have unrealistically long durations for a transit signal.  Such
+a case could easily give the planet hypothesis the \emph{largest}
+likelihood (resulting in a low FPP), not because it is intrinsically
+likely, but because everything else is just much worse.
 
 Another important constraint used in the FPP calculation is the
 allowed sky area inside which a blended false positive may live.  As
 described in \sect{data}, this value is taken to be three times the
 uncertainty on the fitted centroid position from the pixel-level data.
-However, many KOIs have already been identified to be blended binaries
-displaced from the target star.  Some of these are found by detecting
-significant centroid offsets---in these cases, treating the confusion
-radius simply as the uncertainty in the centroid position will clearly
-give a misleading result.  Other displaced false positives have been
+However, many KOIs have already been identified to be blended binary
+false positives displaced from the target star.  Some of these are
+found by detecting significant centroid offsets in the pixel-level
+data---in these cases, \vespa\ treating the confusion radius simply as
+the uncertainty in the centroid position will clearly give a
+misleading result.  Other displaced false positives have been
 identified as originating from displaced stars by finding KOIs with
 matching ephemerides \citep{Coughlin:2014}, and often the ``parents''
 of these signals are outside the pixel masks, and so unable to be
@@ -580,52 +563,40 @@ detected via centroid-measuring methods.  In these cases as well, the
 \vespa\ assumptions break down, and the FPP calculations will not be
 valid.
 
-To summarize, the results presented in \tab{fpp} are
-strictly reliable only for KOIs \emph{that have already strongly
-  passed the other Kepler vetting tests.}  The first cut for this is
-the KOI disposition: FALSE POSITIVE indicates failure of one or more
-of these tests (and thus probable invalidity of the
-\vespa\ calculation).  However, because of the generally permissive
-philosophy of the \kepler\ dispositioning, not all CANDIDATE KOIs
-receive the same level of vetting.  That is, something is not
-identified as a FALSE POSITIVE \emph{unless there is positive
-  confirmation of false positive status}.  In particular, when
-pixel-level analysis fails to determine whether the signal is indeed
-coming from the target star because of low SNR, such a KOI will still
-receive CANDIDATE disposition.  Therefore, the \vespa-calculated FPP
-may be considered reliable only when a KOI is designated a CANDIDATE
-(or CONFIRMED) and has large enough SNR to enable secure positional
-determination.
-
-To enable convenience of interpretation, \tab{fpp} thus contains both
-the current KOI disposition and the results of the positional
-probability calculations of \citet{Bryson:2015}.  \fig{fppall} shows
-the calculated FPPs for all KOIs not dispositioned FALSE POSITIVE that
-have $>$99\% probability to be located on the target star (and for
-which the positional calculations are reliable; that is, having a
-``reliability score'' > 0.4).
+To summarize, the results presented in \tab{fpp} are strictly reliable
+only for KOIs \emph{that have already strongly passed the other Kepler
+  vetting tests, and that are not indicated to be clearly poor fits to
+  all the proposed hypotheses}.  The first cut for this is the KOI
+disposition: FALSE POSITIVE indicates failure of one or more of these
+tests (and thus probable invalidity of the \vespa\ calculation).
+However, because of the generally permissive philosophy of the
+\kepler\ dispositioning, not all CANDIDATE KOIs receive the same level
+of vetting.  That is, something is not identified as a FALSE POSITIVE
+\emph{unless there is positive confirmation of false positive status}.
+In particular, when pixel-level analysis fails to determine whether
+the signal is indeed coming from the target star because of low SNR,
+such a KOI will still receive CANDIDATE disposition.  Therefore, the
+\vespa-calculated FPP may be considered most reliable only when a KOI
+is designated a CANDIDATE (or CONFIRMED) and has large enough SNR to
+enable secure positional determination.
 
 
+To enable interpretation, \tab{fpp} thus contains both the current KOI
+disposition and the results of the positional probability calculations
+of \citet{Bryson:2015}.  \Fig{fppall} shows FPPs for all KOIs passing
+the following criteria:
+\begin{itemize}
+\item Dispositioned CANDIDATE or CONFIRMED at the NExScI archive
+\item $> 0.99$ probability to be on the target star, according
+  to \citet{Bryson:2015}, along with a positional probability
+  ``score'' $> 0.4$ (indicating a reliable result).
+\item $L_{\rm tot} > 1e-3$, indicating that not all the hypotheses are
+  poor fits to the transit signal.
+\end{itemize}
 
-\begin{figure*}[p]
-\begin{center}
-\includegraphics[width=7in]{figures/fpp_summary_all.pdf}
-\end{center}
-\caption{False positive probabilities of all KOIs for which we
-  consider the \vespa\ calculations to be reliable (floored at
-  $10^{-4}$ for visualization purposes).  This includes KOIs that are
-  not dispositioned as FALSE POSITIVE on the NExScI archive, are
-  considered to be reliably located on the target star ($ {\rm Pr} >
-  0.99$, with ``score'' $>$ 0.4) according to pixel-level analysis
-  \citep{Bryson:2015}, and for which $\mathcal L_{\rm tot} > 10^{-3}$,
-  indicating that the hypotheses tested by \vespa\ are not all poor
-  explanations of the data.  Of these \nreliable\ KOIs, \nval\ have
-  FPPs less than 1\%.  Noteably, \nreliableFP\ are likely false
-  positives (FPP $> 0.5$), consistent with the \citet{Morton:2011} and
-  \citet{Fressin:2013} \emph{a priori} estimates of the overall
-  \kepler\ candidate false positive rate.  \figlabel{fppall}}
-\end{figure*}
-
+These selections leave \nreliable\ KOIs for which the \vespa\ results
+can be considered most reliable.  Of these, \nval\ have ${\rm FPP} <
+0.01$, and are thus validated at the 99\% level.  
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -691,6 +662,78 @@ It is a pleasure to thank
 \clearpage
 \bibliography{ms}
 \clearpage
+
+\begin{figure*}[p]
+\begin{center}
+\includegraphics[width=7in]{figures/hubercompare_teff.pdf}
+\end{center}
+\caption{Comparison between effective temperatures estimated from the
+  \isochrones\ analysis in this work and those from the
+  \kepler\ stellar parameters catalog \citep[][hereafter
+    \citetalias{Huber:2014}]{Huber:2014}.  Bottom panel shows stars
+  for which \citetalias{Huber:2014} predicts $T_{\rm eff} < 4500$\,K,
+  middle spans $4500\,{\rm K} < T_{\rm eff} < 6500\,{\rm K}$, and top
+  has $T_{\rm eff} > 6500$\,K. Blue horizontal bold lines are the
+  \citetalias{Huber:2014} values in sorted order; blue shading
+  represents the error bars from \citetalias{Huber:2014}.  Vertical
+  lines span the 1$\sigma$ credible region of the \isochrones\ fits;
+  these lines are grey if they overlap with the
+  \citetalias{Huber:2014} 1$\sigma$ region and red (with the median
+  marked by a point) if they are inconsistent.  This comparison shows
+  that the stellar parameters estimated in this work are broadly
+  consistent with \citetalias{Huber:2014}, though less so for the
+  coolest and hottest stars.
+\figlabel{starsteff}}
+\end{figure*}
+
+
+\begin{figure*}[p]
+\begin{center}
+\includegraphics[width=7in]{figures/hubercompare_fehradius.pdf}
+\end{center}
+\caption{Comparison between metallicities and radii estimated from the
+  \isochrones\ analysis in this work and those from the
+  \kepler\ stellar parameters catalog \citep[][hereafter
+    \citetalias{Huber:2014}]{Huber:2014}.  Top panel shows metallicity
+  for all stars in the sample.  The middle panel shows stars for which
+  \citetalias{Huber:2014} estimates $R_\star < 2\,R_\odot$, and the
+  bottom shows $R_\star > 2\,R_\odot$. Blue horizontal bold lines are
+  the \citetalias{Huber:2014} values in sorted order; blue shading
+  represents the error bars from \citetalias{Huber:2014}.  Vertical
+  lines span the 1$\sigma$ credible region of the \isochrones\ fits;
+  these lines are grey if they overlap with the
+  \citetalias{Huber:2014} 1$\sigma$ region and red (with the median
+  marked by a point) if they are inconsistent.  This comparison shows
+  that the stellar parameters estimated in this work are broadly
+  consistent with \citetalias{Huber:2014}, though less so for the more
+  evolved stars.  The metallicity estimates of the
+  \isochrones\ calculations are driven by the use of the local
+  metallicity prior \citep[][\tab{priors}]{Hayden:2015,
+    Casagrande:2011}.
+\figlabel{starsfehradius}}
+\end{figure*}
+
+
+
+\begin{figure*}[p]
+\begin{center}
+\includegraphics[width=7in]{figures/fpp_summary_all.pdf}
+\end{center}
+\caption{False positive probabilities of all KOIs for which we
+  consider the \vespa\ calculations to be reliable (floored at
+  $10^{-4}$ for visualization purposes).  This includes KOIs that are
+  not dispositioned as FALSE POSITIVE on the NExScI archive, are
+  considered to be reliably located on the target star ($ {\rm Pr} >
+  0.99$, with ``score'' $>$ 0.4) according to pixel-level analysis
+  \citep{Bryson:2015}, and for which $L_{\rm tot} > 10^{-3}$,
+  indicating that the hypotheses tested by \vespa\ are not all poor
+  explanations of the data.  Of these \nreliable\ KOIs, \nval\ have
+  FPPs less than 1\%.  Noteably, \nreliableFP\ are likely false
+  positives (FPP $> 0.5$), consistent with the \citet{Morton:2011} and
+  \citet{Fressin:2013} \emph{a priori} estimates of the overall
+  \kepler\ candidate false positive rate.  \figlabel{fppall}}
+\end{figure*}
+
 
 %\capstartfalse
 \input{table_stars}
