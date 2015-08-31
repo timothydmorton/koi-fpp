@@ -64,17 +64,21 @@
 \newcommand{\nbadotherCAND}{5}
 \newcommand{\nbadotherCONF}{1}
 
-\newcommand{\nreliable}{2752}
-\newcommand{\nval}{2069}
-\newcommand{\nreliableFP}{292}
-\newcommand{\nvalnew}{1396}
-\newcommand{\nfpnew}{192}
+\newcommand{\nreliable}{2854}
+\newcommand{\nval}{2136}
+\newcommand{\nreliableFP}{298}
+\newcommand{\nvalnew}{1456}
+\newcommand{\nfpnew}{195}
 \newcommand{\ncurval}{1001}
+
+\newcommand{\posprobthresh}{0.3}
 
 \newcommand{\kepler}{\textit{Kepler}}
 \newcommand{\vespa}{\texttt{vespa}}
 \newcommand{\isochrones}{\texttt{isochrones}}
 \newcommand{\bvec}[1]{{\ensuremath{\boldsymbol{#1}}}}
+
+\newcommand{\dataurl}{\url{http://tigress-web.princeton.edu/~tmorton/koi-fpp/}}
 
 %% TODO commands
 \newcommand{\todo}[3]{{\color{#2} \emph{#1} TODO: #3}}
@@ -129,7 +133,7 @@ that \nval\ have probabilities $<$1\% to be astrophysical false
 positives, and thus may be considered validated planets.  \nvalnew\ of
 these have not yet been validated or confirmed by other methods.  In
 addition, we identify \nfpnew\ KOIs likely to be false positives
-($>$90\% \nfpnew) that have not yet been identified as such. A side
+($>$90\%) that have not yet been identified as such. A side
 product of these calculations is full stellar property posterior
 samplings for every host star, modeled as single, binary, and triple
 systems.  These calculations use \vespa, a publicly available Python
@@ -244,8 +248,13 @@ PDF for the parameters under hypothesis $i$.\footnote{$\mathcal L_i$
 currently supported by \vespa\ are the following: unblended eclipsing
 binary (EB), hierarchical-triple eclipsing binary (HEB),
 chance-aligned background/foreground eclipsing binary (BEB), and
-transiting planet (Pl).
-
+transiting planet (Pl).  We note that the determination of the diluted
+eclipse depth of these blended scenarios assumes that the blended
+system is \emph{fully contained} within the target's photometric
+aperture.  That is, these scenarios do not account for the possibility
+that only a small fraction of the light from a nearby contaminating
+star might be in the aperture, many of which have already been
+identified via other methods \cite{Bryson:2013,Coughlin:2014}.  
 
 Observational constraints are incorporated in two different ways.
 First, photometric (or spectroscopic/asteroseismic) measurements of
@@ -592,13 +601,13 @@ enable secure positional determination.
 
 To enable interpretation, \tab{fpp} thus contains both the current KOI
 disposition and the results of the positional probability calculations
-of \citet{Bryson:2015}.  \Fig{fppall} shows FPPs for all KOIs passing
+of \citet{Bryson:KSCI}.  \Fig{fppall} shows FPPs for all KOIs passing
 the following criteria:
 \begin{itemize}
 \item Dispositioned CANDIDATE or CONFIRMED at the NExScI archive,
 \item $> 0.99$ probability to be on the target star, according
-  to \citet{Bryson:2015}, along with a positional probability
-  ``score'' $> 0.4$ (indicating a reliable result), and   
+  to \citet{Bryson:KSCI}, along with a positional probability
+  ``score'' $> \posprobthresh$ (indicating a reliable result), and   
 \item $L_{\rm tot} > 1e-3$, indicating that not all the hypotheses are
   poor fits to the transit signal.
 \end{itemize}
@@ -613,6 +622,18 @@ KOIs by disposition and splitting up the CANDIDATES according to the
 the 99\% level.  \Fig{rpcand} shows the radii and periods of the
 CANDIDATE KOIs, grouped by FPP.
 
+One final note about these FPP calculations is that unidentified
+transit timing variations (TTVs) will increase the FPP of a transit
+signal, as the shape of the folded light curve will be distorted,
+typically resulting in a longer signal which a trapezoid model will
+also identify as more V-shaped.  While we have analyzed light curves
+using known TTVs when available, we have also undoubtedly missed many
+systems with as-yet-unspecified TTV signals.  This means that a large
+FPP may be simply an indication of unidentified TTVs rather than
+indicative of an astrophysical false positive, especially in
+multi-planet systems, which should overall have a very low false
+positive rate.  \Tab{fpp} lists whether known TTVs were accounted for
+when constructing the folded transit light curve for each KOI.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -662,15 +683,35 @@ In this work, we have calculated the astrophysical false positive
 probability (FPP) for every \kepler\ object of interest (KOI), using
 the publicly available Python module \vespa.  While the assumptions
 behind this calculation are not necessarily valid for every KOI (see
-\sect{results:fpp}, we have identified \nvalnew\ KOIs that have
+\sect{results:fpp}), we have identified \nvalnew\ KOIs that have
 reliable FPPs of $< 0.01$, resulting in validation of their planetary
-nature at the 99\% confidence level.  The reliability of these
-calculations is dependent largely on the results of \citet{Bryson:2015},
-which quantify the probability that the eclipse/transit signal is
-spatially coincident on the sky with the presumed target star.
+nature at the 99\% confidence level, more than doubling the
+number of confirmed \kepler\ exoplanets.
 
+The reliability of these calculations is dependent largely on the
+results of \citet{Bryson:KSCI}, which quantify the probability that
+the eclipse/transit signal is spatially coincident on the sky with the
+presumed target star.  Without confirmation that the transit signal is
+not coming from a significantly displaced source, the sky area used as
+part of the prior for the false positive scenarios would need to be
+significantly larger than the positional uncertainty value assumed in
+this work (described in \sect{methods:fpp}).  Additionally, the
+blended false positive scenarios being considered are assumed to be
+fully contained within the photometric aperture; this assumption would
+also be broken if the source of the eclipse were significantly
+displaced. 
 
-These batch FPP calculations will 
+While previous \emph{a priori} false positive rate estimates
+\cite{Morton:2011b,Fressin:2013} have made clear that the
+\kepler\ planet candidate catalogs are \emph{generally} low enough to
+ignore for the purposes of planet occurrence rate calculations, any
+more detailed study of any small subset of individual KOIs must
+understand in more detail the FPPs of those specific candidates.  This
+type of small-sample candidate culling using individually calculated
+FPPs has already been done in the literature
+\cite{MortonSwift:2014,MortonWinn:2015}; the publication of this full
+catalog allows the community to do the same.
+
 
 
 
@@ -749,14 +790,14 @@ It is a pleasure to thank
   KOIs for which we consider the \vespa\ calculations to be reliable
   (floored at $10^{-4}$ for visualization purposes), meaning they are
   considered to be reliably located on the target star ($ {\rm Pr} >
-  0.99$, with ``score'' $>$ 0.4) according to pixel-level analysis
-  \citep{Bryson:2015}, and have $L_{\rm tot} > 10^{-3}$, indicating
+  0.99$, with ``score'' $> \posprobthresh$) according to pixel-level analysis
+  \citep{Bryson:KSCI}, and have $L_{\rm tot} > 10^{-3}$, indicating
   that the hypotheses tested by \vespa\ are not all poor explanations
   of the data (see \sect{results:fpp}).  Of these \nreliable\ KOIs,
   \nval\ have FPPs less than 1\% (\nvalnew\ of which have not yet been
   dispositioned as CONFIRMED).  Noteably, \nreliableFP\ are likely
   false positives (FPP $> 0.5$), consistent with the
-  \citet{Morton:2011} and \citet{Fressin:2013} \emph{a priori}
+  \citet{Morton:2011b} and \citet{Fressin:2013} \emph{a priori}
   estimates of the overall \kepler\ candidate false positive rate.
   \figlabel{fppall}}
 \end{figure*}
@@ -774,8 +815,8 @@ It is a pleasure to thank
   calculation'' category means that either the \vespa\ calculation was
   not successful, or that $L_{\rm tot} < 10^{-3}$.  ``On-target
   probability uncertain'' indicates that the positional probability
-  calculations of \citet{Bryson:2015} are not reliable (score $<
-  0.4$).  ``On-target probability $<$ 0.99'' means that the positional
+  calculations of \citet{Bryson:KSCI} are not reliable (score $<
+  \posprobthresh$).  ``On-target probability $<$ 0.99'' means that the positional
   probability calculations indicate that there is a non-negligible
   chance that the source of the transit signal is not at the position
   of the KOI.  The remaining three categories are all CANDIDATE KOIs
