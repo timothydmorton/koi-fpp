@@ -24,7 +24,10 @@ positional_table = pd.read_csv(positional_file, index_col=0)
 star_table = pd.read_table(starprop_file, delim_whitespace=True)
 star_table.index = star_table['koi']
 
+ttv_table = pd.read_table('ttvdata.txt', index_col=0, delim_whitespace=True) 
+
 err_table = np.loadtxt('fpp_err.txt', usecols=(0,1), dtype=str)
+
 
 kois = fpp_table.index
 
@@ -42,6 +45,8 @@ fpp_table['ephem_match'] = ku.DATA.ix[kois, 'koi_fpflag_ec'].astype(bool)
 fpp_table['exception'] = None
 fpp_table.ix[err_table[:,0], 'exception'] = err_table[:,1]
 fpp_table['exception'] = fpp_table['exception'].str.replace(':','')
+
+fpp_table['has_ttv'] = ttv_table.ix[kois,'has_ttv']
 
 fpp_table.to_csv('fpp_final_table.csv')
 
