@@ -128,17 +128,19 @@
 \begin{abstract}
 We present the results of applying a fully automated transit signal
 false positive probability calculating procedure to every
-\kepler\ Object of Interest (KOI).  Out of \ncalc\ KOIs, we determine
-that \nval\ have probabilities $<$1\% to be astrophysical false
-positives, and thus may be considered validated planets.  \nvalnew\ of
-these have not yet been validated or confirmed by other methods.  In
-addition, we identify \nfpnew\ KOIs likely to be false positives
-($>$90\%) that have not yet been identified as such. A side
-product of these calculations is full stellar property posterior
-samplings for every host star, modeled as single, binary, and triple
-systems.  These calculations use \vespa, a publicly available Python
-package able to be easily applied to any transiting exoplanet
-candidate.
+\kepler\ Object of Interest (KOI)---the first large-scale
+demonstration of a fully automated transiting planet validation
+procedure.  Out of \ncalc\ KOIs, we determine that \nval\ have
+probabilities $<$1\% to be astrophysical false positives, and thus may
+be considered validated planets.  \nvalnew\ of these have not yet been
+validated or confirmed by other methods.  In addition, we identify
+\nfpnew\ KOIs likely to be false positives that have not yet been
+identified as such, though some of these may be a result of
+unidentified transit timing variations. A side product of these
+calculations is full stellar property posterior samplings for every
+host star, modeled as single, binary, and triple systems.  These
+calculations use \vespa, a publicly available Python package able to
+be easily applied to any transiting exoplanet candidate.
 \end{abstract}
 
 %% Keywords should appear after the \end{abstract} command. The uncommented
@@ -622,7 +624,7 @@ KOIs by disposition and splitting up the CANDIDATES according to the
 the 99\% level.  \Fig{rpcand} shows the radii and periods of the
 CANDIDATE KOIs, grouped by FPP.
 
-One final note about these FPP calculations is that unidentified
+One final note about these calculations is that unidentified
 transit timing variations (TTVs) will increase the FPP of a transit
 signal, as the shape of the folded light curve will be distorted,
 typically resulting in a longer signal which a trapezoid model will
@@ -632,7 +634,7 @@ systems with as-yet-unspecified TTV signals.  This means that a large
 FPP may be simply an indication of unidentified TTVs rather than
 indicative of an astrophysical false positive, especially in
 multi-planet systems, which should overall have a very low false
-positive rate.  \Tab{fpp} lists whether known TTVs were accounted for
+positive rate.  \Tab{fpp} lists whether known TTV were accounted for
 when constructing the folded transit light curve for each KOI.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -685,8 +687,11 @@ the publicly available Python module \vespa.  While the assumptions
 behind this calculation are not necessarily valid for every KOI (see
 \sect{results:fpp}), we have identified \nvalnew\ KOIs that have
 reliable FPPs of $< 0.01$, resulting in validation of their planetary
-nature at the 99\% confidence level, more than doubling the
-number of confirmed \kepler\ exoplanets.
+nature at the 99\% confidence level, more than doubling the number of
+confirmed \kepler\ exoplanets.  Among this set of reliable \vespa\
+calculations are also \nfpnew\ new likely false positive KOIs,
+although we note that there is a chance that some of these large FPPs
+are due to unidentified or miscorrected transit timing variations.
 
 The reliability of these calculations is dependent largely on the
 results of \citet{Bryson:KSCI}, which quantify the probability that
@@ -709,16 +714,32 @@ more detailed study of any small subset of individual KOIs must
 understand in more detail the FPPs of those specific candidates.  This
 type of small-sample candidate culling using individually calculated
 FPPs has already been done in the literature
-\cite{MortonSwift:2014,MortonWinn:2015}; the publication of this full
+\citep{MortonSwift:2014,MortonWinn:2015}; the publication of this full
 catalog allows the community to do the same.
 
-
-
-
 The \kepler\ mission has demonstrated that space-based transiting
-planet surveys can identify viable planet candidates at a rate much
-faster than traditional follow-up techniques can confirm them.  As a
-result, probabilistic validation techniques are now 
+planet surveys identify planet candidates at a rate much faster than
+traditional follow-up techniques can confirm them.  As a result, false
+positive probability quantification techniques are now an integral
+part of the landscape of exoplanet science.  While the present work is
+the first large-scale demonstration of a fully automated validation
+procedure, there is much progress still to be made.  For example,
+there is currently no support within \vespa\ to calculate the FPP for
+a candidate which has a \emph{specifically identified} but hitherto
+unknown close companion.  Future development plans for the
+\vespa\ package include support for this scenario, as well as other
+improvements.  One of the most important of these will be to allow for
+a contaminating EB to not be fully contained within the target
+photometric aperture; that is, modeling the probability for
+further-away stars to be EBs contributing only a small amount of their
+flux to the target photometry, such as is the case for many of the
+false positives identified via ephemeris matching by
+\citet{Coughlin:2014}.  Full inclusion of this effect will allow for
+even low-SNR candidates to receive confident \vespa\ analysis, which
+is now limited only to KOIs for which confident pixel-level positional
+analysis is possible.
+
+
 
 
 
@@ -844,9 +865,11 @@ It is a pleasure to thank
 \input{table_stars}
 %\capstarttrue
 
+\begin{turnpage}
 %\capstartfalse
 \input{table_fpp}
 %\capstarttrue
+\end{turnpage}
 
 
 \end{document}
