@@ -416,7 +416,7 @@ calculated in approximately one day on the Princeton Univeristy
 
 The results of the \vespa\ calculations are presented in
 \tab{stars} and \tab{fpp}, and are discussed in
-the following subsections.
+the following subsections.  
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -607,10 +607,11 @@ These selections leave \nreliable\ KOIs for which the \vespa\ results
 can be considered most reliable.  Of these, \nval\ have ${\rm FPP} <
 0.01$, and are thus validated at the 99\% level.  These are not all
 new validations, however, since a number of these are already
-CONFIRMED.  \Fig{fpppie} shows a different kind of summary, setting
-aside those with CONFIRMED and FALSE POSITIVE dispositions and
-splitting up the CANDIDATES according to the \vespa\ results, showing
-that \nvalnew\ KOIs are newly validated at the 99\% level.
+CONFIRMED.  \Fig{fpppie} shows a different kind of summary, grouping
+KOIs by disposition and splitting up the CANDIDATES according to the
+\vespa\ results, showing that \nvalnew\ KOIs are newly validated at
+the 99\% level.  \Fig{rpcand} shows the radii and periods of the
+CANDIDATE KOIs, grouped by FPP.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -657,15 +658,27 @@ the ``failure'' column in \tab{fpp}.
 \section{Conclusions}
 \sectlabel{conclusions}
 
-%\acrodef{fpp}[FPP]{false positive probability}
-%\acrodef{koi}[KOI]{\kepler\ Object of Interest}
-%\acrodefplural{koi}[KOIs]{\kepler\ Objects of Interest}
-%\acrodef{nexsci}[NExScI]{NASA Exoplanet Science Institute}
-%\acrodef{mcmc}[MCMC]{Markov Chain Monte Carlo}
-%\acrodef{trilegal}[TRILEGAL]{TRIdimensional modeL of thE GALaxy}
-%\acrodef{kic}[KIC]{Kepler Input Catalog}
-%\acrodef{sdss}[SDSS]{Sloan Digital Sky Survey}
-%\acrodef{ttv}[TTV]{transit timing variations}
+In this work, we have calculated the astrophysical false positive
+probability (FPP) for every \kepler\ object of interest (KOI), using
+the publicly available Python module \vespa.  While the assumptions
+behind this calculation are not necessarily valid for every KOI (see
+\sect{results:fpp}, we have identified \nvalnew\ KOIs that have
+reliable FPPs of $< 0.01$, resulting in validation of their planetary
+nature at the 99\% confidence level.  The reliability of these
+calculations is dependent largely on the results of \citet{Bryson:2015},
+which quantify the probability that the eclipse/transit signal is
+spatially coincident on the sky with the presumed target star.
+
+
+These batch FPP calculations will 
+
+
+
+The \kepler\ mission has demonstrated that space-based transiting
+planet surveys can identify viable planet candidates at a rate much
+faster than traditional follow-up techniques can confirm them.  As a
+result, probabilistic validation techniques are now 
+
 
 
 \acknowledgments
@@ -740,7 +753,8 @@ It is a pleasure to thank
   \citep{Bryson:2015}, and have $L_{\rm tot} > 10^{-3}$, indicating
   that the hypotheses tested by \vespa\ are not all poor explanations
   of the data (see \sect{results:fpp}).  Of these \nreliable\ KOIs,
-  \nval\ have FPPs less than 1\%.  Noteably, \nreliableFP\ are likely
+  \nval\ have FPPs less than 1\% (\nvalnew\ of which have not yet been
+  dispositioned as CONFIRMED).  Noteably, \nreliableFP\ are likely
   false positives (FPP $> 0.5$), consistent with the
   \citet{Morton:2011} and \citet{Fressin:2013} \emph{a priori}
   estimates of the overall \kepler\ candidate false positive rate.
@@ -771,6 +785,17 @@ It is a pleasure to thank
   \figlabel{fpppie}}
 \end{figure*}
 
+\begin{figure*}[p]
+\begin{center}
+\includegraphics[width=7in]{figures/RP_cand.pdf}
+\end{center}
+\caption{Periods and radii of KOIs with CANDIDATE disposition, grouped
+  by FPP value.  Green circles are most likely to be planets, red X's
+  are most likely to be false positives, and blue plusses have
+  intermediate FPPs.  Grey dots are KOIs for which the
+  \vespa\ calculation is considered less reliable.  
+  \figlabel{rpcand}}
+\end{figure*}
 
 
 
