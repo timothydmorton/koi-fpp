@@ -202,15 +202,34 @@ principle of probabilistic validation is to demonstrate that all
 conceivable astrophysical false positive scenarios are negligibly
 likely to be the cause of a transit candidate signal compared to the
 explanation of a planet transiting the presumed target star.  The
-``Blender'' method pioneered this approach and has validated many
-\kepler\ candidates, including .  More recently, the PASTIS analysis suite has
-been introduced \citep{Diaz:2014} and applied to both \kepler\ and 
+\verb|BLENDER| method pioneered this approach and has validated many
+\kepler\ candidates, including .  More recently, the \verb|PASTIS| analysis
+suite has been introduced \citep{Diaz:2014} and used to validate both
+\kepler\ and \textit{CoRoT} candidates.  
 
-Two
-examples of validation procedures that have been used in the
-literature are ``Blender'' that has been used in the validation of
-many \kepler\ planets, and PASTIS, which has also been used 
+While they have both proven useful for the purposes of validating
+individual candidates of particular interest, neither \verb|BLENDER|
+nor \verb|PASTIS| is designed for fully automated batch processing of
+large numbers of candidates.  \citet{Morton:2012} describe a
+computationally simpler planet validation procedure designed for
+exactly such a purpose, based on the idea of describing eclipse light
+curves as simple trapezoids and simulating realistic populations of
+astrophysical false positives.  This procedure has also been used in
+the literature to validate a number of \kepler\ planets, and has also
+been applied to a number of candidates found by the \textit{K2}
+mission \citep{Montet:2015,Becker:2015}.  The code that implements
+this procedure is now publicly available in the Python module
+\vespa\footnote{\url{https://github.com/timothydmorton/vespa}}
+\citep{vespa}.
 
+This work presents results of applying \vespa\ \emph{en masse} to the
+entire \kepler\ catalog. This is both the first time that most
+\kepler\ candidates have been individually analyzed to assess false
+positive probability and the first time that an automated planet
+validation calculation has been applied on such a large scale.  
+\Sect{methods} describes the methods used, \sect{results} presents and
+discusses the results, and \sect{conclusions} contains concluding
+remarks.  
 
 
 
@@ -224,10 +243,7 @@ described in \citet[][hereafter \citetalias{Morton:2012}]{Morton:2012}
 to \ncalc\ Kepler Objects of Interest (KOIs; see \sect{data} for
 details).  While we refer the reader to \citetalias{Morton:2012} for a
 detailed description of the method, we outline it briefly in this
-section.  The procedure as implemented here is publicly available in
-the Python module
-\vespa\footnote{\url{https://github.com/timothydmorton/vespa}}
-\citep{vespa}.
+section.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
