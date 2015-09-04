@@ -178,7 +178,39 @@ intimately on another revolution---how to interpret transiting planet
 \textit{candidate} signals in the absence of unambiguous positive
 confirmation of their veracity.
 
-Before \kepler, every survey searching for transiting exoplanets had a 
+Before \kepler, every survey searching for transiting exoplanets
+demanded that a candidate signal be verified as a true planet via
+radial velocity (RV) measurement of its mass.  This would involve a
+series of follow-up observations in order to weed out astrophysical
+false positive scenarios---typically stellar eclipsing binaries in
+various configurations.  
+
+But for \kepler, following this model has been largely impossible
+because of the quantity and character of the flood of planet
+candidates (thousands of mostly small-planet candidates around
+relatively faint stars).  There have been a small number of
+\kepler\ planets with masses measured by RVs
+\citep[][e.g.]{Marcy:2014}, and significantly more that have been
+confirmed as planets by measurement of transit timing variations
+(TTVs) in multi-planet systems \citep[][e.g.]{}, but this still leaves
+the vast majority of candidates unaccessible to dynamical
+confirmation.
+
+This situation has inspired the development of \emph{probabilistic
+  validation} as a new approach to evaluating transit candidates.  The
+principle of probabilistic validation is to demonstrate that all
+conceivable astrophysical false positive scenarios are negligibly
+likely to be the cause of a transit candidate signal compared to the
+explanation of a planet transiting the presumed target star.  The
+``Blender'' method pioneered this approach and has validated many
+\kepler\ candidates, including .  More recently, the PASTIS analysis suite has
+been introduced \citep{Diaz:2014} and applied to both \kepler\ and 
+
+Two
+examples of validation procedures that have been used in the
+literature are ``Blender'' that has been used in the validation of
+many \kepler\ planets, and PASTIS, which has also been used 
+
 
 
 
@@ -189,10 +221,11 @@ Before \kepler, every survey searching for transiting exoplanets had a
 
 In this work, we apply the fully automated FPP-computing procedure
 described in \citet[][hereafter \citetalias{Morton:2012}]{Morton:2012}
-to \ncalc\ KOIs (see \sect{data} for details).  While we refer the
-reader to \citetalias{Morton:2012} for a detailed description of the
-method, we outline it briefly in this section.  The procedure as
-implemented here is publicly available in the Python module
+to \ncalc\ Kepler Objects of Interest (KOIs; see \sect{data} for
+details).  While we refer the reader to \citetalias{Morton:2012} for a
+detailed description of the method, we outline it briefly in this
+section.  The procedure as implemented here is publicly available in
+the Python module
 \vespa\footnote{\url{https://github.com/timothydmorton/vespa}}
 \citep{vespa}.
 
@@ -395,13 +428,25 @@ various sources in order to enable the \vespa\ calculation:
   small exclusion radii.  If this quantity is not available from the
   Archive we set a default exclusion radius of 4\arcsec.
 \item The maximum secondary eclipse depth allowed by the
-  \kepler\ photometry.  This quantity is obtained from vetting
-  metrics produced internally by the \kepler\ Science Office.  When
-  these metrics are not available for a particular KOI, we
-  default to 10$\times$ the uncertainty in the \kepler\ pipeline
-  measured transit depth (\verb|koi_depth_err1|).  While these
-  secondary metrics are not yet available on the Archive, they should
-  become available with the final data release.  
+  \kepler\ photometry.  This quantity is derived by searching the
+  phased-folded KOI light curve for the deepest signal at any other
+  phase other than that of the primary transit.  This ``model-shift
+  uniqueness test'' is described in both Section 3.2.2 of
+  \citet{Rowe:2015} and \citet{Coughlin:KSCI}, and the values of these
+  metrics for the \kepler\ Data Release 24 (DR24) will soon be
+  published (Coughlin et al.~2015, in prep).  The maximum secondary
+  depth we use is
+\begin{equation}
+\eqlabel{secthresh}
+\delta_{\rm max} = \delta_{\rm sec}  + 3 \sigma_{\rm sec},
+\end{equation}
+where $\delta_{\rm sec}$ is the fitted depth and $\sigma_{\rm sec}$ is
+the uncertainty on that depth (including red noise).  As the DR24
+pipeline uses two different detrending methods, we calculate
+$\delta_{\rm max}$ and $\sigma_{\rm max}$ using both methods and take
+the maximum between the two.  When these metrics are not available for
+a particular KOI, we default to 10$\times$ the uncertainty in the
+\kepler\ pipeline measured transit depth (\verb|koi_depth_err1|).
   
 \end{enumerate}
 As explained in the \vespa\ documentation, we first specify this
@@ -609,7 +654,7 @@ the following criteria:
 \item $> 0.99$ probability to be on the target star, according
   to \citet{Bryson:KSCI}, along with a positional probability
   ``score'' $> \posprobthresh$ (indicating a reliable result), and   
-\item $L_{\rm tot} > 1e-3$, indicating that not all the hypotheses are
+\item $L_{\rm tot} > 10^{-3}$, indicating that not all the hypotheses are
   poor fits to the transit signal.
 \end{itemize}
 
@@ -623,18 +668,19 @@ KOIs by disposition and splitting up the CANDIDATES according to the
 the 99\% level.  \Fig{rpcand} shows the radii and periods of the
 CANDIDATE KOIs, grouped by FPP.
 
-One final note about these calculations is that unidentified
-transit timing variations (TTVs) will increase the FPP of a transit
-signal, as the shape of the folded light curve will be distorted,
-typically resulting in a longer signal which a trapezoid model will
-also identify as more V-shaped.  While we have analyzed light curves
-using known TTVs when available, we have also undoubtedly missed many
-systems with as-yet-unspecified TTV signals.  This means that a large
-FPP may be simply an indication of unidentified TTVs rather than
-indicative of an astrophysical false positive, especially in
+One final note about these calculations is that unidentified transit
+timing variations (TTVs) will increase the FPP of a transit signal, as
+the shape of the folded light curve will be distorted, typically
+resulting in a longer signal which a trapezoid model will also
+identify as more V-shaped.  While we have analyzed light curves
+correcting for known TTVs when available, we have also undoubtedly
+missed many systems with as-yet-unspecified TTV signals.  This means
+that a large FPP may be simply an indication of unidentified TTVs
+rather than an astrophysical false positive, especially in
 multi-planet systems, which should overall have a very low false
-positive rate.  \Tab{fpp} lists whether known TTV were accounted for
-when constructing the folded transit light curve for each KOI.
+positive rate \citep{Lissauer:2014,Rowe:2014}.  \Tab{fpp} lists
+whether known TTV were accounted for when constructing the folded
+transit light curve for each KOI.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
