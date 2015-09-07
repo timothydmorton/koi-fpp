@@ -76,7 +76,7 @@ K01112.01 EmptyPhotometryError: K01112.01 photometry file (/tigress/tmorton/kepl
 K01132.02 MCMCError: TransitSignal trapezoid fit not converged (K01132.02).
 K01134.02 TypeError: Improper input: N=4 must not exceed M=0
 K01149.01 EmptyPhotometryError: K01149.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1149.n/tremove.1.dat) is empty
-K01174.01 2015-09-03 10:15:11,199: No eclipse registered for index 8608
+K01174.01 2015-09-07 13:27:11,449: No eclipse registered for index 2727
 K01177.01 BadRoweFitError: K01177.01 has RoR > 1 (22.661406) from JRowe MCMC fit
 K01219.01 NoWeakSecondaryError: K01219.01
 K01249.01 BadRoweFitError: K01249.01 has RoR > 1 (72.991737) from JRowe MCMC fit
@@ -451,9 +451,7 @@ K05266.01 NoWeakSecondaryError: K05266.01
 K05292.01 NoWeakSecondaryError: K05292.01
 K05295.01 BadRoweFitError: K05295.01 has RoR > 1 (2.848532) from JRowe MCMC fit
 K05304.01 AllWithinRocheError: All simulated systems within Roche lobe
-K05306.01 2015-09-03 10:15:03,225: No eclipse registered for index 13909
 K05309.01 NoWeakSecondaryError: K05309.01
-K05312.01 2015-09-04 16:22:46,768: No eclipse registered for index 17460
 K05317.01 BadRoweFitError: K05317.01 has RoR > 1 (1.537256) from JRowe MCMC fit
 K05342.01 NoWeakSecondaryError: K05342.01
 K05346.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -484,7 +482,6 @@ K05450.01 NoWeakSecondaryError: K05450.01
 K05467.01 NoWeakSecondaryError: K05467.01
 K05482.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05494.01 NoWeakSecondaryError: K05494.01
-K05503.01 2015-09-03 10:17:12,098: No eclipse registered for index 18143
 K05504.01 NoWeakSecondaryError: K05504.01
 K05516.01 MissingStellarError: 8432034 not in stellar table?
 K05533.01 NoWeakSecondaryError: K05533.01
