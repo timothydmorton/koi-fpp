@@ -204,7 +204,6 @@ K02843.01 NoWeakSecondaryError: K02843.01
 K02854.01 MissingStellarError: 5513866 not in stellar table?
 K02902.01 TypeError: Improper input: N=4 must not exceed M=0
 K02917.01 MCMCError: TransitSignal trapezoid fit not converged (K02917.01).
-K02918.02 KeyError: 'distance'
 K02940.01 TypeError: Improper input: N=4 must not exceed M=0
 K02988.01 NoWeakSecondaryError: K02988.01
 K03046.01 NoWeakSecondaryError: K03046.01
@@ -218,7 +217,6 @@ K03133.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03139.01 NoWeakSecondaryError: K03139.01
 K03143.01 TypeError: Improper input: N=4 must not exceed M=0
 K03149.01 NoWeakSecondaryError: K03149.01
-K03156.01 KeyError: 'distance'
 K03156.02 BadRoweFitError: K03156.02 has RoR > 1 (1.76501) from JRowe MCMC fit
 K03158.04 AllWithinRocheError: All simulated systems within Roche lobe
 K03158.05 AllWithinRocheError: All simulated systems within Roche lobe
@@ -613,7 +611,6 @@ K06471.01 MCMCError: TransitSignal trapezoid fit not converged (K06471.01).
 K06503.02 MCMCError: TransitSignal trapezoid fit not converged (K06503.02).
 K06507.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06512.01 MCMCError: TransitSignal trapezoid fit not converged (K06512.01).
-K06514.01 KeyError: 'distance'
 K06529.01 MissingStellarError: 5126627 not in stellar table?
 K06531.01 MissingStellarError: 5164794 not in stellar table?
 K06598.01 MCMCError: TransitSignal trapezoid fit not converged (K06598.01).
@@ -622,7 +619,7 @@ K06630.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06635.01 BadRoweFitError: K06635.01 has a/Rstar < 1 (0.981313022682) from JRowe MCMC fit
 K06639.01 EmptyPopulationError: < 4 valid systems in population
 K06648.01 EmptyPopulationError: < 4 valid systems in population
-K06682.01 KeyError: 'distance'
+K06682.01 MCMCError: TransitSignal trapezoid fit not converged (K06682.01).
 K06696.01 EmptyPopulationError: < 4 valid systems in population
 K06698.01 BadRoweFitError: K06698.01 has RoR > 1 (7.673435) from JRowe MCMC fit
 K06704.01 BadRoweFitError: K06704.01 has RoR > 1 (99.870651) from JRowe MCMC fit
