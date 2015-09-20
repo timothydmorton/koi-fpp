@@ -76,7 +76,6 @@ K01112.01 EmptyPhotometryError: K01112.01 photometry file (/tigress/tmorton/kepl
 K01132.02 MCMCError: TransitSignal trapezoid fit not converged (K01132.02).
 K01134.02 TypeError: Improper input: N=4 must not exceed M=0
 K01149.01 EmptyPhotometryError: K01149.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1149.n/tremove.1.dat) is empty
-K01174.01 2015-09-07 13:27:11,449: No eclipse registered for index 2727
 K01177.01 BadRoweFitError: K01177.01 has RoR > 1 (22.661406) from JRowe MCMC fit
 K01219.01 NoWeakSecondaryError: K01219.01
 K01249.01 BadRoweFitError: K01249.01 has RoR > 1 (72.991737) from JRowe MCMC fit
@@ -131,7 +130,6 @@ K01796.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01807.01 TypeError: Improper input: N=4 must not exceed M=0
 K01810.01 EmptyPhotometryError: K01810.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1810.n/tremove.1.dat) is empty
 K01816.01 BadRoweFitError: K01816.01 has RoR > 1 (61.072872) from JRowe MCMC fit
-K01827.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01912.01 MissingStellarError: 3952651 not in stellar table?
 K01922.02 MCMCError: TransitSignal trapezoid fit not converged (K01922.02).
 K01926.01 EmptyPhotometryError: K01926.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1926.n/tremove.1.dat) is empty
@@ -205,6 +203,7 @@ K02854.01 MissingStellarError: 5513866 not in stellar table?
 K02902.01 TypeError: Improper input: N=4 must not exceed M=0
 K02917.01 MCMCError: TransitSignal trapezoid fit not converged (K02917.01).
 K02940.01 TypeError: Improper input: N=4 must not exceed M=0
+K02968.01 AttributeError: can't set attribute
 K02988.01 NoWeakSecondaryError: K02988.01
 K03046.01 NoWeakSecondaryError: K03046.01
 K03055.01 NoWeakSecondaryError: K03055.01
@@ -213,7 +212,6 @@ K03079.01 NoWeakSecondaryError: K03079.01
 K03080.01 NoWeakSecondaryError: K03080.01
 K03090.02 AllWithinRocheError: All simulated systems within Roche lobe
 K03118.01 NoWeakSecondaryError: K03118.01
-K03133.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03139.01 NoWeakSecondaryError: K03139.01
 K03143.01 TypeError: Improper input: N=4 must not exceed M=0
 K03149.01 NoWeakSecondaryError: K03149.01
@@ -378,6 +376,7 @@ K04355.05 MissingStellarError: 4571004 not in stellar table?
 K04363.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04369.01 NoWeakSecondaryError: K04369.01
 K04419.01 AllWithinRocheError: All simulated systems within Roche lobe
+K04463.01 LinAlgError: singular matrix
 K04500.03 AllWithinRocheError: All simulated systems within Roche lobe
 K04507.01 MissingStellarError: 7598111 not in stellar table?
 K04543.01 MissingStellarError: 9776186 not in stellar table?
@@ -388,7 +387,6 @@ K04636.01 BadRoweFitError: K04636.01 has RoR > 1 (87.348167) from JRowe MCMC fit
 K04682.01 MissingStellarError: 5024252 not in stellar table?
 K04713.01 MissingStellarError: 5253802 not in stellar table?
 K04724.01 MissingStellarError: 8395860 not in stellar table?
-K04753.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04782.02 AllWithinRocheError: All simulated systems within Roche lobe
 K04797.01 BadRoweFitError: K04797.01 has RoR > 1 (63.505539) from JRowe MCMC fit
 K04804.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -585,7 +583,7 @@ K06242.01 NoWeakSecondaryError: K06242.01
 K06242.02 NoWeakSecondaryError: K06242.02
 K06245.02 AllWithinRocheError: All simulated systems within Roche lobe
 K06264.01 BadRoweFitError: K06264.01 has RoR > 1 (1.035711) from JRowe MCMC fit
-K06266.01 EmptyPopulationError: < 4 valid systems in population
+K06266.01 AttributeError: can't set attribute
 K06270.01 MissingStellarError: 2438061 not in stellar table?
 K06271.01 MissingStellarError: 2438062 not in stellar table?
 K06308.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -599,14 +597,14 @@ K06395.01 BadRoweFitError: K06395.01 has RoR > 1 (97.703239) from JRowe MCMC fit
 K06401.01 MCMCError: TransitSignal trapezoid fit not converged (K06401.01).
 K06402.01 MCMCError: TransitSignal trapezoid fit not converged (K06402.01).
 K06406.01 MCMCError: TransitSignal trapezoid fit not converged (K06406.01).
-K06407.01 EmptyPopulationError: < 4 valid systems in population
-K06412.01 EmptyPopulationError: < 4 valid systems in population
+K06407.01 AttributeError: can't set attribute
+K06412.01 AttributeError: can't set attribute
 K06416.01 MissingStellarError: 4454219 not in stellar table?
 K06423.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06424.01 AllWithinRocheError: All simulated systems within Roche lobe
-K06433.01 EmptyPopulationError: < 4 valid systems in population
+K06433.01 AttributeError: can't set attribute
 K06448.01 AllWithinRocheError: All simulated systems within Roche lobe
-K06460.01 EmptyPopulationError: < 4 valid systems in population
+K06460.01 AttributeError: can't set attribute
 K06471.01 MCMCError: TransitSignal trapezoid fit not converged (K06471.01).
 K06503.02 MCMCError: TransitSignal trapezoid fit not converged (K06503.02).
 K06507.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -614,13 +612,13 @@ K06512.01 MCMCError: TransitSignal trapezoid fit not converged (K06512.01).
 K06529.01 MissingStellarError: 5126627 not in stellar table?
 K06531.01 MissingStellarError: 5164794 not in stellar table?
 K06598.01 MCMCError: TransitSignal trapezoid fit not converged (K06598.01).
-K06602.01 EmptyPopulationError: < 4 valid systems in population
+K06602.01 AttributeError: can't set attribute
 K06630.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06635.01 BadRoweFitError: K06635.01 has a/Rstar < 1 (0.981313022682) from JRowe MCMC fit
-K06639.01 EmptyPopulationError: < 4 valid systems in population
-K06648.01 EmptyPopulationError: < 4 valid systems in population
+K06639.01 AttributeError: can't set attribute
+K06648.01 AttributeError: can't set attribute
 K06682.01 MCMCError: TransitSignal trapezoid fit not converged (K06682.01).
-K06696.01 EmptyPopulationError: < 4 valid systems in population
+K06696.01 AttributeError: can't set attribute
 K06698.01 BadRoweFitError: K06698.01 has RoR > 1 (7.673435) from JRowe MCMC fit
 K06704.01 BadRoweFitError: K06704.01 has RoR > 1 (99.870651) from JRowe MCMC fit
 K06713.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -629,25 +627,25 @@ K06728.01 MissingStellarError: 6543682 not in stellar table?
 K06768.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06780.01 MCMCError: TransitSignal trapezoid fit not converged (K06780.01).
 K06796.01 AllWithinRocheError: All simulated systems within Roche lobe
-K06814.01 EmptyPopulationError: < 4 valid systems in population
+K06814.01 AttributeError: can't set attribute
 K06817.01 MissingStellarError: 7090801 not in stellar table?
-K06827.01 EmptyPopulationError: < 4 valid systems in population
+K06827.01 AttributeError: can't set attribute
 K06834.01 AllWithinRocheError: All simulated systems within Roche lobe
-K06851.01 EmptyPopulationError: < 4 valid systems in population
-K06852.01 EmptyPopulationError: < 4 valid systems in population
+K06851.01 AttributeError: can't set attribute
+K06852.01 AttributeError: can't set attribute
 K06855.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06884.01 TypeError: Improper input: N=4 must not exceed M=0
 K06885.01 BadRoweFitError: K06885.01 has RoR > 1 (1.225935) from JRowe MCMC fit
 K06902.01 BadRoweFitError: K06902.01 has RoR > 1 (13.434557) from JRowe MCMC fit
 K06939.01 MissingStellarError: 7960295 not in stellar table?
 K06955.01 MCMCError: TransitSignal trapezoid fit not converged (K06955.01).
-K06963.01 EmptyPopulationError: < 4 valid systems in population
+K06963.01 AttributeError: can't set attribute
 K07029.01 AllWithinRocheError: All simulated systems within Roche lobe
-K07034.01 EmptyPopulationError: < 4 valid systems in population
-K07039.01 EmptyPopulationError: < 4 valid systems in population
+K07034.01 AttributeError: can't set attribute
+K07039.01 AttributeError: can't set attribute
 K07062.01 BadRoweFitError: K07062.01 has RoR > 1 (15.255919) from JRowe MCMC fit
-K07067.01 EmptyPopulationError: < 4 valid systems in population
-K07081.01 EmptyPopulationError: < 4 valid systems in population
+K07067.01 AttributeError: can't set attribute
+K07081.01 AttributeError: can't set attribute
 K07095.01 MCMCError: TransitSignal trapezoid fit not converged (K07095.01).
 K07097.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07101.01 AllWithinRocheError: All simulated systems within Roche lobe
