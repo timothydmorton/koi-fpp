@@ -203,7 +203,6 @@ K02854.01 MissingStellarError: 5513866 not in stellar table?
 K02902.01 TypeError: Improper input: N=4 must not exceed M=0
 K02917.01 MCMCError: TransitSignal trapezoid fit not converged (K02917.01).
 K02940.01 TypeError: Improper input: N=4 must not exceed M=0
-K02968.01 AttributeError: can't set attribute
 K02988.01 NoWeakSecondaryError: K02988.01
 K03046.01 NoWeakSecondaryError: K03046.01
 K03055.01 NoWeakSecondaryError: K03055.01
@@ -241,6 +240,7 @@ K03338.02 EmptyPhotometryError: K03338.02 photometry file (/tigress/tmorton/kepl
 K03350.01 BadRoweFitError: K03350.01 has RoR > 1 (15.077429) from JRowe MCMC fit
 K03376.02 TypeError: Improper input: N=4 must not exceed M=0
 K03405.01 BadRoweFitError: K03405.01 has RoR > 1 (67.439331) from JRowe MCMC fit
+K03420.02 SyntaxError: invalid syntax
 K03442.01 MissingStellarError: 9837586 not in stellar table?
 K03473.01 BadRoweFitError: K03473.01 has RoR > 1 (30.353176) from JRowe MCMC fit
 K03501.01 BadRoweFitError: K03501.01 has RoR > 1 (97.637962) from JRowe MCMC fit
@@ -351,6 +351,7 @@ K03947.01 MissingStellarError: 5952366 not in stellar table?
 K03947.02 MissingStellarError: 5952366 not in stellar table?
 K03967.02 EmptyPhotometryError: K03967.02 photometry file (/tigress/tmorton/kepler/data/rowe/koi3967.n/tremove.2.dat) is empty
 K03972.01 BadRoweFitError: K03972.01 has a/Rstar < 1 (0.910894705808) from JRowe MCMC fit
+K03975.01 SyntaxError: invalid syntax
 K03982.01 MissingStellarError: 5303557 not in stellar table?
 K03993.01 MissingStellarError: 2970804 not in stellar table?
 K03998.01 MCMCError: TransitSignal trapezoid fit not converged (K03998.01).
@@ -363,10 +364,12 @@ K04094.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04118.01 MissingStellarError: 10661778 not in stellar table?
 K04134.01 NoWeakSecondaryError: K04134.01
 K04136.01 MCMCError: TransitSignal trapezoid fit not converged (K04136.01).
+K04156.01 SyntaxError: invalid syntax
 K04185.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04279.01 MissingStellarError: 5876360 not in stellar table?
 K04298.02 MCMCError: TransitSignal trapezoid fit not converged (K04298.02).
 K04323.02 MCMCError: TransitSignal trapezoid fit not converged (K04323.02).
+K04341.01 SyntaxError: invalid syntax
 K04352.01 TypeError: Improper input: N=4 must not exceed M=0
 K04355.01 MissingStellarError: 4571004 not in stellar table?
 K04355.02 MissingStellarError: 4571004 not in stellar table?
@@ -376,15 +379,16 @@ K04355.05 MissingStellarError: 4571004 not in stellar table?
 K04363.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04369.01 NoWeakSecondaryError: K04369.01
 K04419.01 AllWithinRocheError: All simulated systems within Roche lobe
-K04463.01 LinAlgError: singular matrix
 K04500.03 AllWithinRocheError: All simulated systems within Roche lobe
 K04507.01 MissingStellarError: 7598111 not in stellar table?
+K04518.01 SyntaxError: invalid syntax
 K04543.01 MissingStellarError: 9776186 not in stellar table?
 K04565.01 MCMCError: TransitSignal trapezoid fit not converged (K04565.01).
 K04567.02 AllWithinRocheError: All simulated systems within Roche lobe
 K04568.02 NoWeakSecondaryError: K04568.02
 K04636.01 BadRoweFitError: K04636.01 has RoR > 1 (87.348167) from JRowe MCMC fit
 K04682.01 MissingStellarError: 5024252 not in stellar table?
+K04705.01 SyntaxError: invalid syntax
 K04713.01 MissingStellarError: 5253802 not in stellar table?
 K04724.01 MissingStellarError: 8395860 not in stellar table?
 K04782.02 AllWithinRocheError: All simulated systems within Roche lobe
@@ -393,6 +397,7 @@ K04804.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04807.01 MissingStellarError: 9822284 not in stellar table?
 K04883.01 NoWeakSecondaryError: K04883.01
 K04889.01 NoWeakSecondaryError: K04889.01
+K04895.01 SyntaxError: invalid syntax
 K04932.01 NoWeakSecondaryError: K04932.01
 K04948.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04952.01 NoWeakSecondaryError: K04952.01
@@ -420,6 +425,7 @@ K05074.01 NoWeakSecondaryError: K05074.01
 K05076.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05076.02 AllWithinRocheError: All simulated systems within Roche lobe
 K05080.01 NoWeakSecondaryError: K05080.01
+K05096.01 SyntaxError: invalid syntax
 K05103.01 NoWeakSecondaryError: K05103.01
 K05118.01 NoWeakSecondaryError: K05118.01
 K05129.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -477,6 +483,7 @@ K05437.01 NoWeakSecondaryError: K05437.01
 K05450.01 NoWeakSecondaryError: K05450.01
 K05467.01 NoWeakSecondaryError: K05467.01
 K05482.01 AllWithinRocheError: All simulated systems within Roche lobe
+K05492.01 SyntaxError: invalid syntax
 K05494.01 NoWeakSecondaryError: K05494.01
 K05504.01 NoWeakSecondaryError: K05504.01
 K05516.01 MissingStellarError: 8432034 not in stellar table?
@@ -497,6 +504,7 @@ K05656.01 NoWeakSecondaryError: K05656.01
 K05668.01 NoWeakSecondaryError: K05668.01
 K05670.01 NoWeakSecondaryError: K05670.01
 K05673.01 NoWeakSecondaryError: K05673.01
+K05692.01 SyntaxError: invalid syntax
 K05697.01 NoWeakSecondaryError: K05697.01
 K05700.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05703.01 MissingStellarError: 9662475 not in stellar table?
@@ -532,6 +540,7 @@ K05857.01 NoWeakSecondaryError: K05857.01
 K05872.01 NoWeakSecondaryError: K05872.01
 K05880.01 NoWeakSecondaryError: K05880.01
 K05882.01 NoWeakSecondaryError: K05882.01
+K05890.01 SyntaxError: invalid syntax
 K05905.01 NoWeakSecondaryError: K05905.01
 K05916.01 NoWeakSecondaryError: K05916.01
 K05931.01 NoWeakSecondaryError: K05931.01
@@ -551,6 +560,7 @@ K06048.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06051.01 BadRoweFitError: K06051.01 has RoR > 1 (1.232471) from JRowe MCMC fit
 K06082.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06084.01 BadRoweFitError: K06084.01 has RoR > 1 (3.409271) from JRowe MCMC fit
+K06087.01 SyntaxError: invalid syntax
 K06094.01 BadRoweFitError: K06094.01 has RoR > 1 (1.201546) from JRowe MCMC fit
 K06095.01 MissingStellarError: 2707097 not in stellar table?
 K06097.01 NoWeakSecondaryError: K06097.01
@@ -581,7 +591,7 @@ K06238.01 NoWeakSecondaryError: K06238.01
 K06239.02 NoWeakSecondaryError: K06239.02
 K06242.01 NoWeakSecondaryError: K06242.01
 K06242.02 NoWeakSecondaryError: K06242.02
-K06245.02 AllWithinRocheError: All simulated systems within Roche lobe
+K06245.02 SyntaxError: invalid syntax
 K06264.01 BadRoweFitError: K06264.01 has RoR > 1 (1.035711) from JRowe MCMC fit
 K06266.01 AttributeError: can't set attribute
 K06270.01 MissingStellarError: 2438061 not in stellar table?
@@ -603,6 +613,7 @@ K06416.01 MissingStellarError: 4454219 not in stellar table?
 K06423.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06424.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06433.01 AttributeError: can't set attribute
+K06444.01 SyntaxError: invalid syntax
 K06448.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06460.01 AttributeError: can't set attribute
 K06471.01 MCMCError: TransitSignal trapezoid fit not converged (K06471.01).
@@ -615,7 +626,7 @@ K06598.01 MCMCError: TransitSignal trapezoid fit not converged (K06598.01).
 K06602.01 AttributeError: can't set attribute
 K06630.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06635.01 BadRoweFitError: K06635.01 has a/Rstar < 1 (0.981313022682) from JRowe MCMC fit
-K06639.01 AttributeError: can't set attribute
+K06639.01 SyntaxError: invalid syntax
 K06648.01 AttributeError: can't set attribute
 K06682.01 MCMCError: TransitSignal trapezoid fit not converged (K06682.01).
 K06696.01 AttributeError: can't set attribute
@@ -631,6 +642,7 @@ K06814.01 AttributeError: can't set attribute
 K06817.01 MissingStellarError: 7090801 not in stellar table?
 K06827.01 AttributeError: can't set attribute
 K06834.01 AllWithinRocheError: All simulated systems within Roche lobe
+K06838.01 SyntaxError: invalid syntax
 K06851.01 AttributeError: can't set attribute
 K06852.01 AttributeError: can't set attribute
 K06855.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -642,6 +654,7 @@ K06955.01 MCMCError: TransitSignal trapezoid fit not converged (K06955.01).
 K06963.01 AttributeError: can't set attribute
 K07029.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07034.01 AttributeError: can't set attribute
+K07037.01 SyntaxError: invalid syntax
 K07039.01 AttributeError: can't set attribute
 K07062.01 BadRoweFitError: K07062.01 has RoR > 1 (15.255919) from JRowe MCMC fit
 K07067.01 AttributeError: can't set attribute
@@ -659,6 +672,7 @@ K07200.01 MissingStellarError: 9597095 not in stellar table?
 K07204.01 BadRoweFitError: K07204.01 has RoR > 1 (8.014888) from JRowe MCMC fit
 K07205.01 MissingStellarError: 9635520 not in stellar table?
 K07231.02 AllWithinRocheError: All simulated systems within Roche lobe
+K07233.01 SyntaxError: invalid syntax
 K07302.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07304.01 BadRoweFitError: K07304.01 has RoR > 1 (2.125602) from JRowe MCMC fit
 K07309.01 BadRoweFitError: K07309.01 has RoR > 1 (1.298723) from JRowe MCMC fit
@@ -666,6 +680,7 @@ K07331.01 MissingStellarError: 10468514 not in stellar table?
 K07349.01 TypeError: Improper input: N=4 must not exceed M=0
 K07369.01 MissingStellarError: 10743600 not in stellar table?
 K07378.01 AllWithinRocheError: All simulated systems within Roche lobe
+K07433.01 SyntaxError: invalid syntax
 K07447.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07473.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07474.01 AllWithinRocheError: All simulated systems within Roche lobe
