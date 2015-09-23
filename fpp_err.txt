@@ -26,7 +26,7 @@ K00371.02 MissingKOIError: /tigress/tmorton/kepler/data/rowe/koi371.n/tremove.2.
 K00383.01 EmptyPhotometryError: K00383.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi383.n/tremove.1.dat) is empty
 K00396.01 BadRoweFitError: K00396.01 has RoR > 1 (3.396545) from JRowe MCMC fit
 K00406.01 BadRoweFitError: K00406.01 has RoR > 1 (8.259789) from JRowe MCMC fit
-K00423.02 AttributeError: can't set attribute
+K00423.02 2015-09-22 21:33:39,959: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K00436.01 BadRoweFitError: K00436.01 has RoR > 1 (28.054026) from JRowe MCMC fit
 K00439.02 MCMCError: TransitSignal trapezoid fit not converged (K00439.02).
 K00445.01 TypeError: Improper input: N=4 must not exceed M=0
@@ -66,7 +66,6 @@ K00977.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00978.01 TypeError: Improper input: N=4 must not exceed M=0
 K00979.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00983.02 AllWithinRocheError: All simulated systems within Roche lobe
-K00990.01 AttributeError: can't set attribute
 K01010.01 EmptyPhotometryError: K01010.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1010.n/tremove.1.dat) is empty
 K01019.01 NoWeakSecondaryError: K01019.01
 K01026.01 EmptyPhotometryError: K01026.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1026.n/tremove.1.dat) is empty
@@ -337,12 +336,12 @@ K03855.01 MissingStellarError: 2558370 not in stellar table?
 K03857.01 MissingStellarError: 11825057 not in stellar table?
 K03859.01 MissingStellarError: 9692336 not in stellar table?
 K03861.01 AllWithinRocheError: All simulated systems within Roche lobe
-K03863.01 AttributeError: can't set attribute
+K03863.01 2015-09-22 21:34:14,997: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K03864.01 BadRoweFitError: K03864.01 has RoR > 1 (2.215502) from JRowe MCMC fit
 K03875.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03878.02 AllWithinRocheError: All simulated systems within Roche lobe
 K03885.01 AllWithinRocheError: All simulated systems within Roche lobe
-K03889.01 AttributeError: can't set attribute
+K03889.01 2015-09-22 21:35:40,970: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K03891.01 BadRoweFitError: K03891.01 has RoR > 1 (96.11116) from JRowe MCMC fit
 K03895.01 MissingStellarError: 12106934 not in stellar table?
 K03899.01 MissingStellarError: 3556229 not in stellar table?
@@ -389,7 +388,7 @@ K04636.01 BadRoweFitError: K04636.01 has RoR > 1 (87.348167) from JRowe MCMC fit
 K04682.01 MissingStellarError: 5024252 not in stellar table?
 K04713.01 MissingStellarError: 5253802 not in stellar table?
 K04724.01 MissingStellarError: 8395860 not in stellar table?
-K04777.02 AttributeError: can't set attribute
+K04777.02 2015-09-22 21:35:37,630: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K04782.02 AllWithinRocheError: All simulated systems within Roche lobe
 K04797.01 BadRoweFitError: K04797.01 has RoR > 1 (63.505539) from JRowe MCMC fit
 K04804.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -413,7 +412,7 @@ K05022.01 NoWeakSecondaryError: K05022.01
 K05031.01 NoWeakSecondaryError: K05031.01
 K05035.01 NoWeakSecondaryError: K05035.01
 K05037.01 AllWithinRocheError: All simulated systems within Roche lobe
-K05039.01 AttributeError: can't set attribute
+K05039.01 2015-09-22 21:36:22,235: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K05041.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05051.01 NoWeakSecondaryError: K05051.01
 K05052.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -425,10 +424,8 @@ K05076.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05076.02 AllWithinRocheError: All simulated systems within Roche lobe
 K05080.01 NoWeakSecondaryError: K05080.01
 K05103.01 NoWeakSecondaryError: K05103.01
-K05110.01 AttributeError: can't set attribute
-K05112.01 AttributeError: can't set attribute
 K05118.01 NoWeakSecondaryError: K05118.01
-K05124.01 AttributeError: can't set attribute
+K05124.01 2015-09-22 21:34:37,268: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K05129.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05136.01 NoWeakSecondaryError: K05136.01
 K05137.01 NoWeakSecondaryError: K05137.01
@@ -446,7 +443,7 @@ K05194.01 NoWeakSecondaryError: K05194.01
 K05197.01 NoWeakSecondaryError: K05197.01
 K05201.01 TypeError: Improper input: N=4 must not exceed M=0
 K05210.01 NoWeakSecondaryError: K05210.01
-K05214.01 AttributeError: can't set attribute
+K05214.01 2015-09-22 21:35:18,310: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K05226.01 MissingStellarError: 6034379 not in stellar table?
 K05234.01 MissingStellarError: 6062298 not in stellar table?
 K05238.01 MissingStellarError: 6116605 not in stellar table?
@@ -470,7 +467,7 @@ K05367.01 NoWeakSecondaryError: K05367.01
 K05368.01 NoWeakSecondaryError: K05368.01
 K05377.01 NoWeakSecondaryError: K05377.01
 K05383.01 NoWeakSecondaryError: K05383.01
-K05385.01 AttributeError: can't set attribute
+K05385.01 2015-09-22 21:35:23,225: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K05400.01 NoWeakSecondaryError: K05400.01
 K05402.01 NoWeakSecondaryError: K05402.01
 K05404.01 NoWeakSecondaryError: K05404.01
@@ -490,7 +487,7 @@ K05494.01 NoWeakSecondaryError: K05494.01
 K05504.01 NoWeakSecondaryError: K05504.01
 K05516.01 MissingStellarError: 8432034 not in stellar table?
 K05533.01 NoWeakSecondaryError: K05533.01
-K05535.01 AttributeError: can't set attribute
+K05535.01 2015-09-22 21:36:39,195: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K05561.01 NoWeakSecondaryError: K05561.01
 K05571.01 MissingStellarError: 8766285 not in stellar table?
 K05576.01 NoWeakSecondaryError: K05576.01
@@ -507,7 +504,7 @@ K05656.01 NoWeakSecondaryError: K05656.01
 K05668.01 NoWeakSecondaryError: K05668.01
 K05670.01 NoWeakSecondaryError: K05670.01
 K05673.01 NoWeakSecondaryError: K05673.01
-K05681.01 AttributeError: can't set attribute
+K05681.01 2015-09-22 21:36:35,635: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K05697.01 NoWeakSecondaryError: K05697.01
 K05700.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05703.01 MissingStellarError: 9662475 not in stellar table?
@@ -536,13 +533,13 @@ K05813.01 NoWeakSecondaryError: K05813.01
 K05820.01 NoWeakSecondaryError: K05820.01
 K05821.01 NoWeakSecondaryError: K05821.01
 K05824.01 NoWeakSecondaryError: K05824.01
-K05828.01 AttributeError: can't set attribute
+K05828.01 2015-09-22 21:37:17,884: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K05836.01 NoWeakSecondaryError: K05836.01
 K05837.01 MCMCError: TransitSignal trapezoid fit not converged (K05837.01).
 K05843.01 NoWeakSecondaryError: K05843.01
 K05857.01 NoWeakSecondaryError: K05857.01
 K05872.01 NoWeakSecondaryError: K05872.01
-K05873.01 AttributeError: can't set attribute
+K05873.01 2015-09-22 21:37:21,088: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K05880.01 NoWeakSecondaryError: K05880.01
 K05882.01 NoWeakSecondaryError: K05882.01
 K05905.01 NoWeakSecondaryError: K05905.01
@@ -562,7 +559,7 @@ K06035.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06042.01 BadRoweFitError: K06042.01 has RoR > 1 (3.032926) from JRowe MCMC fit
 K06048.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06051.01 BadRoweFitError: K06051.01 has RoR > 1 (1.232471) from JRowe MCMC fit
-K06065.01 AttributeError: can't set attribute
+K06065.01 2015-09-22 21:34:49,169: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K06082.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06084.01 BadRoweFitError: K06084.01 has RoR > 1 (3.409271) from JRowe MCMC fit
 K06094.01 BadRoweFitError: K06094.01 has RoR > 1 (1.201546) from JRowe MCMC fit
@@ -584,7 +581,7 @@ K06175.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06176.02 NoWeakSecondaryError: K06176.02
 K06180.01 NoWeakSecondaryError: K06180.01
 K06188.01 TypeError: Improper input: N=4 must not exceed M=0
-K06200.01 AttributeError: can't set attribute
+K06200.01 2015-09-22 21:35:39,778: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K06202.01 NoWeakSecondaryError: K06202.01
 K06210.01 NoWeakSecondaryError: K06210.01
 K06213.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -622,10 +619,10 @@ K06512.01 MCMCError: TransitSignal trapezoid fit not converged (K06512.01).
 K06529.01 MissingStellarError: 5126627 not in stellar table?
 K06531.01 MissingStellarError: 5164794 not in stellar table?
 K06598.01 MCMCError: TransitSignal trapezoid fit not converged (K06598.01).
-K06604.01 AttributeError: can't set attribute
+K06604.01 2015-09-22 21:36:16,554: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K06630.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06635.01 BadRoweFitError: K06635.01 has a/Rstar < 1 (0.981313022682) from JRowe MCMC fit
-K06681.01 AttributeError: can't set attribute
+K06681.01 2015-09-22 21:36:21,033: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K06682.01 MCMCError: TransitSignal trapezoid fit not converged (K06682.01).
 K06698.01 BadRoweFitError: K06698.01 has RoR > 1 (7.673435) from JRowe MCMC fit
 K06704.01 BadRoweFitError: K06704.01 has RoR > 1 (99.870651) from JRowe MCMC fit
@@ -645,7 +642,7 @@ K06939.01 MissingStellarError: 7960295 not in stellar table?
 K06955.01 MCMCError: TransitSignal trapezoid fit not converged (K06955.01).
 K07029.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07062.01 BadRoweFitError: K07062.01 has RoR > 1 (15.255919) from JRowe MCMC fit
-K07073.01 AttributeError: can't set attribute
+K07073.01 2015-09-22 21:37:37,557: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K07095.01 MCMCError: TransitSignal trapezoid fit not converged (K07095.01).
 K07097.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07101.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -659,7 +656,7 @@ K07200.01 MissingStellarError: 9597095 not in stellar table?
 K07204.01 BadRoweFitError: K07204.01 has RoR > 1 (8.014888) from JRowe MCMC fit
 K07205.01 MissingStellarError: 9635520 not in stellar table?
 K07231.02 AllWithinRocheError: All simulated systems within Roche lobe
-K07251.01 AttributeError: can't set attribute
+K07251.01 2015-09-22 21:37:35,316: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
 K07302.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07304.01 BadRoweFitError: K07304.01 has RoR > 1 (2.125602) from JRowe MCMC fit
 K07309.01 BadRoweFitError: K07309.01 has RoR > 1 (1.298723) from JRowe MCMC fit
@@ -678,4 +675,4 @@ K07561.01 MCMCError: TransitSignal trapezoid fit not converged (K07561.01).
 K07562.01 TypeError: Improper input: N=4 must not exceed M=0
 K07578.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07581.01 AllWithinRocheError: All simulated systems within Roche lobe
-K07599.01 AttributeError: can't set attribute
+K07599.01 2015-09-22 21:38:14,137: Empty population (Planets): < 4 valid systems! Cannot calculate lhood.
