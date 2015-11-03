@@ -41,6 +41,7 @@ fpp_table['not_transitlike'] = ku.DATA.ix[kois, 'koi_fpflag_nt'].astype(bool)
 fpp_table['significant_secondary'] = ku.DATA.ix[kois, 'koi_fpflag_ss'].astype(bool)
 fpp_table['centroid_offset'] = ku.DATA.ix[kois, 'koi_fpflag_co'].astype(bool)
 fpp_table['ephem_match'] = ku.DATA.ix[kois, 'koi_fpflag_ec'].astype(bool)
+fpp_table['MES'] = ku.DATA.ix[kois, 'koi_max_mult_ev']
 
 fpp_table['exception'] = None
 fpp_table.ix[err_table[:,0], 'exception'] = err_table[:,1]
