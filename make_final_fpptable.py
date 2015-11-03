@@ -48,6 +48,7 @@ fpp_table.ix[err_table[:,0], 'exception'] = err_table[:,1]
 fpp_table['exception'] = fpp_table['exception'].str.replace(':','')
 
 fpp_table['has_ttv'] = ttv_table.ix[kois,'has_ttv']
+fpp_table['MES'] = ku.DATA.ix[kois, 'koi_max_mult_ev']
 
 fpp_table.to_csv('fpp_final_table.csv')
 
