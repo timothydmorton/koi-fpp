@@ -218,14 +218,12 @@ K03995.01 BadRoweFitError: K03995.01 has RoR > 1 (2.079166) from JRowe MCMC fit
 K04034.02 BadRoweFitError: K04034.02 has RoR > 1 (97.048454) from JRowe MCMC fit
 K04035.01 MissingStellarError: 3247404 not in stellar table?
 K04094.01 AllWithinRocheError: All simulated systems within Roche lobe
-K04115.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K04118.01 MissingStellarError: 10661778 not in stellar table?
 K04136.01 MCMCError: TransitSignal trapezoid fit not converged (K04136.01).
 K04185.01 BadRoweFitError: K04185.01 has RoR > 1 (33.18457) from JRowe MCMC fit
 K04279.01 MissingStellarError: 5876360 not in stellar table?
 K04298.02 MCMCError: TransitSignal trapezoid fit not converged (K04298.02).
 K04299.01 BadRoweFitError: K04299.01 has RoR > 1 (1.653607) from JRowe MCMC fit
-K04339.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K04363.01 BadRoweFitError: K04363.01 has RoR > 1 (93.311729) from JRowe MCMC fit
 K04419.01 BadRoweFitError: K04419.01 has RoR > 1 (3.543025) from JRowe MCMC fit
 K04463.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -233,7 +231,6 @@ K04500.03 BadRoweFitError: K04500.03 has RoR > 1 (61.523319) from JRowe MCMC fit
 K04507.01 MissingStellarError: 7598111 not in stellar table?
 K04543.01 MissingStellarError: 9776186 not in stellar table?
 K04565.01 MCMCError: TransitSignal trapezoid fit not converged (K04565.01).
-K04566.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K04567.02 BadRoweFitError: K04567.02 has RoR > 1 (15.723242) from JRowe MCMC fit
 K04636.01 BadRoweFitError: K04636.01 has RoR > 1 (87.348167) from JRowe MCMC fit
 K04677.01 MCMCError: TransitSignal trapezoid fit not converged (K04677.01).
@@ -243,7 +240,6 @@ K04724.01 MissingStellarError: 8395860 not in stellar table?
 K04782.02 BadRoweFitError: K04782.02 has RoR > 1 (13.959527) from JRowe MCMC fit
 K04804.01 BadRoweFitError: K04804.01 has RoR > 1 (91.638718) from JRowe MCMC fit
 K04807.01 MissingStellarError: 9822284 not in stellar table?
-K04819.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K04946.01 BadRoweFitError: K04946.01 has RoR > 1 (1.354932) from JRowe MCMC fit
 K04948.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04953.01 BadRoweFitError: K04953.01 has RoR > 1 (5.78851) from JRowe MCMC fit
@@ -257,7 +253,6 @@ K05124.01 BadRoweFitError: K05124.01 has RoR > 1 (83.764427) from JRowe MCMC fit
 K05129.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05145.01 BadRoweFitError: K05145.01 has RoR > 1 (1.945891) from JRowe MCMC fit
 K05190.01 MissingStellarError: 5653163 not in stellar table?
-K05273.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K05295.01 BadRoweFitError: K05295.01 has RoR > 1 (2.848532) from JRowe MCMC fit
 K05317.01 BadRoweFitError: K05317.01 has RoR > 1 (1.537256) from JRowe MCMC fit
 K05346.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -280,7 +275,6 @@ K05752.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05792.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05832.01 BadRoweFitError: K05832.01 has RoR > 1 (2.87506) from JRowe MCMC fit
 K05841.01 BadRoweFitError: K05841.01 has RoR > 1 (1.098129) from JRowe MCMC fit
-K05865.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K05906.01 BadRoweFitError: K05906.01 has RoR > 1 (1.395448) from JRowe MCMC fit
 K05984.01 BadRoweFitError: K05984.01 has RoR > 1 (53.616791) from JRowe MCMC fit
 K06035.01 BadRoweFitError: K06035.01 has RoR > 1 (19.643879) from JRowe MCMC fit
@@ -296,7 +290,6 @@ K06139.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06144.01 BadRoweFitError: K06144.01 has RoR > 1 (18.441494) from JRowe MCMC fit
 K06152.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06159.01 BadRoweFitError: K06159.01 has RoR > 1 (5.45796) from JRowe MCMC fit
-K06169.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K06174.01 MCMCError: TransitSignal trapezoid fit not converged (K06174.01).
 K06175.01 BadRoweFitError: K06175.01 has RoR > 1 (40.790203) from JRowe MCMC fit
 K06213.01 BadRoweFitError: K06213.01 has RoR > 1 (35.968613) from JRowe MCMC fit
@@ -314,7 +307,6 @@ K06349.01 BadRoweFitError: K06349.01 has RoR > 1 (2.912287) from JRowe MCMC fit
 K06363.01 MissingStellarError: 3836413 not in stellar table?
 K06386.01 BadRoweFitError: K06386.01 has RoR > 1 (8.205035) from JRowe MCMC fit
 K06387.01 BadRoweFitError: K06387.01 has RoR > 1 (33.003998) from JRowe MCMC fit
-K06389.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K06391.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06395.01 BadRoweFitError: K06395.01 has RoR > 1 (97.703239) from JRowe MCMC fit
 K06401.01 MCMCError: TransitSignal trapezoid fit not converged (K06401.01).
@@ -337,7 +329,6 @@ K06531.01 NoWeakSecondaryError: K06531.01
 K06549.01 BadRoweFitError: K06549.01 has a/Rstar < 1 (0.373234587407) from JRowe MCMC fit
 K06554.01 BadRoweFitError: K06554.01 has RoR > 1 (1.77214) from JRowe MCMC fit
 K06556.01 BadRoweFitError: K06556.01 has RoR > 1 (1.314934) from JRowe MCMC fit
-K06584.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K06594.01 BadRoweFitError: K06594.01 has RoR > 1 (1.085812) from JRowe MCMC fit
 K06598.01 NoWeakSecondaryError: K06598.01
 K06604.01 BadRoweFitError: K06604.01 has RoR > 1 (99.230606) from JRowe MCMC fit
@@ -354,7 +345,6 @@ K06713.01 BadRoweFitError: K06713.01 has RoR > 1 (12.975605) from JRowe MCMC fit
 K06720.01 BadRoweFitError: K06720.01 has a/Rstar < 1 (0.975023963081) from JRowe MCMC fit
 K06728.01 MissingStellarError: 6543682 not in stellar table?
 K06780.01 MCMCError: TransitSignal trapezoid fit not converged (K06780.01).
-K06784.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K06794.01 BadRoweFitError: K06794.01 has a/Rstar < 1 (0.998026066487) from JRowe MCMC fit
 K06796.01 BadRoweFitError: K06796.01 has RoR > 1 (86.277725) from JRowe MCMC fit
 K06817.01 MissingStellarError: 7090801 not in stellar table?
@@ -368,7 +358,6 @@ K06902.01 BadRoweFitError: K06902.01 has RoR > 1 (13.434557) from JRowe MCMC fit
 K06917.01 BadRoweFitError: K06917.01 has RoR > 1 (1.182665) from JRowe MCMC fit
 K06939.01 MissingStellarError: 7960295 not in stellar table?
 K06941.01 BadRoweFitError: K06941.01 has RoR > 1 (1.662662) from JRowe MCMC fit
-K06983.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K07029.01 BadRoweFitError: K07029.01 has RoR > 1 (30.747644) from JRowe MCMC fit
 K07038.01 BadRoweFitError: K07038.01 has RoR > 1 (1.236598) from JRowe MCMC fit
 K07062.01 BadRoweFitError: K07062.01 has RoR > 1 (15.255919) from JRowe MCMC fit
@@ -385,7 +374,6 @@ K07156.01 BadRoweFitError: K07156.01 has RoR > 1 (1.372288) from JRowe MCMC fit
 K07159.01 BadRoweFitError: K07159.01 has RoR > 1 (14.690237) from JRowe MCMC fit
 K07161.01 BadRoweFitError: K07161.01 has RoR > 1 (65.385162) from JRowe MCMC fit
 K07176.01 BadRoweFitError: K07176.01 has RoR > 1 (25.076719) from JRowe MCMC fit
-K07181.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K07186.01 MCMCError: TransitSignal trapezoid fit not converged (K07186.01).
 K07194.01 MCMCError: TransitSignal trapezoid fit not converged (K07194.01).
 K07199.01 BadRoweFitError: K07199.01 has RoR > 1 (7.728274) from JRowe MCMC fit
@@ -404,7 +392,6 @@ K07343.01 BadRoweFitError: K07343.01 has RoR > 1 (1.024628) from JRowe MCMC fit
 K07368.01 MCMCError: TransitSignal trapezoid fit not converged (K07368.01).
 K07369.01 MissingStellarError: 10743600 not in stellar table?
 K07378.01 BadRoweFitError: K07378.01 has RoR > 1 (62.554085) from JRowe MCMC fit
-K07379.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K07401.01 BadRoweFitError: K07401.01 has a/Rstar < 1 (0.951449764013) from JRowe MCMC fit
 K07402.01 BadRoweFitError: K07402.01 has RoR > 1 (1.106935) from JRowe MCMC fit
 K07412.01 MCMCError: TransitSignal trapezoid fit not converged (K07412.01).
@@ -426,7 +413,6 @@ K07543.01 NoWeakSecondaryError: K07543.01
 K07553.01 BadRoweFitError: K07553.01 has RoR > 1 (1.106412) from JRowe MCMC fit
 K07573.01 BadRoweFitError: K07573.01 has a/Rstar < 1 (0.998783797906) from JRowe MCMC fit
 K07578.01 AllWithinRocheError: All simulated systems within Roche lobe
-K07579.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K07585.01 BadRoweFitError: K07585.01 has a/Rstar < 1 (0.999632401315) from JRowe MCMC fit
 K07590.01 BadRoweFitError: K07590.01 has a/Rstar < 1 (0.988838325297) from JRowe MCMC fit
 K07599.01 BadRoweFitError: K07599.01 has RoR > 1 (62.968838) from JRowe MCMC fit
