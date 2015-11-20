@@ -43,11 +43,11 @@
 \newcommand{\vdag}{(v)^\dagger}
 \newcommand{\myemail}{tdm@astro.princeton.edu}
 
-\newcommand{\ntotal}{8826}
-\newcommand{\nfail}{787}
-\newcommand{\ncalc}{8039}
+\newcommand{\ntotal}{7470}
+\newcommand{\nfail}{422}
+\newcommand{\ncalc}{7048}
 
-\newcommand{\nfp}{500}
+\newcommand{\nfp}{424}
 
 \newcommand{\nbadphot}{47} %EmptyPhotometry or MissingKOI
 \newcommand{\nbadphotFP}{34}
@@ -64,12 +64,12 @@
 \newcommand{\nbadotherCAND}{5}
 \newcommand{\nbadotherCONF}{1}
 
-\newcommand{\nreliable}{2854}
-\newcommand{\nval}{2136}
-\newcommand{\nreliableFP}{298}
-\newcommand{\nvalnew}{1456}
-\newcommand{\nfpnew}{195}
-\newcommand{\ncurval}{1001}
+\newcommand{\nreliable}{3018}
+\newcommand{\nval}{2818}
+\newcommand{\nreliableFP}{424}
+\newcommand{\nvalnew}{1380}
+\newcommand{\nfpnew}{424}
+\newcommand{\ncurval}{1002}
 
 \newcommand{\posprobthresh}{0.3}
 
@@ -176,7 +176,7 @@ $R_\oplus$) out to orbits of about one year.  It is important to
 remember, however, that these revolutionary discoveries depend
 intimately on another revolution---how to interpret transiting planet
 \textit{candidate} signals in the absence of unambiguous positive
-confirmation of their veracity.
+confirmation of their veracity. 
 
 Before \kepler, every survey searching for transiting exoplanets
 demanded that a candidate signal be verified as a true planet via
@@ -217,9 +217,9 @@ curves as simple trapezoids and simulating realistic populations of
 astrophysical false positives.  This procedure has also been used in
 the literature to validate a number of \kepler\ planets, and has also
 been applied to a number of candidates found by the \textit{K2}
-mission \citep{Montet:2015,Becker:2015}.  The code that implements
-this procedure is now publicly available in the Python module
-\vespa\footnote{\url{https://github.com/timothydmorton/vespa}}
+mission \citep{Montet:2015,Becker:2015,Schlieder:2015}.  The code that
+implements this procedure is now publicly available in the Python
+module \vespa\footnote{\url{https://github.com/timothydmorton/vespa}}
 \citep{vespa}.
 
 This work presents results of applying \vespa\ \emph{en masse} to the
@@ -280,41 +280,48 @@ Markov Chain Monte Carlo (MCMC), using the \texttt{emcee} sampler
 determined by simulating a physically realistic population of the
 hypothesized astrophysical scenario and using this population to
 define the PDF for the trapezoidal parameters under the hypothesis.
-The likelihood is then
-\begin{equation}
-  \eqlabel{lhood}
-  \mathcal L_i = \displaystyle \int p_\mathrm{sig}\left(\bvec{\theta}\right)
-                                    p_i\left(\bvec{\theta}\right)\,d\bvec{\theta},
-\end{equation}
-where $\bvec{\theta}$ is the vector of trapezoidal shape parameters,
+The likelihood is then \begin{equation}   \eqlabel{lhood}   \mathcal
+L_i = \displaystyle \int p_\mathrm{sig}\left(\bvec{\theta}\right)
+p_i\left(\bvec{\theta}\right)\,d\bvec{\theta}, \end{equation} where
+$\bvec{\theta}$ is the vector of trapezoidal shape parameters,
 $p_\mathrm{sig}$ is the posterior PDF of the signal, and $p_i$ is the
 PDF for the parameters under hypothesis $i$.\footnote{$\mathcal L_i$
-  may be seen to be the ``evidence'' or ``marginalized likelihood'' of
-  the trapezoidal model under hypothesis $i$, with $p_\mathrm{sig}$
-  being the likelihood and $p_i$ being the prior, integrated over the
-  $\bvec{\theta}$ parameter space.  But for clarity, and for
-  continuity with previous publications, we continue to call $\mathcal
-  L_i$ the ``likelihood'' for hypothesis $i$.}  The hypotheses
-currently supported by \vespa\ are the following: unblended eclipsing
-binary (EB), hierarchical-triple eclipsing binary (HEB),
-chance-aligned background/foreground eclipsing binary (BEB), and
-transiting planet (Pl).  We note that the determination of the diluted
-eclipse depth of these blended scenarios assumes that the blended
-system is \emph{fully contained} within the target's photometric
-aperture.  That is, these scenarios do not account for the possibility
-that only a small fraction of the light from a nearby contaminating
-star might be in the aperture, many of which have already been
-identified via other methods \cite{Bryson:2013,Coughlin:2014}.  
+may be seen to be the ``evidence'' or ``marginalized likelihood'' of
+the trapezoidal model under hypothesis $i$, with $p_\mathrm{sig}$
+being the likelihood and $p_i$ being the prior, integrated over the
+$\bvec{\theta}$ parameter space.  But for clarity, and for continuity
+with previous publications, we continue to call $\mathcal L_i$ the
+``likelihood'' for hypothesis $i$.}  The hypotheses supported by
+\vespa\ are the following: unblended eclipsing binary (EB),
+hierarchical- triple eclipsing binary (HEB), chance-aligned
+background/foreground eclipsing binary (BEB), and transiting planet
+(Pl).  In this work, we also implement ``double-period'' versions of
+each of the stellar false positive scenarios, acknowledging the
+possibility that if an eclipsing binary has similar primary and
+secondar eclipse depths, then it might be mischaracterized as a
+primary-only transiting planet signal at twice the orbital period
+(especially if diluted).  We note that the determination of the
+diluted eclipse depth of all these blended scenarios assumes that the
+light from the blended system is \emph{fully contained} within the
+target's photometric aperture.  That is, these scenarios do not
+account for the possibility that only a small fraction of the light
+from a nearby contaminating star might be in the aperture, many of
+which have already been identified via other methods
+\cite{Bryson:2013,Coughlin:2014}.
 
 Observational constraints are incorporated in two different ways.
 First, photometric (or spectroscopic/asteroseismic) measurements of
 the target star are folded into the population simulations of each
 hypothesis (see \sect{methods:stellar}).  All other constraints are
 applied to narrow down which simulated instances of each scenario may
-be counted in the final prior and likelihood evalulations; for example,
-only blended eclipsing binaries with secondary eclipse depths
+be counted in the final prior and likelihood evalulations; for
+example, only blended eclipsing binaries with secondary eclipse depths
 shallower than the observed limits contribute to the construction of
-the $p_i$ trapezoidal shape parameter PDF.
+the $p_i$ trapezoidal shape parameter PDF.  For the ``double-period''
+scenarios, we require the primary and secondary eclipse signals to
+have depths within 3-$\sigma$ of each other, where $\sigma$ is defined
+as the fitted uncertainty in the trapezoid-model depth of the
+candidate signal.
 
 The steps \vespa\ takes to calculate the FPP of a transit signal
 are thus as follows:
@@ -569,8 +576,8 @@ of this work, nor are the FPP results very sensitive to the exact
 estimated stellar properties.  The exception to this would be if the
 stellar density estimate is significantly mis-estimated, which would
 be the case if a star is not properly identified as evolved.  However,
-we note that of the 743 KOIs with host stars $>$2\,$R_{\odot}$ at the
-NExScI Archive, 515 of them already have FALSE POSITIVE designations;
+we note that of the 730 KOIs with host stars $>$2\,$R_{\odot}$ at the
+NExScI Archive, 502 of them already have FALSE POSITIVE designations;
 additionally, \citet{Sliski:2014} find a large false positive rate for
 KOIs with evolved host stars.  Given all of these considerations, we
 believe that potential systematic issues with stellar property
@@ -736,6 +743,35 @@ detailed below.
 The numbers in this list correspond to the numbers in
 the ``failure'' column in \tab{fpp}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Comparison with follow-up observations}
+\sectlabel{comparisons} One of the difficulties with probabilistic
+validation is that, by necessity, it is typically invoked when no
+other method of follow-up confirmation is possible.  It can therefore
+be difficult to find ways to compare the results of a calculation such
+as \vespa\ to any known observational ground-truth, or to ``validate
+the validations.''  However, because so much follow-up observational
+effort has gone into \kepler\ candidates over the last few years,
+there actually are two different datasets that do provide such
+information for relatively small subsets of candidates.  Here, we
+discuss the results of \vespa\ calculations for these candidates and
+the impliciations for the reliability of the \vespa\ framework.
+
+The first of these datasets is from \citet{Desert:2015}, who observe
+the transits of 50 \kepler\ candidates with the Spitzer Space
+Telescope in order to observationally constrain the FP rate.  The idea
+behind these observations is that a blended EB false positive will
+often show a color-dependent transit depth, and so comparing the
+candidate depths measured by \kepler\ to those measured in the
+infrared by Spitzer would give an idea of how likely a signal is to be
+a false positive. The results of their analysis suggest that fewer
+that about 8\% of their observed candidates are likely to be false
+positives.  Of these 50 candidates, \vespa\ on its own calculates FPP
+$\gt$ 0.1 for four.  Two of these (KOI-103.01 and KOI-248.02) are
+systems with known significant TTVs; the other two (KOI-247.01 and
+KOI-555.02) are likely false positives, with FPPs of 0.90 and 0.81,
+respectively.  All but two of the remaining canidates have FPP $\lt$
+0.01.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -800,8 +836,11 @@ even low-SNR candidates to receive confident \vespa\ analysis, which
 is now limited only to KOIs for which confident pixel-level positional
 analysis is possible.
 
-Beyond \kepler, future transit missions will require automated false
-positive analysis in order to 
+Beyond \kepler, future transit missions such as TESS and PLATO will
+require automated false positive analysis in order to efficiently sift
+through the large numbers of candidates that they will find.  This
+work demonstrates that \vespa\ will be a valuable tool towards this
+purpose.
 
 
 
