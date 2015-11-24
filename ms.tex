@@ -49,24 +49,24 @@
 
 \newcommand{\nfp}{424}
 
-\newcommand{\nbadphot}{47} %EmptyPhotometry or MissingKOI
-\newcommand{\nbadphotFP}{34}
-\newcommand{\nbadphotCAND}{13}
+\newcommand{\nbadphot}{28} %EmptyPhotometry or BadPhotometry of MissingKOI or IOError
+%\newcommand{\nbadphotFP}{34}
+%\newcommand{\nbadphotCAND}{13}
 \newcommand{\nbadrowemcmc}{233}
 \newcommand{\nbadstellar}{74} %MissingStellar
 \newcommand{\nbadsec}{8} %NoWeakSecondary
-\newcommand{\nattempted}{8141}
-\newcommand{\ntryfail}{112}
-\newcommand{\nbadtrapfit}{36}
+%\newcommand{\nattempted}{8141}
+%\newcommand{\ntryfail}{112}
+\newcommand{\nbadtrapfit}{38}
 \newcommand{\nbadroche}{37}
-\newcommand{\nbadother}{2}
-\newcommand{\nbadotherFP}{1}
-\newcommand{\nbadotherCAND}{1}
-\newcommand{\nbadotherCONF}{1}
+%\newcommand{\nbadother}{2}
+%\newcommand{\nbadotherFP}{1}
+%\newcommand{\nbadotherCAND}{1}
+%\newcommand{\nbadotherCONF}{1}
 
-\newcommand{\nreliable}{3018}
-\newcommand{\nval}{2818}
-\newcommand{\nreliableFP}{424}
+\newcommand{\nreliable}{2943}
+\newcommand{\nval}{2046}
+\newcommand{\nreliableFP}{419}
 \newcommand{\nvalnew}{1380}
 \newcommand{\nfpnew}{424}
 \newcommand{\ncurval}{1002}
@@ -75,8 +75,6 @@
 
 \newcommand{\kepler}{\textit{Kepler}}
 \newcommand{\vespa}{\texttt{vespa}}
-\newcommand{\pastis}{\verb|PASTIS|}
-\newcommand{\blender}{\verb|BLENDER|}
 \newcommand{\isochrones}{\texttt{isochrones}}
 \newcommand{\bvec}[1]{{\ensuremath{\boldsymbol{#1}}}}
 
@@ -118,6 +116,7 @@
 
 \author{Timothy D. Morton}
 \affil{Department of Astrophysical Sciences, Princeton University}
+\author{et al.}
 
 %\altaffiltext{1}{Department of Astrophysics, Princeton University}
 
@@ -128,7 +127,7 @@
 %% editorial office after submission.
 
 \begin{abstract}
-We present transit signal false positive probability calculations for
+We present astrophysical false positive probability calculations for
 every \kepler\ Object of Interest (KOI)---the first large-scale
 demonstration of a fully automated transiting planet validation
 procedure.  Out of \ncalc\ KOIs, we determine that \nval\ have
@@ -171,29 +170,29 @@ The \kepler\ mission has revolutionized our understanding of
 exoplanets.  Among many other important discoveries, \kepler\ has
 identified several previously unsuspected features of planetary
 systems, such as the prevalence of planets between the size of Earth
-and Neptune, and a population of very compact multiple-planet
-systems. And perhaps most notably, it has enabled for the first time
-estimates of the occurrence rates of small planets ($\gtrsim$1
-$R_\oplus$) out to orbits of about one year.  It is important to
+and Neptune, and a population of very compact multiple-planet systems.
+And perhaps most notably, it has enabled for the first time estimates
+of the occurrence rates of small planets ($\gtrsim$1 $R_\oplus$) out
+to orbits of about one year
+\citep[e.g.][]{Petigura:2013,DFM:2014,Burke:2015}.  It is important to
 remember, however, that these revolutionary discoveries depend
 intimately on another revolution---how to interpret transiting planet
 \textit{candidate} signals in the absence of unambiguous positive
-confirmation of their veracity. 
+confirmation of their veracity.
 
 Before \kepler, every survey searching for transiting exoplanets
 demanded that a candidate signal be verified as a true planet via
 radial velocity (RV) measurement of its mass.  This would involve a
 series of follow-up observations in order to weed out astrophysical
 false positive scenarios---typically stellar eclipsing binaries in
-various configurations.  
-
-However, following this model has been largely impossible for \kepler\
-because of the quantity and character of the planet candidates
-(thousands of mostly small-planet candidates around relatively faint
-stars).  There have been a small number of \kepler\ planets with
-masses measured by RVs \citep[e.g.,][]{Marcy:2014}, and significantly
-more that have been confirmed as planets by measurement of transit
-timing variations (TTVs) in multi-planet systems
+various configurations.  However, following this model has been
+largely impossible for \kepler\ because of the quantity and character
+of the planet candidates (thousands of mostly small-planet candidates
+around relatively faint stars).  There have been a small number of
+\kepler\ planets with masses measured by RVs
+\citep[e.g.,][]{Marcy:2014,Santerne:2015}, and significantly more that
+have been confirmed as planets by measurement of transit timing
+variations (TTVs) in multi-planet systems
 \citep[e.g.,][]{Ford:2012,Steffen:2012,Fabrycky:2012,Steffen:2013},
 but this still leaves the vast majority of candidates unaccessible to
 dynamical confirmation.
@@ -204,35 +203,33 @@ principle of probabilistic validation is to demonstrate that all
 conceivable astrophysical false positive scenarios are negligibly
 likely to be the cause of a transit candidate signal compared to the
 explanation of a planet transiting the presumed target star.  The
-\blender\ method pioneered this approach and has validated many
+\verb|BLENDER| method pioneered this approach and has validated many
 \kepler\ candidates
 \citep[e.g.,][]{Borucki:2012,Kipping:2014,Torres:2015}.   More
-recently, the \pastis\ analysis suite has been introduced
+recently, the \verb|PASTIS| analysis suite has been introduced
 \citep{Diaz:2014} and used to validate both \kepler\ and
 \textit{CoRoT} candidates \citep[e.g.,][]{Santerne:2014,Moutou:2014}.
+An alternative validation approach for candidates in multiple-planet
+systems has also been applied to a large number of \kepler\ systems
+based on the general argument that it is unlikely to see multiple
+false-positive signals in the same \kepler\ light curve
+\citep{Lissauer:2012}, resulting resulting in validations of over 800
+planets with 99\% confidence \citep{Lissauer:2014,Rowe:2014}. This
+methodology differs from the \verb|BLENDER|/\verb|PASTIS| approach in
+two significant ways: (a) it is applicable only to planets in multi-
+planet systems, and (b) it relies on broad-brush general arguments
+rather than analyzing the details of candidate signals individually.  
+
 
 While they have both proven useful for the purposes of validating
-individual candidates of particular interest, neither \blender\ nor
-\pastis\ is designed for fully automated batch processing of large
-numbers of candidates.  An alternative validation approach for
-candidates in multiple-planet systems has also been applied to a large
-number of \kepler\ systems based on the general argument that it is
-unlikely to see multiple false-positive signals in the same \kepler\
-light curve \citep{Lissauer:2012}, resulting resulting in validations
-of over 800 planets with 99\% confidence
-\citep{Lissauer:2014,Rowe:2014}. However, this methodology differs
-from the \blender/\pastis\ approach in two important ways: (a) it is
-applicable only to planets in multi-planet systems, and (b) it relies on  
-broad-brush general arguments rather than analyzing candidate signals
-individually.
-
-\citet{Morton:2012} describe a planet validation procedure that does
-analyze individual signals, but is computationally simpler than
-\blender\ or \pastis, designed explicitly for batch processing.  Based
-on the idea of describing eclipse light curves as simple trapezoids
-and simulating realistic populations of astrophysical false positives,
-This procedure has also been used in the literature to validate a
-number of \kepler\ planets
+individual candidates of particular interest, neither \verb|BLENDER|
+nor \verb|PASTIS| is designed for fully automated batch processing of
+large numbers of candidates.  \citet{Morton:2012} describes a
+computationally simpler planet validation procedure designed for
+exactly such a purpose, based on the idea of describing eclipse light
+curves as simple trapezoids and simulating realistic populations of
+astrophysical false positives. This procedure has also been used in
+the literature to validate a number of \kepler\ planets
 \citep[e.g.,][]{Muirhead:2012,Dawson:2012,Swift:2013}, and has also
 been applied to a number of candidates found by the \textit{K2}
 mission \citep{Montet:2015,Becker:2015}.  The code that implements
@@ -243,11 +240,11 @@ this procedure is publicly available in the Python module
 This work presents results of applying \vespa\ \emph{en masse} to the
 entire \kepler\ catalog. This is both the first time that most
 \kepler\ candidates have been individually analyzed to assess false
-positive probability and the first time that an automated planet
-validation calculation has been applied on such a large scale.  
+positive probability and the first time that a detailed automated
+planet validation calculation has been applied on such a large scale.
 \Sect{methods} describes the methods used, \sect{results} presents and
 discusses the results, and \sect{conclusions} contains concluding
-remarks.  
+remarks.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -585,7 +582,7 @@ behavior, as \citetalias{Huber:2014} estimates the properties for many
 of these using only broad-band photometry as well, which means their
 true nature is not securely known.  The need for caution when
 estimating the radii of KOI host stars has also been emphasized by
-\citetalias{Bastien:2014}, who find from photometric ``flicker''
+\citet{Bastien:2014}, who find from photometric ``flicker''
 measurements that a significant number of FGK KOI hosts may be
 slightly evolved.
 
@@ -732,11 +729,11 @@ transit light curve for each KOI.
 We were not able to successfully run \vespa\ on all of the KOIs. The 
 various reasons for these failures are detailed below.  
 \begin{enumerate}
-\item Some KOIs did not receive MCMC modeling.  Most of these
+\item \nbadphot\ KOIs did not receive MCMC modeling.  Most of these
   have been are already designated FALSE POSITIVE at the archive.
-\item A number of KOIs (\nbadrowemcmc) did receive MCMC modeling but had unphysical fit
+\item \nbadrowemcmc\ KOIs did receive MCMC modeling but had unphysical fit
   results; e.g., negative $R_p/R_\star$ or best-fit impact parameter
-  greater than $(1 + R_p/R_\star)$.  These KOIs were left out of the \vespa calculations.
+  greater than $(1 + R_p/R_\star)$.  These KOIs were left out of the \vespa\ calculations.
 \item The host stars of \nbadstellar\ KOIs are not included in the
   \citetalias{Huber:2014} stellar property catalog, and thus were not
   included in this analysis.
@@ -747,19 +744,19 @@ various reasons for these failures are detailed below.
   convergence criterion was for the autocorrelation time of the chain
   for each parameter to be shorter than 10\% of the total chain
   length.
-\item For \nbadroche\ KOIs, the period of the planet was such that its
-  orbit was implied to be within its host star's Roche limit.  This
+\item For \nbadroche\ KOIs, the orbital period and stellar properties of the 
+  candidate imply the orbit to be within its host star's Roche limit.  This
   usually happens when the host star is estimated to be a giant, and
   these situations are nearly always false positives. 
-\item Finally, \nbadother\ KOIs failed for as-yet undetermined
-  reasons, one of which is a FALSE POSITIVE (371.02) and one is a 
-  candidate (2433.06).
+%\item Finally, a small number of KOIs failed for as-yet-undetermined
+%  reasons.  %, one of which is a FALSE POSITIVE (371.02) and one is a 
+%  candidate (2433.06).
 \end{enumerate}
 The numbers in this list correspond to the numbers in
 the ``failure'' column in \tab{fpp}.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Comparison with follow-up surveys}
+\section{Comparison with follow-up observational surveys}
 \sectlabel{comparisons} 
 
 One of the difficulties with probabilistic
@@ -826,13 +823,13 @@ effectively identify which are true planets and which are not.
 \tabletypesize{\scriptsize}
 \tablecaption{\vespa--calculated FPPs of the \\Santerne (2015) RV sample
   \tablabel{santerne}}
-\tablehead{\colhead{nature} & \colhead{mean FPP} & \colhead{median FPP}}
+\tablehead{\colhead{RV-based nature} & \colhead{mean FPP} & \colhead{median FPP}}
 \startdata
-planet & 0.0892 & 0.0002 \\
-BD & 0.0035 & 0.0038 \\
-EB & 0.7764 & 0.9450 \\
-CEB & 0.8326 & 0.9950 \\
-? & 0.2393 & 0.0032
+Planet & 0.0892 & 0.0002 \\
+Brown dwarf & 0.0035 & 0.0038 \\
+Eclipsing binary (EB) & 0.7764 & 0.9450 \\
+Contaminating EB & 0.8326 & 0.9950 \\
+Undetermined & 0.2393 & 0.0032
 \enddata
 \end{deluxetable}
 
@@ -854,7 +851,7 @@ validation of their planetary nature at the 99\% confidence level,
 more than doubling the number of confirmed \kepler\ exoplanets.  Among
 this set of reliable \vespa\ calculations are also \nfpnew\ new likely
 false positive KOIs, although we note that some of these may be due to
-unidentified or miscorrected transit timing variations.
+unidentified or miscorrected transit timing variations.  
 
 These calculations depend largely on the results of
 \citet{Bryson:KSCI}, which quantify the probability that the
@@ -870,15 +867,19 @@ also be broken if the source of the eclipse were significantly
 displaced.
 
 While previous \emph{a priori} false positive rate estimates
-\cite{Morton:2011b,Fressin:2013} have made clear that the
-\kepler\ planet candidate catalogs are generally low enough to
-ignore for the purposes of planet occurrence rate calculations, any
-more detailed study of any small subset of individual KOIs should
-understand in more detail the FPPs of those specific candidates.  This
-type of small-sample candidate culling using individually calculated
-FPPs has already been done in the literature
-\citep{MortonSwift:2014,MortonWinn:2015}; the publication of this full
-catalog allows the community to do the same.
+\citep{Morton:2011b,Fressin:2013} have made clear that the \kepler\
+planet candidate catalogs are generally low enough to ignore for the
+purposes of planet occurrence rate calculations, any more detailed
+study of any small subset of individual KOIs should understand in more
+detail the FPPs of those specific candidates.  This type of small-sample 
+candidate culling using individually calculated FPPs has
+already been done in the literature
+\citep{MortonSwift:2014,MortonWinn:2014}; the publication of this full
+catalog allows the community to do the same.  In particular, several
+other studies have shown that specific samples of KOIs tend to have
+large FPPs than the global average, so studies involving giant-planet
+KOIs \citep{Santerne:2015} or evolved stars \citep{Sliski:2014} are in
+even greater need of individual FPP analysis.
 
 The \kepler\ mission has demonstrated that space-based transiting
 planet surveys identify planet candidates at a rate much faster than
@@ -990,6 +991,20 @@ It is a pleasure to thank
   \figlabel{fppall}}
 \end{figure*}
 
+\begin{figure*}[p]
+\begin{center}
+\includegraphics[width=7in]{figures/fpp_summary_fp.pdf}
+\end{center}
+\caption{Same as \Fig{fppall}, but for KOIs currently dispositioned
+  as FALSE POSITIVE. The vast majority are also identified by \vespa\ as likely
+  false positives.  There are also some that have low FPPs, but this can be
+  explained by the fact that many of the reasons for dispositioning a 
+  KOI as a FALSE POSITIVE also invalidate assumptions made by \vespa; 
+  for example, that the signal is spatially coincident with the target 
+  star (see \Sect{results}). This figure illustrates that \vespa\ is
+  effective (though not 100\% efficient) at recovering known false positives.  
+  \figlabel{fppfps}}
+\end{figure*}
 
 \begin{figure*}[p]
 \begin{center}
@@ -1010,7 +1025,7 @@ It is a pleasure to thank
   of the KOI.  The remaining three categories are all CANDIDATE KOIs
   reliably confirmed to be located at the presumed target star,
   grouped by false positive probability.  \nvalnew\ of these are new
-  planet validations, and \nfpnew\ are new likely false positives.
+  planet validations.%, and \nfpnew\ are new likely false positives.
   \figlabel{fpppie}}
 \end{figure*}
 
