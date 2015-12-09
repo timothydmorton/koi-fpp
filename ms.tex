@@ -57,19 +57,19 @@
 \newcommand{\nbadsec}{8} %NoWeakSecondary
 %\newcommand{\nattempted}{8141}
 %\newcommand{\ntryfail}{112}
-\newcommand{\nbadtrapfit}{38}
+\newcommand{\nbadtrapfit}{38} %MCMCError or NoFitError
 \newcommand{\nbadroche}{37}
 %\newcommand{\nbadother}{2}
 %\newcommand{\nbadotherFP}{1}
 %\newcommand{\nbadotherCAND}{1}
 %\newcommand{\nbadotherCONF}{1}
 
-\newcommand{\nreliable}{2943}
-\newcommand{\nval}{2046}
-\newcommand{\nreliableFP}{419}
-\newcommand{\nvalnew}{1380}
-\newcommand{\nfpnew}{424}
-\newcommand{\ncurval}{1002}
+\newcommand{\nreliable}{2823} %from figure
+\newcommand{\nval}{1994} %from figure
+\newcommand{\nreliableFP}{398} %from figure
+\newcommand{\nvalnew}{1324} %from pie chart
+\newcommand{\nfpnew}{424}  % all candidate with FPP < 0.9
+\newcommand{\ncurval}{984} % from pie chart
 
 \newcommand{\posprobthresh}{0.3}
 
@@ -92,7 +92,7 @@
 
 \slugcomment{}
 
-\shorttitle{False Positive Probabilities for KOIs}
+\shorttitle{False Positive Probabilities for all KOIs}
 \shortauthors{Morton et al.}
 
 %% This is the end of the preamble.  Indicate the beginning of the
@@ -242,8 +242,9 @@ entire \kepler\ catalog. This is both the first time that most
 \kepler\ candidates have been individually analyzed to assess false
 positive probability and the first time that a detailed automated
 planet validation calculation has been applied on such a large scale.
-\Sect{methods} describes the methods used, \sect{results} presents and
-discusses the results, and \sect{conclusions} contains concluding
+\Sect{methods} describes the methods used, \sect{data} describes the data set,
+\sect{results} presents the results, \sect{comparisons} compares these
+results with observational studies, and \sect{conclusions} contains concluding
 remarks.
 
 
@@ -665,10 +666,27 @@ unable to be detected via centroid-measuring methods.  In these cases
 as well, the \vespa\ assumptions break down, and the FPP calculations
 will not be valid.
 
+\begin{deluxetable}{ccc}
+\tabletypesize{\scriptsize}
+\tablecaption{Mean FPPs of candidate KOIs with reliable \vespa\ calculations
+  \tablabel{meanFPP}}
+\tablehead{\colhead{Selection} & \colhead{Number} & \colhead{mean FPP}}
+\startdata
+all & 2823 & 0.148 \\
+singles & 1665 & 0.196 \\
+multis & 1158 & 0.078 \\
+$R_p > 10\,R_\oplus$ & 347 & 0.704 \\ 
+$4\,R_\oplus < R_p < 10\,R_\oplus$ & 245 & 0.182 \\ 
+$2\,R_\oplus < R_p < 4\,R_\oplus$ & 1150 & 0.057 \\ 
+$R_p < 2\,R_\oplus$ & 1081 & 0.058 
+\enddata
+\end{deluxetable}
+
+
 To summarize, the results presented in \tab{fpp} are strictly reliable
 only for KOIs \emph{that have already strongly passed the other Kepler
-  vetting tests, and that are not indicated to be clearly poor fits to
-  all the proposed hypotheses}.  The first cut for this is the KOI
+vetting tests, and that are not indicated to be clearly poor fits to
+all the proposed hypotheses}.  The first cut for this is the KOI
 disposition: FALSE POSITIVE indicates failure of one or more of these
 tests (and thus probable invalidity of the \vespa\ calculation).
 However, because of the generally permissive philosophy of the
@@ -680,16 +698,21 @@ the signal is indeed coming from the target star because of low SNR,
 such a KOI will still receive CANDIDATE disposition.  Therefore, the
 \vespa-calculated FPP may be considered most reliable only when a KOI
 is designated a CANDIDATE (or CONFIRMED) and has large enough SNR to
-enable secure positional determination.
+enable secure positional determination.  In addition, for greatest
+reliability we also require a signal's multiple-event statistic (MES;
+equivalend to SNR) to be greater than 10, in order to avoid low-SNR
+signals that might be caused by light-curve systematics.
 
 
-To enable interpretation, \tab{fpp} thus contains both the current KOI
-disposition and the results of the positional probability calculations
+To enable interpretation, \tab{fpp} thus contains the current KOI
+disposition, MES, and the results of the positional probability calculations
 of \citet{Bryson:KSCI}.  \Fig{fppall} shows FPPs for all KOIs passing
 the following criteria:
 \begin{itemize}
 \item Dispositioned CANDIDATE or CONFIRMED at the NExScI archive,
-\item $> 0.99$ probability to be on the target star, according
+\item MES $>$ 10, indicating the signal is unlikely to be caused by 
+      systematic noise in the light curve,
+\item Probability $> 0.99$ to be on the target star, according
   to \citet{Bryson:KSCI}, along with a positional probability
   ``score'' $> \posprobthresh$ (indicating a reliable result), and   
 \item $L_{\rm tot} > 10^{-3}$, indicating that not all the hypotheses are
@@ -697,14 +720,40 @@ the following criteria:
 \end{itemize}
 
 These selections leave \nreliable\ KOIs for which the \vespa\ results
-can be considered most reliable.  Of these, \nval\ have ${\rm FPP} <
-0.01$, and are thus validated at the 99\% level.  These are not all
+can be considered most reliable;  \Tab{meanFPP} presents the mean FPPs
+for different subsets, showing several notable features.  Single KOIs
+are about 3$\times$ more likely to be false positives than KOIs in
+multiple-KOI systems, in qualitative agreement with
+\citet{Lissauer:2012}---and this is true even without giving any
+``multiplicity boost'' to multi-KOI systems for the increased transit
+probability of subsequent planets once one planet transits in a
+coplanar system.  Also, large candidates typically have high FPPs, in
+agreement with \citet{Santerne:2012} and \citet{Santerne:2015}.  And
+finally, the mean FPPs are very consistent with the \textit{a priori}
+predictions of \citet{Morton:2011b} and with the analysis of
+\citet{Fressin:2013}.
+
+Of these KOIs with reliable \vespa\ FPPs, \nval\ have ${\rm FPP}
+<0.01$, and are thus validated at the 99\% level.  These are not all
 new validations, however, since a number of these are already
 CONFIRMED.  \Fig{fpppie} shows a different kind of summary, grouping
 KOIs by disposition and splitting up the CANDIDATES according to the
 \vespa\ results, showing that \nvalnew\ KOIs are newly validated at
-the 99\% level.  \Fig{rpcand} shows the radii and periods of the
+the 99\% level. \Fig{rpcand} shows the radii and periods of the
 CANDIDATE KOIs, grouped by FPP.
+
+In addition to the confident validations, we identify \nfpnew\ KOIs
+that currently have CANDIDATE disposition but for which \vespa\
+calculates FPP $>$ 0.9; these KOIs are likely to be false positives.
+We note that these likely false positives are not required to obey the
+same selections that were done in order to ensure a clean sample for
+validation.  This is because even if a signal has characteristics
+such that a low \vespa\ FPP would not be  sufficient to validate it, a
+high \vespa\ FPP is still sufficient to cast doubt on its planetary
+nature.  As a demonstration of the ability of \vespa\ to identify 
+false positives, \Fig{fppfps} shows the FPPs for KOIs that are 
+dispositioned FALSE POSITIVE and have MES $>$ 10 and $L_{\rm tot} > 10^{-3}$.
+The vast majority of these have large FPPs.
 
 One final note about these calculations is that unidentified transit
 timing variations (TTVs) will increase the FPP of a transit signal, as
@@ -714,11 +763,13 @@ identify as more V-shaped.  While we have analyzed light curves
 correcting for known TTVs when available, we have also undoubtedly
 missed many systems with as-yet-unspecified TTV signals.  This means
 that a large FPP may be simply an indication of unidentified TTVs
-rather than an astrophysical false positive, especially in
-multi-planet systems, which should overall have a very low false
-positive rate \citep{Lissauer:2014,Rowe:2014}.  \Tab{fpp} lists
-whether known TTV were accounted for when constructing the folded
-transit light curve for each KOI.
+rather than an astrophysical false positive, especially in  
+multi-planet systems, which should overall have a very low false positive
+rate \citep{Lissauer:2014,Rowe:2014}.  It is thus probable that
+despite multi-KOIs having lower FPPs than singles (\tab{meanFPP}),
+even these relatively low FPPs are inflated by the effect of TTVs.
+\Tab{fpp} lists whether known TTV were accounted for when constructing
+the folded transit light curve for each KOI.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -727,7 +778,7 @@ transit light curve for each KOI.
 
 
 We were not able to successfully run \vespa\ on all of the KOIs. The 
-various reasons for these failures are detailed below.  
+various reasons for these occasional failures are detailed below.  
 \begin{enumerate}
 \item \nbadphot\ KOIs did not receive MCMC modeling.  Most of these
   have been are already designated FALSE POSITIVE at the archive.
@@ -819,6 +870,17 @@ the \vespa\ calculation, showing that even in a population of
 candidates that include many false positives, it is able to
 effectively identify which are true planets and which are not.
 
+We also briefly discuss another case of individual interest.
+KOI-6705.01, a 0.99\,d signal around a mid M-dwarf star, was
+identified  as a KOI of possible interest by \citet{Gaidos:2015}.
+After significant follow-up observations and detailed full-frame image
+analysis, they concluded that the signal was most likely due to a
+charge-transfer  effect from a 1.99\,d EB located on the same CCD
+column.  For this KOI, \vespa\ calculates an FPP of 1, with
+probabilities of 0.86 to be a BEB, 0.13 to be a BEB with twice the
+period (the true scenario uncovered by the detective work of
+\citet{Gaidos:2015}), and 0.01 to be an HEB.
+
 \begin{deluxetable}{ccc}
 \tabletypesize{\scriptsize}
 \tablecaption{\vespa--calculated FPPs of the \\Santerne (2015) RV sample
@@ -832,6 +894,9 @@ Contaminating EB & 0.8326 & 0.9950 \\
 Undetermined & 0.2393 & 0.0032
 \enddata
 \end{deluxetable}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -853,9 +918,9 @@ this set of reliable \vespa\ calculations are also \nfpnew\ new likely
 false positive KOIs, although we note that some of these may be due to
 unidentified or miscorrected transit timing variations.  
 
-These calculations depend largely on the results of
-\citet{Bryson:KSCI}, which quantify the probability that the
-eclipse/transit signal is spatially coincident on the sky with the
+The reliability of these calculations depends significantly on the
+results of \citet{Bryson:KSCI}, which quantify the probability that
+the eclipse/transit signal is spatially coincident on the sky with the
 presumed target star.  Without confirmation that the transit signal is
 not coming from a significantly displaced source, the sky area used as
 part of the prior for the false positive scenarios would need to be
@@ -1005,7 +1070,7 @@ It is a pleasure to thank
   effective (though not 100\% efficient) at recovering known false positives.  
   \figlabel{fppfps}}
 \end{figure*}
-
+ 
 \begin{figure*}[p]
 \begin{center}
 \includegraphics[width=7in]{figures/fpp_pie.pdf}

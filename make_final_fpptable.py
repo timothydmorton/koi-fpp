@@ -7,6 +7,7 @@ import os
 from configobj import ConfigObj
 
 from keputils import koiutils as ku
+DATA = ku.DR24
 
 from astropy import constants as const
 RSUN = const.R_sun.cgs.value
@@ -31,24 +32,25 @@ err_table = np.loadtxt('fpp_err.txt', usecols=(0,1), dtype=str)
 
 kois = fpp_table.index
 
-fpp_table['kepid'] = ku.DATA.ix[kois, 'kepid']
-fpp_table['period'] = ku.DATA.ix[kois, 'koi_period']
+fpp_table['kepid'] = DATA.ix[kois, 'kepid']
+fpp_table['period'] = DATA.ix[kois, 'koi_period']
 fpp_table['rp'] = fpp_table.ix[kois, 'rprs'] * star_table.ix[kois, 'radius'] * RSUN/REARTH
-fpp_table['disposition'] = ku.DATA.ix[kois, 'koi_disposition']
+fpp_table['disposition'] = DATA.ix[kois, 'koi_disposition']
 fpp_table['prob_ontarget'] = positional_table.ix[kois, 'pp_host_rel_prob']
 fpp_table['pos_prob_score'] = positional_table.ix[kois, 'pp_host_prob_score']
-fpp_table['not_transitlike'] = ku.DATA.ix[kois, 'koi_fpflag_nt'].astype(bool)
-fpp_table['significant_secondary'] = ku.DATA.ix[kois, 'koi_fpflag_ss'].astype(bool)
-fpp_table['centroid_offset'] = ku.DATA.ix[kois, 'koi_fpflag_co'].astype(bool)
-fpp_table['ephem_match'] = ku.DATA.ix[kois, 'koi_fpflag_ec'].astype(bool)
-fpp_table['MES'] = ku.DATA.ix[kois, 'koi_max_mult_ev']
+fpp_table['not_transitlike'] = DATA.ix[kois, 'koi_fpflag_nt'].astype(bool)
+fpp_table['significant_secondary'] = DATA.ix[kois, 'koi_fpflag_ss'].astype(bool)
+fpp_table['centroid_offset'] = DATA.ix[kois, 'koi_fpflag_co'].astype(bool)
+fpp_table['ephem_match'] = DATA.ix[kois, 'koi_fpflag_ec'].astype(bool)
+fpp_table['MES'] = DATA.ix[kois, 'koi_max_mult_ev']
 
 fpp_table['exception'] = None
 fpp_table.ix[err_table[:,0], 'exception'] = err_table[:,1]
 fpp_table['exception'] = fpp_table['exception'].str.replace(':','')
 
 fpp_table['has_ttv'] = ttv_table.ix[kois,'has_ttv']
-fpp_table['MES'] = ku.DATA.ix[kois, 'koi_max_mult_ev']
+fpp_table['MES'] = DATA.ix[kois, 'koi_max_mult_ev']
+fpp_table['n_cands'] = DATA.ix[kois, 'koi_count']
 
 fpp_table.to_csv('fpp_final_table.csv')
 
