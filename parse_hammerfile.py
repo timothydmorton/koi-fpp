@@ -3,8 +3,10 @@
 import numpy as np
 import pandas as pd
 
+app_hammerfile = 'forTim_kplr20151218020451_appham.txt'
+
 d = {}
-for line in open('app_hammer.txt'):
+for line in open(app_hammerfile):
     line = line.strip().split('|')
     try:
         if line[1] not in d:
