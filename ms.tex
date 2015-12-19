@@ -59,15 +59,11 @@
 %\newcommand{\ntryfail}{112}
 \newcommand{\nbadtrapfit}{38} %MCMCError or NoFitError
 \newcommand{\nbadroche}{37}
-%\newcommand{\nbadother}{2}
-%\newcommand{\nbadotherFP}{1}
-%\newcommand{\nbadotherCAND}{1}
-%\newcommand{\nbadotherCONF}{1}
 
 \newcommand{\nreliable}{2823} %from figure
-\newcommand{\nval}{1994} %from figure
+\newcommand{\nval}{1997} %from figure
 \newcommand{\nreliableFP}{398} %from figure
-\newcommand{\nvalnew}{1324} %from pie chart
+\newcommand{\nvalnew}{1325} %from pie chart
 \newcommand{\nfpnew}{424}  % all candidate with FPP < 0.9
 \newcommand{\ncurval}{984} % from pie chart
 
@@ -114,9 +110,19 @@
 %% anywhere in the paper, not just in the front matter.
 %% As in the title, use \\ to force line breaks.
 
-\author{Timothy D. Morton}
-\affil{Department of Astrophysical Sciences, Princeton University}
-\author{et al.}
+%\author{Timothy D. Morton}
+%\affil{Department of Astrophysical Sciences, Princeton University}
+\author{Timothy D. Morton\altaffilmark{1}, Stephen T. Bryson\altaffilmark{2}, Jeffrey L. Coughlin\altaffilmark{2,3}, Jason F. Rowe\altaffilmark{4},Michael R. Haas\altaffilmark{2}, and Natalie M. Batalha\altaffilmark{2}}
+
+%\journalinfo{} and \submitted{}
+%\journalinfo{Accepted for Publication in the Astronomical Journal - Feb. 21, 2014}
+%\submitted{}
+
+\altaffiltext{1}{Department of Astrophysical Sciences, Princeton University, 4 Ivy Lane, Princeton, NJ 08544, USA, tdm@astro.princeton.edu}
+\altaffiltext{2}{NASA Ames Research Center, M/S 244-30, Moffett Field, CA 94035, USA}
+\altaffiltext{3}{SETI Institute, 189 Bernardo Ave, Mountain View, CA 94043, USA}
+\altaffiltext{4}{D\'epartement de Physique, Universit\'e de Montr\'eal, Montr\'eal, QC, Canada, H3T 1J4}
+
 
 %\altaffiltext{1}{Department of Astrophysics, Princeton University}
 
@@ -193,8 +199,8 @@ around relatively faint stars).  There have been a small number of
 \citep[e.g.,][]{Marcy:2014,Santerne:2015}, and significantly more that
 have been confirmed as planets by measurement of transit timing
 variations (TTVs) in multi-planet systems
-\citep[e.g.,][]{Ford:2012,Steffen:2012,Fabrycky:2012,Steffen:2013},
-but this still leaves the vast majority of candidates unaccessible to
+\citep[e.g.,][]{Ford:2012,Steffen:2012,Fabrycky:2012,Steffen:2013,Jontof:2015},
+but this still leaves the vast majority of candidates inaccessible to
 dynamical confirmation.
 
 This situation has inspired the development of \emph{probabilistic
@@ -313,7 +319,7 @@ background/foreground eclipsing binary (BEB), and transiting planet
 (Pl).  In this work, we also implement ``double-period'' versions of
 each of the stellar false positive scenarios, acknowledging the
 possibility that if an eclipsing binary has similar primary and
-secondar eclipse depths, then it might be mischaracterized as a
+secondary eclipse depths, then it might be mischaracterized as a
 primary-only transiting planet signal at twice the orbital period
 (especially if diluted).  We note that the determination of the
 diluted eclipse depth of all these blended scenarios assumes that the
@@ -440,7 +446,7 @@ Distance $d$ & $\propto d^2$
 The goal of this work is to calculate the FPP for every KOI,
 regardless of classification as CONFIRMED, CANDIDATE, or FALSE
 POSITIVE.  As such, we begin with a list of \ntotal\ KOIs from the
-Q1-Q17 (DR24) table at the NASA Exoplanet Science Institute (NExScI)
+Q1-Q17 DR24 table at the NASA Exoplanet Science Institute (NExScI)
 Exoplanet Archive (the most recent available uniform catalog).  We
 then gather ancillary data and constraints from various sources in
 order to enable the \vespa\ calculation:
@@ -472,8 +478,8 @@ order to enable the \vespa\ calculation:
   phase other than that of the primary transit.  This ``model-shift
   uniqueness test'' is described in both Section 3.2.2 of
   \citet{Rowe:2015} and \citet{Coughlin:KSCI}, and the values of these
-  metrics for the \kepler\ Data Release 24 (DR24) will soon be
-  published (Coughlin et al.~2015, in prep).  The maximum secondary
+  metrics for the Q1-Q17 DR24 release will soon be
+  published (Coughlin et al.~2015, submitted).  The maximum secondary
   depth we use is
 \begin{equation}
 \eqlabel{secthresh}
@@ -610,7 +616,7 @@ probabilities of thousands of KOIs.
 \subsection{False Positive Probabilities}
 \sectlabel{results:fpp}
 
-Of the \ntotal\ KOIs in the cumulative table at the NExScI Exoplanet
+Of the \ntotal\ KOIs in the Q1-Q17 DR24 table at the NExScI Exoplanet
 Archive, \vespa\ successfully calculates the FPP for \ncalc.  These
 results are listed in \tab{fpp};  \sect{failures} contains detailed
 explanations of the failure reasons for the other \nfail\ KOIs.
@@ -690,8 +696,10 @@ all the proposed hypotheses}.  The first cut for this is the KOI
 disposition: FALSE POSITIVE indicates failure of one or more of these
 tests (and thus probable invalidity of the \vespa\ calculation).
 However, because of the generally permissive philosophy of the
-\kepler\ dispositioning, not all CANDIDATE KOIs receive the same level
-of vetting.  That is, something is not identified as a FALSE POSITIVE
+\kepler\ dispositioning, not all CANDIDATE KOIs have the same level of 
+reliability in their disposition, due an ``innocent 
+until proven guilty'' philosophy.
+That is, something is not identified as a FALSE POSITIVE
 \emph{unless there is positive confirmation of false positive status}.
 In particular, when pixel-level analysis fails to determine whether
 the signal is indeed coming from the target star because of low SNR,
@@ -734,26 +742,32 @@ predictions of \citet{Morton:2011b} and with the analysis of
 \citet{Fressin:2013}.
 
 Of these KOIs with reliable \vespa\ FPPs, \nval\ have ${\rm FPP}
-<0.01$, and are thus validated at the 99\% level.  These are not all
-new validations, however, since a number of these are already
-CONFIRMED.  \Fig{fpppie} shows a different kind of summary, grouping
-KOIs by disposition and splitting up the CANDIDATES according to the
-\vespa\ results, showing that \nvalnew\ KOIs are newly validated at
-the 99\% level. \Fig{rpcand} shows the radii and periods of the
-CANDIDATE KOIs, grouped by FPP.
+<0.01$, and are thus validated at the 99\% level.  These KOIs are
+marked as labeled as such in \tab{fpp}.  These are not all new
+validations, however, since a number of them are already CONFIRMED.
+\Fig{fpppie} shows a different kind of summary, grouping KOIs by
+disposition and splitting up the CANDIDATES according to the \vespa\
+results, showing that \nvalnew\ KOIs are newly validated at the 99\%
+level. \Fig{rpcand} shows the radii and periods of the CANDIDATE KOIs,
+grouped by FPP.
 
 In addition to the confident validations, we identify \nfpnew\ KOIs
 that currently have CANDIDATE disposition but for which \vespa\
 calculates FPP $>$ 0.9; these KOIs are likely to be false positives.
-We note that these likely false positives are not required to obey the
-same selections that were done in order to ensure a clean sample for
-validation.  This is because even if a signal has characteristics
-such that a low \vespa\ FPP would not be  sufficient to validate it, a
-high \vespa\ FPP is still sufficient to cast doubt on its planetary
-nature.  As a demonstration of the ability of \vespa\ to identify 
-false positives, \Fig{fppfps} shows the FPPs for KOIs that are 
-dispositioned FALSE POSITIVE and have MES $>$ 10 and $L_{\rm tot} > 10^{-3}$.
-The vast majority of these have large FPPs.
+As \Fig{rpcand} shows, many of these newly identified false positives
+have large radii---this is again because of the dispositioning
+philosophy adopted by the \kepler\ team, which does not use any cut in
+transit depth or inferred ``planet'' size to identify FALSE POSITIVES.
+To identify these likely false positives from the \vespa\
+calculations, we do not require CANDIDATES to obey the same selections
+we used to ensure a clean sample for validation.  This is because even
+if a signal has characteristics such that a low \vespa\ FPP would not
+be sufficient to validate it, a high \vespa\ FPP is still sufficient
+to cast doubt on its planetary nature. As a demonstration of the
+ability of \vespa\ to identify false positives, \Fig{fppfps} shows the
+FPPs for KOIs that are dispositioned FALSE POSITIVE and have MES $>$
+10 and $L_{\rm tot} > 10^{-3}$. The vast majority of these have large
+FPPs.
 
 One final note about these calculations is that unidentified transit
 timing variations (TTVs) will increase the FPP of a transit signal, as
@@ -771,6 +785,37 @@ even these relatively low FPPs are inflated by the effect of TTVs.
 \Tab{fpp} lists whether known TTV were accounted for when constructing
 the folded transit light curve for each KOI.
 
+
+\subsection{Unidentified Ephemeris Matches?}
+\sectlabel{PEMs}
+
+One potential concern for the reliability of the validations presented
+here might be the possibility of unidentified ephemeris matches, or
+``period-epoch matches'' (PEMs).  \citet{Coughlin:2014} identified a
+number of false positives among KOIs using this method, by comparing
+the periods and epochs of KOIs both to each other and to known
+catalogs of eclipsing binaries in order to see if any have identical
+ephemerides, an indication of contamination, sometimes from far away 
+on the \kepler\ CCD.  
+
+In the Q1-Q17 DR24 KOI table used as the basis for this work, 980
+KOIs were identified as PEMs.  Of these, 187 were not identified by
+any other method.  Only 18 of these 187 survived all the quality cuts
+described in \sect{results:fpp}. And of these 18, only 4 have FPP 
+$< 0.01$.
+
+Thus, we expect only about 0.4\% (4/980) of unidentified PEMs to end
+up as validated according to \vespa. As the total rate of PEMs is
+estimated to be something around 35\% \citep{Coughlin:2014}, there
+remains a small ($\sim$0.1\%  chance) that any of the validated
+planets may turn out to be due to  as-yet unidentified contamination
+from one of the false positive  sources that cause PEMs.  In other
+words, among our validated sample of planets, there may well be one or
+two that turn out to be false positives due to distant contamination
+(such as via the ``column anomaly'' effect), but not substantially
+more.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Failure Modes}
@@ -784,7 +829,8 @@ various reasons for these occasional failures are detailed below.
   have been are already designated FALSE POSITIVE at the archive.
 \item \nbadrowemcmc\ KOIs did receive MCMC modeling but had unphysical fit
   results; e.g., negative $R_p/R_\star$ or best-fit impact parameter
-  greater than $(1 + R_p/R_\star)$.  These KOIs were left out of the \vespa\ calculations.
+  greater than $(1 + R_p/R_\star)$.  These KOIs were left out of the 
+  \vespa\ calculations.
 \item The host stars of \nbadstellar\ KOIs are not included in the
   \citetalias{Huber:2014} stellar property catalog, and thus were not
   included in this analysis.
@@ -799,15 +845,12 @@ various reasons for these occasional failures are detailed below.
   candidate imply the orbit to be within its host star's Roche limit.  This
   usually happens when the host star is estimated to be a giant, and
   these situations are nearly always false positives. 
-%\item Finally, a small number of KOIs failed for as-yet-undetermined
-%  reasons.  %, one of which is a FALSE POSITIVE (371.02) and one is a 
-%  candidate (2433.06).
 \end{enumerate}
 The numbers in this list correspond to the numbers in
 the ``failure'' column in \tab{fpp}.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Comparison with follow-up observational surveys}
+\section{Comparison with follow-up observational studies}
 \sectlabel{comparisons} 
 
 One of the difficulties with probabilistic
@@ -822,8 +865,10 @@ information for relatively small subsets of candidates.  Here, we
 discuss the results of \vespa\ calculations for these candidates and
 the impliciations for the reliability of the \vespa\ framework.
 
+\subsection{\textit{Spitzer} photometry}
+ 
 The first of these datasets is from \citet{Desert:2015}, who observe
-the transits of 50 \kepler\ candidates with the Spitzer Space
+the transits of 50 \kepler\ candidates with the \textit{Spitzer} Space
 Telescope in order to observationally constrain the FP rate.  The idea
 behind these observations is that a blended EB false positive will
 often show a color-dependent transit depth, and so comparing the
@@ -843,6 +888,8 @@ similar to \citet{Morton:2011b} and thus are not quite candidates for
 the agreements between these two independent studies are certainly
 supportive of the \vespa\ results.
 
+\subsection{Radial-velocity monitoring of large candidates}
+
 A much more independent and powerful test data set has recently become
 available in the work of \citet{Santerne:2015}, which presented the
 results of a long-term RV-monitoring campaign targeting 129 \kepler\
@@ -851,8 +898,10 @@ identify 48 as eclipsing binaries, 15 as contaminating EBs (CEBs), and
 3 as brown dwarfs.  They are unable to determine the nature of the
 remaining 18.  These results imply a relatively high FP rate among
 giant-planet candidates, possibly near 50\%, which sounds potentially
-concerning.  However, when we look at our results on this sample, we
-see very good agreement between the \vespa\ predictions and the RV-
+concerning, although we reiterate that KOIs are not ruled FALSE 
+POSITIVES based on their transit depth or inferred size alone.
+Additionally, when we look at the \vespa\ results on this sample, we
+see very good agreement between our results and the RV-
 detected ``ground truth'' (\Tab{santerne}).  Notably, confirmed
 planets show a mean FPP of about 9\% and a median of only 0.02\%,
 while confirmed EBs (CEBs) show a mean FPP of 78\% (83\%) and a median
@@ -870,6 +919,8 @@ the \vespa\ calculation, showing that even in a population of
 candidates that include many false positives, it is able to
 effectively identify which are true planets and which are not.
 
+\subsection{The enigmatic case of KOI-6705.01}
+
 We also briefly discuss another case of individual interest.
 KOI-6705.01, a 0.99\,d signal around a mid M-dwarf star, was
 identified  as a KOI of possible interest by \citet{Gaidos:2015}.
@@ -879,7 +930,11 @@ charge-transfer  effect from a 1.99\,d EB located on the same CCD
 column.  For this KOI, \vespa\ calculates an FPP of 1, with
 probabilities of 0.86 to be a BEB, 0.13 to be a BEB with twice the
 period (the true scenario uncovered by the detective work of
-\citet{Gaidos:2015}), and 0.01 to be an HEB.
+\citet{Gaidos:2015}), and 0.01 to be an HEB.  This is an excellent
+example of what was discussed in \sect{PEMs}: that even effects like
+column anomalies that were not identified by the \kepler\ team as
+ephemeris matches will typically be identified as false positives by 
+\vespa.
 
 \begin{deluxetable}{ccc}
 \tabletypesize{\scriptsize}
@@ -905,7 +960,7 @@ Undetermined & 0.2393 & 0.0032
 
 In this work, we have calculated the astrophysical false positive
 probability (FPP) for every \kepler\ object of interest (KOI) in the
-Q1-Q17 (DR24) table, using the publicly available Python module
+Q1-Q17 DR24 table, using the publicly available Python module
 \vespa, which implements the procedure introduced in
 \citet{Morton:2012}, with improvements in stellar parameter modeling
 and the inclusion of new ``double-period'' false positive scenarios.
@@ -929,7 +984,10 @@ this work (described in \sect{methods:fpp}).  Additionally, the
 blended false positive scenarios \vespa\ considers are assumed to be
 fully contained within the photometric aperture; this assumption would
 also be broken if the source of the eclipse were significantly
-displaced.
+displaced.  We estimate that perhaps 0.1\% of the planets we validate
+could be signals coming from significantly displaced sources, similar 
+to those identified as period-epoch matches by \citet{Coughlin:2014}
+but unidentified by that analysis.
 
 While previous \emph{a priori} false positive rate estimates
 \citep{Morton:2011b,Fressin:2013} have made clear that the \kepler\
@@ -944,7 +1002,7 @@ catalog allows the community to do the same.  In particular, several
 other studies have shown that specific samples of KOIs tend to have
 large FPPs than the global average, so studies involving giant-planet
 KOIs \citep{Santerne:2015} or evolved stars \citep{Sliski:2014} are in
-even greater need of individual FPP analysis.
+even greater need of the individual FPP analysis here presented.
 
 The \kepler\ mission has demonstrated that space-based transiting
 planet surveys identify planet candidates at a rate much faster than
@@ -977,8 +1035,8 @@ purpose.
 
 
 \acknowledgments
-It is a pleasure to thank
-\ldots\
+TDM acknowledges support from the \kepler\ Participating Scientist
+Program (NNX14AE11G). \ldots
 
 \clearpage
 \bibliography{ms}
