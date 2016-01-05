@@ -66,6 +66,7 @@
 \newcommand{\nvalnew}{1325} %from pie chart
 \newcommand{\nfpnew}{424}  % all candidate with FPP < 0.9
 \newcommand{\ncurval}{984} % from pie chart
+\newcommand{\nhz}{10}
 
 \newcommand{\posprobthresh}{0.3}
 
@@ -73,6 +74,42 @@
 \newcommand{\vespa}{\texttt{vespa}}
 \newcommand{\isochrones}{\texttt{isochrones}}
 \newcommand{\bvec}[1]{{\ensuremath{\boldsymbol{#1}}}}
+
+%from Natalie
+\newcommand{\teff}{\ensuremath{T_{\rm eff}}}
+\newcommand{\logg}{\ensuremath{\log{g}}}
+\newcommand{\vsini}{\ensuremath{v \sin{i}}}
+\newcommand{\feh}{[Fe/H]}
+\newcommand{\logl}{\ensuremath{\log{L}}}
+
+\newcommand{\rsun}{\ensuremath{R_\sun}}
+\newcommand{\msun}{\ensuremath{M_\sun}}
+\newcommand{\lsun}{\ensuremath{L_\sun}}
+
+\newcommand{\rstar}{\ensuremath{R_\star}}
+\newcommand{\mstar}{\ensuremath{M_\star}}
+\newcommand{\loggstar}{\ensuremath{\logg_\star}}
+\newcommand{\lstar}{\ensuremath{L_\star}}
+\newcommand{\astar}{\ensuremath{a_\star}}
+\newcommand{\dstar}{\ensuremath{d_\star}}
+\newcommand{\loglstar}{\ensuremath{\log{L_\star}}}
+\newcommand{\rhostar}{\ensuremath{\rho_\star}}
+
+\newcommand{\rpl}{\ensuremath{R_{\rm P}}}
+\newcommand{\mpl}{\ensuremath{M_{\rm P}}}
+\newcommand{\lpl}{\ensuremath{L_{\rm P}}}
+\newcommand{\rhopl}{\ensuremath{\rho_{\rm P}}}
+\newcommand{\loggpl}{\ensuremath{\logg_{\rm P}}}
+\newcommand{\teq}{\ensuremath{T_{\rm eq}}}
+
+\newcommand{\rjup}{\ensuremath{R_{\rm J}}}
+\newcommand{\mjup}{\ensuremath{M_{\rm J}}}
+\newcommand{\rhojup}{\ensuremath{\rho_{\rm J}}}
+\newcommand{\rearth}{\ensuremath{R_{\earth}}}
+\newcommand{\mearth}{\ensuremath{M_{\earth}}}
+
+\newcommand{\msini}{\ensuremath{m \sin{i}}}
+\newcommand{\mplsini}{\ensuremath{\mpl\sin{i}}}
 
 \newcommand{\dataurl}{\url{http://tigress-web.princeton.edu/~tmorton/koi-fpp/}}
 
@@ -314,9 +351,12 @@ $\bvec{\theta}$ parameter space.  But for clarity, and for continuity
 with previous publications, we continue to call $\mathcal L_i$ the
 ``likelihood'' for hypothesis $i$.}  The hypotheses supported by
 \vespa\ are the following: unblended eclipsing binary (EB),
-hierarchical- triple eclipsing binary (HEB), chance-aligned
+hierarchical-triple eclipsing binary (HEB), chance-aligned
 background/foreground eclipsing binary (BEB), and transiting planet
-(Pl).  In this work, we also implement ``double-period'' versions of
+(Pl).\footnote{We note that we do not consider ``blended transiting planet''
+false positive scenarios, either due to physically associated or 
+chance-aligned companions.  See \sect{btp} for more discussion.} 
+In this work, we also implement ``double-period'' versions of
 each of the stellar false positive scenarios, acknowledging the
 possibility that if an eclipsing binary has similar primary and
 secondary eclipse depths, then it might be mischaracterized as a
@@ -370,7 +410,7 @@ how stellar properties are treated.  Previously, either the target
 star's mass and radius were explicitly provided, or they were randomly
 generated according to the stellar population expected along the line
 of sight by the TRIdimensional modeL of thE GALaxy (TRILEGAL) Galactic
-stellar popultion synthesis tool, but constrained to agree with some
+stellar population synthesis tool, but constrained to agree with some
 observed color(s) of the star (e.g. $J-K$), to within some specified
 tolerance.  This strategy was used both to generate the host stars for
 the transiting planet model and the binary and triple stars for the EB
@@ -741,15 +781,50 @@ finally, the mean FPPs are very consistent with the \textit{a priori}
 predictions of \citet{Morton:2011b} and with the analysis of
 \citet{Fressin:2013}.
 
-Of these KOIs with reliable \vespa\ FPPs, \nval\ have ${\rm FPP}
-<0.01$, and are thus validated at the 99\% level.  These KOIs are
-marked as labeled as such in \tab{fpp}.  These are not all new
-validations, however, since a number of them are already CONFIRMED.
-\Fig{fpppie} shows a different kind of summary, grouping KOIs by
-disposition and splitting up the CANDIDATES according to the \vespa\
-results, showing that \nvalnew\ KOIs are newly validated at the 99\%
-level. \Fig{rpcand} shows the radii and periods of the CANDIDATE KOIs,
+\subsection{Validation of \nvalnew\ new planets}
+
+While the FPP below which to claim planet validation is clearly
+an arbitrary choice, there is precedent to using ${\rm FPP} <0.01$ as 
+the threshold---\citet{Rowe:2014} validated over 800 multi-planet KOIs
+using this number.  Adopting this same threshold, we find that 
+of the KOIs with reliable \vespa\ FPPs, \nval\ have ${\rm FPP}
+<0.01$, and are thus validated at the 99\% level.  
+These KOIs are labeled as such in \tab{fpp}.  These are not all new validations,
+however, since a number of them are already CONFIRMED. \Fig{fpppie}
+shows a different kind of summary, grouping KOIs by disposition and
+splitting up the CANDIDATES according to the \vespa\ results, showing
+that \nvalnew\ KOIs are newly validated at the 99\% level.
+\Fig{rpcand} shows the radii and periods of the CANDIDATE KOIs,
 grouped by FPP.
+
+%HZ table
+\input{table_hz}
+
+
+As there is significant interest in identifying potentially habitable
+planets, \tab{hz} lists the properties of \nhz\ CANDIDATE KOIs newly
+validated by this work that \textit{may} fall within the optimistic
+habitable zones of their host stars \citep{Kopparapu:2013}, 
+according to the stellar
+properties reported by the DR24 table at the NExScI Archive.  We note
+that while more detailed follow-up observations (imaging and
+spectroscopy) have been taken for each of these targets, we make no
+attempt here to characterize these systems in detail.  Analysis of
+high-resolution spectroscopy in particular will solidify the
+properties of these host stars, which will affect the habitable zone
+boundaries.  We thus emphasize that this list is neither complete nor
+final, serving only to draw attention to new validations of 
+interest rather than to be a definitive statement on potential 
+habitability.  We also note that based solely on the properties in the 
+DR24 table, KOI-5475.01 (listed as having a 448-day orbital period) 
+should also be included in this list of potentially habitable-zone
+planets.  However, as explained in \citet[][Section 5.5.4]{Coughlin:2015},
+this particular KOI actually has a 224-day period, making its insolation
+to high to be within the habitable zone; we have thus excluded it 
+from \tab{hz}.
+
+
+\subsection{Likely False Positives}
 
 In addition to the confident validations, we identify \nfpnew\ KOIs
 that currently have CANDIDATE disposition but for which \vespa\
@@ -782,7 +857,7 @@ multi-planet systems, which should overall have a very low false positive
 rate \citep{Lissauer:2014,Rowe:2014}.  It is thus probable that
 despite multi-KOIs having lower FPPs than singles (\tab{meanFPP}),
 even these relatively low FPPs are inflated by the effect of TTVs.
-\Tab{fpp} lists whether known TTV were accounted for when constructing
+\Tab{fpp} lists whether known TTVs were accounted for when constructing
 the folded transit light curve for each KOI.
 
 
@@ -813,10 +888,42 @@ from one of the false positive  sources that cause PEMs.  In other
 words, among our validated sample of planets, there may well be one or
 two that turn out to be false positives due to distant contamination
 (such as via the ``column anomaly'' effect), but not substantially
-more.
+more.  (See \sect{gaidos} for an example of a KOI caused by a 
+column anomaly that went unidentified by the \kepler\ pipeline but
+which \vespa\ assigned a high FPP.)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Blended Transiting Planets?}
+\sectlabel{btp}
+
+In this work, the only false positive scenarios we consider are 
+eclisping binary stars (EB, HEB, BEB, and the double-period versions
+thereof).  Previous work studying \kepler\ false positive rates
+\citep[e.g.][]{Fressin:2013} has also considered the  ``blended transiting
+planet'' to be a false positive---i.e.,  a fainter companion
+star hosting a transiting planet larger than what would be inferred if
+it were transiting the target star.  Because we do not consider such
+a scenario to be a false positive, the \vespa\ analysis presented here 
+does not quantify its probability.  As a result, we are \textit{not}
+able to unambiguously determine the radii of the planets we validate---
+all the planet radii listed in \tab{fpp} are based on the assumption
+that the planet transits the target star and that the target star is 
+unblended.  If the target star is actually a member of an unresolved
+binary system (as a significant fraction of KOIs undoubtedly are),
+then the true planet radius will be larger (significantly larger 
+if transiting a fainter companion).  This was indeed the motivation
+for \citet{Fressin:2013} to consider the ``blended transiting planet''
+as a false positive; part of the goal of that work was to 
+compute the planet occurrence rates in different radius bins.  
+However, trying to distinguish between single and binary target
+star configurations is beyond the scope of this work; we thus follow
+the precedent of \citet[][especially Section 5]{Lissauer:2014} by 
+acknowledging the potential for substantial radius
+uncertainties among the validated planet sample while nevertheless 
+defending the validations themselves as robust.   
+
 
 \subsection{Failure Modes}
 \sectlabel{failures}
@@ -920,6 +1027,7 @@ candidates that include many false positives, it is able to
 effectively identify which are true planets and which are not.
 
 \subsection{The enigmatic case of KOI-6705.01}
+\sectlabel{gaidos}
 
 We also briefly discuss another case of individual interest.
 KOI-6705.01, a 0.99\,d signal around a mid M-dwarf star, was
@@ -1000,7 +1108,7 @@ already been done in the literature
 \citep{MortonSwift:2014,MortonWinn:2014}; the publication of this full
 catalog allows the community to do the same.  In particular, several
 other studies have shown that specific samples of KOIs tend to have
-large FPPs than the global average, so studies involving giant-planet
+larger FPPs than the global average, so studies involving giant-planet
 KOIs \citep{Santerne:2015} or evolved stars \citep{Sliski:2014} are in
 even greater need of the individual FPP analysis here presented.
 
@@ -1034,9 +1142,23 @@ purpose.
 
 
 
-\acknowledgments
-TDM acknowledges support from the \kepler\ Participating Scientist
-Program (NNX14AE11G). \ldots
+\acknowledgments TDM acknowledges support from the \kepler\
+Participating Scientist Program (NNX14AE11G). This paper includes data
+collected by the \kepler\ mission. Funding for the \kepler\ mission
+is provided by the NASA Science Mission directorate. The authors
+acknowledge the efforts of the \kepler\ Mission team for obtaining
+the light curve products used in
+this publication, which were generated by the \kepler\ Mission
+science pipeline through the efforts of the \kepler\ Science
+Operations Center and Science Office. The \kepler\ Mission is led by
+the project office at NASA Ames Research Center. Ball Aerospace built
+the \kepler\ photometer and spacecraft which is operated by the
+mission operations center at LASP. These data products are archived at
+the NASA Exoplanet Science Institute, which is operated by the
+California Institute of Technology, under contract with the National
+Aeronautics and Space Administration under the Exoplanet Exploration
+Program. This research has made use of NASA's Astrophysics Data
+System. 
 
 \clearpage
 \bibliography{ms}
@@ -1159,7 +1281,8 @@ Program (NNX14AE11G). \ldots
 \caption{Periods and radii of KOIs with CANDIDATE disposition, grouped
   by FPP value.  Green circles are most likely to be planets, red X's
   are most likely to be false positives, and blue plusses have
-  intermediate FPPs.  Grey dots are KOIs for which the
+  intermediate FPPs.  Grey dots are KOIs not identified as likely 
+  false positives for which the
   \vespa\ calculation is considered less reliable.  
   \figlabel{rpcand}}
 \end{figure*}
