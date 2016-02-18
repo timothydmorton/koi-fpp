@@ -346,7 +346,6 @@ K06917.01 BadRoweFitError: K06917.01 has RoR > 1 (1.182665) from JRowe MCMC fit
 K06939.01 MissingStellarError: 7960295 not in stellar table?
 K06941.01 BadRoweFitError: K06941.01 has RoR > 1 (1.662662) from JRowe MCMC fit
 K07029.01 BadRoweFitError: K07029.01 has RoR > 1 (30.747644) from JRowe MCMC fit
-K07033.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07038.01 BadRoweFitError: K07038.01 has RoR > 1 (1.236598) from JRowe MCMC fit
 K07062.01 BadRoweFitError: K07062.01 has RoR > 1 (15.255919) from JRowe MCMC fit
 K07073.01 BadRoweFitError: K07073.01 has RoR > 1 (57.837112) from JRowe MCMC fit
