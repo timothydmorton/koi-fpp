@@ -1,4 +1,3 @@
-K00028.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00031.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00043.01 BadRoweFitError: K00043.01 has RoR > 1 (5.687459) from JRowe MCMC fit
 K00045.01 MissingStellarError: 3742855 not in stellar table?
@@ -29,7 +28,6 @@ K00759.01 BadRoweFitError: K00759.01 has RoR > 1 (43.61377) from JRowe MCMC fit
 K00799.01 BadRoweFitError: K00799.01 has RoR > 1 (4.210016) from JRowe MCMC fit
 K00876.01 BadRoweFitError: K00876.01 has RoR > 1 (26.379158) from JRowe MCMC fit
 K00888.01 BadRoweFitError: K00888.01 has RoR > 1 (1.847289) from JRowe MCMC fit
-K00959.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00970.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00972.02 MCMCError: TransitSignal trapezoid fit not converged (K00972.02).
 K00977.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -40,8 +38,8 @@ K01112.01 EmptyPhotometryError: K01112.01 photometry file (/tigress/tmorton/kepl
 K01134.02 BadPhotometryError: No valid light curve points?
 K01177.01 BadRoweFitError: K01177.01 has RoR > 1 (22.661406) from JRowe MCMC fit
 K01249.01 BadRoweFitError: K01249.01 has RoR > 1 (72.991737) from JRowe MCMC fit
+K01253.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01254.01 MissingStellarError: 8454250 not in stellar table?
-K01260.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01317.01 BadRoweFitError: K01317.01 has RoR > 1 (2.734658) from JRowe MCMC fit
 K01348.01 BadRoweFitError: K01348.01 has RoR > 1 (3.228014) from JRowe MCMC fit
 K01349.01 BadRoweFitError: K01349.01 has RoR > 1 (33.756237) from JRowe MCMC fit
@@ -99,8 +97,6 @@ K02854.01 MissingStellarError: 5513866 not in stellar table?
 K03055.01 NoWeakSecondaryError: K03055.01
 K03090.02 BadRoweFitError: K03090.02 has RoR > 1 (91.576218) from JRowe MCMC fit
 K03156.02 BadRoweFitError: K03156.02 has RoR > 1 (1.76501) from JRowe MCMC fit
-K03158.03 AllWithinRocheError: All simulated systems within Roche lobe
-K03158.04 AllWithinRocheError: All simulated systems within Roche lobe
 K03172.01 MissingStellarError: 3337061 not in stellar table?
 K03174.01 MissingStellarError: 7115661 not in stellar table?
 K03193.01 MissingStellarError: 7430876 not in stellar table?
@@ -123,7 +119,6 @@ K03501.01 BadRoweFitError: K03501.01 has RoR > 1 (97.637962) from JRowe MCMC fit
 K03515.01 BadRoweFitError: K03515.01 has RoR > 1 (1.830554) from JRowe MCMC fit
 K03522.01 BadRoweFitError: K03522.01 has RoR > 1 (85.506981) from JRowe MCMC fit
 K03525.01 BadRoweFitError: K03525.01 has RoR > 1 (1.295101) from JRowe MCMC fit
-K03528.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03541.01 BadRoweFitError: K03541.01 has RoR > 1 (44.56646) from JRowe MCMC fit
 K03551.01 BadRoweFitError: K03551.01 has RoR > 1 (1.158661) from JRowe MCMC fit
 K03552.01 BadRoweFitError: K03552.01 has RoR > 1 (3.253776) from JRowe MCMC fit
@@ -206,7 +201,6 @@ K03889.01 BadRoweFitError: K03889.01 has RoR > 1 (96.986549) from JRowe MCMC fit
 K03891.01 BadRoweFitError: K03891.01 has RoR > 1 (96.11116) from JRowe MCMC fit
 K03895.01 BadRoweFitError: K03895.01 has RoR > 1 (2.09434) from JRowe MCMC fit
 K03930.01 MCMCError: TransitSignal trapezoid fit not converged (K03930.01).
-K03938.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03947.01 MissingStellarError: 5952366 not in stellar table?
 K03947.02 MissingStellarError: 5952366 not in stellar table?
 K03967.02 EmptyPhotometryError: K03967.02 photometry file (/tigress/tmorton/kepler/data/rowe/koi3967.n/klc05385697.dct.dat) is empty
@@ -226,7 +220,6 @@ K04298.02 MCMCError: TransitSignal trapezoid fit not converged (K04298.02).
 K04299.01 BadRoweFitError: K04299.01 has RoR > 1 (1.653607) from JRowe MCMC fit
 K04363.01 BadRoweFitError: K04363.01 has RoR > 1 (93.311729) from JRowe MCMC fit
 K04419.01 BadRoweFitError: K04419.01 has RoR > 1 (3.543025) from JRowe MCMC fit
-K04463.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04500.03 BadRoweFitError: K04500.03 has RoR > 1 (61.523319) from JRowe MCMC fit
 K04507.01 MissingStellarError: 7598111 not in stellar table?
 K04543.01 MissingStellarError: 9776186 not in stellar table?
@@ -247,7 +240,6 @@ K05018.01 BadRoweFitError: K05018.01 has RoR > 1 (1.196282) from JRowe MCMC fit
 K05041.01 BadRoweFitError: K05041.01 has RoR > 1 (99.982002) from JRowe MCMC fit
 K05052.01 BadRoweFitError: K05052.01 has RoR > 1 (82.035538) from JRowe MCMC fit
 K05054.01 BadRoweFitError: K05054.01 has RoR > 1 (1.927772) from JRowe MCMC fit
-K05076.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05076.02 BadRoweFitError: K05076.02 has a/Rstar < 1 (0.559901762999) from JRowe MCMC fit
 K05124.01 BadRoweFitError: K05124.01 has RoR > 1 (83.764427) from JRowe MCMC fit
 K05129.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -267,12 +259,10 @@ K05606.01 BadRoweFitError: K05606.01 has RoR > 1 (9.267149) from JRowe MCMC fit
 K05614.01 BadRoweFitError: K05614.01 has RoR > 1 (1.150181) from JRowe MCMC fit
 K05615.01 BadRoweFitError: K05615.01 has RoR > 1 (1.168184) from JRowe MCMC fit
 K05672.01 BadRoweFitError: K05672.01 has RoR > 1 (2.13629) from JRowe MCMC fit
-K05700.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05711.01 MissingStellarError: 9775475 not in stellar table?
 K05728.01 BadRoweFitError: K05728.01 has RoR > 1 (58.453232) from JRowe MCMC fit
 K05733.01 BadRoweFitError: K05733.01 has RoR > 1 (2.382619) from JRowe MCMC fit
 K05752.01 AllWithinRocheError: All simulated systems within Roche lobe
-K05792.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05832.01 BadRoweFitError: K05832.01 has RoR > 1 (2.87506) from JRowe MCMC fit
 K05841.01 BadRoweFitError: K05841.01 has RoR > 1 (1.098129) from JRowe MCMC fit
 K05906.01 BadRoweFitError: K05906.01 has RoR > 1 (1.395448) from JRowe MCMC fit
@@ -300,14 +290,12 @@ K06264.01 BadRoweFitError: K06264.01 has RoR > 1 (1.035711) from JRowe MCMC fit
 K06270.01 MissingStellarError: 2438061 not in stellar table?
 K06271.01 BadRoweFitError: K06271.01 has RoR > 1 (3.175832) from JRowe MCMC fit
 K06278.01 BadRoweFitError: K06278.01 has RoR > 1 (4.147811) from JRowe MCMC fit
-K06308.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06330.01 BadRoweFitError: K06330.01 has RoR > 1 (15.999484) from JRowe MCMC fit
 K06332.01 BadRoweFitError: K06332.01 has RoR > 1 (24.665094) from JRowe MCMC fit
 K06349.01 BadRoweFitError: K06349.01 has RoR > 1 (2.912287) from JRowe MCMC fit
 K06363.01 MissingStellarError: 3836413 not in stellar table?
 K06386.01 BadRoweFitError: K06386.01 has RoR > 1 (8.205035) from JRowe MCMC fit
 K06387.01 BadRoweFitError: K06387.01 has RoR > 1 (33.003998) from JRowe MCMC fit
-K06391.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06395.01 BadRoweFitError: K06395.01 has RoR > 1 (97.703239) from JRowe MCMC fit
 K06401.01 MCMCError: TransitSignal trapezoid fit not converged (K06401.01).
 K06402.01 BadRoweFitError: K06402.01 has a/Rstar < 1 (0.862073393009) from JRowe MCMC fit
@@ -351,7 +339,6 @@ K06817.01 MissingStellarError: 7090801 not in stellar table?
 K06822.01 BadRoweFitError: K06822.01 has a/Rstar < 1 (0.548907472816) from JRowe MCMC fit
 K06834.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06836.01 BadRoweFitError: K06836.01 has RoR > 1 (1.018089) from JRowe MCMC fit
-K06855.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06884.01 MCMCError: TransitSignal trapezoid fit not converged (K06884.01).
 K06885.01 BadRoweFitError: K06885.01 has RoR > 1 (1.225935) from JRowe MCMC fit
 K06902.01 BadRoweFitError: K06902.01 has RoR > 1 (13.434557) from JRowe MCMC fit
@@ -363,7 +350,6 @@ K07038.01 BadRoweFitError: K07038.01 has RoR > 1 (1.236598) from JRowe MCMC fit
 K07062.01 BadRoweFitError: K07062.01 has RoR > 1 (15.255919) from JRowe MCMC fit
 K07073.01 BadRoweFitError: K07073.01 has RoR > 1 (57.837112) from JRowe MCMC fit
 K07095.01 MCMCError: TransitSignal trapezoid fit not converged (K07095.01).
-K07097.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07101.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07103.01 BadRoweFitError: K07103.01 has RoR > 1 (3.593594) from JRowe MCMC fit
 K07119.01 BadRoweFitError: K07119.01 has a/Rstar < 1 (0.386260510023) from JRowe MCMC fit
@@ -395,13 +381,11 @@ K07378.01 BadRoweFitError: K07378.01 has RoR > 1 (62.554085) from JRowe MCMC fit
 K07401.01 BadRoweFitError: K07401.01 has a/Rstar < 1 (0.951449764013) from JRowe MCMC fit
 K07402.01 BadRoweFitError: K07402.01 has RoR > 1 (1.106935) from JRowe MCMC fit
 K07412.01 MCMCError: TransitSignal trapezoid fit not converged (K07412.01).
-K07416.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07429.01 BadRoweFitError: K07429.01 has RoR > 1 (2.248229) from JRowe MCMC fit
 K07447.01 BadRoweFitError: K07447.01 has RoR > 1 (5.773531) from JRowe MCMC fit
 K07451.01 BadRoweFitError: K07451.01 has a/Rstar < 1 (0.97743782939) from JRowe MCMC fit
 K07455.01 MCMCError: TransitSignal trapezoid fit not converged (K07455.01).
 K07473.01 BadRoweFitError: K07473.01 has RoR > 1 (20.604183) from JRowe MCMC fit
-K07474.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07493.01 BadRoweFitError: K07493.01 has RoR > 1 (10.292369) from JRowe MCMC fit
 K07501.01 BadRoweFitError: K07501.01 has RoR > 1 (1.594684) from JRowe MCMC fit
 K07511.01 BadRoweFitError: K07511.01 has RoR > 1 (1.411098) from JRowe MCMC fit
