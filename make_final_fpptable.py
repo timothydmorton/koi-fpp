@@ -4,8 +4,6 @@ import pandas as pd
 import numpy as np
 import os
 
-from configobj import ConfigObj
-
 from keputils import koiutils as ku
 DATA = ku.DR24
 
@@ -13,9 +11,11 @@ from astropy import constants as const
 RSUN = const.R_sun.cgs.value
 REARTH = const.R_earth.cgs.value
 
-fpp_file = 'fpp_all.txt'
-positional_file = 'positional_probability.csv'
-starprop_file = 'starprops_all.txt'
+folder = 'data'
+
+fpp_file = os.path.join(folder, 'fpp_all.txt')
+positional_file = os.path.join(folder, 'positional_probability.csv')
+starprop_file = os.path.join(folder, 'starprops_all.txt')
 
 fpp_table = pd.read_table(fpp_file, delim_whitespace=True)
 fpp_table.index = fpp_table['koi']
@@ -25,9 +25,11 @@ positional_table = pd.read_csv(positional_file, index_col=0)
 star_table = pd.read_table(starprop_file, delim_whitespace=True)
 star_table.index = star_table['koi']
 
-ttv_table = pd.read_table('ttvdata.txt', index_col=0, delim_whitespace=True) 
+ttv_file = os.path.join(folder, 'ttvdata.txt')
+ttv_table = pd.read_table(ttv_file, index_col=0, delim_whitespace=True) 
 
-err_table = np.loadtxt('fpp_err.txt', usecols=(0,1), dtype=str)
+err_file = os.path.join(folder, 'fpp_err.txt')
+err_table = np.loadtxt(err_file, usecols=(0,1), dtype=str)
 
 
 kois = fpp_table.index
