@@ -14,7 +14,13 @@ the failed `vespa` calculations. [TDM note: created by
 * `ttvdata.txt`: table of whether TTV information was used
 to create the folded Kepler photometry used for the trapezoid fits.
 [TDM note: created by `compile_ttv.py`]
-* `starprops_all.txt`: concatenation of all the 
+* `starprops_all.txt`: summarized information from all the single-star
+`isochrones` fits to all the KOI stars. [TDM note: created by `summarize_starprops.py`]
 * `positional_probability.csv`: table of positional probability
 data from Steve Bryson.  This should correspond to the "positional
 probability" table at the NASA Exoplanet Archive.
+
+Running the `make_finale_fpptable.py` script uses the data from these files
+as well as the DR24 table to produce the `fpp_final_table.csv` file in the top
+level of this repository.
+
