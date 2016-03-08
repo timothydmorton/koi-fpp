@@ -25,7 +25,7 @@ Running the `make_finale_fpptable.py` script uses the data from these files
 as well as the DR24 table to produce the `fpp_final_table.csv` file in the top
 level of this repository.
 
-The `fpp-results-analysis.ipynb` and `starprop-analysis` notebooks
+The `fpp-results-analysis.ipynb` and `starprop-analysis.ipynb` notebooks
 contain all the commands to make the figures & tables that live in
 the `document` directory, with the exception of the Santerne+ (2015)
 comparison table, which is created by `santerne_compare.ipynb`.
