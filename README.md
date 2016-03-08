@@ -24,3 +24,5 @@ Running the `make_finale_fpptable.py` script uses the data from these files
 as well as the DR24 table to produce the `fpp_final_table.csv` file in the top
 level of this repository.
 
+The `fpp-results-analysis.ipynb` notebook contains all the commands
+to make the figures & tables that live under the `document` directory.
