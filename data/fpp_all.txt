@@ -1,4 +1,4 @@
-koi rprs secthresh maxrad lhood_heb pr_heb lhood_heb_Px2 pr_heb_Px2 lhood_eb pr_eb lhood_eb_Px2 pr_eb_Px2 lhood_bebpr_beb lhood_beb_Px2 pr_beb_Px2 lhood_tot fp FPP
+koi rprs secthresh maxrad lhood_heb pr_heb lhood_heb_Px2 pr_heb_Px2 lhood_eb pr_eb lhood_eb_Px2 pr_eb_Px2 lhood_beb pr_beb lhood_beb_Px2 pr_beb_Px2 lhood_tot fp FPP
 K00001.01 0.124 20 0.50 1.950e+03 3.210e-04 8.650e+03 5.190e-05 6.290e+03 5.030e-03 1.680e+04 8.900e-04 2.490e-04 7.960e-12 7.150e-13 1.540e-20 4.667e+05 0.074 6.290e-03
 K00002.01 0.075 96 1.95 1.440e-07 1.800e-13 2.050e-08 1.970e-16 7.650e-06 2.530e-11 1.560e-03 8.350e-11 5.310e-114 1.490e-119 1.430e-80 1.820e-86 1.220e+05 0.057 1.090e-10
 K00003.01 0.058 11 4.50 5.460e-21 1.060e-27 3.420e-07 6.140e-16 1.230e-17 7.790e-24 9.960e-12 4.030e-20 6.020e-20 4.940e-25 1.850e-34 1.410e-39 6.450e+05 0.083 5.550e-16
