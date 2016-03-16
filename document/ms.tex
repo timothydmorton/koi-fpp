@@ -150,7 +150,8 @@
 
 %\author{Timothy D. Morton}
 %\affil{Department of Astrophysical Sciences, Princeton University}
-\author{Timothy D. Morton\altaffilmark{1}, Stephen T. Bryson\altaffilmark{2}, Jeffrey L. Coughlin\altaffilmark{2,3}, Jason F. Rowe\altaffilmark{4},Michael R. Haas\altaffilmark{2}, and Natalie M. Batalha\altaffilmark{2}}
+\author{Timothy D. Morton\altaffilmark{1}, Stephen T. Bryson\altaffilmark{2}, Jeffrey L. Coughlin\altaffilmark{2,3}, Jason F. Rowe\altaffilmark{4}, Ganesh Ravichandran\altaffilmark{5}, Erik A. Petigura\altaffilmark{6}, 
+Michael R. Haas\altaffilmark{2}, and Natalie M. Batalha\altaffilmark{2}}
 
 %\journalinfo{} and \submitted{}
 %\journalinfo{Accepted for Publication in the Astronomical Journal - Feb. 21, 2014}
@@ -160,7 +161,8 @@
 \altaffiltext{2}{NASA Ames Research Center, M/S 244-30, Moffett Field, CA 94035, USA}
 \altaffiltext{3}{SETI Institute, 189 Bernardo Ave, Mountain View, CA 94043, USA}
 \altaffiltext{4}{D\'epartement de Physique, Universit\'e de Montr\'eal, Montr\'eal, QC, Canada, H3T 1J4}
-
+\altaffiltext{5}{Columbia University}
+\altaffiltext{6}{California Institute of Technology}
 
 %\altaffiltext{1}{Department of Astrophysics, Princeton University}
 
@@ -310,7 +312,7 @@ section.
 \sectlabel{methods:fpp}
 
 The basic idea of \vespa\ is to assign probabilities to different
-astrophysical hypotheses that might describe a transiting planet
+hypotheses that might describe a transiting planet
 candidate signal.  If $\{H_i\}$ is the set of all considered
 hypotheses, the probability for any given model $i$ is
 \begin{equation}
@@ -371,6 +373,7 @@ from a nearby contaminating star might be in the aperture, many of
 which have already been identified via other methods
 \cite{Bryson:2013,Coughlin:2014}.
 
+
 Observational constraints are incorporated in two different ways.
 First, photometric (or spectroscopic/asteroseismic) measurements of
 the target star are folded into the population simulations of each
@@ -399,6 +402,30 @@ are thus as follows:
   account all available observational constraints.
 \item Use \eq{prob} to calculate the posterior probability for each scenario.
 \end{enumerate}
+
+We note that a built-in weakness of model selection is that it assumes that
+the set of models being considered is comprehensive.  This could
+in principle lead to a situation where one model is strongly preferred
+over all other models, but even that model is a poor explanation of
+the data---in this work, this could lead to improperly validated planets.  
+There are two general strategies to try to address this issue.  The first 
+is to somehow quantify the absolute goodness-of-fit of the models, and 
+require that a validated planet pass some threshold test.  The other 
+strategy, that we adopt here, is to expand the set of models to be more 
+comprehensive.  In order to do this, we introduce two artificial models:
+``boxy'' and ``long.''  The ``boxy'' likelihood function is a step function
+at some minimum value of $T/\tau$ (zero below this threshold, and constant
+above), and constant throughout the space of the other trapezoidal parameters.
+Similarly, the likelihood of the ``long'' model is a step function at some
+minimum threshold value of duration $T$.  These thresholds  
+are set relative to the simulated trapezoidal shapes of the planet model:
+the $T/\tau$ threshold is the maximum value from the simulated planet population,
+and the $T$ threshold is the 99\% percentile of simulated planet
+population values.  We also choose the model priors for these artificial
+models to be low, reflecting that we expect only a small number of signals
+to be unexplained by any of the astrophysical scenarios: the number that we
+choose for each of these models is $5 \times 10^{-5}$, corresponding to an expectation
+that there may be $\sim$10 such signals among the $\sim$200,000 \kepler\ targets.
 
 %%%%%%%%%%%%%%%%%%%%%%
 
@@ -664,12 +691,18 @@ explanations of the failure reasons for the other \nfail\ KOIs.
 
 In order to properly interpret these results, it is necessary to
 understand the range of applicability of the \vespa\ calculation.
-First of all, this method selects between different \emph{eclipse
-  configuration} explanations for the transit-like signal, and cannot
+First of all, this method selects between different specific explanations 
+for the transit-like signal, and cannot
 comment on whether the signal might be caused by stellar variability
 or an instrumental false alarm.  Thus, \vespa\ results on low
 signal-to-noise ratio (SNR) candidates that are not clearly
-transit-like must be viewed with caution.  
+transit-like must be viewed with caution.  This being said, the reason 
+for including the artificial 
+``boxy'' and ``long'' models in the model selection calculation
+ (\sect{mothods:fpp}) is to flag signals that do not 
+fit well with any of the astrophysical eclipse models---and despite their
+contrived nature, they do seem to 
+
 
 However, while the FPP value does only give the \emph{relative}
 probability between the false positive and planet scenarios, there is
@@ -1262,14 +1295,12 @@ System.
 
 \begin{figure*}[p]
 \begin{center}
-\includegraphics[width=7in]{figures/RP_cand.pdf}
+\includegraphics[width=7in]{figures/fppalpha.pdf}
 \end{center}
-\caption{Periods and radii of KOIs with CANDIDATE disposition, grouped
-  by FPP value.  Green circles are most likely to be planets, red X's
-  are most likely to be false positives, and blue plusses have
-  intermediate FPPs.  Grey dots are KOIs not identified as likely 
-  false positives for which the
-  \vespa\ calculation is considered less reliable.  
+\caption{Periods and radii of KOIs with CANDIDATE and CONFIRMED disposition.  
+  Blue circles have previously been identified as CONFIRMED.  Candidates are orange circles, 
+  shaded by false positive probability, with 
+  a transparent circle representing a high FPP. 
   \figlabel{rpcand}}
 \end{figure*}
 

@@ -65,12 +65,18 @@ fpp_max = pd.read_csv('data/fpp_bootstrap_max.csv')
 fpp_max.rename(columns={'Unnamed: 0':'koi'}, inplace=True)
 fpp_max.index = fpp_max['koi']
 
+fpp_std = pd.read_csv('data/fpp_bootstrap_std.csv')
+fpp_std.rename(columns={'Unnamed: 0':'koi'}, inplace=True)
+fpp_std.index = fpp_std['koi']
+
+
 for m in ['heb', 'eb', 'beb', 'heb', 'eb_Px2', 'beb_Px2', 'heb_Px2', 'long', 'boxy', 'pl']:
     for col in ['lhood_{}'.format(m), 'pr_{}'.format(m)]:
         fpp_table[col] = fpp_mean.ix[fpp_table.index, col]
         
 fpp_table['FPP'] = fpp_mean.ix[fpp_table.index, 'FPP']
 fpp_table['FPP_max'] = fpp_max.ix[fpp_table.index, 'FPP']
+fpp_table['FPP_std'] = fpp_std.ix[fpp_table.index, 'FPP']
 
 
 fpp_table.to_csv('fpp_final_table.csv')
