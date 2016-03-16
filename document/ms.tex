@@ -61,6 +61,8 @@
 \newcommand{\nbadtrapfit}{38} %MCMCError or NoFitError
 \newcommand{\nbadroche}{37}
 
+\newcommand{\nlongfp}{530}
+
 \newcommand{\nreliable}{2823} %from figure
 \newcommand{\nval}{1997} %from figure
 \newcommand{\nreliableFP}{398} %from figure
@@ -699,37 +701,13 @@ signal-to-noise ratio (SNR) candidates that are not clearly
 transit-like must be viewed with caution.  This being said, the reason 
 for including the artificial 
 ``boxy'' and ``long'' models in the model selection calculation
- (\sect{mothods:fpp}) is to flag signals that do not 
-fit well with any of the astrophysical eclipse models---and despite their
-contrived nature, they do seem to 
+ (\sect{methods:fpp}) is to flag signals that do not 
+fit well with any of the astrophysical eclipse models---in fact, the ``long''
+model is preferred by \nlongfp\ KOIs that are already dispositioned
+as FALSE POSITIVE.  
 
 
-However, while the FPP value does only give the \emph{relative}
-probability between the false positive and planet scenarios, there is
-a way to get a sense of whether \emph{all} of the models might be bad
-fits to the data (and thus get a hint that perhaps the signal is due
-to stellar variability or a false alarm).  Recall that FPP is
-calculated as
-\begin{equation}
-\eqlabel{fpp}
-{\rm FPP} = \frac{\displaystyle\sum_{i \neq {\rm Pl}}
-  L_i}{\displaystyle \sum_i L_i}
-\end{equation}
-where $L_i$ = $\mathcal L_i \pi_i$ and $i$ runs over all the models,
-with ``Pl'' representing the planet scenario.  If, for example, the
-shape of the transit is such that \emph{none} of the models gives any
-kind of decent fit to its trapezoidal shape, then $L_{\rm tot} =
-\sum_i L_i$ will be very small.  It appears that a value of $10^{-3}$
-is a reasonable threshold below which to consider a particular
-calculation unreliable.  To set this threshold we inspected the
-handful of systems that have low FPPs and $L_{\rm tot} < 10^{-3}$
-(some go as low as $10^{-10}$ or lower), and find that these very
-often have unrealistically long durations for a transit signal.  Such
-a case could easily give the planet hypothesis the \emph{largest}
-likelihood (resulting in a low FPP), not because it is intrinsically
-likely, but because all the other scenarios are even less likely.
-
-Another important constraint used in the FPP calculation is the
+Additionally, an important constraint used in the FPP calculation is the
 allowed sky area inside which a blended false positive may live.  As
 described in \sect{data}, this value is taken to be three times the
 uncertainty on the fitted centroid position from the pixel-level data.
@@ -746,21 +724,7 @@ unable to be detected via centroid-measuring methods.  In these cases
 as well, the \vespa\ assumptions break down, and the FPP calculations
 will not be valid.
 
-\begin{deluxetable}{ccc}
-\tabletypesize{\scriptsize}
-\tablecaption{Mean FPPs of candidate KOIs with reliable \vespa\ calculations
-  \tablabel{meanFPP}}
-\tablehead{\colhead{Selection} & \colhead{Number} & \colhead{mean FPP}}
-\startdata
-all & 2823 & 0.148 \\
-singles & 1665 & 0.196 \\
-multis & 1158 & 0.078 \\
-$R_p > 10\,R_\oplus$ & 347 & 0.704 \\ 
-$4\,R_\oplus < R_p < 10\,R_\oplus$ & 245 & 0.182 \\ 
-$2\,R_\oplus < R_p < 4\,R_\oplus$ & 1150 & 0.057 \\ 
-$R_p < 2\,R_\oplus$ & 1081 & 0.058 
-\enddata
-\end{deluxetable}
+\input{table_meanfpp}
 
 
 To summarize, the results presented in \tab{fpp} are strictly reliable
@@ -1044,13 +1008,13 @@ POSITIVES based on their transit depth or inferred size alone.
 Additionally, when we look at the \vespa\ results on this sample, we
 see very good agreement between our results and the RV-
 detected ``ground truth'' (\Tab{santerne}).  Notably, confirmed
-planets show a mean FPP of about 9\% and a median of only 0.02\%,
-while confirmed EBs (CEBs) show a mean FPP of 78\% (83\%) and a median
-of 95\% (99.5\%).  The three brown dwarfs also show low FPPs, which is
+planets show a mean FPP of about 10\% and a median of much less than 1\%,
+while confirmed EBs (CEBs) show a mean FPP of 75\% (78\%) and a median
+of 97\% (99\%).  The three brown dwarfs also show low FPPs, which is
 understandable because \vespa\ doesn't pretend to predict anything
 about the mass of the companion, and BDs are essentially the same size
 as giant planets.  It is also instructive to investigate the four
-cases where \vespa\ computes high FPPs ($>$0.3) for confirmed planets.
+cases where \vespa\ computes high FPPs ($>$0.5) for confirmed planets.
 Three of these (KOI-377.01, KOI-1426.02 and KOI-1474.01) have
 significant TTVs, and one is a grazing eclipse (KOI-614.01).
 KOI-1474.01 is also on a highly eccentric orbit \citep{Dawson:2012},
@@ -1069,7 +1033,9 @@ identified  as a KOI of possible interest by \citet{Gaidos:2015}.
 After significant follow-up observations and detailed full-frame image
 analysis, they concluded that the signal was most likely due to a
 charge-transfer  effect from a 1.99\,d EB located on the same CCD
-column.  For this KOI, \vespa\ calculates an FPP of 1, with
+column.  For this KOI, \vespa\ calculates an FPP of 1, with the 
+``long'' model preferred by far.  
+
 probabilities of 0.86 to be a BEB, 0.13 to be a BEB with twice the
 period (the true scenario uncovered by the detective work of
 \citet{Gaidos:2015}), and 0.01 to be an HEB.  This is an excellent
