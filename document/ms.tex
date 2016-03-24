@@ -45,10 +45,8 @@
 \newcommand{\myemail}{tdm@astro.princeton.edu}
 
 \newcommand{\ntotal}{7470}
-\newcommand{\nfail}{422}
-\newcommand{\ncalc}{7048}
-
-\newcommand{\nfp}{424}
+\newcommand{\nfail}{427}
+\newcommand{\ncalc}{7056}
 
 \newcommand{\nbadphot}{28} %EmptyPhotometry or BadPhotometry of MissingKOI or IOError
 %\newcommand{\nbadphotFP}{34}
@@ -59,15 +57,15 @@
 %\newcommand{\nattempted}{8141}
 %\newcommand{\ntryfail}{112}
 \newcommand{\nbadtrapfit}{38} %MCMCError or NoFitError
-\newcommand{\nbadroche}{37}
+\newcommand{\nbadroche}{39}
 
-\newcommand{\nlongfp}{530}
+\newcommand{\nlongfp}{526}
 
-\newcommand{\nreliable}{2823} %from figure
-\newcommand{\nval}{1997} %from figure
-\newcommand{\nreliableFP}{398} %from figure
-\newcommand{\nvalnew}{1325} %from pie chart
-\newcommand{\nfpnew}{424}  % all candidate with FPP < 0.9
+\newcommand{\nreliable}{2857} %from figure
+\newcommand{\nval}{1948} %from figure
+\newcommand{\nreliableFP}{419} %from figure
+\newcommand{\nvalnew}{1284} %from pie chart
+\newcommand{\nfpnew}{428}  % all candidate with FPP < 0.9
 \newcommand{\ncurval}{984} % from pie chart
 \newcommand{\nhz}{10}
 
@@ -703,7 +701,7 @@ for including the artificial
 ``boxy'' and ``long'' models in the model selection calculation
  (\sect{methods:fpp}) is to flag signals that do not 
 fit well with any of the astrophysical eclipse models---in fact, the ``long''
-model is preferred by \nlongfp\ KOIs that are already dispositioned
+model is preferred ($>50\5$) by \nlongfp\ KOIs that are already dispositioned
 as FALSE POSITIVE.  
 
 
@@ -757,18 +755,16 @@ the following criteria:
 \begin{itemize}
 \item Dispositioned CANDIDATE or CONFIRMED at the NExScI archive,
 \item MES $>$ 10, indicating the signal is unlikely to be caused by 
-      systematic noise in the light curve,
+      systematic noise in the light curve, and
 \item Probability $> 0.99$ to be on the target star, according
   to \citet{Bryson:KSCI}, along with a positional probability
-  ``score'' $> \posprobthresh$ (indicating a reliable result), and   
-\item $L_{\rm tot} > 10^{-3}$, indicating that not all the hypotheses are
-  poor fits to the transit signal.
+  ``score'' $> \posprobthresh$ (indicating a reliable result).  
 \end{itemize}
 
 These selections leave \nreliable\ KOIs for which the \vespa\ results
 can be considered most reliable;  \Tab{meanFPP} presents the mean FPPs
 for different subsets, showing several notable features.  Single KOIs
-are about 3$\times$ more likely to be false positives than KOIs in
+are about 2.5$\times$ more likely to be false positives than KOIs in
 multiple-KOI systems, in qualitative agreement with
 \citet{Lissauer:2012}---and this is true even without giving any
 ``multiplicity boost'' to multi-KOI systems for the increased transit
@@ -779,25 +775,52 @@ finally, the mean FPPs are very consistent with the \textit{a priori}
 predictions of \citet{Morton:2011b} and with the analysis of
 \citet{Fressin:2013}.
 
+\subsection{Unidentified Ephemeris Matches?}
+\sectlabel{PEMs}
+
+One potential concern worth addressing in some detail, before deciding
+which planets to validate based on the \vespa\ calculations, is the 
+possibility of false positives caused by distant contamination
+but not identified through the ``period-epoch match'' (PEM) technique
+used by \citet{Coughlin:2014}, due to the fact that not all stars in the 
+\kepler\ field were monitored by the mission.  We thus estimate here
+the probability that a CANDIDATE KOI to which \vespa\ assigns a low FPP
+might still be caused by such a scenario.
+
+In the Q1-Q17 DR24 KOI table used as the basis for this work, 980
+KOIs were identified as PEMs.  Of these, 187 were not identified 
+as false positives by any other method.  Only 15 of these 187 survived 
+all the quality cuts described in \sect{results:fpp}. And of these 15, 
+only 3 have FPP $< 0.01$  (See \sect{gaidos} for an example of a KOI caused by a 
+``column anomaly'' effect that went unidentified by the \kepler\ pipeline but
+to which \vespa\ assigned a high FPP.).  Thus, we expect only about 0.3\% (3/980) of 
+as-yet unidentified distant-contamination FPs to end
+up with FPP $< 0.01$ according to \vespa. As the fraction of false positives
+from pixel contamination but unidentified as PEMs among the entire KOI sample is
+estimated to be something around 23\% \citep{Coughlin:2014}, we estimate
+that there remains a small ($\sim$0.06\%) residual FPP for all KOIs, even 
+when the \vespa\-calculated FPP is negligibly tiny.
+
 \subsection{Validation of \nvalnew\ new planets}
 
 While the FPP below which to claim planet validation is clearly
 an arbitrary choice, there is precedent to using ${\rm FPP} <0.01$ as 
 the threshold---\citet{Rowe:2014} validated over 800 multi-planet KOIs
-using this number.  Adopting this same threshold, we find that 
+using this number.  Adopting this same threshold, and incorporating
+the 0.06\% residual FPP estimated in \sect{PEMs}, we find that 
 of the KOIs with reliable \vespa\ FPPs, \nval\ have ${\rm FPP}
-<0.01$, and are thus validated at the 99\% level.  
+<0.0094$, and are thus validated at the 99\% level.  
 These KOIs are labeled as such in \tab{fpp}.  These are not all new validations,
 however, since a number of them are already CONFIRMED. \Fig{fpppie}
 shows a different kind of summary, grouping KOIs by disposition and
 splitting up the CANDIDATES according to the \vespa\ results, showing
 that \nvalnew\ KOIs are newly validated at the 99\% level.
-\Fig{rpcand} shows the radii and periods of the CANDIDATE KOIs,
-grouped by FPP.
+\Fig{rpcand} shows the radii and periods of the CONFIRMED and 
+CANDIDATE KOIs, with the transparency of the points representing
+the \vespa-calculated FPP. 
 
 %HZ table
 \input{table_hz}
-
 
 As there is significant interest in identifying potentially habitable
 planets, \tab{hz} lists the properties of \nhz\ CANDIDATE KOIs newly
@@ -807,9 +830,13 @@ according to the stellar
 properties reported by the DR24 table at the NExScI Archive.  We note
 that while more detailed follow-up observations (imaging and
 spectroscopy) have been taken for each of these targets, we make no
-attempt here to characterize these systems in detail.  Analysis of
-high-resolution spectroscopy in particular will solidify the
-properties of these host stars, which will affect the habitable zone
+attempt here to characterize these systems in detail.  However, 
+we do note that high-resolution imaging of KOI-2418 and KOI-3010 reveal
+that these two host stars have close companions that may or may not
+change the habitable nature of the planets (e.g., if the planets happen
+to transit the secondary star instead of the primary).  Additionally, analysis of
+high-resolution spectroscopy will solidify the
+properties of all these host stars, affecting the habitable zone
 boundaries.  We thus emphasize that this list is neither complete nor
 final, serving only to draw attention to new validations of 
 interest rather than to be a definitive statement on potential 
@@ -858,37 +885,6 @@ even these relatively low FPPs are inflated by the effect of TTVs.
 \Tab{fpp} lists whether known TTVs were accounted for when constructing
 the folded transit light curve for each KOI.
 
-
-\subsection{Unidentified Ephemeris Matches?}
-\sectlabel{PEMs}
-
-One potential concern for the reliability of the validations presented
-here might be the possibility of unidentified ephemeris matches, or
-``period-epoch matches'' (PEMs).  \citet{Coughlin:2014} identified a
-number of false positives among KOIs using this method, by comparing
-the periods and epochs of KOIs both to each other and to known
-catalogs of eclipsing binaries in order to see if any have identical
-ephemerides, an indication of contamination, sometimes from far away 
-on the \kepler\ CCD.  
-
-In the Q1-Q17 DR24 KOI table used as the basis for this work, 980
-KOIs were identified as PEMs.  Of these, 187 were not identified by
-any other method.  Only 18 of these 187 survived all the quality cuts
-described in \sect{results:fpp}. And of these 18, only 4 have FPP 
-$< 0.01$.
-
-Thus, we expect only about 0.4\% (4/980) of unidentified PEMs to end
-up as validated according to \vespa. As the total rate of PEMs is
-estimated to be something around 35\% \citep{Coughlin:2014}, there
-remains a small ($\sim$0.1\%  chance) that any of the validated
-planets may turn out to be due to  as-yet unidentified contamination
-from one of the false positive  sources that cause PEMs.  In other
-words, among our validated sample of planets, there may well be one or
-two that turn out to be false positives due to distant contamination
-(such as via the ``column anomaly'' effect), but not substantially
-more.  (See \sect{gaidos} for an example of a KOI caused by a 
-column anomaly that went unidentified by the \kepler\ pipeline but
-which \vespa\ assigned a high FPP.)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1034,11 +1030,8 @@ After significant follow-up observations and detailed full-frame image
 analysis, they concluded that the signal was most likely due to a
 charge-transfer  effect from a 1.99\,d EB located on the same CCD
 column.  For this KOI, \vespa\ calculates an FPP of 1, with the 
-``long'' model preferred by far.  
-
-probabilities of 0.86 to be a BEB, 0.13 to be a BEB with twice the
-period (the true scenario uncovered by the detective work of
-\citet{Gaidos:2015}), and 0.01 to be an HEB.  This is an excellent
+``long'' model preferred by far (of the astrophysical models, the 
+double-period BEB---the true scenario---is preferred). This is an excellent
 example of what was discussed in \sect{PEMs}: that even effects like
 column anomalies that were not identified by the \kepler\ team as
 ephemeris matches will typically be identified as false positives by 
