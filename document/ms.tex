@@ -45,7 +45,7 @@
 \newcommand{\myemail}{tdm@astro.princeton.edu}
 
 \newcommand{\ntotal}{7470}
-\newcommand{\nfail}{427}
+\newcommand{\nfail}{414}
 \newcommand{\ncalc}{7056}
 
 \newcommand{\nbadphot}{28} %EmptyPhotometry or BadPhotometry of MissingKOI or IOError
@@ -62,12 +62,12 @@
 \newcommand{\nlongfp}{526}
 
 \newcommand{\nreliable}{2857} %from figure
-\newcommand{\nval}{1948} %from figure
+\newcommand{\nval}{1935} %from figure
 \newcommand{\nreliableFP}{419} %from figure
 \newcommand{\nvalnew}{1284} %from pie chart
 \newcommand{\nfpnew}{428}  % all candidate with FPP < 0.9
 \newcommand{\ncurval}{984} % from pie chart
-\newcommand{\nhz}{10}
+\newcommand{\nhz}{9}
 
 \newcommand{\posprobthresh}{0.3}
 
@@ -403,6 +403,13 @@ are thus as follows:
 \item Use \eq{prob} to calculate the posterior probability for each scenario.
 \end{enumerate}
 
+To quantify uncertainty due to the Monte Carlo nature of this procedure, 
+\vespa\ is also able to repeat these calculations any desired number of times 
+by bootstrap resampling (with replacement) of the simulated populations, 
+and recalculating the likelihoods based on the resampled populations.  
+This mitigates the chances for rare outliers in a simulation to significantly 
+affect the calculated FPP.
+
 We note that a built-in weakness of model selection is that it assumes that
 the set of models being considered is comprehensive.  This could
 in principle lead to a situation where one model is strongly preferred
@@ -426,6 +433,7 @@ models to be low, reflecting that we expect only a small number of signals
 to be unexplained by any of the astrophysical scenarios: the number that we
 choose for each of these models is $5 \times 10^{-5}$, corresponding to an expectation
 that there may be $\sim$10 such signals among the $\sim$200,000 \kepler\ targets.
+
 
 %%%%%%%%%%%%%%%%%%%%%%
 
@@ -685,9 +693,18 @@ probabilities of thousands of KOIs.
 \sectlabel{results:fpp}
 
 Of the \ntotal\ KOIs in the Q1-Q17 DR24 table at the NExScI Exoplanet
-Archive, \vespa\ successfully calculates the FPP for \ncalc.  These
-results are listed in \tab{fpp};  \sect{failures} contains detailed
-explanations of the failure reasons for the other \nfail\ KOIs.
+Archive, \vespa\ successfully calculates the FPP for \ncalc.  
+\Sect{failures} contains detailed explanations of the failure reasons for 
+the \nfail\ KOIs for which we do not present \vespa\ results.  
+FPPs and their uncertainties are determined as the mean and standard 
+deviations of 10 bootstrap 
+recalculations of the initially simulated populations for each KOI (as described in 
+\sect{methods:fpp}).  These results are listed in \tab{fpp}.  
+The median fractional FPP uncertainty 
+for KOIs with 0.001 $<$ FPP $<$ 0.1 (within an order of magnitude of the 
+validation threshold) is about 12\%, and this distribution 
+is shown in \fig{sigmafpp}.
+
 
 In order to properly interpret these results, it is necessary to
 understand the range of applicability of the \vespa\ calculation.
@@ -701,7 +718,7 @@ for including the artificial
 ``boxy'' and ``long'' models in the model selection calculation
  (\sect{methods:fpp}) is to flag signals that do not 
 fit well with any of the astrophysical eclipse models---in fact, the ``long''
-model is preferred ($>50\5$) by \nlongfp\ KOIs that are already dispositioned
+model is preferred ($>50\%$) by \nlongfp\ KOIs that are already dispositioned
 as FALSE POSITIVE.  
 
 
@@ -791,25 +808,27 @@ In the Q1-Q17 DR24 KOI table used as the basis for this work, 980
 KOIs were identified as PEMs.  Of these, 187 were not identified 
 as false positives by any other method.  Only 15 of these 187 survived 
 all the quality cuts described in \sect{results:fpp}. And of these 15, 
-only 3 have FPP $< 0.01$  (See \sect{gaidos} for an example of a KOI caused by a 
+only 3 have FPP $< 0.01$.  (See \sect{gaidos} for an example of a KOI caused by a 
 ``column anomaly'' effect that went unidentified by the \kepler\ pipeline but
-to which \vespa\ assigned a high FPP.).  Thus, we expect only about 0.3\% (3/980) of 
+to which \vespa\ assigned a high FPP.)  Thus, we expect only about 0.3\% (3/980) of 
 as-yet unidentified distant-contamination FPs to end
 up with FPP $< 0.01$ according to \vespa. As the fraction of false positives
 from pixel contamination but unidentified as PEMs among the entire KOI sample is
 estimated to be something around 23\% \citep{Coughlin:2014}, we estimate
 that there remains a small ($\sim$0.06\%) residual FPP for all KOIs, even 
-when the \vespa\-calculated FPP is negligibly tiny.
+when the \vespa-calculated FPP is negligibly tiny.
 
 \subsection{Validation of \nvalnew\ new planets}
 
 While the FPP below which to claim planet validation is clearly
 an arbitrary choice, there is precedent to using ${\rm FPP} <0.01$ as 
 the threshold---\citet{Rowe:2014} validated over 800 multi-planet KOIs
-using this number.  Adopting this same threshold, and incorporating
-the 0.06\% residual FPP estimated in \sect{PEMs}, we find that 
+using this number, and \citet{Montet:2015} used it to validate a sample
+of K2-Campaign 1 planets.  Adopting this same threshold and adding
+the 0.06\% residual FPP estimated in \sect{PEMs} to the \vespa-calculated
+value, we find that 
 of the KOIs with reliable \vespa\ FPPs, \nval\ have ${\rm FPP}
-<0.0094$, and are thus validated at the 99\% level.  
+<0.01$, and are thus validated at the 99\% level.  
 These KOIs are labeled as such in \tab{fpp}.  These are not all new validations,
 however, since a number of them are already CONFIRMED. \Fig{fpppie}
 shows a different kind of summary, grouping KOIs by disposition and
@@ -817,7 +836,9 @@ splitting up the CANDIDATES according to the \vespa\ results, showing
 that \nvalnew\ KOIs are newly validated at the 99\% level.
 \Fig{rpcand} shows the radii and periods of the CONFIRMED and 
 CANDIDATE KOIs, with the transparency of the points representing
-the \vespa-calculated FPP. 
+the \vespa-calculated FPP.  \Fig{validatedcompare} compares the temperature
+and radii of the stars hosting these planets between the \citetalias{Huber:2014}
+and \isochrones\ analysis.
 
 %HZ table
 \input{table_hz}
@@ -866,8 +887,7 @@ be sufficient to validate it, a high \vespa\ FPP is still sufficient
 to cast doubt on its planetary nature. As a demonstration of the
 ability of \vespa\ to identify false positives, \Fig{fppfps} shows the
 FPPs for KOIs that are dispositioned FALSE POSITIVE and have MES $>$
-10 and $L_{\rm tot} > 10^{-3}$. The vast majority of these have large
-FPPs.
+10. The vast majority of these have large FPPs.
 
 One final note about these calculations is that unidentified transit
 timing variations (TTVs) will increase the FPP of a transit signal, as
@@ -892,7 +912,7 @@ the folded transit light curve for each KOI.
 \subsection{Blended Transiting Planets?}
 \sectlabel{btp}
 
-In this work, the only false positive scenarios we consider are 
+In this work, the only astrophysical false positive scenarios we consider are 
 eclisping binary stars (EB, HEB, BEB, and the double-period versions
 thereof).  Previous work studying \kepler\ false positive rates
 \citep[e.g.][]{Fressin:2013} has also considered the  ``blended transiting
@@ -1049,13 +1069,19 @@ probability (FPP) for every \kepler\ object of interest (KOI) in the
 Q1-Q17 DR24 table, using the publicly available Python module
 \vespa, which implements the procedure introduced in
 \citet{Morton:2012}, with improvements in stellar parameter modeling
-and the inclusion of new ``double-period'' false positive scenarios.
+and the inclusion of new ``double-period'' false positive scenarios 
+and artificial models to identify KOIs that are not well explained
+by any of the astrophysical models.  We have also for the first time
+estimated uncertainties in the \vespa\ calculation, through a bootstrap
+resampling procedure.
+
 While the assumptions behind this calculation are not necessarily
 valid for every KOI (see \sect{results:fpp}), we have identified
 \nvalnew\ KOIs that have reliable FPPs of $< 0.01$, resulting in
 validation of their planetary nature at the 99\% confidence level,
 more than doubling the number of confirmed \kepler\ exoplanets.  Among
-this set of reliable \vespa\ calculations are also \nfpnew\ new likely
+this set of newly validated planets are \nhz\ that are consistent with being
+in the habitable zones of their host stars.  We also identify \nfpnew\ new likely
 false positive KOIs, although we note that some of these may be due to
 unidentified or miscorrected transit timing variations.  
 
@@ -1070,7 +1096,7 @@ this work (described in \sect{methods:fpp}).  Additionally, the
 blended false positive scenarios \vespa\ considers are assumed to be
 fully contained within the photometric aperture; this assumption would
 also be broken if the source of the eclipse were significantly
-displaced.  We estimate that perhaps 0.1\% of the planets we validate
+displaced.  We estimate that perhaps 0.06\% of the planets we validate
 could be signals coming from significantly displaced sources, similar 
 to those identified as period-epoch matches by \citet{Coughlin:2014}
 but unidentified by that analysis.
@@ -1121,8 +1147,11 @@ purpose.
 
 
 \acknowledgments TDM acknowledges support from the \kepler\
-Participating Scientist Program (NNX14AE11G). This paper includes data
-collected by the \kepler\ mission. Funding for the \kepler\ mission
+Participating Scientist Program (NNX14AE11G). We thank the anonymous
+referee, Daniel Huber, Jack Lissauer, Juna Kollmeier, and David Hogg 
+for providing helpful suggestions that improved both the analysis and 
+presentation herein.
+This paper includes data collected by the \kepler\ mission. Funding for the \kepler\ mission
 is provided by the NASA Science Mission directorate. The authors
 acknowledge the efforts of the \kepler\ Mission team for obtaining
 the light curve products used in
@@ -1193,6 +1222,19 @@ System.
 \end{figure*}
 
 
+\begin{figure*}[p]
+\begin{center}
+\includegraphics[width=7in]{figures/sigmafpp.pdf}
+\end{center}
+\caption{Fractional uncertainties for KOIs with FPPs between
+  0.001 and 0.1; that is, within an order of magnitude of the 
+  validation threshold.  FPP values and uncertainties 
+  are determined by the mean and standard deviations 
+  of \vespa\ calculations based on 
+  10 bootstrap resamplings (see \sect{methods:fpp}) of 
+  a single set of simulated populations for each KOI.
+  \figlabel{sigmafpp}}
+\end{figure*}
 
 \begin{figure*}[p]
 \begin{center}
@@ -1203,14 +1245,13 @@ System.
   (floored at $10^{-4}$ for visualization purposes), meaning they are
   considered to be reliably located on the target star ($ {\rm Pr} >
   0.99$, with ``score'' $> \posprobthresh$) according to pixel-level analysis
-  \citep{Bryson:KSCI}, and have $L_{\rm tot} > 10^{-3}$, indicating
-  that the hypotheses tested by \vespa\ are not all poor explanations
-  of the data (see \sect{results:fpp}).  Of these \nreliable\ KOIs,
+  \citep{Bryson:KSCI}, and have MES $>10$.  Of these \nreliable\ KOIs,
   \nval\ have FPPs less than 1\% (\nvalnew\ of which have not yet been
   dispositioned as CONFIRMED).  Noteably, \nreliableFP\ are likely
   false positives (FPP $> 0.5$), consistent with the
   \citet{Morton:2011b} and \citet{Fressin:2013} \emph{a priori}
   estimates of the overall \kepler\ candidate false positive rate.
+  Red circles correspond to median FPP values in equal-sized bins. 
   \figlabel{fppall}}
 \end{figure*}
 
@@ -1238,8 +1279,8 @@ System.
   half of all KOIs to date have already been dispositioned FALSE
   POSITIVE or CONFIRMED.  Those dispositioned CANDIDATE we further
   categorize according to their reliability.  The ``no reliable
-  calculation'' category means that either the \vespa\ calculation was
-  not successful, or that $L_{\rm tot} < 10^{-3}$.  ``On-target
+  calculation'' category means that the \vespa\ calculation was
+  not successful.  ``On-target
   probability uncertain'' indicates that the positional probability
   calculations of \citet{Bryson:KSCI} are not reliable (score $<
   \posprobthresh$).  ``On-target probability $<$ 0.99'' means that the positional
@@ -1261,6 +1302,23 @@ System.
   shaded by false positive probability, with 
   a transparent circle representing a high FPP. 
   \figlabel{rpcand}}
+\end{figure*}
+
+
+\begin{figure*}[p]
+\begin{center}
+\includegraphics[width=7in]{figures/validated_compare.pdf}
+\end{center}
+\caption{Comparison between temperatures and radii estimated from the
+  \isochrones\ analysis in this work and those from the
+  \kepler\ stellar parameters catalog \citepalias{Huber:2014}, for the 
+  sample of stars hosting planets validated in this study.  As 
+  seen in previous figures, the \isochrones\ analysis tends to 
+  over-predict the stellar radii compared to \citetalias{Huber:2014} 
+  for the coolest stars.  A small number of stars are also estimated by 
+  the photometric analysis of \citetalias{Huber:2014} to be evolved, 
+  but not by \isochrones.
+  \figlabel{validatedcompare}}
 \end{figure*}
 
 
