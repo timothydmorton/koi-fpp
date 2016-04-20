@@ -1,9 +1,9 @@
 ## koi-fpp
 False positive probabilities for all KOIs in the Q1-Q17 (DR24) Kepler table.
-The one-stop-shop table for the summarized FPP results is `fpp_final_table.csv`.
+The one-stop-shop table for the summarized FPP results is [fpp_final_table.csv](fpp_final_table.csv).
 
 If you're curious about individual KOIs and want to browse the diagnostic/result
-plots, please go [here](phn14.astro.princeton.edu/koi-fpp).
+plots, please go [here](http://phn14.astro.princeton.edu/koi-fpp).
 
 If you're really curious, *all* the data files produced by these
  calculations are currently hosted at Princeton.  To browse the
