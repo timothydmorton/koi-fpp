@@ -25,7 +25,7 @@ these datasets:
 * [Kepler photometry]().  This is in two separate tarballs (Zenodo max file size is 2Gb), so unpack them both and combine their contents (all the koi*.n sub-directories) into a single directory.  Define a `JROWE_DIR` environment variable referring to this location.
 
 Then, set up the python environment using the `environment.yml` file in the top
-level of this repository:  [If you do not have `conda` available, install [miniconda](http://conda.pydata.org/docs/install/quick.html) first.] 
+level of this repository, as follows.  [If you do not have `conda` available, install [miniconda](http://conda.pydata.org/docs/install/quick.html) first.] 
 
     conda env create -f environment.yml
     source activate koifpp
@@ -43,11 +43,14 @@ can then run the calculation as follows:
     cd $KOI_FPPDIR
     calcfpp K07016.01
 
-Note that the stellar parameter inference will be much more reliable
-if you have `multinest`/`pymultinest` installed.  The calculations
-will run just using the default `emcee` sampler, but I stronly
-recommend using `multinest` becaues of the inherently multimodal
-nature of the problem.  Follow [these instructions](http://astrobetter.com/wiki/MultiNest+Installation+Notes) to install.
+Note that the stellar parameter inference (and thus the FPP
+calculation) will be much more reliable if you have
+`multinest`/`pymultinest` installed.  The calculations will run just
+using the default `emcee` sampler, but I stronly recommend using
+`multinest` becaues of the inherently multimodal nature of the
+problem.  Follow [these
+instructions](http://astrobetter.com/wiki/MultiNest+Installation+Notes)
+to install.
 
 Other Data
 ------
