@@ -1,6 +1,5 @@
 ## koi-fpp
 False positive probabilities for all KOIs in the Q1-Q17 (DR24) Kepler table.
-
 The one-stop-shop table for the summarized FPP results is `fpp_final_table.csv`.
 
 If you're curious about individual KOIs and want to browse the diagnostic/result
@@ -9,13 +8,14 @@ plots, please go [here](phn14.astro.princeton.edu/koi-fpp).
 If you're really curious, *all* the data files produced by these
  calculations are currently hosted at Princeton.  To browse the
  results from a given KOI, visit
- tigress-web.princeton.edu/~tmorton/koi-fpp/K?????.??, with the
+ `tigress-web.princeton.edu/~tmorton/koi-fpp/K?????.??`, with the
  appropriate KOI identifier.  These directories contain the entire
  `vespa` and `isochrones` outputs for every KOI (including the stellar
  posteriors for the single-, binary- and triple-star fits).  If you
  have specific questions, please feel free to contact me.
 
-# Reproducing results
+Reproducing results
+----------
 
 You can run your own `vespa` KOI calculations using all of the same
 data and constraints that I used for this work.  To do this, first obtain
@@ -49,7 +49,8 @@ will work just using the default `emcee` sampler, but I stronly
 recommend using `multinest` becaues of the inherently multimodal
 nature of the problem.  Follow [these instructions](http://astrobetter.com/wiki/MultiNest+Installation+Notes) to install.
 
-# Other Data
+Other Data
+------
 
 The `data` directory contains the following files:
 
