@@ -1,3 +1,4 @@
+K00003.01 LinAlgError: singular matrix
 K00028.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00031.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00043.01 BadRoweFitError: K00043.01 has RoR > 1 (5.687459) from JRowe MCMC fit
@@ -71,6 +72,7 @@ K01889.02 MCMCError: TransitSignal trapezoid fit not converged (K01889.02).
 K01912.01 MissingStellarError: 3952651 not in stellar table?
 K01948.01 EmptyPhotometryError: K01948.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi1948.n/klc09536692.dct.dat) is empty
 K02048.02 BadRoweFitError: K02048.02 has RoR > 1 (10.723516) from JRowe MCMC fit
+K02050.02 AttributeError: 'tuple' object has no attribute 'reshape'
 K02112.01 EmptyPhotometryError: K02112.01 photometry file (/tigress/tmorton/kepler/data/rowe/koi2112.n/klc10470616.dct.dat) is empty
 K02191.01 MCMCError: TransitSignal trapezoid fit not converged (K02191.01).
 K02324.01 MissingStellarError: 7746958 not in stellar table?
@@ -186,6 +188,7 @@ K03797.01 BadRoweFitError: K03797.01 has RoR > 1 (22.193785) from JRowe MCMC fit
 K03800.01 BadRoweFitError: K03800.01 has RoR > 1 (34.221661) from JRowe MCMC fit
 K03829.01 MissingStellarError: 4474637 not in stellar table?
 K03844.01 MissingStellarError: 7174349 not in stellar table?
+K03845.01 MCMCError: TransitSignal trapezoid fit not converged (K03845.01).
 K03846.01 BadRoweFitError: K03846.01 has RoR > 1 (2.648556) from JRowe MCMC fit
 K03850.01 BadRoweFitError: K03850.01 has RoR > 1 (7.645912) from JRowe MCMC fit
 K03851.01 MissingStellarError: 9784230 not in stellar table?
@@ -200,6 +203,7 @@ K03875.01 BadRoweFitError: K03875.01 has RoR > 1 (78.907173) from JRowe MCMC fit
 K03878.02 BadRoweFitError: K03878.02 has RoR > 1 (72.96579) from JRowe MCMC fit
 K03884.01 BadRoweFitError: K03884.01 has RoR > 1 (1.340793) from JRowe MCMC fit
 K03885.01 BadRoweFitError: K03885.01 has RoR > 1 (7.627928) from JRowe MCMC fit
+K03886.01 LinAlgError: singular matrix
 K03888.01 BadRoweFitError: K03888.01 has RoR > 1 (3.024982) from JRowe MCMC fit
 K03889.01 BadRoweFitError: K03889.01 has RoR > 1 (96.986549) from JRowe MCMC fit
 K03891.01 BadRoweFitError: K03891.01 has RoR > 1 (96.11116) from JRowe MCMC fit
@@ -229,6 +233,7 @@ K04419.01 BadRoweFitError: K04419.01 has RoR > 1 (3.543025) from JRowe MCMC fit
 K04463.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04500.03 BadRoweFitError: K04500.03 has RoR > 1 (61.523319) from JRowe MCMC fit
 K04507.01 MissingStellarError: 7598111 not in stellar table?
+K04533.01 LinAlgError: singular matrix
 K04543.01 MissingStellarError: 9776186 not in stellar table?
 K04565.01 MCMCError: TransitSignal trapezoid fit not converged (K04565.01).
 K04567.02 BadRoweFitError: K04567.02 has RoR > 1 (15.723242) from JRowe MCMC fit
@@ -327,6 +332,7 @@ K06507.01 BadRoweFitError: K06507.01 has RoR > 1 (2.789983) from JRowe MCMC fit
 K06512.01 NoWeakSecondaryError: K06512.01
 K06529.01 BadRoweFitError: K06529.01 has a/Rstar < 1 (0.979393956852) from JRowe MCMC fit
 K06531.01 NoWeakSecondaryError: K06531.01
+K06542.01 AttributeError: 'tuple' object has no attribute 'reshape'
 K06549.01 BadRoweFitError: K06549.01 has a/Rstar < 1 (0.373234587407) from JRowe MCMC fit
 K06554.01 BadRoweFitError: K06554.01 has RoR > 1 (1.77214) from JRowe MCMC fit
 K06556.01 BadRoweFitError: K06556.01 has RoR > 1 (1.314934) from JRowe MCMC fit
@@ -397,7 +403,6 @@ K07378.01 BadRoweFitError: K07378.01 has RoR > 1 (62.554085) from JRowe MCMC fit
 K07401.01 BadRoweFitError: K07401.01 has a/Rstar < 1 (0.951449764013) from JRowe MCMC fit
 K07402.01 BadRoweFitError: K07402.01 has RoR > 1 (1.106935) from JRowe MCMC fit
 K07412.01 MCMCError: TransitSignal trapezoid fit not converged (K07412.01).
-K07416.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07429.01 BadRoweFitError: K07429.01 has RoR > 1 (2.248229) from JRowe MCMC fit
 K07447.01 BadRoweFitError: K07447.01 has RoR > 1 (5.773531) from JRowe MCMC fit
 K07451.01 BadRoweFitError: K07451.01 has a/Rstar < 1 (0.97743782939) from JRowe MCMC fit
@@ -413,6 +418,7 @@ K07531.01 MCMCError: TransitSignal trapezoid fit not converged (K07531.01).
 K07535.01 MCMCError: TransitSignal trapezoid fit not converged (K07535.01).
 K07543.01 NoWeakSecondaryError: K07543.01
 K07553.01 BadRoweFitError: K07553.01 has RoR > 1 (1.106412) from JRowe MCMC fit
+K07561.01 AttributeError: 'tuple' object has no attribute 'reshape'
 K07573.01 BadRoweFitError: K07573.01 has a/Rstar < 1 (0.998783797906) from JRowe MCMC fit
 K07578.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07581.01 AllWithinRocheError: All simulated systems within Roche lobe
