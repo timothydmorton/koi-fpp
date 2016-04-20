@@ -1,6 +1,6 @@
 ## koi-fpp
 False positive probabilities for all KOIs in the Q1-Q17 (DR24) Kepler table.
-The one-stop-shop table for the summarized FPP results is [fpp_final_table.csv](fpp_final_table.csv).
+The one-stop-shop table for the summarized FPP results is [fpp_final_table.csv](https://raw.githubusercontent.com/timothydmorton/koi-fpp/master/fpp_final_table.csv).
 
 If you're curious about individual KOIs and want to browse the diagnostic/result
 plots, please go [here](http://phn14.astro.princeton.edu/koi-fpp).
@@ -22,7 +22,7 @@ data and constraints that I used for this work.  To do this, first obtain
 these datasets:
 
 * [TRILEGAL starfield simulations](https://zenodo.org/deposit/108768/).  Define a `KOI_FPPDIR` environment variable, and unpack this `starfield` directory within that.
-* [Kepler photometry]()  This is in two separate tarballs, so unpack them both and combine their contents (all the koi*.n sub-directories) into a single directory.  Define a `JROWE_DIR` environment variable referring to this location.  (Zenodo max file size is 2Gb).
+* [Kepler photometry]().  This is in two separate tarballs (Zenodo max file size is 2Gb), so unpack them both and combine their contents (all the koi*.n sub-directories) into a single directory.  Define a `JROWE_DIR` environment variable referring to this location.
 
 Then, set up the python environment using the `environment.yml` file in the top
 level of this repository:  [If you do not have `conda` available, install [miniconda](http://conda.pydata.org/docs/install/quick.html) first.] 
@@ -45,7 +45,7 @@ can then run the calculation as follows:
 
 Note that the stellar parameter inference will be much more reliable
 if you have `multinest`/`pymultinest` installed.  The calculations
-will work just using the default `emcee` sampler, but I stronly
+will run just using the default `emcee` sampler, but I stronly
 recommend using `multinest` becaues of the inherently multimodal
 nature of the problem.  Follow [these instructions](http://astrobetter.com/wiki/MultiNest+Installation+Notes) to install.
 
