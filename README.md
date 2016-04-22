@@ -40,11 +40,6 @@ level of this repository, as follows.  [If you do not have `conda` available, in
     source activate koifpp
 
 This should install all the required packages.
-
-Next, define a `KOI_FPPDIR` environment variable to
-point to the `example_data` directory in this repository, and a 
-`JROWE_DIR` environment variable to point to `example_data/photometry`.
-
 Now from within this environment you can run the following: 
 
     koifpp-config K07016.01
