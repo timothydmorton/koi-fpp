@@ -45,7 +45,9 @@ Now from within this environment you can run the following:
     koifpp-config K07016.01
 
 This will set up the `vespa` and `isochrones` config files in a
-`K07016.01` directory under `KOI_FPPDIR`.  It will also do the
+`K07016.01` directory under `KOI_FPPDIR` (if you haven't yet used
+`isochrones`, then be prepared for a few minutes' worth of stellar
+model downloads).  It will also do the
 trapezoid shape fitting to the photometry.  Take a look at the
 `fpp.ini` and `star.ini` files to see what the inputs look like.  You
 can then run the calculation as follows:
