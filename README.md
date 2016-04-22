@@ -22,13 +22,16 @@ data and constraints that I used for this work.  If you wish to
 do this, first test out the calculation for the KOI for which I 
 provide example data in this repository (KOI-7016.01/Kepler-452b).
 
-First, clone this repository:
+First, clone this repository and hop on in:
 
     git clone https://github.com/timothydmorton/koi-fpp
+    cd koi-fpp
 
-Then, define a `KOI_FPPDIR` environment variable to
-point to the `example_data` directory in this repository, and a 
-`JROWE_DIR` environment variable to point to `example_data/photometry`.
+Then define some temporary enivronment variables (assuming you're
+calling this from inside this repository):
+
+    export KOI_FPPDIR="example_data"
+    export JROWE_DIR="example_data/photometry"
 
 Then, set up the python environment using the `environment.yml` file in the top
 level of this repository, as follows.  [If you do not have `conda` available, install [miniconda](http://conda.pydata.org/docs/install/quick.html) first.] 
