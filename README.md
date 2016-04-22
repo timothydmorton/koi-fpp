@@ -17,12 +17,14 @@ If you're really curious, *all* the data files produced by these
 Reproducing results
 ----------
 
-You can run your own `vespa` KOI calculations using all of the same
-data and constraints that I used for this work.  To do this, first obtain
-these datasets:
+You can run your own FPP calculations using all of the same
+data and constraints that I used for this work.  If you wish to 
+do this, first test out the calculation for the KOI for which I 
+provide example data in this repository (KOI-7016.01/Kepler-452b).
 
-* [TRILEGAL starfield simulations](https://zenodo.org/deposit/108768/).  Define a `KOI_FPPDIR` environment variable, and unpack this `starfield` directory within that.
-* [Kepler photometry]().  This is in two separate tarballs (Zenodo max file size is 2Gb), so unpack them both and combine their contents (all the koi*.n sub-directories) into a single directory.  Define a `JROWE_DIR` environment variable referring to this location.
+To do this, first define a `KOI_FPPDIR` environment variable to
+point to the `example_data` directory in this repository, and a 
+`JROWE_DIR` environment variable to point to `example_data/photometry`.
 
 Then, set up the python environment using the `environment.yml` file in the top
 level of this repository, as follows.  [If you do not have `conda` available, install [miniconda](http://conda.pydata.org/docs/install/quick.html) first.] 
@@ -51,6 +53,14 @@ using the default `emcee` sampler, but I stronly recommend using
 problem.  Follow [these
 instructions](http://astrobetter.com/wiki/MultiNest+Installation+Notes)
 to install.
+
+In order to get the data necessary for all the KOI FPP calculations beyond 
+this single example, you will need the following:
+
+* [TRILEGAL starfield simulations](https://zenodo.org/record/108768/).  Define a `KOI_FPPDIR` environment variable to be somewhere sensible to you, and unpack this `starfield` directory within that.
+* [Kepler photometry](https://zenodo.org/record/50147).  This is in two separate tarballs (Zenodo max file size is 2Gb), so unpack them both and combine their contents (all the koi*.n sub-directories) into a single directory.  Define a `JROWE_DIR` environment variable referring to this location.
+
+Then you can run the `koifpp-config` and `calcfpp` commands for your favorite KOI(s).
 
 Other Data
 ------
