@@ -22,7 +22,11 @@ data and constraints that I used for this work.  If you wish to
 do this, first test out the calculation for the KOI for which I 
 provide example data in this repository (KOI-7016.01/Kepler-452b).
 
-To do this, first define a `KOI_FPPDIR` environment variable to
+First, clone this repository:
+
+    git clone https://github.com/timothydmorton/koi-fpp
+
+Then, define a `KOI_FPPDIR` environment variable to
 point to the `example_data` directory in this repository, and a 
 `JROWE_DIR` environment variable to point to `example_data/photometry`.
 
