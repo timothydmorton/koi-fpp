@@ -218,7 +218,6 @@ K03982.01 MissingStellarError: 5303557 not in stellar table?
 K03990.01 BadRoweFitError: K03990.01 has RoR > 1 (2.30459) from JRowe MCMC fit
 K03993.01 MissingStellarError: 2970804 not in stellar table?
 K03995.01 BadRoweFitError: K03995.01 has RoR > 1 (2.079166) from JRowe MCMC fit
-K04021.01 AllWithinRocheError: All simulated systems within Roche lobe
 K04034.02 BadRoweFitError: K04034.02 has RoR > 1 (97.048454) from JRowe MCMC fit
 K04035.01 MissingStellarError: 3247404 not in stellar table?
 K04094.01 AllWithinRocheError: All simulated systems within Roche lobe
