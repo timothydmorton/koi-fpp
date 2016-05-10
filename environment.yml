@@ -48,5 +48,5 @@ dependencies:
   - simpledist==0.1.12
   - tables==3.2.2
   - triangle-plot==0.3.0
-  - vespa==0.4.5
+  - vespa==0.4.6
 
