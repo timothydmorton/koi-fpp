@@ -41,8 +41,8 @@ First, clone this repository and hop on in:
 Then define some temporary enivronment variables (assuming you're
 calling this from inside this repository):
 
-    export KOI_FPPDIR="example_data"
-    export JROWE_DIR="example_data/photometry"
+    export KOI_FPPDIR="$PWD/example_data"
+    export JROWE_DIR="$PWD/example_data/photometry"
 
 Then, set up the python environment using the `environment.yml` file in the top
 level of this repository, as follows.  [If you do not have `conda` available, install [miniconda](http://conda.pydata.org/docs/install/quick.html) first.] 
