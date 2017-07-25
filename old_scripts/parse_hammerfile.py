@@ -2,11 +2,14 @@
 
 import numpy as np
 import pandas as pd
+import sys, re
 
-app_hammerfile = 'forTim_kplr20151218020451_appham.txt'
+app_hammerfile = sys.argv[1]
 
 d = {}
 for line in open(app_hammerfile):
+    if re.search(':', line):
+        continue
     line = line.strip().split('|')
     try:
         if line[1] not in d:
