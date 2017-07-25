@@ -55,28 +55,31 @@ fpp_table['MES'] = DATA.ix[kois, 'koi_max_mult_ev']
 fpp_table['n_cands'] = DATA.ix[kois, 'koi_count']
 
 
-# Replace with mean values
+# Replace with mean values, if bootstrap results exist
 
-fpp_mean = pd.read_csv('data/fpp_bootstrap_mean.csv')
-fpp_mean.rename(columns={'Unnamed: 0':'koi'}, inplace=True)
-fpp_mean.index = fpp_mean['koi']
+try:
+    fpp_mean = pd.read_csv('data/fpp_bootstrap_mean.csv')
+    fpp_mean.rename(columns={'Unnamed: 0':'koi'}, inplace=True)
+    fpp_mean.index = fpp_mean['koi']
 
-fpp_max = pd.read_csv('data/fpp_bootstrap_max.csv')
-fpp_max.rename(columns={'Unnamed: 0':'koi'}, inplace=True)
-fpp_max.index = fpp_max['koi']
+    fpp_max = pd.read_csv('data/fpp_bootstrap_max.csv')
+    fpp_max.rename(columns={'Unnamed: 0':'koi'}, inplace=True)
+    fpp_max.index = fpp_max['koi']
 
-fpp_std = pd.read_csv('data/fpp_bootstrap_std.csv')
-fpp_std.rename(columns={'Unnamed: 0':'koi'}, inplace=True)
-fpp_std.index = fpp_std['koi']
+    fpp_std = pd.read_csv('data/fpp_bootstrap_std.csv')
+    fpp_std.rename(columns={'Unnamed: 0':'koi'}, inplace=True)
+    fpp_std.index = fpp_std['koi']
 
+    for m in ['heb', 'eb', 'beb', 'heb', 'eb_Px2', 'beb_Px2', 'heb_Px2', 'long', 'boxy', 'pl']:
+        for col in ['lhood_{}'.format(m), 'pr_{}'.format(m)]:
+            fpp_table[col] = fpp_mean.ix[fpp_table.index, col]
 
-for m in ['heb', 'eb', 'beb', 'heb', 'eb_Px2', 'beb_Px2', 'heb_Px2', 'long', 'boxy', 'pl']:
-    for col in ['lhood_{}'.format(m), 'pr_{}'.format(m)]:
-        fpp_table[col] = fpp_mean.ix[fpp_table.index, col]
-        
-fpp_table['FPP'] = fpp_mean.ix[fpp_table.index, 'FPP']
-fpp_table['FPP_max'] = fpp_max.ix[fpp_table.index, 'FPP']
-fpp_table['FPP_std'] = fpp_std.ix[fpp_table.index, 'FPP']
+    fpp_table['FPP'] = fpp_mean.ix[fpp_table.index, 'FPP']
+    fpp_table['FPP_max'] = fpp_max.ix[fpp_table.index, 'FPP']
+    fpp_table['FPP_std'] = fpp_std.ix[fpp_table.index, 'FPP']
+
+except IOError:
+    print("Bootstrap results not available. Using single-run results.")
 
 
 fpp_table.to_csv('fpp_final_table.csv')
