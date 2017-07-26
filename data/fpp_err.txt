@@ -2,152 +2,94 @@ K00014.01 BadRoweFitError: K00014.01 has RoR > 1 (1.6543638307) from JRowe MCMC 
 K00031.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00066.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00126.02 MCMCError: TransitSignal trapezoid fit not converged (K00126.02).
-K00141.01 Unable to open/create file '/tigress/tmorton/kepler/dr25/fpp/K00141.01/dartmouth_starmodel_triple.h5'
-K00143.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
-K00144.01 2017-07-18 01:07:37,388: Fitting BinaryStarModel to {'Teff': (4957.0, 100.0), 'g': (14.5444162, 0.05), 'i': (13.2920672, 0.05), 'H': (11.565, 0.02), 'K': (11.461, 0.02), 'J': (12.063, 0.02), 'feh': (0.26, 0.15), 'logg': (4.594, 0.014), 'r': (13.6145236, 0.05), 'Kepler': 13.698, 'z': (13.1237551, 0.05)}...
-K00282.03 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
-K00283.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
+K00144.01 2017-07-26 08:59:47,259: Fitting BinaryStarModel to {'Teff': (4957.0, 100.0), 'g': (14.5444162, 0.05), 'i': (13.2920672, 0.05), 'H': (11.565, 0.02), 'K': (11.461, 0.02), 'J': (12.063, 0.02), 'feh': (0.26, 0.15), 'logg': (4.594, 0.014), 'r': (13.6145236, 0.05), 'Kepler': 13.698, 'z': (13.1237551, 0.05)}...
 K00322.01 BadRoweFitError: K00322.01 has RoR > 1 (5.3541506803) from JRowe MCMC fit
 K00406.01 BadRoweFitError: K00406.01 has RoR > 1 (7.445899123) from JRowe MCMC fit
-K00427.03 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
-K00428.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K00441.01 Unable to open/create file '/tigress/tmorton/kepler/dr25/fpp/K00441.01/dartmouth_starmodel_triple.h5'
 K00442.03 Unable to open/create file '/tigress/tmorton/kepler/dr25/fpp/K00442.03/dartmouth_starmodel_triple.h5'
-K00566.03 Unable to open/create file '/tigress/tmorton/kepler/dr25/fpp/K00566.03/dartmouth_starmodel_single.h5'
-K00567.01 Unable to open/create file '/tigress/tmorton/kepler/dr25/fpp/K00567.01/dartmouth_starmodel_single.h5'
-K00618.01 2017-07-17 23:31:53,988: Fitting BinaryStarModel to {'g': (15.5008124, 0.05), 'i': (14.6646456, 0.05), 'H': (13.321, 0.02), 'K': (13.211, 0.02), 'J': (13.729, 0.02), 'r': (14.8678928, 0.05), 'Kepler': 14.959, 'z': (14.5686939, 0.05)}...
-K00701.02 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K00707.05 NoFitError
 K00731.01 BadRoweFitError: K00731.01 has RoR > 1 (1.8557842599) from JRowe MCMC fit
 K00742.01 BadRoweFitError: K00742.01 has RoR > 1 (1.6253583819) from JRowe MCMC fit
-K00781.01 Unable to open/create file '/tigress/tmorton/kepler/dr25/fpp/K00781.01/dartmouth_starmodel_triple.h5'
-K00832.01 2017-07-18 01:33:33,405: Fitting BinaryStarModel to {'g': (15.9025758, 0.05), 'i': (15.0729168, 0.05), 'H': (13.602, 0.02), 'K': (13.551, 0.02), 'J': (14.031, 0.02), 'r': (15.3224684, 0.05), 'Kepler': 15.365, 'z': (14.9484549, 0.05)}...
+K00832.01 2017-07-26 08:59:47,831: Fitting BinaryStarModel to {'g': (15.9025758, 0.05), 'i': (15.0729168, 0.05), 'H': (13.602, 0.02), 'K': (13.551, 0.02), 'J': (14.031, 0.02), 'r': (15.3224684, 0.05), 'Kepler': 15.365, 'z': (14.9484549, 0.05)}...
 K00876.01 BadRoweFitError: K00876.01 has RoR > 1 (6.5025742727) from JRowe MCMC fit
-K00899.03 2017-07-17 23:17:44,489: Fitting BinaryStarModel to {'Teff': (3561.0, 71.0), 'g': (16.8776242, 0.05), 'i': (14.5474792, 0.05), 'H': (12.15, 0.02), 'K': (11.966, 0.02), 'J': (12.836, 0.02), 'feh': (0.0, 0.15), 'logg': (4.855, 0.055), 'r': (15.4561296, 0.05), 'Kepler': 15.234, 'z': (14.0744282, 0.05)}...
 K00909.01 BadRoweFitError: K00909.01 has RoR > 1 (8.3587929424) from JRowe MCMC fit
-K00922.01 Unable to open/create file '/tigress/tmorton/kepler/dr25/fpp/K00922.01/dartmouth_starmodel_single.h5'
 K00961.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K00970.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00977.01 AllWithinRocheError: All simulated systems within Roche lobe
 K00979.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01034.01 BadRoweFitError: K01034.01 has RoR > 1 (3.3156126489) from JRowe MCMC fit
-K01087.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
-K01088.01 Unable to open/create file '/tigress/tmorton/kepler/dr25/fpp/K01088.01/dartmouth_starmodel_single.h5'
-K01090.01 2017-07-18 00:26:59,928: Fitting BinaryStarModel to {'Teff': (6089.0, 82.0), 'g': (14.3375635, 0.05), 'i': (13.7947736, 0.05), 'H': (12.644, 0.02), 'K': (12.579, 0.02), 'J': (12.916, 0.02), 'feh': (0.08, 0.15), 'logg': (4.044, 0.182), 'r': (13.9290568, 0.05), 'Kepler': 14.01, 'z': (13.751648, 0.05)}...
-K01134.02 2017-07-18 10:00:13,535: 0 Transiting planet systems generated (target 20000)
+K01134.02 2017-07-26 10:09:36,258: 0 Transiting planet systems generated (target 20000)
 K01249.01 BadRoweFitError: K01249.01 has RoR > 1 (12.009301868) from JRowe MCMC fit
-K01258.02 Unable to open/create file '/tigress/tmorton/kepler/dr25/fpp/K01258.02/dartmouth_starmodel_single.h5'
-K01262.01 Unable to open/create file '/tigress/tmorton/kepler/dr25/fpp/K01262.01/dartmouth_starmodel_single.h5'
-K01273.01 2017-07-18 01:14:45,502: Fitting BinaryStarModel to {'g': (15.3590363, 0.05), 'i': (14.5834624, 0.05), 'H': (13.307, 0.02), 'K': (13.105, 0.02), 'J': (13.596, 0.02), 'r': (14.7699612, 0.05), 'Kepler': 14.862, 'z': (14.5021547, 0.05)}...
-K01277.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K01319.01 BadRoweFitError: K01319.01 has RoR > 1 (12.407402583) from JRowe MCMC fit
 K01348.01 BadRoweFitError: K01348.01 has RoR > 1 (2.4851947363) from JRowe MCMC fit
 K01349.01 BadRoweFitError: K01349.01 has RoR > 1 (6.6072861125) from JRowe MCMC fit
 K01417.01 BadRoweFitError: K01417.01 has RoR > 1 (5.886209422) from JRowe MCMC fit
 K01418.01 BadRoweFitError: K01418.01 has RoR > 1 (9.1390567328) from JRowe MCMC fit
-K01422.02 2017-07-18 00:34:04,651: Fitting BinaryStarModel to {'Teff': (3526.0, 71.0), 'g': (17.6591367, 0.05), 'i': (15.1980616, 0.05), 'H': (12.807, 0.02), 'K': (12.6, 0.02), 'J': (13.391, 0.02), 'feh': (-0.08, 0.15), 'logg': (4.866, 0.066), 'r': (16.1008008, 0.05), 'Kepler': 15.921, 'z': (14.7405716, 0.05)}...
-K01423.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K01454.01 BadRoweFitError: K01454.01 has RoR > 1 (4.1044375476) from JRowe MCMC fit
 K01464.01 BadRoweFitError: K01464.01 has RoR > 1 (2.2168555391) from JRowe MCMC fit
 K01482.01 BadRoweFitError: K01482.01 has RoR > 1 (2.7409503255) from JRowe MCMC fit
-K01545.02 2017-07-18 10:00:16,159: 0 Transiting planet systems generated (target 20000)
+K01545.02 2017-07-26 10:09:36,849: 0 Transiting planet systems generated (target 20000)
 K01546.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K01575.01 BadRoweFitError: K01575.01 has RoR > 1 (3.4519332907) from JRowe MCMC fit
 K01767.01 BadRoweFitError: K01767.01 has RoR > 1 (7.5645492086) from JRowe MCMC fit
 K01770.01 AllWithinRocheError: All simulated systems within Roche lobe
 K01823.02 BadRoweFitError: K01823.02 has RoR > 1 (1.639757941) from JRowe MCMC fit
 K01867.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
-K02098.01 2017-07-18 01:20:03,794: Fitting BinaryStarModel to {'g': (14.1061165, 0.05), 'i': (13.645356, 0.05), 'H': (12.491, 0.02), 'K': (12.484, 0.02), 'J': (12.807, 0.02), 'r': (13.773728, 0.05), 'Kepler': 13.838, 'z': (13.526931, 0.05)}...
-K02098.02 2017-07-18 01:21:10,786: Fitting BinaryStarModel to {'g': (14.1061165, 0.05), 'i': (13.645356, 0.05), 'H': (12.491, 0.02), 'K': (12.484, 0.02), 'J': (12.807, 0.02), 'r': (13.773728, 0.05), 'Kepler': 13.838, 'z': (13.526931, 0.05)}...
-K02363.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
-K02392.01 2017-07-18 02:38:44,748: Fitting BinaryStarModel to {'Teff': (5573.0, 75.0), 'g': (15.4913785, 0.05), 'i': (14.7047592, 0.05), 'H': (13.345, 0.02), 'K': (13.208, 0.02), 'J': (13.706, 0.02), 'feh': (0.16, 0.15), 'logg': (4.434, 0.066), 'r': (14.9237696, 0.05), 'Kepler': 14.985, 'z': (14.5875027, 0.05)}...
-K02541.02 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
-K02715.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
+K02548.01 AllWithinRocheError: All simulated systems within Roche lobe
 K02718.01 AllWithinRocheError: All simulated systems within Roche lobe
-K02725.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K02746.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
-K02753.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K02813.01 AllWithinRocheError: All simulated systems within Roche lobe
-K02836.01 2017-07-17 23:33:24,764: Fitting BinaryStarModel to {'g': (16.1321268, 0.05), 'i': (14.8857632, 0.05), 'H': (13.128, 0.02), 'K': (12.959, 0.02), 'J': (13.665, 0.02), 'r': (15.2180716, 0.05), 'Kepler': 15.29, 'z': (14.6965639, 0.05)}...
+K02836.01 2017-07-26 08:59:47,414: Fitting BinaryStarModel to {'g': (16.1321268, 0.05), 'i': (14.8857632, 0.05), 'H': (13.128, 0.02), 'K': (12.959, 0.02), 'J': (13.665, 0.02), 'r': (15.2180716, 0.05), 'Kepler': 15.29, 'z': (14.6965639, 0.05)}...
 K02882.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
-K02885.01 2017-07-17 23:37:47,507: Fitting BinaryStarModel to {'g': (14.2551812, 0.05), 'i': (13.5050888, 0.05), 'H': (12.095, 0.02), 'K': (12.063, 0.02), 'J': (12.511, 0.02), 'r': (13.7004544, 0.05), 'Kepler': 13.776, 'z': (13.4054874, 0.05)}...
-K02904.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
-K02913.01 2017-07-18 03:35:32,128: Fitting BinaryStarModel to {'Teff': (5696.0, 113.0), 'g': (13.2689446, 0.05), 'i': (12.6118872, 0.05), 'H': (11.394, 0.02), 'K': (11.361, 0.02), 'J': (11.724, 0.02), 'feh': (0.44, 0.05), 'logg': (4.247, 0.13), 'r': (12.7619336, 0.05), 'Kepler': 12.858, 'z': (12.5449329, 0.05)}...
-K02926.02 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
-K02931.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
-K03065.01 2017-07-17 23:43:33,087: Fitting BinaryStarModel to {'g': (15.0693392, 0.05), 'i': (14.3373672, 0.05), 'H': (13.025, 0.02), 'K': (12.99, 0.02), 'J': (13.353, 0.02), 'r': (14.5366736, 0.05), 'Kepler': 14.603, 'z': (14.2332809, 0.05)}...
-K03066.01 2017-07-17 23:42:46,461: Fitting BinaryStarModel to {'g': (16.648022, 0.05), 'i': (15.5452136, 0.05), 'H': (14.012, 0.02), 'K': (13.714, 0.02), 'J': (14.437, 0.02), 'r': (15.8272768, 0.05), 'Kepler': 15.911, 'z': (15.4201375, 0.05)}...
-K03085.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
-K03087.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
-K03110.01 2017-07-18 00:35:00,963: Fitting BinaryStarModel to {'g': (15.2286818, 0.05), 'i': (14.6542608, 0.05), 'H': (13.508, 0.02), 'K': (13.404, 0.02), 'J': (13.775, 0.02), 'r': (14.7954404, 0.05), 'Kepler': 14.879, 'z': (14.6123306, 0.05)}...
-K03117.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K03199.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03211.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03219.01 AllWithinRocheError: All simulated systems within Roche lobe
-K03223.01 2017-07-17 23:36:08,432: Fitting BinaryStarModel to {'g': (12.9976663, 0.05), 'i': (11.7753712, 0.05), 'H': (10.002, 0.02), 'K': (9.921, 0.02), 'J': (10.546, 0.02), 'r': (12.0879756, 0.05), 'Kepler': 12.173, 'z': (11.6203746, 0.05)}...
+K03223.01 2017-07-26 08:59:47,185: Fitting BinaryStarModel to {'g': (12.9976663, 0.05), 'i': (11.7753712, 0.05), 'H': (10.002, 0.02), 'K': (9.921, 0.02), 'J': (10.546, 0.02), 'r': (12.0879756, 0.05), 'Kepler': 12.173, 'z': (11.6203746, 0.05)}...
 K03269.01 BadRoweFitError: K03269.01 has RoR > 1 (3.7204832372) from JRowe MCMC fit
-K03291.01 2017-07-18 02:10:48,806: Fitting BinaryStarModel to {'g': (14.2801161, 0.05), 'i': (13.680532, 0.05), 'H': (12.461, 0.02), 'K': (12.441, 0.02), 'J': (12.782, 0.02), 'r': (13.868016, 0.05), 'Kepler': 13.91, 'z': (13.6058851, 0.05)}...
+K03284.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K03298.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
-K03302.01 2017-07-18 03:21:07,414: Fitting BinaryStarModel to {'g': (15.3270891, 0.05), 'i': (14.585532, 0.05), 'H': (13.214, 0.02), 'K': (13.145, 0.02), 'J': (13.602, 0.02), 'r': (14.773016, 0.05), 'Kepler': 14.854, 'z': (14.5083612, 0.05)}...
-K03304.01 2017-07-18 02:31:50,311: Fitting BinaryStarModel to {'g': (15.6186544, 0.05), 'i': (14.710404, 0.05), 'H': (13.331, 0.02), 'K': (13.274, 0.02), 'J': (13.791, 0.02), 'r': (14.966852, 0.05), 'Kepler': 15.023, 'z': (14.6771566, 0.05)}...
-K03334.01 2017-07-18 00:40:34,013: Fitting BinaryStarModel to {'g': (15.389205, 0.05), 'i': (13.9440344, 0.05), 'H': (11.972, 0.02), 'K': (11.841, 0.02), 'J': (12.545, 0.02), 'r': (14.3226472, 0.05), 'Kepler': 14.401, 'z': (13.6909903, 0.05)}...
 K03350.01 BadRoweFitError: K03350.01 has RoR > 1 (11.513160959) from JRowe MCMC fit
-K03381.02 2017-07-18 02:26:11,350: Fitting BinaryStarModel to {'g': (15.9765107, 0.05), 'i': (15.3652792, 0.05), 'H': (14.197, 0.02), 'K': (14.213, 0.02), 'J': (14.52, 0.02), 'r': (15.5350296, 0.05), 'Kepler': 15.598, 'z': (15.3002981, 0.05)}...
-K03424.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
-K03425.03 2017-07-18 01:38:26,833: Fitting BinaryStarModel to {'g': (13.9558513, 0.05), 'i': (12.91784, 0.05), 'H': (11.61, 0.02), 'K': (11.514, 0.02), 'J': (11.897, 0.02), 'r': (13.20877, 0.05), 'Kepler': 13.266}...
-K03466.01 2017-07-18 02:19:37,622: Fitting BinaryStarModel to {'g': (16.9611546, 0.05), 'i': (16.1148728, 0.05), 'H': (14.775, 0.02), 'K': (14.617, 0.02), 'J': (15.102, 0.02), 'r': (16.3496464, 0.05), 'Kepler': 16.411, 'z': (16.0242656, 0.05)}...
 K03467.01 BadRoweFitError: K03467.01 has RoR > 1 (1.1876814852) from JRowe MCMC fit
-K03468.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
-K03480.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K03501.01 BadRoweFitError: K03501.01 has RoR > 1 (21.720514129) from JRowe MCMC fit
 K03525.01 BadRoweFitError: K03525.01 has RoR > 1 (1.3591179701) from JRowe MCMC fit
 K03544.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
 K03552.01 BadRoweFitError: K03552.01 has RoR > 1 (3.0470010931) from JRowe MCMC fit
 K03561.01 BadRoweFitError: K03561.01 has RoR > 1 (14.70832916) from JRowe MCMC fit
-K03565.01 2017-07-18 02:20:56,757: Fitting BinaryStarModel to {'g': (16.4837068, 0.05), 'i': (15.5916016, 0.05), 'H': (14.216, 0.02), 'K': (14.116, 0.02), 'J': (14.554, 0.02), 'r': (15.7800708, 0.05), 'Kepler': 15.902, 'z': (15.5101547, 0.05)}...
-K03569.01 2017-07-18 02:35:53,777: Fitting BinaryStarModel to {'g': (14.2838767, 0.05), 'i': (13.2074952, 0.05), 'H': (11.294, 0.02), 'K': (11.143, 0.02), 'J': (11.874, 0.02), 'r': (13.3378376, 0.05), 'Kepler': 13.57, 'z': (12.8441127, 0.05)}...
 K03572.01 BadRoweFitError: K03572.01 has RoR > 1 (12.633444572) from JRowe MCMC fit
 K03575.01 BadRoweFitError: K03575.01 has RoR > 1 (2.4883019823) from JRowe MCMC fit
 K03601.01 BadRoweFitError: K03601.01 has RoR > 1 (1.1737259695) from JRowe MCMC fit
-K03615.01 2017-07-17 23:54:43,861: Fitting BinaryStarModel to {'g': (14.4280363, 0.05), 'i': (13.6319936, 0.05), 'H': (12.277, 0.02), 'K': (12.254, 0.02), 'J': (12.684, 0.02), 'r': (13.8401668, 0.05), 'Kepler': 13.915, 'z': (13.541583, 0.05)}...
 K03621.01 BadRoweFitError: K03621.01 has RoR > 1 (1.246769486) from JRowe MCMC fit
 K03638.01 BadRoweFitError: K03638.01 has RoR > 1 (3.4475274138) from JRowe MCMC fit
 K03641.02 MCMCError: TransitSignal trapezoid fit not converged (K03641.02).
 K03647.01 BadRoweFitError: K03647.01 has RoR > 1 (4.9121926206) from JRowe MCMC fit
 K03650.01 BadRoweFitError: K03650.01 has RoR > 1 (4.418494874) from JRowe MCMC fit
 K03657.01 BadRoweFitError: K03657.01 has RoR > 1 (1.0554898052) from JRowe MCMC fit
-K03658.01 2017-07-18 01:44:28,854: Fitting BinaryStarModel to {'Teff': (3979.0, 71.0), 'g': (16.8524805, 0.05), 'i': (15.083588, 0.05), 'H': (12.979, 0.02), 'K': (12.813, 0.02), 'J': (13.568, 0.02), 'feh': (-0.26, 0.15), 'logg': (4.699, 0.042), 'r': (15.625744, 0.05), 'Kepler': 15.625, 'z': (14.7685123, 0.05)}...
 K03664.01 BadRoweFitError: K03664.01 has RoR > 1 (1.0993001186) from JRowe MCMC fit
-K03666.01 2017-07-18 00:24:43,890: Fitting BinaryStarModel to {'g': (16.7076802, 0.05), 'i': (15.6384408, 0.05), 'H': (13.891, 0.02), 'K': (13.75, 0.02), 'J': (14.35, 0.02), 'r': (15.9520304, 0.05), 'Kepler': 15.994, 'z': (15.3941968, 0.05)}...
-K03679.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K03701.01 BadRoweFitError: K03701.01 has RoR > 1 (4.1775510536) from JRowe MCMC fit
 K03705.01 BadRoweFitError: K03705.01 has RoR > 1 (1.4968063494) from JRowe MCMC fit
 K03710.01 BadRoweFitError: K03710.01 has RoR > 1 (1.1769687213) from JRowe MCMC fit
-K03716.02 2017-07-18 10:00:15,995: 0 Transiting planet systems generated (target 20000)
+K03716.02 2017-07-26 10:09:35,038: 0 Transiting planet systems generated (target 20000)
 K03730.01 BadRoweFitError: K03730.01 has RoR > 1 (1.2706925059) from JRowe MCMC fit
 K03734.01 BadRoweFitError: K03734.01 has RoR > 1 (3.7459034311) from JRowe MCMC fit
 K03738.01 BadRoweFitError: K03738.01 has RoR > 1 (6.2219972686) from JRowe MCMC fit
-K03739.01 2017-07-18 01:51:13,375: Fitting BinaryStarModel to {'g': (14.3145135, 0.05), 'i': (14.5066448, 0.05), 'H': (13.869, 0.02), 'K': (13.775, 0.02), 'J': (13.945, 0.02), 'r': (14.4409324, 0.05), 'Kepler': 14.467, 'z': (14.5432694, 0.05)}...
 K03740.01 BadRoweFitError: K03740.01 has RoR > 1 (1.0336805763) from JRowe MCMC fit
 K03741.01 BadRoweFitError: K03741.01 has RoR > 1 (2.6957825866) from JRowe MCMC fit
 K03745.01 BadRoweFitError: K03745.01 has RoR > 1 (9.5630198383) from JRowe MCMC fit
-K03749.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K03765.01 BadRoweFitError: K03765.01 has RoR > 1 (2.8214032626) from JRowe MCMC fit
 K03773.01 BadRoweFitError: K03773.01 has RoR > 1 (6.3538946172) from JRowe MCMC fit
 K03779.01 BadRoweFitError: K03779.01 has RoR > 1 (2.4317799337) from JRowe MCMC fit
-K03796.01 2017-07-17 23:39:55,072: Fitting BinaryStarModel to {'Teff': (4740.0, 78.0), 'g': (13.6000871, 0.05), 'i': (12.2862944, 0.05), 'H': (10.375, 0.02), 'K': (10.253, 0.02), 'J': (10.935, 0.02), 'feh': (-0.1, 0.15), 'logg': (2.9, 0.14), 'r': (12.6402772, 0.05), 'Kepler': 12.708, 'z': (12.067801, 0.05)}...
+K03788.01 AllWithinRocheError: All simulated systems within Roche lobe
+K03796.01 AssertionError: I don't believe that you want more dimensions than samples!
 K03800.01 BadRoweFitError: K03800.01 has RoR > 1 (24.66271117) from JRowe MCMC fit
 K03853.01 BadRoweFitError: K03853.01 has RoR > 1 (1.4750991383) from JRowe MCMC fit
-K03861.01 2017-07-18 02:46:56,089: Fitting BinaryStarModel to {'g': (15.5287731, 0.05), 'i': (14.7072464, 0.05), 'H': (13.284, 0.02), 'K': (13.221, 0.02), 'J': (13.654, 0.02), 'r': (14.9331532, 0.05), 'Kepler': 14.997, 'z': (14.581931, 0.05)}...
-K03873.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
 K03886.01 AllWithinRocheError: All simulated systems within Roche lobe
 K03895.01 BadRoweFitError: K03895.01 has RoR > 1 (5.4424743504) from JRowe MCMC fit
 K03918.01 BadRoweFitError: K03918.01 has RoR > 1 (1.055912298) from JRowe MCMC fit
 K03929.01 AllWithinRocheError: All simulated systems within Roche lobe
-K03947.02 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
-K04063.01 2017-07-18 01:11:25,584: Fitting BinaryStarModel to {'g': (12.639974, 0.05), 'i': (12.8406008, 0.05), 'H': (12.345, 0.02), 'K': (12.347, 0.02), 'J': (12.366, 0.02), 'r': (12.7601104, 0.05), 'Kepler': 12.789, 'z': (12.8959367, 0.05)}...
-K04147.01 2017-07-18 01:58:54,040: Fitting BinaryStarModel to {'g': (13.0371554, 0.05), 'i': (12.4033928, 0.05), 'H': (11.122, 0.02), 'K': (11.083, 0.02), 'J': (11.491, 0.02), 'r': (12.5889064, 0.05), 'Kepler': 12.643, 'z': (12.3431872, 0.05)}...
-K04417.02 2017-07-18 10:00:13,131: 0 Transiting planet systems generated (target 20000)
+K04049.01 ValueError: Properties not same as saved chains (basename chains/triple-*). Use overwrite=True to fit.
+K04094.01 AllWithinRocheError: All simulated systems within Roche lobe
+K04323.02 MCMCError: TransitSignal trapezoid fit not converged (K04323.02).
+K04417.02 2017-07-26 10:09:36,138: 0 Transiting planet systems generated (target 20000)
 K04544.01 BadRoweFitError: K04544.01 has RoR > 1 (2.6759118751) from JRowe MCMC fit
 K04688.01 MCMCError: TransitSignal trapezoid fit not converged (K04688.01).
 K04948.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -156,8 +98,9 @@ K05054.01 BadRoweFitError: K05054.01 has RoR > 1 (1.6526861247) from JRowe MCMC 
 K05076.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05129.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05145.01 BadRoweFitError: K05145.01 has RoR > 1 (8.8288627438) from JRowe MCMC fit
+K05152.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05157.01 AllWithinRocheError: All simulated systems within Roche lobe
-K05171.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
+K05171.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05187.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05220.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05346.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -166,7 +109,7 @@ K05569.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05614.01 BadRoweFitError: K05614.01 has RoR > 1 (1.1281431143) from JRowe MCMC fit
 K05615.01 BadRoweFitError: K05615.01 has RoR > 1 (1.0844263103) from JRowe MCMC fit
 K05700.01 BadRoweFitError: K05700.01 has RoR > 1 (1.0686665897) from JRowe MCMC fit
-K05732.01 2017-07-18 01:03:51,658: Fitting BinaryStarModel to {'g': (15.8628263, 0.05), 'i': (15.2076272, 0.05), 'H': (13.946, 0.02), 'K': (13.901, 0.02), 'J': (14.299, 0.02), 'r': (15.3823036, 0.05), 'Kepler': 15.453, 'z': (15.1330438, 0.05)}...
+K05752.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05947.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05984.01 BadRoweFitError: K05984.01 has RoR > 1 (22.820008192) from JRowe MCMC fit
 K06042.01 BadRoweFitError: K06042.01 has RoR > 1 (1.3442655683) from JRowe MCMC fit
@@ -177,17 +120,18 @@ K06084.01 BadRoweFitError: K06084.01 has RoR > 1 (1.4850997575) from JRowe MCMC 
 K06094.01 BadRoweFitError: K06094.01 has RoR > 1 (1.1655463912) from JRowe MCMC fit
 K06139.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06152.01 AllWithinRocheError: All simulated systems within Roche lobe
-K06187.01 ValueError: Properties not same as saved chains (basename chains/single-*). Use overwrite=True to fit.
-K06191.01 2017-07-17 23:54:51,172: Fitting BinaryStarModel to {'g': (15.1155897, 0.05), 'i': (14.5245832, 0.05), 'H': (13.346, 0.02), 'K': (13.302, 0.02), 'J': (13.677, 0.02), 'r': (14.6844816, 0.05), 'Kepler': 14.752, 'z': (14.4779654, 0.05)}...
 K06229.01 BadRoweFitError: K06229.01 has RoR > 1 (3.0753911588) from JRowe MCMC fit
 K06264.01 BadRoweFitError: K06264.01 has RoR > 1 (1.067906238) from JRowe MCMC fit
+K06270.01 2017-07-26 02:51:20,809: Empty population (BEBs (Double Period)): < 4 valid systems! Cannot calculate lhood.
 K06334.01 BadRoweFitError: K06334.01 has RoR > 1 (1.213100647) from JRowe MCMC fit
 K06387.01 BadRoweFitError: K06387.01 has RoR > 1 (1.2481648173) from JRowe MCMC fit
 K06391.01 AllWithinRocheError: All simulated systems within Roche lobe
-K06424.01 2017-07-17 23:48:48,764: Fitting BinaryStarModel to {'g': (10.8075714, 0.05), 'i': (8.579248, 0.05), 'H': (5.868, 0.02), 'K': (5.642, 0.02), 'J': (6.709, 0.02), 'r': (9.343074, 0.05), 'Kepler': 9.242, 'z': (8.1483976, 0.05)}...
+K06424.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06437.01 MCMCError: TransitSignal trapezoid fit not converged (K06437.01).
+K06448.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06472.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06503.01 MCMCError: TransitSignal trapezoid fit not converged (K06503.01).
+K06507.01 NoWeakSecondaryError: K06507.01
 K06529.01 MCMCError: TransitSignal trapezoid fit not converged (K06529.01).
 K06531.01 MCMCError: TransitSignal trapezoid fit not converged (K06531.01).
 K06556.01 BadRoweFitError: K06556.01 has RoR > 1 (1.289667273) from JRowe MCMC fit
@@ -198,15 +142,18 @@ K06747.01 NoWeakSecondaryError: K06747.01
 K06834.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06885.01 BadRoweFitError: K06885.01 has RoR > 1 (1.1980885682) from JRowe MCMC fit
 K06896.01 AllWithinRocheError: All simulated systems within Roche lobe
+K06921.01 2017-07-26 08:59:47,964: Fitting BinaryStarModel to {'g': (15.4662344, 0.05), 'i': (14.8685136, 0.05), 'H': (13.7, 0.02), 'K': (13.646, 0.02), 'J': (13.966, 0.02), 'r': (15.0274268, 0.05), 'Kepler': 15.099, 'z': (14.832061, 0.05)}...
 K06933.01 BadRoweFitError: K06933.01 has RoR > 1 (1.601175733) from JRowe MCMC fit
 K06941.01 NoFitError
 K06965.01 MCMCError: TransitSignal trapezoid fit not converged (K06965.01).
-K07031.01 AllWithinRocheError: All simulated systems within Roche lobe
+K07000.01 2017-07-26 08:59:48,376: Fitting BinaryStarModel to {'g': (13.181893, 0.05), 'i': (12.81518, 0.05), 'H': (11.839, 0.02), 'K': (11.812, 0.02), 'J': (12.036, 0.02), 'r': (12.88444, 0.05), 'Kepler': 12.984, 'z': (12.7926327, 0.05)}...
 K07044.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07062.01 BadRoweFitError: K07062.01 has RoR > 1 (13.443088593) from JRowe MCMC fit
 K07101.01 AllWithinRocheError: All simulated systems within Roche lobe
+K07153.01 2017-07-26 08:59:48,257: Fitting BinaryStarModel to {'g': (15.460733, 0.05), 'i': (14.4729608, 0.05), 'H': (12.971, 0.02), 'K': (12.842, 0.02), 'J': (13.357, 0.02), 'r': (14.7372904, 0.05), 'Kepler': 14.807, 'z': (14.3053899, 0.05)}...
 K07156.01 BadRoweFitError: K07156.01 has RoR > 1 (1.3234782127) from JRowe MCMC fit
 K07159.01 BadRoweFitError: K07159.01 has RoR > 1 (1.0106641795) from JRowe MCMC fit
+K07162.01 2017-07-26 08:59:48,284: Fitting BinaryStarModel to {'g': (13.7286933, 0.05), 'i': (12.6809352, 0.05), 'H': (11.079, 0.02), 'K': (11.004, 0.02), 'J': (11.614, 0.02), 'r': (12.9590576, 0.05), 'Kepler': 13.031, 'z': (12.5317398, 0.05)}...
 K07204.01 BadRoweFitError: K07204.01 has RoR > 1 (2.159873686) from JRowe MCMC fit
 K07218.01 MCMCError: TransitSignal trapezoid fit not converged (K07218.01).
 K07246.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -223,10 +170,8 @@ K07840.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07887.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07993.01 AllWithinRocheError: All simulated systems within Roche lobe
 K08027.01 MCMCError: TransitSignal trapezoid fit not converged (K08027.01).
-K08091.01 2017-07-18 05:19:13,814: 9888 BEB systems generated (target 20000)
 K08109.01 AllWithinRocheError: All simulated systems within Roche lobe
-K08147.01 2017-07-18 07:05:30,059: 8342 BEB systems generated (target 20000)
+K08139.01 AllWithinRocheError: All simulated systems within Roche lobe
 K08157.01 MCMCError: TransitSignal trapezoid fit not converged (K08157.01).
 K08214.01 AllWithinRocheError: All simulated systems within Roche lobe
 K08254.01 BadRoweFitError: K08254.01 has RoR > 1 (1.2583520376) from JRowe MCMC fit
-K08272.01 2017-07-18 04:55:49,894: 15213 BEB systems generated (target 20000)
