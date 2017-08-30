@@ -1,4 +1,3 @@
-koi has_ttv
 K00001.01 False 
 K00002.01 False 
 K00003.01 False 

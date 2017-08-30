@@ -91,14 +91,14 @@ K05054.01 BadRoweFitError: K05054.01 has RoR > 1 (1.6526861247) from JRowe MCMC 
 K05076.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05129.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05145.01 BadRoweFitError: K05145.01 has RoR > 1 (8.8288627438) from JRowe MCMC fit
-K05152.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K05152.01/dartmouth_starmodel_triple.h5'
+K05152.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05157.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05171.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05187.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05220.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05295.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05346.01 AllWithinRocheError: All simulated systems within Roche lobe
-K05564.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K05564.01/dartmouth_starmodel_triple.h5'
+K05564.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05569.01 AllWithinRocheError: All simulated systems within Roche lobe
 K05614.01 BadRoweFitError: K05614.01 has RoR > 1 (1.1281431143) from JRowe MCMC fit
 K05615.01 BadRoweFitError: K05615.01 has RoR > 1 (1.0844263103) from JRowe MCMC fit
@@ -136,22 +136,18 @@ K06556.01 BadRoweFitError: K06556.01 has RoR > 1 (1.289667273) from JRowe MCMC f
 K06612.02 MCMCError: TransitSignal trapezoid fit not converged (K06612.02).
 K06652.01 BadRoweFitError: K06652.01 has RoR > 1 (3.6797480739) from JRowe MCMC fit
 K06698.01 BadRoweFitError: K06698.01 has RoR > 1 (1.0473111323) from JRowe MCMC fit
-K06718.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K06718.01/dartmouth_starmodel_single.h5'
 K06740.01 ValueError: planets not in modelnames: []
 K06741.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06747.01 NoWeakSecondaryError: K06747.01
 K06834.01 AllWithinRocheError: All simulated systems within Roche lobe
 K06885.01 BadRoweFitError: K06885.01 has RoR > 1 (1.1980885682) from JRowe MCMC fit
 K06896.01 AllWithinRocheError: All simulated systems within Roche lobe
-K06926.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K06926.01/dartmouth_starmodel_binary.h5'
 K06933.01 BadRoweFitError: K06933.01 has RoR > 1 (1.601175733) from JRowe MCMC fit
 K06941.01 NoFitError
 K06965.01 MCMCError: TransitSignal trapezoid fit not converged (K06965.01).
-K07021.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K07021.01/dartmouth_starmodel_single.h5'
 K07031.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07044.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07062.01 BadRoweFitError: K07062.01 has RoR > 1 (13.443088593) from JRowe MCMC fit
-K07063.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K07063.01/dartmouth_starmodel_single.h5'
 K07081.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07097.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07101.01 AllWithinRocheError: All simulated systems within Roche lobe
@@ -173,20 +169,10 @@ K07695.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07791.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07840.01 AllWithinRocheError: All simulated systems within Roche lobe
 K07887.01 AllWithinRocheError: All simulated systems within Roche lobe
-K07931.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K07931.01/dartmouth_starmodel_single.h5'
-K07953.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K07953.01/dartmouth_starmodel_single.h5'
 K07979.01 AllWithinRocheError: All simulated systems within Roche lobe
 K08027.01 MCMCError: TransitSignal trapezoid fit not converged (K08027.01).
-K08065.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K08065.01/dartmouth_starmodel_single.h5'
-K08080.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K08080.01/dartmouth_starmodel_triple.h5'
-K08101.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K08101.01/dartmouth_starmodel_single.h5'
-K08139.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K08139.01/dartmouth_starmodel_triple.h5'
+K08139.01 AllWithinRocheError: All simulated systems within Roche lobe
 K08157.01 MCMCError: TransitSignal trapezoid fit not converged (K08157.01).
-K08177.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K08177.01/dartmouth_starmodel_triple.h5'
-K08183.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K08183.01/dartmouth_starmodel_single.h5'
 K08205.01 ValueError: planets not in modelnames: []
 K08214.01 AllWithinRocheError: All simulated systems within Roche lobe
-K08221.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K08221.01/dartmouth_starmodel_single.h5'
 K08254.01 BadRoweFitError: K08254.01 has RoR > 1 (1.2583520376) from JRowe MCMC fit
-K08262.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K08262.01/dartmouth_starmodel_binary.h5'
-K08277.01 OSError: [Errno 2] No such file or directory: '/tigress/tmorton/kepler/dr25/fpp/K08277.01/dartmouth_starmodel_binary.h5'
