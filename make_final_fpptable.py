@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 from keputils import koiutils as ku
-DATA = ku.DR24
+DATA = ku.DR25
 
 from astropy import constants as const
 RSUN = const.R_sun.cgs.value
